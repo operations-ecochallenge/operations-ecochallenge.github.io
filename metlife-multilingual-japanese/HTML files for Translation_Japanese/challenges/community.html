@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:fb="https://www.facebook.com/2008/fbml">
+<head>
+  <title>2019年　メットライフ エコチャレンジ - イベント情報</title>
+  <link rel="stylesheet" media="all" href="../assets/stylesheets/application.css" data-turbolinks-track="true"/>
+  <script src="../assets/javascripts/application.js" data-turbolinks-track="true"></script>
+  <meta name="action-cable-url" content="/cable"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="robots" content="noindex">
+
+  <meta name="csrf-param" content="authenticity_token"/>
+  <meta name="csrf-token"
+        content="KHbHeVfyS683SdqR+FCO7sJ7ZY4xcTTw0pVqzKOm+O8rq5m3j4rBvFsjaMcCnf5Q5WK1AJ3YFK6e/wpdT5aVdg=="/><!-- default meta --><meta property="og:title"
+        content="Join the 2019 MetLife EcoChallenge, presented by MetLife Global Sustainability Team"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:description"
+        content="For two weeks, we challenge you to make eco-friendly choices to live a more sustainable lifestyle! Team up with colleagues from around the world and take action to create a healthier planet during the 2019 MetLife EcoChallenge. "/>
+  <meta property="og:image"
+        content="http://metlife.ecochallenge.org/system/events/org_logos/000/000/039/original/metlife_eng_logo_rgb.jpg?1552691799"/>
+  <meta property="og:url" content="http://metlife.ecochallenge.org"/>
+
+
+  <style type="text/css">nav.user-nav {
+    background-color: #0061A0;
+  }
+
+  .event-header .event-info {
+    margin: 10px 15px 30px;
+  }
+
+  a {
+    color: #007ABC;
+  }
+
+  .button-primary, .button-primary.dark:hover, .award-point-list a, .award-point-list a .points::after, .event-header .event-nav a.outlined:hover, .event-header .event-nav a.outlined:active, .hero .button:hover, .button-outlined:hover {
+    background-color: #007ABC;
+  }
+
+  .event-header .event-nav a.outlined, .button-outlined {
+    border-color: #007ABC;
+    color: #007ABC;
+  }
+
+  .event-check-ins .days li.action-complete, .legend li .action-complete.marker {
+    background-color: #0061A0;
+  }
+
+  .calendar .week a.action-complete {
+    color: #0061A0;
+    border-color: #0061A0;
+  }
+
+  .event-header .event-info .event-date-range {
+    border-top: 1px solid #0061A0;
+    border-bottom: 1px solid #0061A0;
+  }
+
+  h2, h3, h5, .participants-counter .title, .horizontal-section-title .title, .page-content .title {
+    color: #333333;
+  }
+
+  .participant-feed .dropdown-wrapper& gt
+
+  ;
+  .feed-filter {
+    color: #0061A0;
+  }
+
+  .form-button-icon.facebook, .form-button-icon.google {
+    display: none;
+  }
+
+  .hero .sign, .event-header .event-info .title a, h2, h3, h5, .participants-counter .title, .horizontal-section-title .title, .page-content .title, .placeholder .title, .challenges-slider .slider-header .title, .section-title .title, .team-hero .title, .team-detail-points .title, .dashboard-sidebar .team-summary .team-header .title, .dashboard-sidebar .user-summary .user-header .name, .impact-grid .impact-card .units, .dashboard-sidebar .impact-summary .challenge-impact .count, .participants-counter .count .digit-box span {
+    font-family: Georgia, Times;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .global-footer .top .subheading {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: white;
+  }
+
+  .global-footer .top .social a, .global-footer .top .col, .global-footer .top .description {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+  }
+
+  .hero .copy, .company-callout .callout-container .blurb, .placeholder p, .page-content, .participant-action-cards .card-container .description p, .awarded-points-list tr + tr td, .section-title .description, .participants-feed-full .copy {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .placeholder p, .page-content, .section-title .description, .participants-feed-full .copy {
+    font-size: 13px;
+  }
+
+  .hero .container-hero {
+    max-width: 450px;
+  }
+
+  .event-header .event-info .title a {
+    color: #000000;
+  }
+
+  .hero .copy {
+    font-weight: bold;
+  }
+
+  .user-nav ul li a:hover {
+    color: white;
+    opacity: 0.8;
+  }
+
+  .event-header .event-info .logo img {
+    max-height: 100px;
+    max-width: 170px;
+  }
+
+  .bottom .outlined {
+    display: none;
+  }
+
+  .hero .sign {
+    background-color: rgba(242, 242, 242, 0.85);
+    padding: 15px;
+    color: #333;
+    text-transform: inherit;
+    border-radius: 6px 6px 0px 0px;
+  }
+
+  .hero .copy {
+    background-color: rgba(242, 242, 242, 0.85);
+    padding: 15px;
+    padding-top: 0px;
+    color: #333;
+    border-radius: 0px 0px 6px 6px;
+    font-weight: lighter;
+  }
+
+  .hero .button {
+    font-family: & #39;
+    Galaxie Polaris & #39;, & #39;
+    Arial & #39;, sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 25px;
+    color: #ffffff;
+    border-radius: 4px;
+    background-color: #0061A0;
+    transition: color 0.2s ease, background-color 0.2s ease
+  }
+
+  .challenges-slider .slider-utility a, .featured_challenge .challenge-callout a {
+    border-radius: 4px;
+  }
+
+  p.instructional-message {
+    font-size: 12px;
+  }
+
+  .copy a:hover, .dashboard-table a:hover, .participant a:hover, .section-title .description a:hover, .section-title .subtitle a:hover {
+    text-decoration: underline;
+  }
+
+  /* Center Challenge Cards -kbb */
+  .challenges-grid {
+    justify-content: space-around;
+  }
+
+  .company-callout .callout-container .blurb {
+    font-size: 17px;
+  }
+
+  .nweiBrand {
+    text-align: center;
+    margin-top: 48px;
+    margin-bottom: 18px;
+  }
+
+  .nweiLogoAbout {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+  }</style>
+</head>
+
+<body
+        class="layout-event"
+>
+
+<header class="global-header">
+  <nav class="user-nav"></nav>
+</header>
+
+<div class="event-header ">
+  <div class="event-info" style="">
+    <div class="subtitle"><a href="https://metlife.ecochallenge.org/about/event-info"><div class="logo"><img src="../assets/images/logo.jpg"/></div></a></div>
+    <div class="title"><a href="http://metlife.ecochallenge.org/">2019年  メットライフ エコチャレンジ</a></div>
+    <div class="event-date-range" data-date-range=""><span data-date-range-start>2019年4月24日</span> <span> - </span> <span data-date-range-end>5月10日</span></div>
+    <div id="regPassBlock"><a class="outlined regNew" href="https://metlife.ecochallenge.org/users/join">ライブ登録 (英語)</a><p id="greenImpact">イベントのパスワード: greenimpact</p>
+    </div>
+  </div>
+  <nav class="event-nav navNew">
+    <ul>
+      <li><a href="/">詳細</a></li>
+      <li><a href="/points.html">要点</a></li>
+      <li><a href="/challenges.html">課題</a></li>
+    </ul>
+  </nav>
+</div>
+
+
+<section class="bg-spectrum spectrum08">
+  <div class="container">
+    <header class="section-title">
+      <div class="icon">
+        <svg class="border" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 46">
+          <circle r="22.5" cx="23" cy="23" fill="none"></circle>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 46">
+          <path d="M22.5 24.9c0-1.3 1.1-2.4 2.4-2.4h6.4v-5.6c0-2.1-1.7-3.8-3.8-3.8H14.1c-2.1 0-3.8 1.7-3.8 3.8v8c0 2.1 1.7 3.8 3.8 3.8h2.1v4.6l4.6-4.6h1.8v-3.8z"
+                fill="none"/>
+          <path d="M24.9 22.5h8.5c1.3 0 2.4 1.1 2.4 2.4v5c0 1.3-1.1 2.4-2.4 2.4h-1.3v2.9l-2.9-2.9h-4.3c-1.3 0-2.4-1.1-2.4-2.4v-5c0-1.3 1.1-2.4 2.4-2.4"
+                fill="#fff"/>
+        </svg>
+
+      </div>
+      <h1 class="title">地域社会</h1><a class="subtitle medium" href="/challenges.html">すべてのチャレンジに戻る</a><p class="description uppercase">健全な地域社会は、健全な地球に必要です。</p>
+      <p class="description">地域社会のスケールではしばしば、集団行動の力をさらに明確に見ることができます。近所、町、都市では、私たちはインフラと関係性の両方でつながっています。サポートがあつく、独立した地域社会をつくることが私たちの立ち直りを早くさせ、さらに持続可能な生活方法に前進させてくれます。</p>
+      <div class="challenge-resource"><a class="button-outlined" target="_blank"
+           href="https://ecochallenge.org/wp-content/uploads/2017/03/2017-MetLife-EcoChallenge-Resources_Community.pdf">さらに学ぶ</a></div>
+      <div class="challenge-sponsors">
+      </div>
+    </header>
+
+    <nav class="challenge-actions-list">
+      <ul>
+        <li class="action-card"
+            data-participant-action
+            data-action="4559"
+        >
+          <div class="init" data-focus-target>
+            <div class="content" data-action-content>
+              <div class="body">
+                <h3 class="title">シェアリングエコノミーを支援する</h3>
+                <p data-description>私は家族、友達、近所とシェアリングエコノミーを作る、または共有します。</p>
+                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4559">さらに学ぶ</a><ul class="dropdown" data-dropdown="resource-links-4559">
+                    <li>アクション リソース</li>
+                    <li><a href="http://www.thepeoplewhoshare.com/blog/what-is-the-sharing-economy/" target="_blank">シェアリングエコノミーとは？</a></li>
+                    <li><a href="https://www.un.org/sustainabledevelopment/poverty/" target="_blank">UN SDG 1：貧困ゼロ</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=QX3M8Ka9vUA" target="_blank">第3次産業革命：根本的で新しいシェアリングエコノミー</a></li>
+                  </ul>
+                </div>
+
+                <p style="display: none" class="warning" data-warning>チャレンジですでにこのアクションを完了しています。アクションを消去すると、得点を失う可能性があります。本当にやりたいですか？</p>
+              </div>
+
+              <div class="challenge-meta">
+                <p>デイリーチャレンジ</p>
+              </div>
+              <div class="action-difficulty">
+                <div class="indicator">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar dull"></div>
+                  <div class="description">
+                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">チャレンジレベル：</p>
+                    <p style="margin: 11px 0; font-size: 13px">エコプロ</p>
+                    <p style="text-transform: none;">チャレンジレベルは、アクション完了に関わる時間、費用、知識、スキルという4要素で決まります。参加者によってこれらの要素はさまざまかもしれませんが、チャレンジレベルはあなたの生活と目標に最適なアクションを選ぶのに役立ちます。</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </li>
+
+        <li class="action-card"
+            data-participant-action
+            data-action="4560"
+        >
+          <div class="init" data-focus-target>
+            <div class="content" data-action-content>
+              <div class="body">
+                <h3 class="title">近所の人たちに会う</h3>
+                <p data-description>私は毎日(___) 人の新しい近所の人たちに会います。</p>
+                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4560">さらに学ぶ</a><ul class="dropdown" data-dropdown="resource-links-4560">
+                    <li>アクション リソース</li>
+                    <li><a href="https://www.moving.com/tips/simple-tips-on-how-to-meet-your-neighbors/" target="_blank">近所の人たちに会う方法：幸先の良いスタートを切るためのシンプルなヒント</a></li>
+                    <li><a href="http://www.yesmagazine.org/happiness/soup-night-a-neighborhood-revolution-20160107"
+                         target="_blank">スープ鍋の中の近所革命</a></li>
+                    <li><a href="https://www.theatlantic.com/national/archive/2015/01/know-thy-neighbor-reduce-gun-violence/384598/"
+                         target="_blank">銃乱射を減らすために、近所の人たちを知りなさい</a></li>
+                  </ul>
+                </div>
+
+                <p style="display: none" class="warning" data-warning>チャレンジですでにこのアクションを完了しています。アクションを消去すると、得点を失う可能性があります。本当にやりたいですか？</p>
+              </div>
+
+              <div class="challenge-meta">
+                <p>デイリーチャレンジ</p>
+              </div>
+              <div class="action-difficulty">
+                <div class="indicator">
+                  <div class="bar"></div>
+                  <div class="bar dull"></div>
+                  <div class="bar dull"></div>
+                  <div class="description">
+                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">チャレンジレベル：</p>
+                    <p style="margin: 11px 0; font-size: 13px">エコ学習者</p>
+                    <p style="text-transform: none;">チャレンジレベルは、アクション完了に関わる時間、費用、知識、スキルという4要素で決まります。参加者によってこれらの要素はさまざまかもしれませんが、チャレンジレベルはあなたの生活と目標に最適なアクションを選ぶのに役立ちます。</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </li>
+
+        <li class="action-card"
+            data-participant-action
+            data-action="4679"
+        >
+          <div class="init" data-focus-target>
+            <div class="content" data-action-content>
+              <div class="body">
+                <h3 class="title">私たちのグリーンインパクトメンバーになる</h3>
+                <h4 class="subtitle">
+
+                </h4>
+                <p data-description>私はメットライフのグリーンコミュニティに参加して気心の通じる他の同僚とつながり、エコチャレンジのような楽しいイベントに参加する機会を得ます。下のリソースリンクをクリックして参加してください。</p>
+                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4679">さらに学ぶ</a><ul class="dropdown" data-dropdown="resource-links-4679">
+                    <li>アクション リソース</li>
+                    <li><a href="https://my.metlife.com/sites/gogreen/Lists/Become%20a%20Green%20Impact%20Member/NewForm.aspx"
+                         target="_blank">メットライフのグリーンインパクトコミュニティに参加する</a></li>
+                  </ul>
+                </div>
+
+                <p style="display: none" class="warning" data-warning>チャレンジですでにこのアクションを完了しています。アクションを消去すると、得点を失う可能性があります。本当にやりたいですか？</p>
+              </div>
+
+              <div class="challenge-meta">
+                <p>ワンタイム チャレンジ</p>
+              </div>
+              <div class="action-difficulty">
+                <div class="indicator">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar dull"></div>
+                  <div class="description">
+                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">チャレンジレベル：</p>
+                    <p style="margin: 11px 0; font-size: 13px">エコプロ</p>
+                    <p style="text-transform: none;">チャレンジレベルは、アクション完了に関わる時間、費用、知識、スキルという4要素で決まります。参加者によってこれらの要素はさまざまかもしれませんが、チャレンジレベルはあなたの生活と目標に最適なアクションを選ぶのに役立ちます。</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </li>
+
+        <li class="action-card"
+            data-participant-action
+            data-action="4561"
+        >
+          <div class="init" data-focus-target>
+            <div class="content" data-action-content>
+              <div class="body">
+                <h3 class="title">他の人たちを助ける</h3>
+                <h4 class="subtitle">
+
+                </h4>
+                <p data-description>私は毎日、助けを必要としている(___)人の人を助けます。</p>
+                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4561">さらに学ぶ</a><ul class="dropdown" data-dropdown="resource-links-4561">
+                    <li>アクション リソース</li>
+                    <li><a href="http://www.yesmagazine.org/issues/50-solutions/the-fix-it-shop-where-neighbors-repair-your-clothes-and-electronics-20161220"
+                         target="_blank">近所の人たちが服や電化製品を直せる修理店</a></li>
+                    <li><a href="https://www.psychologytoday.com/us/blog/darwins-subterranean-world/201704/helping-your-neighbor"
+                         target="_blank">近所を助ける</a></li>
+                  </ul>
+                </div>
+
+                <p style="display: none" class="warning" data-warning>チャレンジですでにこのアクションを完了しています。アクションを消去すると、得点を失う可能性があります。本当にやりたいですか？</p>
+              </div>
+
+              <div class="challenge-meta">
+                <p>デイリーチャレンジ</p>
+              </div>
+              <div class="action-difficulty">
+                <div class="indicator">
+                  <div class="bar"></div>
+                  <div class="bar dull"></div>
+                  <div class="bar dull"></div>
+                  <div class="description">
+                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">チャレンジレベル：</p>
+                    <p style="margin: 11px 0; font-size: 13px">エコ学習者</p>
+                    <p style="text-transform: none;">チャレンジレベルは、アクション完了に関わる時間、費用、知識、スキルという4要素で決まります。参加者によってこれらの要素はさまざまかもしれませんが、チャレンジレベルはあなたの生活と目標に最適なアクションを選ぶのに役立ちます。</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </li>
+
+        <li class="action-card"
+            data-participant-action
+            data-action="4562"
+        >
+          <div class="init" data-focus-target>
+            <div class="content" data-action-content>
+              <div class="body">
+                <h3 class="title">多様で持続可能な事業を支援する</h3>
+                <h4 class="subtitle">
+
+                </h4>
+                <p data-description>私は多様な（有色人種、女性、LGBTQIコミュニティや退役軍人が運営する）事業と環境的に持続可能な実践を行う事業を支援します。環境的な要素をメットライフでの調達決定に織り込み、多様なサプライヤーを組み込む「1つのルール」を受け入れます。</p>
+                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4562">さらに学ぶ</a><ul class="dropdown" data-dropdown="resource-links-4562">
+                    <li>アクション リソース</li>
+                    <li><a href="https://www.metlife.com/corporate-responsibility/environment/our-environmental-priorities/"
+                         target="_blank">メットライフの責任ある調達</a></li>
+                    <li><a href="https://my.metlife.com/en/us/tools/procurement/Pages/Supplier-Diversity.aspx"
+                         target="_blank">メットライフのサプライヤー組み入れと開発</a></li>
+                    <li><a href="https://my.metlife.com/en/us/tools/procurement/Documents/SID/Rule_of_One.pdf#search=rule%20of%20one"
+                         target="_blank">メットライフのワン アクセス フォームのルール</a></li>
+                  </ul>
+                </div>
+
+                <p style="display: none" class="warning" data-warning>チャレンジですでにこのアクションを完了しています。アクションを消去すると、得点を失う可能性があります。本当にやりたいですか？</p>
+              </div>
+
+              <div class="challenge-meta">
+                <p>ワンタイム チャレンジ</p>
+              </div>
+              <div class="action-difficulty">
+                <div class="indicator">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar dull"></div>
+                  <div class="description">
+                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">チャレンジレベル：</p>
+                    <p style="margin: 11px 0; font-size: 13px">エコプロ</p>
+                    <p style="text-transform: none;">チャレンジレベルは、アクション完了に関わる時間、費用、知識、スキルという4要素で決まります。参加者によってこれらの要素はさまざまかもしれませんが、チャレンジレベルはあなたの生活と目標に最適なアクションを選ぶのに役立ちます。</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </li>
+
+        <li class="action-card"
+            data-participant-action
+            data-action="4668"
+        >
+          <div class="init" data-focus-target>
+            <div class="content" data-action-content>
+              <div class="body">
+                <h3 class="title">自分のチャレンジを認識する</h3>
+                <h4 class="subtitle">
+
+                </h4>
+                <p data-description>私はメットライフ センターステージのポータルサイトを見る、またはメットライフの価値を生活にもたらす手助けをしたり、環境に良い影響を与えたりしてくれた同僚に、バッジやポイントを授与します。私はチャレンジ期間中、毎日最低一人を認めます。</p>
+                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4668">さらに学ぶ</a><ul class="dropdown" data-dropdown="resource-links-4668">
+                    <li>アクション リソース</li>
+                    <li><a href="https://www.metlifecenterstage.com/metlifecenterstage/homePage.do#launch/recognition"
+                         target="_blank">自分のチャレンジを認識する</a></li>
+                  </ul>
+                </div>
+
+                <p style="display: none" class="warning" data-warning>チャレンジですでにこのアクションを完了しています。アクションを消去すると、得点を失う可能性があります。本当にやりたいですか？</p>
+              </div>
+
+              <div class="challenge-meta">
+                <p>デイリーチャレンジ</p>
+              </div>
+              <div class="action-difficulty">
+                <div class="indicator">
+                  <div class="bar"></div>
+                  <div class="bar dull"></div>
+                  <div class="bar dull"></div>
+                  <div class="description">
+                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">チャレンジレベル：</p>
+                    <p style="margin: 11px 0; font-size: 13px">エコ学習者</p>
+                    <p style="text-transform: none;">チャレンジレベルは、アクション完了に関わる時間、費用、知識、スキルという4要素で決まります。参加者によってこれらの要素はさまざまかもしれませんが、チャレンジレベルはあなたの生活と目標に最適なアクションを選ぶのに役立ちます。</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </li>
+
+        <li class="action-card"
+            data-participant-action
+            data-action="4564"
+        >
+          <div class="init" data-focus-target>
+            <div class="content" data-action-content>
+              <div class="body">
+                <h3 class="title">地域でボランティア活動をする</h3>
+                <h4 class="subtitle">
+
+                </h4>
+                <p data-description>私はチャレンジ期間中、地域で(___) 時間ボランティア活動を行います。メットライフのボランティア活動プログラムと、ボランティア機会の詳細はこちらでご覧ください。</p>
+                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4564">さらに学ぶ</a><ul class="dropdown" data-dropdown="resource-links-4564">
+                    <li>アクション リソース</li>
+                    <li><a href="https://www.volunteermatch.org/" target="_blank">ボランティアマッチ</a></li>
+                    <li><a href="http://www.createthegood.org" target="_blank">良いことを創り出す</a></li>
+                    <li><a href="https://my.metlife.com/teams/MetLifeFoundation/SitePages/Volunteering%20and%20Matching%20Gifts.aspx"
+                         target="_blank">メットライフ基金：ボランティア活動</a></li>
+                  </ul>
+                </div>
+
+                <p style="display: none" class="warning" data-warning>チャレンジですでにこのアクションを完了しています。アクションを消去すると、得点を失う可能性があります。本当にやりたいですか？</p>
+              </div>
+
+              <div class="challenge-meta">
+                <p>ワンタイム チャレンジ</p>
+              </div>
+              <div class="action-difficulty">
+                <div class="indicator">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar dull"></div>
+                  <div class="description">
+                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">チャレンジレベル：</p>
+                    <p style="margin: 11px 0; font-size: 13px">エコプロ</p>
+                    <p style="text-transform: none;">チャレンジレベルは、アクション完了に関わる時間、費用、知識、スキルという4要素で決まります。参加者によってこれらの要素はさまざまかもしれませんが、チャレンジレベルはあなたの生活と目標に最適なアクションを選ぶのに役立ちます。</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </li>
+
+        <li class="action-card"
+            data-participant-action
+            data-action="4666"
+        >
+          <div class="init" data-focus-target>
+            <div class="content" data-action-content>
+              <div class="body">
+                <h3 class="title">メットライフの環境チャンピオンになる</h3>
+                <h4 class="subtitle">
+
+                </h4>
+                <p data-description>私はメットライフ マイラーニング ポータルにアクセスし、環境学習チャンピオンコース、または持続可能性のトピックに焦点を絞ったeラーニング、記事、SkillsSoftの本、Ted-Talkを受講します。私はこのスキルと戦略を使い、職場での負荷を減らし、同僚にポジティブな選択をするよう励まします。</p>
+                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4666">さらに学ぶ</a><ul class="dropdown" data-dropdown="resource-links-4666">
+                    <li>アクション リソース</li>
+                    <li><a href="https://my.metlife.com/en/learning/Pages/home.aspx" target="_blank">メットライフのマイ ラーニング</a></li>
+                    <li><a href="https://performancemanager8.successfactors.com/sf/learning?destUrl=https%3A%2F%2Fmetlife.plateau.com%2flearning%2fuser%2fdeeplink_redirect%2ejsp%3flinkId%3dITEM_DETAILS%26componentID%3dUS00003717%26componentTypeID%3dCRSE%26revisionDate%3d1552078080000%26fromSF%3dY&amp;company=mlprod&amp;_s.crb=EKZorw4%252bYIPMobQ7xDc638keikg%253d"
+                         target="_blank">環境チャンピオン学習コースモジュール 1</a></li>
+                    <li><a href="https://degreed.com/account/login?returnUrl=%2Fpathway%2F4o97gj45pn%3Fpath%3Denvironmental-champion-certification"
+                         target="_blank">環境チャンピオンへの道 </a></li>
+                  </ul>
+                </div>
+
+                <p style="display: none" class="warning" data-warning>チャレンジですでにこのアクションを完了しています。アクションを消去すると、得点を失う可能性があります。本当にやりたいですか？</p>
+              </div>
+
+              <div class="challenge-meta">
+                <p>ワンタイム チャレンジ</p>
+              </div>
+              <div class="action-difficulty">
+                <div class="indicator">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="description">
+                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">チャレンジレベル：</p>
+                    <p style="margin: 11px 0; font-size: 13px">エコリーダー</p>
+                    <p style="text-transform: none;">チャレンジレベルは、アクション完了に関わる時間、費用、知識、スキルという4要素で決まります。参加者によってこれらの要素はさまざまかもしれませんが、チャレンジレベルはあなたの生活と目標に最適なアクションを選ぶのに役立ちます。</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </li>
+
+        <li class="action-card"
+            data-participant-action
+            data-action="4565"
+        >
+          <div class="init" data-focus-target>
+            <div class="content" data-action-content>
+              <div class="body">
+                <h3 class="title">町内会または地域のグリーン チームに参加する</h3>
+                <h4 class="subtitle">
+
+                </h4>
+                <p data-description>私は町内会または地域のグリーン チームに参加します。</p>
+                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4565">さらに学ぶ</a><ul class="dropdown" data-dropdown="resource-links-4565">
+                    <li>アクション リソース</li>
+                    <li><a href="https://www.comstocksmag.com/commentary/5-reasons-join-your-neighborhood-association"
+                         target="_blank">町内会に参加する5つの理由</a></li>
+                    <li><a href="https://bit.ly/2LQxjW5" target="_blank">アメリカの最も健全な地域社会を見つける</a></li>
+                    <li><a href="https://my.metlife.com/sites/gogreen/SitePages/Meet%20Our%20Green%20Team.aspx"
+                         target="_blank">メットライフのグリーンチーム</a></li>
+                  </ul>
+                </div>
+
+                <p style="display: none" class="warning" data-warning>チャレンジですでにこのアクションを完了しています。アクションを消去すると、得点を失う可能性があります。本当にやりたいですか？</p>
+              </div>
+
+              <div class="challenge-meta">
+                <p>ワンタイム チャレンジ</p>
+              </div>
+              <div class="action-difficulty">
+                <div class="indicator">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar dull"></div>
+                  <div class="description">
+                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">チャレンジレベル：</p>
+                    <p style="margin: 11px 0; font-size: 13px">エコプロ</p>
+                    <p style="text-transform: none;">チャレンジレベルは、アクション完了に関わる時間、費用、知識、スキルという4要素で決まります。参加者によってこれらの要素はさまざまかもしれませんが、チャレンジレベルはあなたの生活と目標に最適なアクションを選ぶのに役立ちます。</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </li>
+
+        <li class="action-card"
+            data-participant-action
+            data-action="4566"
+        >
+          <div class="init" data-focus-target>
+            <div class="content" data-action-content>
+              <div class="body">
+                <h3 class="title">先住民地域を支援する</h3>
+                <h4 class="subtitle">
+
+                </h4>
+                <p data-description>私は提供リンクのリソースを使い、(___)分を費やして過去に私の地域に住んでいた先住民人口についてと、現存するそのような地域を支援する方法を学びます。</p>
+                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4566">さらに学ぶ</a><ul class="dropdown" data-dropdown="resource-links-4566">
+                    <li>アクション リソース</li>
+                    <li><a href="https://native-land.ca" target="_blank">世界的な先住民族人口</a></li>
+                    <li><a href="http://www.yesmagazine.org/issues/affordable-housing/posting-your-hike-on-instagram-now-you-can-tag-your-locations-indigenous-name-20180523"
+                         target="_blank">ハイキング写真をインスタグラムに投稿しますか？今すぐその場所の先住民族の名前にタグを付けることができます</a></li>
+                    <li><a href="https://everydayfeminism.com/2014/08/honor-native-americans-without-appropriating/"
+                         target="_blank">私たちの文化に沿わせることなく、ネイティブアメリカンを称賛する4つの方法</a></li>
+                  </ul>
+                </div>
+
+                <p style="display: none" class="warning" data-warning>チャレンジですでにこのアクションを完了しています。アクションを消去すると、得点を失う可能性があります。本当にやりたいですか？</p>
+              </div>
+
+              <div class="challenge-meta">
+                <p>ワンタイム チャレンジ</p>
+              </div>
+              <div class="action-difficulty">
+                <div class="indicator">
+                  <div class="bar"></div>
+                  <div class="bar dull"></div>
+                  <div class="bar dull"></div>
+                  <div class="description">
+                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">チャレンジレベル：</p>
+                    <p style="margin: 11px 0; font-size: 13px">エコ学習者</p>
+                    <p style="text-transform: none;">チャレンジレベルは、アクション完了に関わる時間、費用、知識、スキルという4要素で決まります。参加者によってこれらの要素はさまざまかもしれませんが、チャレンジレベルはあなたの生活と目標に最適なアクションを選ぶのに役立ちます。</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </li>
+
+        <li class="action-card"
+            data-participant-action
+            data-action="4567"
+        >
+          <div class="init" data-focus-target>
+            <div class="content" data-action-content>
+              <div class="body">
+                <h3 class="title">非営利団体のために資金を集める</h3>
+                <h4 class="subtitle">
+
+                </h4>
+                <p data-description>私は環境非営利団体のために資金を調達します。</p>
+                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4567">さらに学ぶ</a><ul class="dropdown" data-dropdown="resource-links-4567">
+                    <li>アクション リソース</li>
+                    <li><a href="https://blog.ted.com/how-to-pick-the-charity-thats-right-for-you/" target="_blank">あなたに適切なチャリティーの選び方</a></li>
+                    <li><a href="https://www.nytimes.com/2013/11/08/giving/how-to-choose-a-charity-wisely.html"
+                         target="_blank">賢い寄付を選ぶ</a></li>
+                    <li><a href="https://www.charitynavigator.org/" target="_blank">チャリティーナビゲーター</a></li>
+                  </ul>
+                </div>
+
+                <p style="display: none" class="warning" data-warning>チャレンジですでにこのアクションを完了しています。アクションを消去すると、得点を失う可能性があります。本当にやりたいですか？</p>
+              </div>
+
+              <div class="challenge-meta">
+                <p>ワンタイム チャレンジ</p>
+              </div>
+              <div class="action-difficulty">
+                <div class="indicator">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="description">
+                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">チャレンジレベル：</p>
+                    <p style="margin: 11px 0; font-size: 13px">エコリーダー</p>
+                    <p style="text-transform: none;">チャレンジレベルは、アクション完了に関わる時間、費用、知識、スキルという4要素で決まります。参加者によってこれらの要素はさまざまかもしれませんが、チャレンジレベルはあなたの生活と目標に最適なアクションを選ぶのに役立ちます。</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </li>
+
+        <li class="action-card"
+            data-participant-action
+            data-action="4568"
+        >
+          <div class="init" data-focus-target>
+            <div class="content" data-action-content>
+              <div class="body">
+                <h3 class="title">ホームパーティーを主催する</h3>
+                <h4 class="subtitle">
+
+                </h4>
+                <p data-description>私は(___) 人の友達・同僚とホームパーティーを主催し、私にとって大切な環境問題についての映画を観るか、ゲストスピーカーを紹介します。</p>
+                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4568">さらに学ぶ</a><ul class="dropdown" data-dropdown="resource-links-4568">
+                    <li>アクション リソース</li>
+                    <li><a href="http://www.earthleaders.org/center-programs/home-eco-parties/" target="_blank">地球リーダーシップのためのセンター - エコホームパーティー</a></li>
+                  </ul>
+                </div>
+
+                <p style="display: none" class="warning" data-warning>チャレンジですでにこのアクションを完了しています。アクションを消去すると、得点を失う可能性があります。本当にやりたいですか？</p>
+              </div>
+
+              <div class="challenge-meta">
+                <p>ワンタイム チャレンジ</p>
+              </div>
+              <div class="action-difficulty">
+                <div class="indicator">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="description">
+                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">チャレンジレベル：</p>
+                    <p style="margin: 11px 0; font-size: 13px">エコリーダー</p>
+                    <p style="text-transform: none;">チャレンジレベルは、アクション完了に関わる時間、費用、知識、スキルという4要素で決まります。参加者によってこれらの要素はさまざまかもしれませんが、チャレンジレベルはあなたの生活と目標に最適なアクションを選ぶのに役立ちます。</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </li>
+
+        <li class="action-card"
+            data-participant-action
+            data-action="4569"
+        >
+          <div class="init" data-focus-target>
+            <div class="content" data-action-content>
+              <div class="body">
+                <h3 class="title">友達に伝える</h3>
+                <p data-description>私は自分にとって最も大切な地域での社会的または環境的な問題を決め、毎日(___)人の友達にその問題について伝えます。</p>
+                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4569">さらに学ぶ</a><ul class="dropdown" data-dropdown="resource-links-4569">
+                    <li>アクション リソース</li>
+                    <li><a href="https://www.un.org/sustainabledevelopment/cities/" target="_blank">UN SDG 11：持続可能な町と地域社会</a></li>
+                    <li><a href="https://nbs.net/p/make-it-personal-how-to-get-people-to-care-about-susta-db82e0a8-5f54-48c6-8e6a-b29f08d2d127"
+                         target="_blank">個人的なものにする：人々が持続可能性を気遣うようにする方法</a></li>
+                  </ul>
+                </div>
+
+                <p style="display: none" class="warning" data-warning>チャレンジですでにこのアクションを完了しています。アクションを消去すると、得点を失う可能性があります。本当にやりたいですか？</p>
+              </div>
+
+              <div class="challenge-meta">
+                <p>デイリーチャレンジ</p>
+              </div>
+              <div class="action-difficulty">
+                <div class="indicator">
+                  <div class="bar"></div>
+                  <div class="bar dull"></div>
+                  <div class="bar dull"></div>
+                  <div class="description">
+                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">チャレンジレベル：</p>
+                    <p style="margin: 11px 0; font-size: 13px">エコ学習者</p>
+                    <p style="text-transform: none;">チャレンジレベルは、アクション完了に関わる時間、費用、知識、スキルという4要素で決まります。参加者によってこれらの要素はさまざまかもしれませんが、チャレンジレベルはあなたの生活と目標に最適なアクションを選ぶのに役立ちます。</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </li>
+
+        <li class="action-card"
+            data-participant-action
+            data-action="4570"
+        >
+          <div class="init" data-focus-target>
+            <div class="content" data-action-content>
+              <div class="body">
+                <h3 class="title">非営利団体とつながる</h3>
+                <p data-description>私は地域の環境的もしくはその他の非営利団体とつながり、参加方法やメンバーになる方法を見つけます。</p>
+                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4570">さらに学ぶ</a><ul class="dropdown" data-dropdown="resource-links-4570">
+                    <li>アクション リソース</li>
+                    <li><a href="https://www.volunteermatch.org/" target="_blank">ボランティアマッチ</a></li>
+                  </ul>
+                </div>
+
+                <p style="display: none" class="warning" data-warning>チャレンジですでにこのアクションを完了しています。アクションを消去すると、得点を失う可能性があります。本当にやりたいですか？</p>
+              </div>
+
+              <div class="challenge-meta">
+                <p>ワンタイム チャレンジ</p>
+              </div>
+              <div class="action-difficulty">
+                <div class="indicator">
+                  <div class="bar"></div>
+                  <div class="bar dull"></div>
+                  <div class="bar dull"></div>
+                  <div class="description">
+                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">チャレンジレベル：</p>
+                    <p style="margin: 11px 0; font-size: 13px">エコ学習者</p>
+                    <p style="text-transform: none;">チャレンジレベルは、アクション完了に関わる時間、費用、知識、スキルという4要素で決まります。参加者によってこれらの要素はさまざまかもしれませんが、チャレンジレベルはあなたの生活と目標に最適なアクションを選ぶのに役立ちます。</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </li>
+
+        <li class="action-card"
+            data-participant-action
+            data-action="4667"
+        >
+          <div class="init" data-focus-target>
+            <div class="content" data-action-content>
+              <div class="body">
+                <h3 class="title">災害対策計画を立てる</h3>
+                <h4 class="subtitle">
+
+                </h4>
+                <p data-description>私は災害対策計画を家族、近所、地域のメンバーと立て、自然災害のときの安全性を確実なものにします。この計画の一環として、水、保存食、薬、懐中電灯、応急処置セットなど緊急用のアイテムが入った防災バッグを保管することも良いでしょう。</p>
+                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4667">さらに学ぶ</a><ul class="dropdown" data-dropdown="resource-links-4667">
+                    <li>アクション リソース</li>
+                    <li><a href="http://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan"
+                         target="_blank">緊急時に備える方法</a></li>
+                  </ul>
+                </div>
+
+                <p style="display: none" class="warning" data-warning>チャレンジですでにこのアクションを完了しています。アクションを消去すると、得点を失う可能性があります。本当にやりたいですか？</p>
+              </div>
+
+              <div class="challenge-meta">
+                <p>ワンタイム チャレンジ</p>
+              </div>
+              <div class="action-difficulty">
+                <div class="indicator">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="description">
+                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">チャレンジレベル：</p>
+                    <p style="margin: 11px 0; font-size: 13px">エコリーダー</p>
+                    <p style="text-transform: none;">チャレンジレベルは、アクション完了に関わる時間、費用、知識、スキルという4要素で決まります。参加者によってこれらの要素はさまざまかもしれませんが、チャレンジレベルはあなたの生活と目標に最適なアクションを選ぶのに役立ちます。</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </li>
+
+      </ul>
+    </nav>
+
+
+    <p class="align-center"><a class="back-link" href="/challenges.html">すべてのチャレンジに戻る</a></p>
+  </div>
+</section>
+
+<footer class="global-footer">
+  <section class="bg-neutral20">
+
+  </section>
+  <section class="bg-neutral100">
+    <div class="content">
+      <div class="section">
+        <div class="block">
+          <div>
+            <div class="subheading">私たちのストーリー</div>
+            <p>150年間、メットライフは優良企業市民として業務を行ってきました。長年にわたる卓越性の遺産の上に成り立ち、私たちは世界中の人々、家族、地域社会が自分たちの目標を達成し、人生の紆余曲折を乗り越えるお手伝いをし続けられる未来を確実にすることにコミットしています。</p>
+          </div>
+
+        </div>
+        <div class="block">
+          <div>
+            <div class="subheading">お問合せ</div>
+            <div>MetLife, Inc.<br>200 Park Avenue<br>New York, NY 10166<br>gogreen@metlife.com</div>
+            <div class="support-link"><a href="mailto:support@ecochallenge.org">support@ecochallenge.org</a></div>
+          </div>
+
+          <div>
+          </div>
+
+        </div>
+      </div>
+      <div class="section logos">
+        <div class="logo"><img src="../assets/images/logo.jpg"/> <a class="link-primary" href="https://metlife.ecochallenge.org/about/event-info">主催者について</a></div>
+      </div>
+
+    </div>
+  </section>
+  <section class="bg-neutral120">
+    <div class="bottom">
+      <div class="align-left"><span class="colophon">&copy; 2016-2019 Northwest Earth Institute</span></div>
+      <div class="align-right"><a href="https://ecochallenge.org/wp-content/uploads/2016/07/NWEI-Privacy-Policy_03.11.17.pdf" target="_blank">プライバシーポリシー</a> <a href="mailto:support@ecochallenge.org">テクニカルサポート</a> <a href="https://ecochallenge.org/donations/donate-to-ecochallenge/" target="_blank" class="outlined">寄付</a></div>
+    </div>
+  </section>
+
+</footer>
+
+
+</body>
+</html>
+
