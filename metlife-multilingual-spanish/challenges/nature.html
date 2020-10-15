@@ -1,990 +1,841 @@
-﻿<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:fb="https://www.facebook.com/2008/fbml">
 <head>
-	<title>EcoChallenge 2020 de MetLife. Naturaleza</title>
-	<link href="../assets/stylesheets/application.css" media="all" rel="stylesheet">
-	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-	<meta content="a#ffffff" name="theme-color">
-	<meta content="GU,PR,US,VI" name="location-countries">
-	<meta content="noindex" name="robots">
-	<link href="/site.webmanifest" rel="manifest">
-	<meta content="#134b61" name="msapplication-TileColor">
-	<meta content="#134b61" name="theme-color">
-	<link href="/manifest.json" rel="manifest">
-	<link href="/safari-pinned-tab.svg" rel="mask-icon">
+  <title>&ldquo;Ecochallenge&rdquo; (EcoDesaf&iacute;o) de MetLife 2020: informaci&oacute;n sobre el evento</title>
+  <link rel="stylesheet" media="all" href="../assets/stylesheets/application.css" data-turbolinks-track="true"/>
+  <script src="../assets/javascripts/application.js" data-turbolinks-track="true"></script>
+  <meta name="action-cable-url" content="/cable"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="robots" content="noindex">
+
+  <meta name="csrf-param" content="authenticity_token"/>
+  <meta name="csrf-token"
+        content="KHbHeVfyS683SdqR+FCO7sJ7ZY4xcTTw0pVqzKOm+O8rq5m3j4rBvFsjaMcCnf5Q5WK1AJ3YFK6e/wpdT5aVdg=="/><!-- default meta --><meta property="og:title"
+        content="Join the 2020 MetLife Ecochallenge, presented by MetLife Global Sustainability Team"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:description"
+        content="For two weeks, we challenge you to make eco-friendly choices to live a more sustainable lifestyle! Team up with colleagues from around the world and take action to create a healthier planet during the 2020 MetLife Ecochallenge. "/>
+  <meta property="og:image"
+        content="http://metlife.ecochallenge.org/system/events/org_logos/000/000/039/original/metlife_eng_logo_rgb.jpg?1552691799"/>
+  <meta property="og:url" content="http://metlife.ecochallenge.org"/>
+
+
+  <style type="text/css">nav.user-nav { background-color: #0061A0; } .event-header .event-info { margin: 10px 15px 30px; } a { color: #007ABC; } .button-primary, .button-primary.dark:hover, .award-point-list a, .award-point-list a .points::after, .event-header .event-nav a.outlined:hover, .event-header .event-nav a.outlined:active, .hero .button:hover, .button-outlined:hover { background-color: #007ABC; } .event-header .event-nav a.outlined, .button-outlined { border-color: #007ABC; color: #007ABC; } .event-check-ins .days li.action-complete, .legend li .action-complete.marker { background-color: #0061A0; } .calendar .week a.action-complete { color: #0061A0; border-color: #0061A0; } .event-header .event-info .event-date-range { border-top: 1px solid #0061A0; border-bottom: 1px solid #0061A0; } h2, h3, h5, .participants-counter .title, .horizontal-section-title .title, .page-content .title { color: #333333; } .participant-feed .dropdown-wrapper& gt ; .feed-filter { color: #0061A0; } .form-button-icon.facebook, .form-button-icon.google { display: none; } .hero .sign, .event-header .event-info .title a, h2, h3, h5, .participants-counter .title, .horizontal-section-title .title, .page-content .title, .placeholder .title, .challenges-slider .slider-header .title, .section-title .title, .team-hero .title, .team-detail-points .title, .dashboard-sidebar .team-summary .team-header .title, .dashboard-sidebar .user-summary .user-header .name, .impact-grid .impact-card .units, .dashboard-sidebar .impact-summary .challenge-impact .count, .participants-counter .count .digit-box span { font-family: Georgia, Times; font-weight: bold; text-transform: capitalize; letter-spacing: 1px; } p { font-size: 15px; } .global-footer .top .subheading { font-family: Arial, Helvetica, sans-serif; text-transform: capitalize; letter-spacing: 1px; font-size: 14px; color: white; } .global-footer .top .social a, .global-footer .top .col, .global-footer .top .description { font-family: Arial, Helvetica, sans-serif; font-weight: normal; font-size: 12px; } .hero .copy, .company-callout .callout-container .blurb, .placeholder p, .page-content, .participant-action-cards .card-container .description p, .awarded-points-list tr + tr td, .section-title .description, .participants-feed-full .copy { font-family: Arial, Helvetica, sans-serif; } .placeholder p, .page-content, .section-title .description, .participants-feed-full .copy { font-size: 13px; } .hero .container-hero { max-width: 450px; } .event-header .event-info .title a { color: #000000; } .hero .copy { font-weight: bold; } .user-nav ul li a:hover { color: white; opacity: 0.8; } .event-header .event-info .logo img { max-height: 100px; max-width: 170px; } .bottom .outlined { display: none; } .hero .sign { background-color: rgba(242, 242, 242, 0.85); padding: 15px; color: #333; text-transform: inherit; border-radius: 6px 6px 0px 0px; } .hero .copy { background-color: rgba(242, 242, 242, 0.85); padding: 15px; padding-top: 0px; color: #333; border-radius: 0px 0px 6px 6px; font-weight: lighter; } .hero .button { font-family: & #39; Galaxie Polaris & #39;, & #39; Arial & #39;, sans-serif; font-size: 13px; letter-spacing: 0.1em; display: inline-block; padding: 10px 15px; margin-top: 25px; color: #ffffff; border-radius: 4px; background-color: #0061A0; transition: color 0.2s ease, background-color 0.2s ease } .challenges-slider .slider-utility a, .featured_challenge .challenge-callout a { border-radius: 4px; } p.instructional-message { font-size: 12px; } .copy a:hover, .dashboard-table a:hover, .participant a:hover, .section-title .description a:hover, .section-title .subtitle a:hover { text-decoration: underline; } /* Center Challenge Cards -kbb */ .challenges-grid { justify-content: space-around; } .company-callout .callout-container .blurb { font-size: 17px; } .nweiBrand { text-align: center; margin-top: 48px; margin-bottom: 18px; } .nweiLogoAbout { width: 100%; max-width: 250px; height: auto; }</style>
+<meta charset="utf-8">
 </head>
-<body class="layout-event" data-gtm-page-name="" data-gtm-subdomain="metlife">
-	<header class="global-header">
-		<nav class="user-nav"></nav>
-	</header>
-	<div class="event-header">
-		<div class="event-info">
-			<div class="subtitle">
-				<a href="https://www.metlife.com/">
-				<div class="logo"><img src="../assets/images/metlife_eng_logo_rgb.jpg"/></div></a>
-			</div>
-			<div class="title">
-				<a href="http://metlife.ecochallenge.org">EcoChallenge 2020 de MetLife</a>
-			</div>
-			<div class="event-date-range" data-date-range="">
-				Del 19 al 30 de octubre de 2020
-			</div>
-		</div>
-	</div>
-	<section class="bg-spectrum spectrum07">
-		<div class="container">
-			<header class="section-title">
-				<div class="icon">
-					<svg class="border" viewbox="0 0 46 46" xmlns="http://www.w3.org/2000/svg">
-					<circle cx="23" cy="23" fill="none" r="22.5"></circle></svg> <svg viewbox="0 0 46 46" xmlns="http://www.w3.org/2000/svg">
-					<path d="M23.123 34.922v10.824" fill="none"></path>
-					<path d="M17.64 16.69l5.483-6.614 5.483 6.614zm12.059 8.457l-6.576-7.933-6.576 7.933zm1.093 9.775l-7.67-9.252-7.668 9.252z" fill="#fff"></path></svg>
-				</div>
-				<h1 class="title">Naturaleza</h1><a class="subtitle medium" href="../challenges.html">Volver a todas las categorías de acciones</a>
-				<p class="description uppercase">¡La naturaleza nos llama! Seleccione entre las siguientes acciones y vuelva a conectarse con el mundo que está a su alrededor.</p>
-				<p class="description">A medida que el mundo se ha ido industrializando y globalizando, nos hemos ido desconectando de la naturaleza, de las estaciones y de los lugares donde vivimos, así como de quién produce nuestros alimentos y a dónde van nuestros residuos. Cuanto más depende nuestro sustento de nuestra propia biorregión y cuanto más nos ocupamos de nuestros desechos, mejor podemos ver los efectos de nuestra vida diaria en el agua, el suelo y los seres vivos que nos rodean. Cuando nos interesamos por nuestro propio entorno y nos comprometemos a hacerlo perdurar en el tiempo, los beneficios pueden ser inmensos, para nosotros mismos, para nuestras comunidades y para la Tierra.</p>
-				<div class="challenge-resource">
-					<a class="button-outlined" href="https://ecochallenge.org/wp-content/uploads/2017/03/2017-MetLife-EcoChallenge-Resources_Nature.pdf" target="_blank">Más información</a>
-				</div>
-				<div class="challenge-sponsors"></div>
-			</header>
-			<div class="filter-toggle-group closed">
-				<div class="form-divider" data-filter-toggle="">
-					<span class="rule"></span> <span class="text" data-filter-toggle="" data-filter-type="action"></span> <span class="rule"></span>
-				</div>
-				<form accept-charset="UTF-8" action="/challenges/nature" class="form-search-filter form-field centered" data-search-filter="true" method="get">
-					<input name="utf8" type="hidden" value="&#x2713;">
-					<div class="filters centered">
-						<div class="select" data-filter="">
-							<select id="difficulty" name="difficulty">
-								<option value="">
-									Dificultad:
-								</option>
-								<option value="easy">
-									EcoLearner
-								</option>
-								<option value="medium">
-									EcoPro
-								</option>
-								<option value="difficult">
-									EcoLeader
-								</option>
-							</select>
-						</div>
-						<div class="select" data-filter="">
-							<select id="limit_kind" name="limit_kind">
-								<option value="">
-									Frecuencia:
-								</option>
-								<option value="one_time">
-									Una vez
-								</option>
-								<option value="daily">
-									Todos los días
-								</option>
-							</select>
-						</div>
-					</div>
-					<div class="filters centered">
-						<span class="prompt">Solo mostrar las acciones que:</span> <label class="checkbox" data-filter=""><input id="is_customizable" name="is_customizable" type="checkbox" value="1"> <span class="toggle-indicator"></span> Se pueden personalizar</label> <label class="checkbox" data-filter=""><input id="has_resources" name="has_resources" type="checkbox" value="1"> <span class="toggle-indicator"></span> Tienen enlaces de recursos</label>
-					</div>
-					<div class="reset inactive">
-						<a href="/challenges/nature">Borrar todos los filtros</a>
-					</div>
-				</form>
-			</div>
-			<nav class="challenge-actions-list">
-				<ul>
-					<li class="action-card" data-action="6870" data-api-path="https://metlife.ecochallenge.org/me/actions/6870/myself/selection" data-customizable="false" id="action-6870">
-						<div class="init" data-focus-target="">
-							<div class="content" data-action-content="true">
-								<div class="body">
-									<h3 class="title">Promover los espacios verdes</h3>
-									<p data-description="">Abogaré por el desarrollo de más espacios verdes en mi ciudad.</p>
-									<div class="resource-links dropdown-wrapper">
-										<div class="button-action indicator">Más información</div>
-										<ul class="dropdown" data-dropdown="resource-links-6870">
-											<li>Action Resources:</li>
-											<li>
-												<a href="https://www.theguardian.com/teacher-network/2018/mar/01/improving-childrens-access-nature-addressing-inequality-bame-low-income-backgrounds" target="_blank">Improving Children's Access to Nature Starts with Addressing Inequality</a>
-											</li>
-											<li>
-												<a href="http://www.hphpcentral.com/article/urban-planning-and-the-importance-of-green-space-in-cities-to-human-and-environmental-health" target="_blank">Urban Planning and the Importance of Green Space in Cities to Human and Environmental Health</a>
-											</li>
-											<li>
-												<a href="https://www.npr.org/sections/health-shots/2018/07/20/630615148/replacing-vacant-lots-with-green-spaces-can-ease-depression-in-urban-communities" target="_blank">Replacing Vacant Lots With Green Spaces Can Ease Depression In Urban Communities</a>
-											</li>
-										</ul>
-									</div>
-									<p class="warning" data-warning="" style="display: none">Ya ha completado esta acción durante el desafío. Eliminar la acción podría hacer que pierda puntos. ¿Está seguro de que desea hacer esto?</p>
-								</div>
 
-								<div class="challenge-meta">
-									<p>Acción diaria</p>
-								</div>
-								<div class="action-difficulty">
-									<div aria-describedby="action-difficulty-tooltip" class="indicator">
-										<div class="bar"></div>
-										<div class="bar"></div>
-										<div class="bar dull"></div>
-										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
-											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
-											<p style="margin: 11px 0; font-size: 13px">EcoPro</p>
-											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills. While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li class="action-card" data-action="6871" data-api-path="https://metlife.ecochallenge.org/me/actions/6871/myself/selection" data-customizable="true" id="action-6871">
-						<div class="init" data-focus-target="">
-							<div class="content" data-action-content="true">
-								<div class="body">
-									<h3 class="title">Practicar gratitud hacia la Tierra</h3>
-									<p data-description="">Dedicaré (___) minuto(s) por día a practicar gratitud al aire libre (plegarias, meditación, redacción de un diario, etc.) hacia la Tierra y la naturaleza que me rodea.</p>
-									<div class="resource-links dropdown-wrapper">
-										<div class="button-action indicator">Más información</div>
-										<ul class="dropdown" data-dropdown="resource-links-6871">
-											<li>Action Resources:</li>
-											<li>
-												<a href="http://alexstark.com/on-gratitude/" target="_blank">On Gratitude</a>
-											</li>
-											<li>
-												<a href="https://greatergood.berkeley.edu/article/item/what_happens_when_we_reconnect_with_nature" target="_blank">What Happens When We Reconnect with Nature</a>
-											</li>
-											<li>
-												<a href="http://www.yesmagazine.org/happiness/if-meditation-is-not-your-thing-try-a-walk-in-the-woods-20180712" target="_blank">If Meditation Is Not Your Thing, Try a Walk in the Woods</a>
-											</li>
-										</ul>
-									</div>
-									<p class="warning" data-warning="" style="display: none">Ya ha completado esta acción durante el desafío. Eliminar la acción podría hacer que pierda puntos. ¿Está seguro de que desea hacer esto?</p>
-								</div>
+<body
+        class="layout-event"
+>
 
-								<div class="challenge-meta">
-									<p>Acción diaria</p>
-								</div>
-								<div class="action-difficulty">
-									<div aria-describedby="action-difficulty-tooltip" class="indicator">
-										<div class="bar"></div>
-										<div class="bar dull"></div>
-										<div class="bar dull"></div>
-										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
-											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
-											<p style="margin: 11px 0; font-size: 13px">EcoLearner</p>
-											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills. While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li class="action-card" data-action="6872" data-api-path="https://metlife.ecochallenge.org/me/actions/6872/myself/selection" data-customizable="true" id="action-6872">
-						<div class="init" data-focus-target="">
-							<div class="content" data-action-content="true">
-								<div class="body">
-									<h3 class="title">Salir a caminar a diario</h3>
-									<p data-description="">Saldré a caminar (___) minutos al aire libre todos los días, siguiendo las pautas locales de distanciamiento social.</p>
-									<div class="resource-links dropdown-wrapper">
-										<div class="button-action indicator">Más información</div>
-										<ul class="dropdown" data-dropdown="resource-links-6872">
-											<li>Action Resources:</li>
-											<li>
-												<a href="https://www.uofmhealth.org/news/archive/201409/walking-depression-and-beating-stress-outdoors-nature-group" target="_blank">Nature Group Walks Linked to Improved Mental Health</a>
-											</li>
-											<li>
-												<a href="https://greatergood.berkeley.edu/article/item/what_happens_when_we_reconnect_with_nature" target="_blank">What Happens When We Reconnect with Nature</a>
-											</li>
-											<li>
-												<a href="http://www.yesmagazine.org/happiness/if-meditation-is-not-your-thing-try-a-walk-in-the-woods-20180712" target="_blank">If Meditation Is Not Your Thing, Try a Walk in the Woods</a>
-											</li>
-										</ul>
-									</div>
-									<p class="warning" data-warning="" style="display: none">Ya ha completado esta acción durante el desafío. Eliminar la acción podría hacer que pierda puntos. ¿Está seguro de que desea hacer esto?</p>
-								</div>
+<header class="global-header">
+  <nav class="user-nav"></nav>
+</header>
 
-								<div class="challenge-meta">
-									<p>Acción diaria</p>
-								</div>
-								<div class="action-difficulty">
-									<div aria-describedby="action-difficulty-tooltip" class="indicator">
-										<div class="bar"></div>
-										<div class="bar dull"></div>
-										<div class="bar dull"></div>
-										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
-											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
-											<p style="margin: 11px 0; font-size: 13px">EcoLearner</p>
-											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills. While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li class="action-card" data-action="6873" data-api-path="https://metlife.ecochallenge.org/me/actions/6873/myself/selection" data-customizable="true" id="action-6873">
-						<div class="init" data-focus-target="">
-							<div class="content" data-action-content="true">
-								<div class="body">
-									<h3 class="title">Apoyar a los polinizadores locales</h3>
-									<p data-description="">Al menos el 30 % de los cultivos y el 90 % de las plantas con flores dependen de los polinizadores para producir frutos. Dedicaré (___) minutos a investigar qué plantas apoyan a los polinizadores nativos locales y plantar algunas en mi jardín.</p>
-									<div class="resource-links dropdown-wrapper">
-										<div class="button-action indicator">Más información</div>
-										<ul class="dropdown" data-dropdown="resource-links-6873">
-											<li>Action Resources:</li>
-											<li>
-												<a href="http://pollinator.org/guides" target="_blank">Pollinator-Friendly Planting Guides</a>
-											</li>
-											<li>
-												<a href="https://www.smithsonianmag.com/smithsonian-institution/honor-world-bee-day-protect-your-local-pollinators-these-ten-east-ways-180969111/" target="_blank">How to Protect Your Local Pollinators in Ten Easy Ways</a>
-											</li>
-										</ul>
-									</div>
-									<p class="warning" data-warning="" style="display: none">Ya ha completado esta acción durante el desafío. Eliminar la acción podría hacer que pierda puntos. ¿Está seguro de que desea hacer esto?</p>
-								</div>
+<div class="event-header ">
+  <div class="event-info" style="">
+    <div class="subtitle"><a href="https://metlife.ecochallenge.org/about/event-info"><div class="logo"><img src="../assets/images/logo.jpg"/></div></a></div>
+    <div class="title"><a href="http://metlife.ecochallenge.org/">Ecochallenge de MetLife 2020</a></div>
+    <div class="event-date-range" data-date-range="">Del <span data-date-range-start>24 de abril</span> <span>al</span> <span data-date-range-end>10 de mayo de 2020</span></div>
+    <div id="regPassBlock"><a class="outlined regNew" href="https://metlife.ecochallenge.org/users/join">INSCRIPCI&Oacute;N EN PERSONA (EN INGL&Eacute;S)</a><p id="greenImpact">contrase&ntilde;a del evento: greenimpact</p>
+    </div>
+  </div>
+  <nav class="event-nav navNew">
+    <ul>
+      <li><a href="../">Informaci&oacute;n</a></li>
+      <li><a href="../points.html">Puntos</a></li>
+      <li><a href="../challenges.html">Desaf&iacute;os</a></li>
+    </ul>
+  </nav>
+</div>
 
-								<div class="challenge-meta">
-									<p>Acción única</p>
-								</div>
-								<div class="action-difficulty">
-									<div aria-describedby="action-difficulty-tooltip" class="indicator">
-										<div class="bar"></div>
-										<div class="bar"></div>
-										<div class="bar dull"></div>
-										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
-											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
-											<p style="margin: 11px 0; font-size: 13px">EcoPro</p>
-											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills. While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li class="action-card" data-action="6874" data-api-path="https://metlife.ecochallenge.org/me/actions/6874/myself/selection" data-customizable="true" id="action-6874">
-						<div class="init" data-focus-target="">
-							<div class="content" data-action-content="true">
-								<div class="body">
-									<h3 class="title">Pasar tiempo al aire libre</h3>
-									<p data-description="">Reemplazaré (___) minuto(s) al día que típicamente paso adentro (en la computadora, viendo televisión, etc.) con tiempo de calidad al aire libre.</p>
-									<div class="resource-links dropdown-wrapper">
-										<div class="button-action indicator">Más información</div>
-										<ul class="dropdown" data-dropdown="resource-links-6874">
-											<li>Action Resources:</li>
-											<li>
-												<a href="https://news.nationalgeographic.com/2017/02/nature-fix-brain-happy-florence-williams/" target="_blank">National Geographic: We Are Wired to Be Outside</a>
-											</li>
-											<li>
-												<a href="https://www.bustle.com/articles/114893-how-to-spend-more-time-outside-in-7-sneaky-ways" target="_blank">How to Spend More Time Outside in 7 Sneaky Ways</a>
-											</li>
-										</ul>
-									</div>
-									<p class="warning" data-warning="" style="display: none">Ya ha completado esta acción durante el desafío. Eliminar la acción podría hacer que pierda puntos. ¿Está seguro de que desea hacer esto?</p>
-								</div>
 
-								<div class="challenge-meta">
-									<p>Acción diaria</p>
-								</div>
-								<div class="action-difficulty">
-									<div aria-describedby="action-difficulty-tooltip" class="indicator">
-										<div class="bar"></div>
-										<div class="bar dull"></div>
-										<div class="bar dull"></div>
-										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
-											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
-											<p style="margin: 11px 0; font-size: 13px">EcoLearner</p>
-											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills. While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li class="action-card" data-action="6875" data-api-path="https://metlife.ecochallenge.org/me/actions/6875/myself/selection" data-customizable="true" id="action-6875">
-						<div class="init" data-focus-target="">
-							<div class="content" data-action-content="true">
-								<div class="body">
-									<h3 class="title">Hacer actividades en la naturaleza</h3>
-									<p data-description="">Participaré en actividades en la naturaleza por mi cuenta, con mis amigos o familiares durante (___) minuto(s) todos los días, siguiendo las pautas locales de distanciamiento social. (Esto puede comprender actividades muy variadas: desde salir a caminar o hacer excursionismo hasta observar cómo las hojas cambian de color o leer un libro sobre temas relacionados con la naturaleza).</p>
-									<div class="resource-links dropdown-wrapper">
-										<div class="button-action indicator">Más información</div>
-										<ul class="dropdown" data-dropdown="resource-links-6875">
-											<li>Action Resources:</li>
-											<li>
-												<a href="https://greatergood.berkeley.edu/article/item/what_happens_when_we_reconnect_with_nature" target="_blank">What Happens When We Reconnect with Nature</a>
-											</li>
-											<li>
-												<a href="https://www.familyeducation.com/fun/nature-activities/10-hands-nature-activities-kids" target="_blank">Hands-On Nature Activities for Kids</a>
-											</li>
-										</ul>
-									</div>
-									<p class="warning" data-warning="" style="display: none">Ya ha completado esta acción durante el desafío. Eliminar la acción podría hacer que pierda puntos. ¿Está seguro de que desea hacer esto?</p>
-								</div>
+<section class="bg-spectrum spectrum07">
+  <div class="container">
+    <header class="section-title">
+      <div class="icon">
+        <svg class="border" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 46">
+          <circle r="22.5" cx="23" cy="23" fill="none"></circle>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 46">
+          <path fill="none" d="M23.123 34.922v10.824"/>
+          <path d="M17.64 16.69l5.483-6.614 5.483 6.614zm12.059 8.457l-6.576-7.933-6.576 7.933zm1.093 9.775l-7.67-9.252-7.668 9.252z"
+                fill="#fff"/>
+        </svg>
 
-								<div class="challenge-meta">
-									<p>Acción diaria</p>
-								</div>
-								<div class="action-difficulty">
-									<div aria-describedby="action-difficulty-tooltip" class="indicator">
-										<div class="bar"></div>
-										<div class="bar dull"></div>
-										<div class="bar dull"></div>
-										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
-											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
-											<p style="margin: 11px 0; font-size: 13px">EcoLearner</p>
-											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills. While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li class="action-card" data-action="6876" data-api-path="https://metlife.ecochallenge.org/me/actions/6876/myself/selection" data-customizable="false" id="action-6876">
-						<div class="init" data-focus-target="">
-							<div class="content" data-action-content="true">
-								<div class="body">
-									<h3 class="title">Sin dejar huellas</h3>
-									<p data-description="">Practicaré los siete principios de Sin dejar huellas haciendo actividades en la naturaleza, ya sea solo o con familiares y amigos, además de seguir las pautas locales de distanciamiento social.</p>
-									<div class="resource-links dropdown-wrapper">
-										<div class="button-action indicator">Más información</div>
-										<ul class="dropdown" data-dropdown="resource-links-6876">
-											<li>Action Resources:</li>
-											<li>
-												<a href="https://lnt.org/learn/7-principles" target="_blank">The 7 Principles of Leave No Trace</a>
-											</li>
-										</ul>
-									</div>
-									<p class="warning" data-warning="" style="display: none">Ya ha completado esta acción durante el desafío. Eliminar la acción podría hacer que pierda puntos. ¿Está seguro de que desea hacer esto?</p>
-								</div>
+      </div>
+      <h1 class="title">Naturaleza</h1><a class="subtitle medium" href="/challenges.html">Volver a todos los desaf&iacute;os</a><p class="description uppercase">¡La naturaleza llama! Seleccione las acciones a continuaci&oacute;n y recon&eacute;ctese con el mundo que lo rodea.</p>
+      <p class="description">A medida que el mundo se volvi&oacute; m&aacute;s industrializado y globalizado, nos hemos separado de la naturaleza, de las estaciones, de los lugares en los que vivimos, de las personas que producen nuestros alimentos, y de los lugares a los que van nuestros desechos. Cuanto m&aacute;s recibimos nuestro sustento de nuestra biorregi&oacute;n y cuidamos los residuos que desechamos en ella, podemos ver mejor los efectos que tienen nuestros h&aacute;bitos de vida en el agua, en la tierra y en los seres vivos que nos rodean.  Cuando apostamos a un cambio en nuestro propio lugar y nos comprometemos a hacer que perdure en el tiempo, los beneficios pueden ser inmensos, tanto para nosotros como para nuestras comunidades y para la Tierra.</p>
+      <div class="challenge-resource"><a class="button-outlined" target="_blank"
+           href="https://ecochallenge.org/wp-content/uploads/2017/03/2017-MetLife-EcoChallenge-Resources_Nature.pdf">M&aacute;s informaci&oacute;n</a></div>
+      <div class="challenge-sponsors">
+      </div>
+    </header>
 
-								<div class="challenge-meta">
-									<p>Acción diaria</p>
-								</div>
-								<div class="action-difficulty">
-									<div aria-describedby="action-difficulty-tooltip" class="indicator">
-										<div class="bar"></div>
-										<div class="bar"></div>
-										<div class="bar"></div>
-										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
-											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
-											<p style="margin: 11px 0; font-size: 13px">EcoLeader</p>
-											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills. While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li class="action-card" data-action="6877" data-api-path="https://metlife.ecochallenge.org/me/actions/6877/myself/selection" data-customizable="false" id="action-6877">
-						<div class="init" data-focus-target="">
-							<div class="content" data-action-content="true">
-								<div class="body">
-									<h3 class="title">Disfrutar del amanecer y el atardecer</h3>
-									<p data-description="">Disfrutaré del amanecer o el atardecer todos los días.</p>
-									<div class="resource-links dropdown-wrapper">
-										<div class="button-action indicator">Más información</div>
-										<ul class="dropdown" data-dropdown="resource-links-6877">
-											<li>Action Resources:</li>
-											<li>
-												<a href="https://sunrise-sunset.org/" target="_blank">Sunrise and Sunset Times for Any Location</a>
-											</li>
-											<li>
-												<a href="https://www.mnn.com/health/fitness-well-being/blogs/how-watching-sunrise-or-sunset-can-improve-your-health" target="_blank">How Watching the Sun Set or Rise Can Help Your Health</a>
-											</li>
-										</ul>
-									</div>
-									<p class="warning" data-warning="" style="display: none">Ya ha completado esta acción durante el desafío. Eliminar la acción podría hacer que pierda puntos. ¿Está seguro de que desea hacer esto?</p>
-								</div>
+    <nav class="challenge-actions-list">
+      <ul>
+        <li class="action-card"
+            data-participant-action
+            data-action="4545"
+        >
+          <div class="init" data-focus-target>
+            <div class="content" data-action-content>
+              <div class="body">
+                <h3 class="title">Exigir espacios verdes</h3>
+                <h4 class="subtitle">
 
-								<div class="challenge-meta">
-									<p>Acción diaria</p>
-								</div>
-								<div class="action-difficulty">
-									<div aria-describedby="action-difficulty-tooltip" class="indicator">
-										<div class="bar"></div>
-										<div class="bar dull"></div>
-										<div class="bar dull"></div>
-										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
-											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
-											<p style="margin: 11px 0; font-size: 13px">EcoLearner</p>
-											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills. While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li class="action-card" data-action="6878" data-api-path="https://metlife.ecochallenge.org/me/actions/6878/myself/selection" data-customizable="true" id="action-6878">
-						<div class="init" data-focus-target="">
-							<div class="content" data-action-content="true">
-								<div class="body">
-									<h3 class="title">Explorar la zona</h3>
-									<p data-description="">Exploraré al menos un nuevo sendero de excursionismo o caminata en la naturaleza en mi zona siguiendo las pautas locales de distanciamiento social.</p>
-									<div class="resource-links dropdown-wrapper">
-										<div class="button-action indicator">Más información</div>
-										<ul class="dropdown" data-dropdown="resource-links-6878">
-											<li>Action Resources:</li>
-											<li>
-												<a href="https://www.nps.gov/findapark/index.htm" target="_blank">National Park Service: Find a Park</a>
-											</li>
-											<li>
-												<a href="https://www.health.harvard.edu/press_releases/spending-time-outdoors-is-good-for-you" target="_blank">Spending time outdoors is good for you</a>
-											</li>
-										</ul>
-									</div>
-									<p class="warning" data-warning="" style="display: none">Ya ha completado esta acción durante el desafío. Eliminar la acción podría hacer que pierda puntos. ¿Está seguro de que desea hacer esto?</p>
-								</div>
+                </h4>
+                <p data-description>Exigir&eacute; que haya m&aacute;s espacios verdes en mi ciudad.</p>
+                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4545">M&aacute;s informaci&oacute;n</a><ul class="dropdown" data-dropdown="resource-links-4545">
+                    <li>Recursos de acci&oacute;n:</li>
+                    <li><a href="https://www.theguardian.com/teacher-network/2018/mar/01/improving-childrens-access-nature-addressing-inequality-bame-low-income-backgrounds"
+                         target="_blank">Improving Children&apos;s Access to Nature Starts with Addressing Inequality (Para mejorar el acceso de los ni&ntilde;os a la naturaleza, se debe comenzar por abordar la desigualdad)</a></li>
+                    <li><a href="http://www.hphpcentral.com/article/urban-planning-and-the-importance-of-green-space-in-cities-to-human-and-environmental-health"
+                         target="_blank">Urban Planning and the Importance of Green Space in Cities to Human and Environmental Health (Planificaci&oacute;n urbana y la importancia de los espacios verdes en las ciudades para la salud humana y ambiental)</a></li>
+                    <li><a href="https://www.npr.org/sections/health-shots/2018/07/20/630615148/replacing-vacant-lots-with-green-spaces-can-ease-depression-in-urban-communities"
+                         target="_blank">Replacing Vacant Lots With Green Spaces Can Ease Depression In Urban Communities (Reemplazar los terrenos bald&iacute;os por espacios verdes puede ayudar a reducir la depresi&oacute;n en las comunidades urbanas)</a></li>
+                  </ul>
+                </div>
 
-								<div class="challenge-meta">
-									<p>Acción única</p>
-								</div>
-								<div class="action-difficulty">
-									<div aria-describedby="action-difficulty-tooltip" class="indicator">
-										<div class="bar"></div>
-										<div class="bar dull"></div>
-										<div class="bar dull"></div>
-										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
-											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
-											<p style="margin: 11px 0; font-size: 13px">EcoLearner</p>
-											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills. While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li class="action-card" data-action="6879" data-api-path="https://metlife.ecochallenge.org/me/actions/6879/myself/selection" data-customizable="true" id="action-6879">
-						<div class="init" data-focus-target="">
-							<div class="content" data-action-content="true">
-								<div class="body">
-									<h3 class="title">Unirse a un proyecto al aire libre</h3>
-									<p data-description="">Organizaré un proyecto voluntario virtual de la comunidad ecológica con mis colegas de MetLife, que esté centrado en la recuperación de espacios exteriores o en la protección del medioambiente.</p>
-									<div class="resource-links dropdown-wrapper">
-										<div class="button-action indicator">Más información</div>
-										<ul class="dropdown" data-dropdown="resource-links-6879">
-											<li>Action Resources:</li>
-											<li>
-												<a href="https://www.volunteermatch.org/" target="_blank">VolunteerMatch</a>
-											</li>
-										</ul>
-									</div>
-									<p class="warning" data-warning="" style="display: none">Ya ha completado esta acción durante el desafío. Eliminar la acción podría hacer que pierda puntos. ¿Está seguro de que desea hacer esto?</p>
-								</div>
+                <p style="display: none" class="warning" data-warning>Ya ha completado esta acci&oacute;n durante el desaf&iacute;o. Si elimina la acci&oacute;n, podr&iacute;a perder puntos. ¿Est&aacute; seguro de que quiere hacerlo?</p>
+              </div>
 
-								<div class="challenge-meta">
-									<p>Acción única</p>
-								</div>
-								<div class="action-difficulty">
-									<div aria-describedby="action-difficulty-tooltip" class="indicator">
-										<div class="bar"></div>
-										<div class="bar"></div>
-										<div class="bar dull"></div>
-										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
-											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
-											<p style="margin: 11px 0; font-size: 13px">EcoPro</p>
-											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills. While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li class="action-card" data-action="6880" data-api-path="https://metlife.ecochallenge.org/me/actions/6880/myself/selection" data-customizable="true" id="action-6880">
-						<div class="init" data-focus-target="">
-							<div class="content" data-action-content="true">
-								<div class="body">
-									<h3 class="title">Llevar un diario sobre la vida en la naturaleza</h3>
-									<p data-description="">Escribiré un diario todos los días sobre mis experiencias en la naturaleza.</p>
-									<div class="resource-links dropdown-wrapper">
-										<div class="button-action indicator">Más información</div>
-										<ul class="dropdown" data-dropdown="resource-links-6880">
-											<li>Action Resources:</li>
-											<li>
-												<a href="https://wearewildness.com/6-reasons-why-you-should-keep-a-nature-journal/" target="_blank">6 Reasons Why You Should Keep a Nature Journal</a>
-											</li>
-										</ul>
-									</div>
-									<p class="warning" data-warning="" style="display: none">Ya ha completado esta acción durante el desafío. Eliminar la acción podría hacer que pierda puntos. ¿Está seguro de que desea hacer esto?</p>
-								</div>
+              <div class="challenge-meta">
+                <p>Desaf&iacute;o diario</p>
+              </div>
+              <div class="action-difficulty">
+                <div class="indicator">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar dull"></div>
+                  <div class="description">
+                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">Nivel de desaf&iacute;o:</p>
+                    <p style="margin: 11px 0; font-size: 13px">EcoPro</p>
+                    <p style="text-transform: none;">Nuestros niveles de desaf&iacute;o est&aacute;n determinados por cuatro factores implicados al momento de completar la acci&oacute;n: tiempo, costo, conocimiento y habilidades. Si bien estos factores pueden variar seg&uacute;n el participante, el nivel de desaf&iacute;o puede ayudarlo a elegir las acciones que concuerden m&aacute;s con su estilo de vida y sus objetivos.</p>
+                  </div>
+                </div>
+              </div>
 
-								<div class="challenge-meta">
-									<p>Acción diaria</p>
-								</div>
-								<div class="action-difficulty">
-									<div aria-describedby="action-difficulty-tooltip" class="indicator">
-										<div class="bar"></div>
-										<div class="bar dull"></div>
-										<div class="bar dull"></div>
-										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
-											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
-											<p style="margin: 11px 0; font-size: 13px">EcoLearner</p>
-											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills. While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li class="action-card" data-action="6881" data-api-path="https://metlife.ecochallenge.org/me/actions/6881/myself/selection" data-customizable="false" id="action-6881">
-						<div class="init" data-focus-target="">
-							<div class="content" data-action-content="true">
-								<div class="body">
-									<h3 class="title">Cuidar un jardín</h3>
-									<p data-description="">Cuidaré un jardín todos los días o comenzaré a trabajar para crear uno.</p>
-									<div class="resource-links dropdown-wrapper">
-										<div class="button-action indicator">Más información</div>
-										<ul class="dropdown" data-dropdown="resource-links-6881">
-											<li>Action Resources:</li>
-											<li>
-												<a href="http://www.yesmagazine.org/issues/good-health/the-curious-case-of-the-antidepressant-anti-anxiety-backyard-garden-20151112" target="_blank">The Curious Case of the Antidepressant, Anti-Anxiety Backyard Garden</a>
-											</li>
-											<li>
-												<a href="https://www.aarp.org/health/healthy-living/info-2017/health-benefits-of-gardening-fd.html" target="_blank">Health Benefits of Gardening</a>
-											</li>
-										</ul>
-									</div>
-									<p class="warning" data-warning="" style="display: none">Ya ha completado esta acción durante el desafío. Eliminar la acción podría hacer que pierda puntos. ¿Está seguro de que desea hacer esto?</p>
-								</div>
+            </div>
+          </div>
+        </li>
 
-								<div class="challenge-meta">
-									<p>Acción diaria</p>
-								</div>
-								<div class="action-difficulty">
-									<div aria-describedby="action-difficulty-tooltip" class="indicator">
-										<div class="bar"></div>
-										<div class="bar"></div>
-										<div class="bar dull"></div>
-										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
-											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
-											<p style="margin: 11px 0; font-size: 13px">EcoPro</p>
-											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills. While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li class="action-card" data-action="6882" data-api-path="https://metlife.ecochallenge.org/me/actions/6882/myself/selection" data-customizable="true" id="action-6882">
-						<div class="init" data-focus-target="">
-							<div class="content" data-action-content="true">
-								<div class="body">
-									<h3 class="title">Comer comidas al aire libre</h3>
-									<p data-description="">Comeré (___) comida(s) al aire libre todos los días.</p>
-									<div class="resource-links dropdown-wrapper">
-										<div class="button-action indicator">Más información</div>
-										<ul class="dropdown" data-dropdown="resource-links-6882">
-											<li>Action Resources:</li>
-											<li>
-												<a href="https://www.health.harvard.edu/press_releases/spending-time-outdoors-is-good-for-you" target="_blank">Spending time outdoors is good for you</a>
-											</li>
-										</ul>
-									</div>
-									<p class="warning" data-warning="" style="display: none">Ya ha completado esta acción durante el desafío. Eliminar la acción podría hacer que pierda puntos. ¿Está seguro de que desea hacer esto?</p>
-								</div>
+        <li class="action-card"
+            data-participant-action
+            data-action="4546"
+        >
+          <div class="init" data-focus-target>
+            <div class="content" data-action-content>
+              <div class="body">
+                <h3 class="title">Agradecer por la Tierra</h3>
+                <p data-description>Saldr&eacute; al aire libre durante (___) minutos por d&iacute;a y agradecer&eacute; (rezar, meditar, escribir en un diario, etc.) por la Tierra y la naturaleza que me rodea.</p>
+                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4546">M&aacute;s informaci&oacute;n</a><ul class="dropdown" data-dropdown="resource-links-4546">
+                    <li>Recursos de acci&oacute;n:</li>
+                    <li><a href="http://alexstark.com/on-gratitude/" target="_blank">On Gratitude (Acerca de la gratitud)</a></li>
+                    <li><a href="https://greatergood.berkeley.edu/article/item/what_happens_when_we_reconnect_with_nature"
+                         target="_blank">What Happens When We Reconnect with Nature (Qu&eacute; sucede cuando nos reconectamos con la naturaleza)</a></li>
+                    <li><a href="http://www.yesmagazine.org/happiness/if-meditation-is-not-your-thing-try-a-walk-in-the-woods-20180712"
+                         target="_blank">If Meditation Is Not Your Thing, Try a Walk in the Woods (Si la meditaci&oacute;n no es lo suyo, intente caminar por el bosque)</a></li>
+                  </ul>
+                </div>
 
-								<div class="challenge-meta">
-									<p>Acción diaria</p>
-								</div>
-								<div class="action-difficulty">
-									<div aria-describedby="action-difficulty-tooltip" class="indicator">
-										<div class="bar"></div>
-										<div class="bar dull"></div>
-										<div class="bar dull"></div>
-										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
-											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
-											<p style="margin: 11px 0; font-size: 13px">EcoLearner</p>
-											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills. While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li class="action-card" data-action="6883" data-api-path="https://metlife.ecochallenge.org/me/actions/6883/myself/selection" data-customizable="true" id="action-6883">
-						<div class="init" data-focus-target="">
-							<div class="content" data-action-content="true">
-								<div class="body">
-									<h3 class="title">Organizar reuniones al aire libre</h3>
-									<p data-description="">Programaré (___) minuto(s) de reuniones de trabajo o llamadas telefónicas al aire libre todos los días.</p>
-									<div class="resource-links dropdown-wrapper">
-										<div class="button-action indicator">Más información</div>
-										<ul class="dropdown" data-dropdown="resource-links-6883">
-											<li>Action Resources:</li>
-											<li>
-												<a href="https://www.health.harvard.edu/press_releases/spending-time-outdoors-is-good-for-you" target="_blank">Spending time outdoors is good for you</a>
-											</li>
-											<li>
-												<a href="https://whatifwewalked.com/seven-reasons-to-travel-on-foot/" target="_blank">What if We Walked?</a>
-											</li>
-											<li>
-												<a href="https://www.smartertravel.com/art-slow-travel/" target="_blank">The Art of Slow Travel</a>
-											</li>
-										</ul>
-									</div>
-									<p class="warning" data-warning="" style="display: none">Ya ha completado esta acción durante el desafío. Eliminar la acción podría hacer que pierda puntos. ¿Está seguro de que desea hacer esto?</p>
-								</div>
+                <p style="display: none" class="warning" data-warning>Ya ha completado esta acci&oacute;n durante el desaf&iacute;o. Si elimina la acci&oacute;n, podr&iacute;a perder puntos. ¿Est&aacute; seguro de que quiere hacerlo?</p>
+              </div>
 
-								<div class="challenge-meta">
-									<p>Acción diaria</p>
-								</div>
-								<div class="action-difficulty">
-									<div aria-describedby="action-difficulty-tooltip" class="indicator">
-										<div class="bar"></div>
-										<div class="bar"></div>
-										<div class="bar dull"></div>
-										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
-											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
-											<p style="margin: 11px 0; font-size: 13px">EcoPro</p>
-											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills. While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li class="action-card" data-action="6884" data-api-path="https://metlife.ecochallenge.org/me/actions/6884/myself/selection" data-customizable="false" id="action-6884">
-						<div class="init" data-focus-target="">
-							<div class="content" data-action-content="true">
-								<div class="body">
-									<h3 class="title">Cuidado sostenible del patio</h3>
-									<p data-description="">Aprenderé sobre las prácticas de cuidado sostenible del patio y compartiré mis aprendizajes en mis noticias del EcoChallenge.</p>
-									<div class="resource-links dropdown-wrapper">
-										<div class="button-action indicator">Más información</div>
-										<ul class="dropdown" data-dropdown="resource-links-6884">
-											<li>Action Resources:</li>
-											<li>
-												<a href="https://www.asla.org/sustainablelandscapes/about.html" target="_blank">Sustainable Landscapes</a>
-											</li>
-											<li>
-												<a href="https://draxe.com/10-ways-to-go-green-with-your-lawn-care/" target="_blank">10 Ways to Go Green with Lawn Care</a>
-											</li>
-										</ul>
-									</div>
-									<p class="warning" data-warning="" style="display: none">Ya ha completado esta acción durante el desafío. Eliminar la acción podría hacer que pierda puntos. ¿Está seguro de que desea hacer esto?</p>
-								</div>
+              <div class="challenge-meta">
+                <p>Desaf&iacute;o diario</p>
+              </div>
+              <div class="action-difficulty">
+                <div class="indicator">
+                  <div class="bar"></div>
+                  <div class="bar dull"></div>
+                  <div class="bar dull"></div>
+                  <div class="description">
+                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">Nivel de desaf&iacute;o:</p>
+                    <p style="margin: 11px 0; font-size: 13px">EcoLearner (EcoAprendiz)</p>
+                    <p style="text-transform: none;">Nuestros niveles de desaf&iacute;o est&aacute;n determinados por cuatro factores implicados al momento de completar la acci&oacute;n: tiempo, costo, conocimiento y habilidades. Si bien estos factores pueden variar seg&uacute;n el participante, el nivel de desaf&iacute;o puede ayudarlo a elegir las acciones que concuerden m&aacute;s con su estilo de vida y sus objetivos.</p>
+                  </div>
+                </div>
+              </div>
 
-								<div class="challenge-meta">
-									<p>Acción única</p>
-								</div>
-								<div class="action-difficulty">
-									<div aria-describedby="action-difficulty-tooltip" class="indicator">
-										<div class="bar"></div>
-										<div class="bar"></div>
-										<div class="bar"></div>
-										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
-											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
-											<p style="margin: 11px 0; font-size: 13px">EcoLeader</p>
-											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills. While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li class="action-card" data-action="8361" data-api-path="https://metlife.ecochallenge.org/me/actions/8361/myself/selection" data-customizable="true" id="action-8361">
-						<div class="init" data-focus-target="">
-							<div class="content" data-action-content="true">
-								<div class="body">
-									<h3 class="title">Investigar sobre animales salvajes</h3>
-									<p data-description="">Dedicaré al menos (___) minutos a aprender sobre un animal salvaje que me resulte interesante, incluyendo su ciclo de vida, hábitat, funciones en el ecosistema e interacciones con los humanos (si las hubiera).</p>
-									<div class="resource-links dropdown-wrapper">
-										<div class="button-action indicator">Más información</div>
-										<ul class="dropdown" data-dropdown="resource-links-8361">
-											<li>Action Resources:</li>
-											<li>
-												<a href="https://www.nationalgeographic.com/animals/facts-pictures/" target="_blank">National Geographic: Animal Pictures and Facts</a>
-											</li>
-											<li>
-												<a href="https://kids.nationalgeographic.com/animals/" target="_blank">National Geographic Kids: Animals</a>
-											</li>
-											<li>
-												<a href="https://www.worldwildlife.org/species" target="_blank">Protecting Wildlife for a Healthy Planet</a>
-											</li>
-										</ul>
-									</div>
-									<p class="warning" data-warning="" style="display: none">Ya ha completado esta acción durante el desafío. Eliminar la acción podría hacer que pierda puntos. ¿Está seguro de que desea hacer esto?</p>
-								</div>
+            </div>
+          </div>
+        </li>
 
-								<div class="challenge-meta">
-									<p>Acción única</p>
-								</div>
-								<div class="action-difficulty">
-									<div aria-describedby="action-difficulty-tooltip" class="indicator">
-										<div class="bar"></div>
-										<div class="bar dull"></div>
-										<div class="bar dull"></div>
-										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
-											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
-											<p style="margin: 11px 0; font-size: 13px">EcoLearner</p>
-											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills. While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li class="action-card" data-action="8362" data-api-path="https://metlife.ecochallenge.org/me/actions/8362/myself/selection" data-customizable="true" id="action-8362">
-						<div class="init" data-focus-target="">
-							<div class="content" data-action-content="true">
-								<div class="body">
-									<h3 class="title">Plantar árboles</h3>
-									<p data-description="">Plantaré (___) árbol(es) nativo(s) en mi comunidad, parques públicos o patio trasero.</p>
-									<div class="resource-links dropdown-wrapper">
-										<div class="button-action indicator">Más información</div>
-										<ul class="dropdown" data-dropdown="resource-links-8362">
-											<li>Action Resources:</li>
-											<li>
-												<a href="https://c402277.ssl.cf1.rackcdn.com/publications/1155/files/original/Forest_4.4.pdf?1523895719" target="_blank">WWF: Take a Walk Through the Forest: Forest Guide</a>
-											</li>
-											<li>
-												<a href="https://www.ted.com/talks/shubhendu_sharma_how_to_grow_a_forest_in_your_backyard" target="_blank">TED Talk: Shubhendu Sharma on How to Grow a Forest in your Backyard</a>
-											</li>
-											<li>
-												<a href="https://solu.news/cb76e" target="_blank">SolutionsU news on expanding urban forests</a>
-											</li>
-										</ul>
-									</div>
-									<p class="warning" data-warning="" style="display: none">Ya ha completado esta acción durante el desafío. Eliminar la acción podría hacer que pierda puntos. ¿Está seguro de que desea hacer esto?</p>
-								</div>
+        <li class="action-card"
+            data-participant-action
+            data-action="4547"
+        >
+          <div class="init" data-focus-target>
+            <div class="content" data-action-content>
+              <div class="body">
+                <h3 class="title">Salir a caminar a diario</h3>
+                <p data-description>Caminar&eacute; al aire libre durante (___) minutos por d&iacute;a.</p>
+                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4547">M&aacute;s informaci&oacute;n</a><ul class="dropdown" data-dropdown="resource-links-4547">
+                    <li>Recursos de acci&oacute;n:</li>
+                    <li><a href="https://www.uofmhealth.org/news/archive/201409/walking-depression-and-beating-stress-outdoors-nature-group"
+                         target="_blank">Nature Group Walks Linked to Improved Mental Health (Las caminatas en grupo en la naturaleza est&aacute;n relacionadas con una mejor salud mental)</a></li>
+                    <li><a href="https://greatergood.berkeley.edu/article/item/what_happens_when_we_reconnect_with_nature"
+                         target="_blank">What Happens When We Reconnect with Nature (Qu&eacute; sucede cuando nos reconectamos con la naturaleza)</a></li>
+                    <li><a href="http://www.yesmagazine.org/happiness/if-meditation-is-not-your-thing-try-a-walk-in-the-woods-20180712"
+                         target="_blank">If Meditation Is Not Your Thing, Try a Walk in the Woods (Si la meditaci&oacute;n no es lo suyo, intente caminar por el bosque)</a></li>
+                  </ul>
+                </div>
 
-								<div class="challenge-meta">
-									<p>Acción única</p>
-								</div>
-								<div class="action-difficulty">
-									<div aria-describedby="action-difficulty-tooltip" class="indicator">
-										<div class="bar"></div>
-										<div class="bar"></div>
-										<div class="bar dull"></div>
-										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
-											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
-											<p style="margin: 11px 0; font-size: 13px">EcoPro</p>
-											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills. While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li class="action-card" data-action="8363" data-api-path="https://metlife.ecochallenge.org/me/actions/8363/myself/selection" data-customizable="true" id="action-8363">
-						<div class="init" data-focus-target="">
-							<div class="content" data-action-content="true">
-								<div class="body">
-									<h3 class="title">Promover la protección de los bosques</h3>
-									<p data-description="">Me pondré en contacto con (___) congresistas o representantes para abogar por una política pública que proteja los bosques y mejore su capacidad para absorber carbono y contribuir a la biodiversidad.</p>
-									<div class="resource-links dropdown-wrapper">
-										<div class="button-action indicator">Más información</div>
-										<ul class="dropdown" data-dropdown="resource-links-8363">
-											<li>Action Resources:</li>
-											<li>
-												<a href="https://c402277.ssl.cf1.rackcdn.com/publications/1155/files/original/Forest_4.4.pdf?1523895719" target="_blank">WWF: Take a Walk Through the Forest: Forest Guide</a>
-											</li>
-											<li>
-												<a href="https://blogs.scientificamerican.com/observations/the-best-technology-for-fighting-climate-change-isnt-a-technology/" target="_blank">The Best Technology for Fighting Climate Change Isn't a Technology</a>
-											</li>
-											<li>
-												<a href="https://www.govtrack.us/congress/members" target="_blank">GovTrack: Find your U.S. Congressperson</a>
-											</li>
-										</ul>
-									</div>
-									<p class="warning" data-warning="" style="display: none">Ya ha completado esta acción durante el desafío. Eliminar la acción podría hacer que pierda puntos. ¿Está seguro de que desea hacer esto?</p>
-								</div>
+                <p style="display: none" class="warning" data-warning>Ya ha completado esta acci&oacute;n durante el desaf&iacute;o. Si elimina la acci&oacute;n, podr&iacute;a perder puntos. ¿Est&aacute; seguro de que quiere hacerlo?</p>
+              </div>
 
-								<div class="challenge-meta">
-									<p>Acción única</p>
-								</div>
-								<div class="action-difficulty">
-									<div aria-describedby="action-difficulty-tooltip" class="indicator">
-										<div class="bar"></div>
-										<div class="bar"></div>
-										<div class="bar"></div>
-										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
-											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
-											<p style="margin: 11px 0; font-size: 13px">EcoLeader</p>
-											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills. While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li class="action-card" data-action="8364" data-api-path="https://metlife.ecochallenge.org/me/actions/8364/myself/selection" data-customizable="true" id="action-8364">
-						<div class="init" data-focus-target="">
-							<div class="content" data-action-content="true">
-								<div class="body">
-									<h3 class="title">Investigar los beneficios de la biodiversidad</h3>
-									<p data-description="">Dedicaré al menos (___) minutos a investigar cómo la biodiversidad impacta positivamente en nuestro mundo y cómo la pérdida de biodiversidad lo perjudica.</p>
-									<div class="resource-links dropdown-wrapper">
-										<div class="button-action indicator">Más información</div>
-										<ul class="dropdown" data-dropdown="resource-links-8364">
-											<li>Action Resources:</li>
-											<li>
-												<a href="https://www.globalissues.org/article/170/why-is-biodiversity-important-who-cares" target="_blank">Why Is Biodiversity Important?</a>
-											</li>
-											<li>
-												<a href="https://www.nytimes.com/2012/07/15/sunday-review/the-ecology-of-disease.html?fbclid=IwAR03nGQzdFR6jT84Xb6R7oX--gdZkjUzXF01A6O0gBbnHsy5A_tDVD9ZsQQ" target="_blank">The Ecology of Disease</a>
-											</li>
-											<li>
-												<a href="https://www.youtube.com/watch?v=ysa5OBhXz-Q&amp;t=9s" target="_blank">How Wolves Change Rivers</a>
-											</li>
-										</ul>
-									</div>
-									<p class="warning" data-warning="" style="display: none">Ya ha completado esta acción durante el desafío. Eliminar la acción podría hacer que pierda puntos. ¿Está seguro de que desea hacer esto?</p>
-								</div>
+              <div class="challenge-meta">
+                <p>Desaf&iacute;o diario</p>
+              </div>
+              <div class="action-difficulty">
+                <div class="indicator">
+                  <div class="bar"></div>
+                  <div class="bar dull"></div>
+                  <div class="bar dull"></div>
+                  <div class="description">
+                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">Nivel de desaf&iacute;o:</p>
+                    <p style="margin: 11px 0; font-size: 13px">EcoLearner (EcoAprendiz)</p>
+                    <p style="text-transform: none;">Nuestros niveles de desaf&iacute;o est&aacute;n determinados por cuatro factores implicados al momento de completar la acci&oacute;n: tiempo, costo, conocimiento y habilidades. Si bien estos factores pueden variar seg&uacute;n el participante, el nivel de desaf&iacute;o puede ayudarlo a elegir las acciones que concuerden m&aacute;s con su estilo de vida y sus objetivos.</p>
+                  </div>
+                </div>
+              </div>
 
-								<div class="challenge-meta">
-									<p>Acción única</p>
-								</div>
-								<div class="action-difficulty">
-									<div aria-describedby="action-difficulty-tooltip" class="indicator">
-										<div class="bar"></div>
-										<div class="bar dull"></div>
-										<div class="bar dull"></div>
-										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
-											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
-											<p style="margin: 11px 0; font-size: 13px">EcoLearner</p>
-											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills. While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li class="action-card" data-action="8365" data-api-path="https://metlife.ecochallenge.org/me/actions/8365/myself/selection" data-customizable="false" id="action-8365">
-						<div class="init" data-focus-target="">
-							<div class="content" data-action-content="true">
-								<div class="body">
-									<h3 class="title">Alimentos beneficiosos para los bosques</h3>
-									<p data-description="">Reemplazaré o eliminaré el aceite de palma, el café y los productos del cacao de mi dieta actual, ya que se sabe que contribuyen a la deforestación.</p>
-									<div class="resource-links dropdown-wrapper">
-										<div class="button-action indicator">Más información</div>
-										<ul class="dropdown" data-dropdown="resource-links-8365">
-											<li>Action Resources:</li>
-											<li>
-												<a href="https://rspo.org/rspo-credits" target="_blank">Roundtable on Sustainable Palm Oil</a>
-											</li>
-											<li>
-												<a href="http://www.onegreenplanet.org/environment/foods-that-are-eating-the-worlds-forests-and-how-to-choose-better/" target="_blank">5 Foods That Are Eating the World’s Forests And How to Choose Better</a>
-											</li>
-											<li>
-												<a href="https://www.rainforest-alliance.org/find-certified?page=1" target="_blank">Find Rainforest Alliance Certified products</a>
-											</li>
-											<li>
-												<a href="https://solutionsu.solutionsjournalism.org/lists/7e2bn17elr" target="_blank">SolutionsU Collection: Restoring Tropical Forests</a>
-											</li>
-										</ul>
-									</div>
-									<p class="warning" data-warning="" style="display: none">Ya ha completado esta acción durante el desafío. Eliminar la acción podría hacer que pierda puntos. ¿Está seguro de que desea hacer esto?</p>
-								</div>
+            </div>
+          </div>
+        </li>
 
-								<div class="challenge-meta">
-									<p>Acción única</p>
-								</div>
-								<div class="action-difficulty">
-									<div aria-describedby="action-difficulty-tooltip" class="indicator">
-										<div class="bar"></div>
-										<div class="bar"></div>
-										<div class="bar dull"></div>
-										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
-											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
-											<p style="margin: 11px 0; font-size: 13px">EcoPro</p>
-											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills. While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li class="action-card" data-action="8366" data-api-path="https://metlife.ecochallenge.org/me/actions/8366/myself/selection" data-customizable="false" id="action-8366">
-						<div class="init" data-focus-target="">
-							<div class="content" data-action-content="true">
-								<div class="body">
-									<h3 class="title">Elegir mejor los productos de madera</h3>
-									<p data-description="">Solo compraré madera y productos de papel de fuentes ecológicamente certificadas como el Forest Stewardship Council.</p>
-									<div class="resource-links dropdown-wrapper">
-										<div class="button-action indicator">Más información</div>
-										<ul class="dropdown" data-dropdown="resource-links-8366">
-											<li>Action Resources:</li>
-											<li>
-												<a href="https://us.fsc.org/en-us/market/find-products" target="_blank">Find Forest Stewardship Council Certified Products</a>
-											</li>
-											<li>
-												<a href="https://blogs.scientificamerican.com/observations/the-best-technology-for-fighting-climate-change-isnt-a-technology/" target="_blank">The Best Technology for Fighting Climate Change Isn't a Technology</a>
-											</li>
-											<li>
-												<a href="https://solutionsu.solutionsjournalism.org/lists/k7ohdwqxg4" target="_blank">SolutionsU Collection: Forest Protection</a>
-											</li>
-										</ul>
-									</div>
-									<p class="warning" data-warning="" style="display: none">Ya ha completado esta acción durante el desafío. Eliminar la acción podría hacer que pierda puntos. ¿Está seguro de que desea hacer esto?</p>
-								</div>
+        <li class="action-card"
+            data-participant-action
+            data-action="4549"
+        >
+          <div class="init" data-focus-target>
+            <div class="content" data-action-content>
+              <div class="body">
+                <h3 class="title">Ayudar a los polinizadores locales</h3>
+                <p data-description>Al menos el 30&nbsp;% de los cultivos y el 90&nbsp;% de las plantas con flores dependen de los polinizadores para producir frutos. Me tomar&eacute; (___) minutos para investigar acerca de qu&eacute; plantas ayudan a los polinizadores nativos locales y plantar&eacute; algunas en mi jard&iacute;n.</p>
+                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4549">M&aacute;s informaci&oacute;n</a><ul class="dropdown" data-dropdown="resource-links-4549">
+                    <li>Recursos de acci&oacute;n:</li>
+                    <li><a href="http://pollinator.org/guides" target="_blank">Gu&iacute;as para hacer plantas buenas para los polinizadores</a></li>
+                    <li><a href="https://www.smithsonianmag.com/smithsonian-institution/honor-world-bee-day-protect-your-local-pollinators-these-ten-east-ways-180969111/"
+                         target="_blank">How to Protect Your Local Pollinators in Ten Easy Ways (Diez maneras simples de proteger a sus polinizadores locales)</a></li>
+                  </ul>
+                </div>
 
-								<div class="challenge-meta">
-									<p>Acción única</p>
-								</div>
-								<div class="action-difficulty">
-									<div aria-describedby="action-difficulty-tooltip" class="indicator">
-										<div class="bar"></div>
-										<div class="bar"></div>
-										<div class="bar dull"></div>
-										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
-											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
-											<p style="margin: 11px 0; font-size: 13px">EcoPro</p>
-											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills. While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
-				</ul>
-			</nav>
-			<p class="align-center"><a class="back-link" href="../challenges.html">Volver a todas las categorías de acciones</a></p>
-		</div>
-	</section>
-	<footer class="global-footer">
-		<section class="bg-neutral20"></section>
-		<section class="bg-neutral100">
-			<div class="content">
-				<div class="section">
-					<div class="block">
-						<div>
-							<div class="subheading">
-								Nuestra historia
-							</div>
-							<p>Durante 150 años, MetLife ha operado como un buen ciudadano corporativo. Teniendo como base nuestro amplio legado de excelencia, nos comprometemos a garantizar un futuro donde podamos continuar ayudando a personas, familias y comunidades de todo el mundo a cumplir sus objetivos y navegar por las vueltas y los rodeos de la vida.</p>
-						</div>
-					</div>
-					<div class="block">
-						<div>
-							<div class="subheading">
-								Contacto
-							</div>
-							<div>
-								MetLife, Inc.<br/>200 Park Avenue<br/>New York, NY 10166<br/>gogreen@metlife.com
-							</div>
-							<div class="support-link">
-								<a href="mailto:support@ecochallenge.org">support@ecochallenge.org</a>
-							</div>
-						</div>
-						<div></div>
-					</div>
-				</div>
-				<div class="section logos">
-					<div class="logo">
-						<img src="../assets/images/metlife_eng_logo_rgb.jpg"/> <a class="link-primary" href="https://www.metlife.com/">Sobre el organizador del evento</a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="bg-neutral120">
-			<div class="bottom">
-				<div class="align-left">
-					<span class="colophon">© 2016-2020 Ecochallenge.org</span>
-				</div>
-				<div class="align-right">
-					<a href="http://ecochallenge.org/privacy-policy" target="_blank">Política de privacidad | Términos y condiciones</a> <a href="mailto:support@ecochallenge.org">Soporte técnico</a> <a class="outlined" data-donate-button="" data-donate-default="30" href="#">Donar</a>
-				</div>
-			</div>
-		</section>
-	</footer>
+                <p style="display: none" class="warning" data-warning>Ya ha completado esta acci&oacute;n durante el desaf&iacute;o. Si elimina la acci&oacute;n, podr&iacute;a perder puntos. ¿Est&aacute; seguro de que quiere hacerlo?</p>
+              </div>
+
+              <div class="challenge-meta">
+                <p>Desaf&iacute;o &uacute;nico</p>
+              </div>
+              <div class="action-difficulty">
+                <div class="indicator">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar dull"></div>
+                  <div class="description">
+                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">Nivel de desaf&iacute;o:</p>
+                    <p style="margin: 11px 0; font-size: 13px">EcoPro</p>
+                    <p style="text-transform: none;">Nuestros niveles de desaf&iacute;o est&aacute;n determinados por cuatro factores implicados al momento de completar la acci&oacute;n: tiempo, costo, conocimiento y habilidades. Si bien estos factores pueden variar seg&uacute;n el participante, el nivel de desaf&iacute;o puede ayudarlo a elegir las acciones que concuerden m&aacute;s con su estilo de vida y sus objetivos.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </li>
+
+        <li class="action-card"
+            data-participant-action
+            data-action="4550"
+        >
+          <div class="init" data-focus-target>
+            <div class="content" data-action-content>
+              <div class="body">
+                <h3 class="title">Pasar tiempo al aire libre</h3>
+                <p data-description>Reemplazar&eacute; (___) minutos por d&iacute;a que suelo pasar adentro (en la computadora, mirando televisi&oacute;n, etc.) por tiempo de calidad al aire libre.</p>
+                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4550">M&aacute;s informaci&oacute;n</a><ul class="dropdown" data-dropdown="resource-links-4550">
+                    <li>Recursos de acci&oacute;n:</li>
+                    <li><a href="https://news.nationalgeographic.com/2017/02/nature-fix-brain-happy-florence-williams/"
+                         target="_blank">National Geographic: We Are Wired to Be Outside (Estamos programados para estar al aire libre)</a></li>
+                    <li><a href="https://www.bustle.com/articles/114893-how-to-spend-more-time-outside-in-7-sneaky-ways"
+                         target="_blank">How to Spend More Time Outside in 7 Sneaky Ways (7&nbsp;maneras de pasar m&aacute;s tiempo al aire libre casi sin darnos cuenta)</a></li>
+                  </ul>
+                </div>
+
+                <p style="display: none" class="warning" data-warning>Ya ha completado esta acci&oacute;n durante el desaf&iacute;o. Si elimina la acci&oacute;n, podr&iacute;a perder puntos. ¿Est&aacute; seguro de que quiere hacerlo?</p>
+              </div>
+
+              <div class="challenge-meta">
+                <p>Desaf&iacute;o diario</p>
+              </div>
+              <div class="action-difficulty">
+                <div class="indicator">
+                  <div class="bar"></div>
+                  <div class="bar dull"></div>
+                  <div class="bar dull"></div>
+                  <div class="description">
+                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">Nivel de desaf&iacute;o:</p>
+                    <p style="margin: 11px 0; font-size: 13px">EcoLearner (EcoAprendiz)</p>
+                    <p style="text-transform: none;">Nuestros niveles de desaf&iacute;o est&aacute;n determinados por cuatro factores implicados al momento de completar la acci&oacute;n: tiempo, costo, conocimiento y habilidades. Si bien estos factores pueden variar seg&uacute;n el participante, el nivel de desaf&iacute;o puede ayudarlo a elegir las acciones que concuerden m&aacute;s con su estilo de vida y sus objetivos.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </li>
+
+        <li class="action-card"
+            data-participant-action
+            data-action="4551"
+        >
+          <div class="init" data-focus-target>
+            <div class="content" data-action-content>
+              <div class="body">
+                <h3 class="title">Realizar actividades en la naturaleza</h3>
+                <p data-description>Participar&eacute; en actividades en la naturaleza solo, o con mi familia, durante (___) minutos por d&iacute;a (puede ser cualquier actividad, desde salir a caminar hasta ver c&oacute;mo cambian de color las hojas o leer un libro con tem&aacute;ticas de la naturaleza).</p>
+                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4551">M&aacute;s informaci&oacute;n</a><ul class="dropdown" data-dropdown="resource-links-4551">
+                    <li>Recursos de acci&oacute;n:</li>
+                    <li><a href="https://greatergood.berkeley.edu/article/item/what_happens_when_we_reconnect_with_nature"
+                         target="_blank">What Happens When We Reconnect with Nature (Qu&eacute; sucede cuando nos reconectamos con la naturaleza)</a></li>
+                  </ul>
+                </div>
+
+                <p style="display: none" class="warning" data-warning>Ya ha completado esta acci&oacute;n durante el desaf&iacute;o. Si elimina la acci&oacute;n, podr&iacute;a perder puntos. ¿Est&aacute; seguro de que quiere hacerlo?</p>
+              </div>
+
+              <div class="challenge-meta">
+                <p>Desaf&iacute;o diario</p>
+              </div>
+              <div class="action-difficulty">
+                <div class="indicator">
+                  <div class="bar"></div>
+                  <div class="bar dull"></div>
+                  <div class="bar dull"></div>
+                  <div class="description">
+                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">Nivel de desaf&iacute;o:</p>
+                    <p style="margin: 11px 0; font-size: 13px">EcoLearner (EcoAprendiz)</p>
+                    <p style="text-transform: none;">Nuestros niveles de desaf&iacute;o est&aacute;n determinados por cuatro factores implicados al momento de completar la acci&oacute;n: tiempo, costo, conocimiento y habilidades. Si bien estos factores pueden variar seg&uacute;n el participante, el nivel de desaf&iacute;o puede ayudarlo a elegir las acciones que concuerden m&aacute;s con su estilo de vida y sus objetivos.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </li>
+
+        <li class="action-card"
+            data-participant-action
+            data-action="4552"
+        >
+          <div class="init" data-focus-target>
+            <div class="content" data-action-content>
+              <div class="body">
+                <h3 class="title">No dejar rastros</h3>
+                <p data-description>Practicar&eacute; los siete principios para no dejar rastros cuando haga actividades en la naturaleza, ya sea solo o con familia y amigos.</p>
+                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4552">M&aacute;s informaci&oacute;n</a><ul class="dropdown" data-dropdown="resource-links-4552">
+                    <li>Recursos de acci&oacute;n:</li>
+                    <li><a href="https://lnt.org/learn/7-principles" target="_blank">Los siete principios para no dejar rastros</a></li>
+                  </ul>
+                </div>
+
+                <p style="display: none" class="warning" data-warning>Ya ha completado esta acci&oacute;n durante el desaf&iacute;o. Si elimina la acci&oacute;n, podr&iacute;a perder puntos. ¿Est&aacute; seguro de que quiere hacerlo?</p>
+              </div>
+
+              <div class="challenge-meta">
+                <p>Desaf&iacute;o diario</p>
+              </div>
+              <div class="action-difficulty">
+                <div class="indicator">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="description">
+                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">Nivel de desaf&iacute;o:</p>
+                    <p style="margin: 11px 0; font-size: 13px">EcoLeader (EcoL&iacute;der)</p>
+                    <p style="text-transform: none;">Nuestros niveles de desaf&iacute;o est&aacute;n determinados por cuatro factores implicados al momento de completar la acci&oacute;n: tiempo, costo, conocimiento y habilidades. Si bien estos factores pueden variar seg&uacute;n el participante, el nivel de desaf&iacute;o puede ayudarlo a elegir las acciones que concuerden m&aacute;s con su estilo de vida y sus objetivos.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </li>
+
+        <li class="action-card"
+            data-participant-action
+            data-action="4553"
+        >
+          <div class="init" data-focus-target>
+            <div class="content" data-action-content>
+              <div class="body">
+                <h3 class="title">Disfrutar el amanecer/atardecer</h3>
+                <p data-description>Disfrutar&eacute; el amanecer o el atardecer todos los d&iacute;as.</p>
+                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4553">M&aacute;s informaci&oacute;n</a><ul class="dropdown" data-dropdown="resource-links-4553">
+                    <li>Recursos de acci&oacute;n:</li>
+                    <li><a href="https://sunrise-sunset.org/" target="_blank">Horarios de la salida y la puesta del sol en todas las ubicaciones</a></li>
+                  </ul>
+                </div>
+
+                <p style="display: none" class="warning" data-warning>Ya ha completado esta acci&oacute;n durante el desaf&iacute;o. Si elimina la acci&oacute;n, podr&iacute;a perder puntos. ¿Est&aacute; seguro de que quiere hacerlo?</p>
+              </div>
+
+              <div class="challenge-meta">
+                <p>Desaf&iacute;o diario</p>
+              </div>
+              <div class="action-difficulty">
+                <div class="indicator">
+                  <div class="bar"></div>
+                  <div class="bar dull"></div>
+                  <div class="bar dull"></div>
+                  <div class="description">
+                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">Nivel de desaf&iacute;o:</p>
+                    <p style="margin: 11px 0; font-size: 13px">EcoLearner (EcoAprendiz)</p>
+                    <p style="text-transform: none;">Nuestros niveles de desaf&iacute;o est&aacute;n determinados por cuatro factores implicados al momento de completar la acci&oacute;n: tiempo, costo, conocimiento y habilidades. Si bien estos factores pueden variar seg&uacute;n el participante, el nivel de desaf&iacute;o puede ayudarlo a elegir las acciones que concuerden m&aacute;s con su estilo de vida y sus objetivos.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </li>
+
+        <li class="action-card"
+            data-participant-action
+            data-action="4554"
+        >
+          <div class="init" data-focus-target>
+            <div class="content" data-action-content>
+              <div class="body">
+                <h3 class="title">Explorar mi &aacute;rea</h3>
+                <h4 class="subtitle">
+
+                </h4>
+                <p data-description>Explorar&eacute; al menos un sendero de excursi&oacute;n nuevo o una caminata en la naturaleza nueva en mi &aacute;rea.</p>
+                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4554">M&aacute;s informaci&oacute;n</a><ul class="dropdown" data-dropdown="resource-links-4554">
+                    <li>Recursos de acci&oacute;n:</li>
+                    <li><a href="https://www.nps.gov/findapark/index.htm" target="_blank">Servicio de Parques Nacionales: encontrar un parque</a></li>
+                    <li><a href="https://localadventurer.com/25-best-hikes-in-the-world-bucket-list/" target="_blank">25 Best Hikes in the World (Las 25 mejores excursiones del mundo)</a></li>
+                    <li><a href="https://www.alltrails.com/" target="_blank">AllTrails: Descubra su pr&oacute;ximo sendero favorito</a></li>
+                  </ul>
+                </div>
+
+                <p style="display: none" class="warning" data-warning>Ya ha completado esta acci&oacute;n durante el desaf&iacute;o. Si elimina la acci&oacute;n, podr&iacute;a perder puntos. ¿Est&aacute; seguro de que quiere hacerlo?</p>
+              </div>
+
+              <div class="challenge-meta">
+                <p>Desaf&iacute;o &uacute;nico</p>
+              </div>
+              <div class="action-difficulty">
+                <div class="indicator">
+                  <div class="bar"></div>
+                  <div class="bar dull"></div>
+                  <div class="bar dull"></div>
+                  <div class="description">
+                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">Nivel de desaf&iacute;o:</p>
+                    <p style="margin: 11px 0; font-size: 13px">EcoLearner (EcoAprendiz)</p>
+                    <p style="text-transform: none;">Nuestros niveles de desaf&iacute;o est&aacute;n determinados por cuatro factores implicados al momento de completar la acci&oacute;n: tiempo, costo, conocimiento y habilidades. Si bien estos factores pueden variar seg&uacute;n el participante, el nivel de desaf&iacute;o puede ayudarlo a elegir las acciones que concuerden m&aacute;s con su estilo de vida y sus objetivos.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </li>
+
+        <li class="action-card"
+            data-participant-action
+            data-action="4555"
+        >
+          <div class="init" data-focus-target>
+            <div class="content" data-action-content>
+              <div class="body">
+                <h3 class="title">Participar en un proyecto al aire libre</h3>
+                <h4 class="subtitle">
+
+                </h4>
+                <p data-description>Me unir&eacute; a un proyecto de restauraci&oacute;n al aire libre en mi comunidad o comenzar&eacute; un proyecto ecol&oacute;gico voluntario y comunitario con mis colegas de MetLife.</p>
+                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4555">M&aacute;s informaci&oacute;n</a><ul class="dropdown" data-dropdown="resource-links-4555">
+                    <li>Recursos de acci&oacute;n:</li>
+                    <li><a href="https://www.volunteermatch.org/" target="_blank">VolunteerMatch</a></li>
+                  </ul>
+                </div>
+
+                <p style="display: none" class="warning" data-warning>Ya ha completado esta acci&oacute;n durante el desaf&iacute;o. Si elimina la acci&oacute;n, podr&iacute;a perder puntos. ¿Est&aacute; seguro de que quiere hacerlo?</p>
+              </div>
+
+              <div class="challenge-meta">
+                <p>Desaf&iacute;o &uacute;nico</p>
+              </div>
+              <div class="action-difficulty">
+                <div class="indicator">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar dull"></div>
+                  <div class="description">
+                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">Nivel de desaf&iacute;o:</p>
+                    <p style="margin: 11px 0; font-size: 13px">EcoPro</p>
+                    <p style="text-transform: none;">Nuestros niveles de desaf&iacute;o est&aacute;n determinados por cuatro factores implicados al momento de completar la acci&oacute;n: tiempo, costo, conocimiento y habilidades. Si bien estos factores pueden variar seg&uacute;n el participante, el nivel de desaf&iacute;o puede ayudarlo a elegir las acciones que concuerden m&aacute;s con su estilo de vida y sus objetivos.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </li>
+
+        <li class="action-card"
+            data-participant-action
+            data-action="4556"
+        >
+          <div class="init" data-focus-target>
+            <div class="content" data-action-content>
+              <div class="body">
+                <h3 class="title">Llevar un diario de la naturaleza</h3>
+                <p data-description>Cada d&iacute;a, escribir&eacute; acerca de mis experiencias en la naturaleza.</p>
+                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4556">M&aacute;s informaci&oacute;n</a><ul class="dropdown" data-dropdown="resource-links-4556">
+                    <li>Recursos de acci&oacute;n:</li>
+                    <li><a href="https://wearewildness.com/6-reasons-why-you-should-keep-a-nature-journal/"
+                         target="_blank">6 Reasons Why You Should Keep a Nature Journal (6&nbsp;razones por las que deber&iacute;a llevar un diario de la naturaleza)</a></li>
+                  </ul>
+                </div>
+
+                <p style="display: none" class="warning" data-warning>Ya ha completado esta acci&oacute;n durante el desaf&iacute;o. Si elimina la acci&oacute;n, podr&iacute;a perder puntos. ¿Est&aacute; seguro de que quiere hacerlo?</p>
+              </div>
+
+              <div class="challenge-meta">
+                <p>Desaf&iacute;o diario</p>
+              </div>
+              <div class="action-difficulty">
+                <div class="indicator">
+                  <div class="bar"></div>
+                  <div class="bar dull"></div>
+                  <div class="bar dull"></div>
+                  <div class="description">
+                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">Nivel de desaf&iacute;o:</p>
+                    <p style="margin: 11px 0; font-size: 13px">EcoLearner (EcoAprendiz)</p>
+                    <p style="text-transform: none;">Nuestros niveles de desaf&iacute;o est&aacute;n determinados por cuatro factores implicados al momento de completar la acci&oacute;n: tiempo, costo, conocimiento y habilidades. Si bien estos factores pueden variar seg&uacute;n el participante, el nivel de desaf&iacute;o puede ayudarlo a elegir las acciones que concuerden m&aacute;s con su estilo de vida y sus objetivos.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </li>
+
+        <li class="action-card"
+            data-participant-action
+            data-action="4557"
+        >
+          <div class="init" data-focus-target>
+            <div class="content" data-action-content>
+              <div class="body">
+                <h3 class="title">Cuidar un jard&iacute;n</h3>
+                <h4 class="subtitle">
+
+                </h4>
+                <p data-description>Cuidar&eacute; un jard&iacute;n todos los d&iacute;as o trabajar&eacute; en crear uno.</p>
+                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4557">M&aacute;s informaci&oacute;n</a><ul class="dropdown" data-dropdown="resource-links-4557">
+                    <li>Recursos de acci&oacute;n:</li>
+                    <li><a href="http://www.yesmagazine.org/issues/good-health/the-curious-case-of-the-antidepressant-anti-anxiety-backyard-garden-20151112"
+                         target="_blank">The Curious Case of the Antidepressant, Anti-Anxiety Backyard Garden (El curioso caso del jard&iacute;n trasero antidepresivo y ansiol&iacute;tico)</a></li>
+                    <li><a href="https://www.moneycrashers.com/start-community-garden-benefits/" target="_blank">What is a community garden? Benefits &amp; how to start your own (¿Qu&eacute; es un jard&iacute;n comunitario? Sus beneficios y c&oacute;mo crear el suyo propio)</a></li>
+                    <li><a href="https://www.nytimes.com/2015/05/27/dining/urban-gardening-tips.html" target="_blank">Urban Gardening Tips (Consejos de jardiner&iacute;a urbana)</a></li>
+                  </ul>
+                </div>
+
+                <p style="display: none" class="warning" data-warning>Ya ha completado esta acci&oacute;n durante el desaf&iacute;o. Si elimina la acci&oacute;n, podr&iacute;a perder puntos. ¿Est&aacute; seguro de que quiere hacerlo?</p>
+              </div>
+
+              <div class="challenge-meta">
+                <p>Desaf&iacute;o diario</p>
+              </div>
+              <div class="action-difficulty">
+                <div class="indicator">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar dull"></div>
+                  <div class="description">
+                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">Nivel de desaf&iacute;o:</p>
+                    <p style="margin: 11px 0; font-size: 13px">EcoPro</p>
+                    <p style="text-transform: none;">Nuestros niveles de desaf&iacute;o est&aacute;n determinados por cuatro factores implicados al momento de completar la acci&oacute;n: tiempo, costo, conocimiento y habilidades. Si bien estos factores pueden variar seg&uacute;n el participante, el nivel de desaf&iacute;o puede ayudarlo a elegir las acciones que concuerden m&aacute;s con su estilo de vida y sus objetivos.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </li>
+
+        <li class="action-card"
+            data-participant-action
+            data-action="4669"
+        >
+          <div class="init" data-focus-target>
+            <div class="content" data-action-content>
+              <div class="body">
+                <h3 class="title">Comer al aire libre</h3>
+                <h4 class="subtitle">
+
+                </h4>
+                <p data-description>Comer&eacute; al aire libre (___) veces por d&iacute;a.</p>
+                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4669">M&aacute;s informaci&oacute;n</a><ul class="dropdown" data-dropdown="resource-links-4669">
+                    <li>Recursos de acci&oacute;n:</li>
+                    <li><a href="https://www.health.harvard.edu/press_releases/spending-time-outdoors-is-good-for-you"
+                         target="_blank">Spending time outdoors is good for you (Pasar tiempo al aire libre es bueno para usted)</a></li>
+                    <li><a href="http://planetmattersandmore.com/healthy-living-2/health-benefits-of-eating-outdoors/"
+                         target="_blank">Health Benefits of Eating Outdoors (Los beneficios para la salud de comer al aire libre)</a></li>
+                  </ul>
+                </div>
+
+                <p style="display: none" class="warning" data-warning>Ya ha completado esta acci&oacute;n durante el desaf&iacute;o. Si elimina la acci&oacute;n, podr&iacute;a perder puntos. ¿Est&aacute; seguro de que quiere hacerlo?</p>
+              </div>
+
+              <div class="challenge-meta">
+                <p>Desaf&iacute;o diario</p>
+              </div>
+              <div class="action-difficulty">
+                <div class="indicator">
+                  <div class="bar"></div>
+                  <div class="bar dull"></div>
+                  <div class="bar dull"></div>
+                  <div class="description">
+                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">Nivel de desaf&iacute;o:</p>
+                    <p style="margin: 11px 0; font-size: 13px">EcoLearner (EcoAprendiz)</p>
+                    <p style="text-transform: none;">Nuestros niveles de desaf&iacute;o est&aacute;n determinados por cuatro factores implicados al momento de completar la acci&oacute;n: tiempo, costo, conocimiento y habilidades. Si bien estos factores pueden variar seg&uacute;n el participante, el nivel de desaf&iacute;o puede ayudarlo a elegir las acciones que concuerden m&aacute;s con su estilo de vida y sus objetivos.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </li>
+
+        <li class="action-card"
+            data-participant-action
+            data-action="4670"
+        >
+          <div class="init" data-focus-target>
+            <div class="content" data-action-content>
+              <div class="body">
+                <h3 class="title">Tener reuniones al aire libre</h3>
+                <h4 class="subtitle">
+
+                </h4>
+                <p data-description>Planificar&eacute; estar al aire libre durante (___) minutos de reuniones del trabajo o de llamadas telef&oacute;nicas por d&iacute;a.</p>
+                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4670">M&aacute;s informaci&oacute;n</a><ul class="dropdown" data-dropdown="resource-links-4670">
+                    <li>Recursos de acci&oacute;n:</li>
+                    <li><a href="https://www.salesforce.com/blog/2014/07/meeting-outside-gp.html" target="_blank">Why you should hold your next meeting outdoors (Por qu&eacute; deber&iacute;a hacer su pr&oacute;xima reuni&oacute;n al aire libre)</a></li>
+                    <li><a href="https://www.entrepreneur.com/article/233897" target="_blank">Why you should take your work outside (Por qu&eacute; deber&iacute;a trabajar al aire libre)</a></li>
+                  </ul>
+                </div>
+
+                <p style="display: none" class="warning" data-warning>Ya ha completado esta acci&oacute;n durante el desaf&iacute;o. Si elimina la acci&oacute;n, podr&iacute;a perder puntos. ¿Est&aacute; seguro de que quiere hacerlo?</p>
+              </div>
+
+              <div class="challenge-meta">
+                <p>Desaf&iacute;o diario</p>
+              </div>
+              <div class="action-difficulty">
+                <div class="indicator">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar dull"></div>
+                  <div class="description">
+                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">Nivel de desaf&iacute;o:</p>
+                    <p style="margin: 11px 0; font-size: 13px">EcoPro</p>
+                    <p style="text-transform: none;">Nuestros niveles de desaf&iacute;o est&aacute;n determinados por cuatro factores implicados al momento de completar la acci&oacute;n: tiempo, costo, conocimiento y habilidades. Si bien estos factores pueden variar seg&uacute;n el participante, el nivel de desaf&iacute;o puede ayudarlo a elegir las acciones que concuerden m&aacute;s con su estilo de vida y sus objetivos.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </li>
+
+        <li class="action-card"
+            data-participant-action
+            data-action="4671"
+        >
+          <div class="init" data-focus-target>
+            <div class="content" data-action-content>
+              <div class="body">
+                <h3 class="title">Cuidado sostenible del jard&iacute;n</h3>
+                <h4 class="subtitle">
+
+                </h4>
+                <p data-description>Aprender&eacute; acerca de las pr&aacute;cticas sostenibles del cuidado del jard&iacute;n y compartir&eacute; lo que aprend&iacute; en el inicio de mi cuenta de Ecochallenge.</p>
+                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4671">M&aacute;s informaci&oacute;n</a><ul class="dropdown" data-dropdown="resource-links-4671">
+                    <li>Recursos de acci&oacute;n:</li>
+                    <li><a href="https://www.nrdc.org/stories/more-sustainable-and-beautiful-alternatives-grass-lawn"
+                         target="_blank">More Sustainable Alternatives to a Grass Lawn (Alternativas m&aacute;s sostenibles a un parque de c&eacute;sped)</a></li>
+                    <li><a href="https://www.planetnatural.com/organic-lawn-care-101/" target="_blank">Introducci&oacute;n al cuidado org&aacute;nico del c&eacute;sped</a></li>
+                    <li><a href="https://draxe.com/10-ways-to-go-green-with-your-lawn-care/" target="_blank">10 Ways to Go Green with Lawn Care (10 maneras de cuidar el c&eacute;sped de manera ecol&oacute;gica)</a></li>
+                  </ul>
+                </div>
+
+                <p style="display: none" class="warning" data-warning>Ya ha completado esta acci&oacute;n durante el desaf&iacute;o. Si elimina la acci&oacute;n, podr&iacute;a perder puntos. ¿Est&aacute; seguro de que quiere hacerlo?</p>
+              </div>
+
+              <div class="challenge-meta">
+                <p>Desaf&iacute;o &uacute;nico</p>
+              </div>
+              <div class="action-difficulty">
+                <div class="indicator">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="description">
+                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">Nivel de desaf&iacute;o:</p>
+                    <p style="margin: 11px 0; font-size: 13px">EcoLeader (EcoL&iacute;der)</p>
+                    <p style="text-transform: none;">Nuestros niveles de desaf&iacute;o est&aacute;n determinados por cuatro factores implicados al momento de completar la acci&oacute;n: tiempo, costo, conocimiento y habilidades. Si bien estos factores pueden variar seg&uacute;n el participante, el nivel de desaf&iacute;o puede ayudarlo a elegir las acciones que concuerden m&aacute;s con su estilo de vida y sus objetivos.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </li>
+
+        <li class="action-card"
+            data-participant-action
+            data-action="4672"
+        >
+          <div class="init" data-focus-target>
+            <div class="content" data-action-content>
+              <div class="body">
+                <h3 class="title">Participar en Our Green Impact</h3>
+                <h4 class="subtitle">
+
+                </h4>
+                <p data-description>Prometo participar en las actividades ambientales de Our Green Impact de MetLife, como seminarios en l&iacute;nea, oportunidades de trabajo voluntario y eventos de la Semana de la Tierra.</p>
+                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4672">M&aacute;s informaci&oacute;n</a><ul class="dropdown" data-dropdown="resource-links-4672">
+                    <li>Recursos de acci&oacute;n:</li>
+                    <li><a href="https://my.metlife.com/sites/gogreen/SitePages/Our-Green-Home.aspx" target="_blank">Our Green Impact</a></li>
+                  </ul>
+                </div>
+
+                <p style="display: none" class="warning" data-warning>Ya ha completado esta acci&oacute;n durante el desaf&iacute;o. Si elimina la acci&oacute;n, podr&iacute;a perder puntos. ¿Est&aacute; seguro de que quiere hacerlo?</p>
+              </div>
+
+              <div class="challenge-meta">
+                <p>Desaf&iacute;o &uacute;nico</p>
+              </div>
+              <div class="action-difficulty">
+                <div class="indicator">
+                  <div class="bar"></div>
+                  <div class="bar dull"></div>
+                  <div class="bar dull"></div>
+                  <div class="description">
+                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">Nivel de desaf&iacute;o:</p>
+                    <p style="margin: 11px 0; font-size: 13px">EcoLearner (EcoAprendiz)</p>
+                    <p style="text-transform: none;">Nuestros niveles de desaf&iacute;o est&aacute;n determinados por cuatro factores implicados al momento de completar la acci&oacute;n: tiempo, costo, conocimiento y habilidades. Si bien estos factores pueden variar seg&uacute;n el participante, el nivel de desaf&iacute;o puede ayudarlo a elegir las acciones que concuerden m&aacute;s con su estilo de vida y sus objetivos.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </li>
+
+        <li class="action-card"
+            data-participant-action
+            data-action="4673"
+        >
+          <div class="init" data-focus-target>
+            <div class="content" data-action-content>
+              <div class="body">
+                <h3 class="title">Moverme a pie</h3>
+                <h4 class="subtitle">
+
+                </h4>
+                <p data-description>Durante el Ecochallenge, caminar&eacute;, correr&eacute; o andar&eacute; en bicicleta para trasladarme a lugares a los que normalmente ir&iacute;a en un veh&iacute;culo, y me asegurar&eacute; de prestar atenci&oacute;n a mi alrededor.</p>
+                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4673">M&aacute;s informaci&oacute;n</a><ul class="dropdown" data-dropdown="resource-links-4673">
+                    <li>Recursos de acci&oacute;n:</li>
+                    <li><a href="https://whatifwewalked.com/seven-reasons-to-travel-on-foot/" target="_blank">What if we walked? (¿Y si caminamos?)</a></li>
+                    <li><a href="https://www.women-on-the-road.com/travel-on-foot.html" target="_blank">Moverse a pie (Women on the Road)</a></li>
+                    <li><a href="https://awol.junkee.com/the-case-for-slow-travel-5-benefits-of-taking-your-time/36618"
+                         target="_blank">Moverse lento: los beneficios de tomarse su tiempo</a></li>
+                  </ul>
+                </div>
+
+                <p style="display: none" class="warning" data-warning>Ya ha completado esta acci&oacute;n durante el desaf&iacute;o. Si elimina la acci&oacute;n, podr&iacute;a perder puntos. ¿Est&aacute; seguro de que quiere hacerlo?</p>
+              </div>
+
+              <div class="challenge-meta">
+                <p>Desaf&iacute;o diario</p>
+              </div>
+              <div class="action-difficulty">
+                <div class="indicator">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="description">
+                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">Nivel de desaf&iacute;o:</p>
+                    <p style="margin: 11px 0; font-size: 13px">EcoLeader (EcoL&iacute;der)</p>
+                    <p style="text-transform: none;">Nuestros niveles de desaf&iacute;o est&aacute;n determinados por cuatro factores implicados al momento de completar la acci&oacute;n: tiempo, costo, conocimiento y habilidades. Si bien estos factores pueden variar seg&uacute;n el participante, el nivel de desaf&iacute;o puede ayudarlo a elegir las acciones que concuerden m&aacute;s con su estilo de vida y sus objetivos.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </li>
+
+      </ul>
+    </nav>
+
+
+    <p class="align-center"><a class="back-link" href="/challenges.html">Volver a todos los desaf&iacute;os</a></p>
+  </div>
+</section>
+
+<footer class="global-footer">
+  <section class="bg-neutral20">
+
+  </section>
+  <section class="bg-neutral100">
+    <div class="content">
+      <div class="section">
+        <div class="block">
+          <div>
+            <div class="subheading">Nuestra historia</div>
+            <p>Durante 150 a&ntilde;os, MetLife ha operado como un buen ciudadano corporativo. Bas&aacute;ndonos en nuestro legado perdurable de excelencia, nos comprometemos a garantizar un futuro en el que podamos continuar ayudando a las personas, a las familias y a las comunidades en todo el mundo a alcanzar sus objetivos y a afrontar los giros y vueltas de la vida.</p>
+          </div>
+
+        </div>
+        <div class="block">
+          <div>
+            <div class="subheading">Contacto</div>
+            <div>MetLife, Inc.<br>200 Park Avenue<br>New York, NY 10166<br>gogreen@metlife.com</div>
+            <div class="support-link"><a href="mailto:support@ecochallenge.org">support@ecochallenge.org</a></div>
+          </div>
+
+          <div>
+          </div>
+
+        </div>
+      </div>
+      <div class="section logos">
+        <div class="logo"><img src="../assets/images/logo.jpg"/> <a class="link-primary" href="https://metlife.ecochallenge.org/about/event-info">Acerca del organizador del evento</a></div>
+      </div>
+
+    </div>
+  </section>
+  <section class="bg-neutral120">
+    <div class="bottom">
+      <div class="align-left"><span class="colophon">&copy; 2016-2020 Northwest Earth Institute</span></div>
+      <div class="align-right"><a href="https://ecochallenge.org/wp-content/uploads/2016/07/NWEI-Privacy-Policy_03.11.17.pdf" target="_blank">pol&iacute;tica de privacidad</a> <a href="mailto:support@ecochallenge.org">Soporte t&eacute;cnico</a> <a href="https://ecochallenge.org/donations/donate-to-ecochallenge/" target="_blank" class="outlined">Donar</a></div>
+    </div>
+  </section>
+
+</footer>
+
+
 </body>
 </html>
+
