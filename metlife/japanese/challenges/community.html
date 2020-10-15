@@ -1,945 +1,864 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:og="http://ogp.me/ns#"
-      xmlns:fb="https://www.facebook.com/2008/fbml">
+﻿<!DOCTYPE html>
+<html>
 <head>
-  <title>2019�N�@���b�g���C�t �G�R�`�������W - �C�x���g���</title>
-  <link rel="stylesheet" media="all" href="../assets/stylesheets/application.css" data-turbolinks-track="true"/>
-  <script src="../assets/javascripts/application.js" data-turbolinks-track="true"></script>
-  <meta name="action-cable-url" content="/cable"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#ffffff">
-  <meta name="robots" content="noindex">
-  <meta charset="UTF-8" />
-
-  <meta name="csrf-param" content="authenticity_token"/>
-  <meta name="csrf-token"
-        content="KHbHeVfyS683SdqR+FCO7sJ7ZY4xcTTw0pVqzKOm+O8rq5m3j4rBvFsjaMcCnf5Q5WK1AJ3YFK6e/wpdT5aVdg=="/><!-- default meta --><meta property="og:title"
-        content="Join the 2019 MetLife EcoChallenge, presented by MetLife Global Sustainability Team"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:description"
-        content="For two weeks, we challenge you to make eco-friendly choices to live a more sustainable lifestyle! Team up with colleagues from around the world and take action to create a healthier planet during the 2019 MetLife EcoChallenge. "/>
-  <meta property="og:image"
-        content="http://metlife.ecochallenge.org/system/events/org_logos/000/000/039/original/metlife_eng_logo_rgb.jpg?1552691799"/>
-  <meta property="og:url" content="http://metlife.ecochallenge.org"/>
-
-
-  <style type="text/css">nav.user-nav {
-    background-color: #0061A0;
-  }
-
-  .event-header .event-info {
-    margin: 10px 15px 30px;
-  }
-
-  a {
-    color: #007ABC;
-  }
-
-  .button-primary, .button-primary.dark:hover, .award-point-list a, .award-point-list a .points::after, .event-header .event-nav a.outlined:hover, .event-header .event-nav a.outlined:active, .hero .button:hover, .button-outlined:hover {
-    background-color: #007ABC;
-  }
-
-  .event-header .event-nav a.outlined, .button-outlined {
-    border-color: #007ABC;
-    color: #007ABC;
-  }
-
-  .event-check-ins .days li.action-complete, .legend li .action-complete.marker {
-    background-color: #0061A0;
-  }
-
-  .calendar .week a.action-complete {
-    color: #0061A0;
-    border-color: #0061A0;
-  }
-
-  .event-header .event-info .event-date-range {
-    border-top: 1px solid #0061A0;
-    border-bottom: 1px solid #0061A0;
-  }
-
-  h2, h3, h5, .participants-counter .title, .horizontal-section-title .title, .page-content .title {
-    color: #333333;
-  }
-
-  .participant-feed .dropdown-wrapper& gt
-
-  ;
-  .feed-filter {
-    color: #0061A0;
-  }
-
-  .form-button-icon.facebook, .form-button-icon.google {
-    display: none;
-  }
-
-  .hero .sign, .event-header .event-info .title a, h2, h3, h5, .participants-counter .title, .horizontal-section-title .title, .page-content .title, .placeholder .title, .challenges-slider .slider-header .title, .section-title .title, .team-hero .title, .team-detail-points .title, .dashboard-sidebar .team-summary .team-header .title, .dashboard-sidebar .user-summary .user-header .name, .impact-grid .impact-card .units, .dashboard-sidebar .impact-summary .challenge-impact .count, .participants-counter .count .digit-box span {
-    font-family: Georgia, Times;
-    font-weight: bold;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-  }
-
-  p {
-    font-size: 15px;
-  }
-
-  .global-footer .top .subheading {
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-    font-size: 14px;
-    color: white;
-  }
-
-  .global-footer .top .social a, .global-footer .top .col, .global-footer .top .description {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: normal;
-    font-size: 12px;
-  }
-
-  .hero .copy, .company-callout .callout-container .blurb, .placeholder p, .page-content, .participant-action-cards .card-container .description p, .awarded-points-list tr + tr td, .section-title .description, .participants-feed-full .copy {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  .placeholder p, .page-content, .section-title .description, .participants-feed-full .copy {
-    font-size: 13px;
-  }
-
-  .hero .container-hero {
-    max-width: 450px;
-  }
-
-  .event-header .event-info .title a {
-    color: #000000;
-  }
-
-  .hero .copy {
-    font-weight: bold;
-  }
-
-  .user-nav ul li a:hover {
-    color: white;
-    opacity: 0.8;
-  }
-
-  .event-header .event-info .logo img {
-    max-height: 100px;
-    max-width: 170px;
-  }
-
-  .bottom .outlined {
-    display: none;
-  }
-
-  .hero .sign {
-    background-color: rgba(242, 242, 242, 0.85);
-    padding: 15px;
-    color: #333;
-    text-transform: inherit;
-    border-radius: 6px 6px 0px 0px;
-  }
-
-  .hero .copy {
-    background-color: rgba(242, 242, 242, 0.85);
-    padding: 15px;
-    padding-top: 0px;
-    color: #333;
-    border-radius: 0px 0px 6px 6px;
-    font-weight: lighter;
-  }
-
-  .hero .button {
-    font-family: & #39;
-    Galaxie Polaris & #39;, & #39;
-    Arial & #39;, sans-serif;
-    font-size: 13px;
-    letter-spacing: 0.1em;
-    display: inline-block;
-    padding: 10px 15px;
-    margin-top: 25px;
-    color: #ffffff;
-    border-radius: 4px;
-    background-color: #0061A0;
-    transition: color 0.2s ease, background-color 0.2s ease
-  }
-
-  .challenges-slider .slider-utility a, .featured_challenge .challenge-callout a {
-    border-radius: 4px;
-  }
-
-  p.instructional-message {
-    font-size: 12px;
-  }
-
-  .copy a:hover, .dashboard-table a:hover, .participant a:hover, .section-title .description a:hover, .section-title .subtitle a:hover {
-    text-decoration: underline;
-  }
-
-  /* Center Challenge Cards -kbb */
-  .challenges-grid {
-    justify-content: space-around;
-  }
-
-  .company-callout .callout-container .blurb {
-    font-size: 17px;
-  }
-
-  .nweiBrand {
-    text-align: center;
-    margin-top: 48px;
-    margin-bottom: 18px;
-  }
-
-  .nweiLogoAbout {
-    width: 100%;
-    max-width: 250px;
-    height: auto;
-  }</style>
+	<title>2020年メットライフEcoChallenge - 地域社会</title>
+	<link href="../assets/stylesheets/application.css" media="all" rel="stylesheet">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="a#ffffff" name="theme-color">
+	<meta content="GU,PR,US,VI" name="location-countries">
+	<meta content="noindex" name="robots">
+	<link href="/site.webmanifest" rel="manifest">
+	<meta content="#134b61" name="msapplication-TileColor">
+	<meta content="#134b61" name="theme-color">
+	<link href="/manifest.json" rel="manifest">
+	<link href="/safari-pinned-tab.svg" rel="mask-icon">
 </head>
-
-<body
-        class="layout-event"
->
-
-<header class="global-header">
-  <nav class="user-nav"></nav>
-</header>
-
-<div class="event-header ">
-  <div class="event-info" style="">
-    <div class="subtitle"><a href="https://metlife.ecochallenge.org/about/event-info"><div class="logo"><img src="../assets/images/logo.jpg"/></div></a></div>
-    <div class="title"><a href="http://metlife.ecochallenge.org/">2019�N  ���b�g���C�t �G�R�`�������W</a></div>
-    <div class="event-date-range" data-date-range=""><span data-date-range-start>2019�N4��24��</span> <span> - </span> <span data-date-range-end>5��10��</span></div>
-    <div id="regPassBlock"><a class="outlined regNew" href="https://metlife.ecochallenge.org/users/join">���C�u�o�^ (�p��)</a><p id="greenImpact">�C�x���g�̃p�X���[�h: greenimpact</p>
-    </div>
-  </div>
-  <nav class="event-nav navNew">
-    <ul>
-      <li><a href="../">�ڍ�</a></li>
-      <li><a href="../points.html">�v�_</a></li>
-      <li><a href="../challenges.html">�ۑ�</a></li>
-    </ul>
-  </nav>
-</div>
-
-
-<section class="bg-spectrum spectrum08">
-  <div class="container">
-    <header class="section-title">
-      <div class="icon">
-        <svg class="border" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 46">
-          <circle r="22.5" cx="23" cy="23" fill="none"></circle>
-        </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 46">
-          <path d="M22.5 24.9c0-1.3 1.1-2.4 2.4-2.4h6.4v-5.6c0-2.1-1.7-3.8-3.8-3.8H14.1c-2.1 0-3.8 1.7-3.8 3.8v8c0 2.1 1.7 3.8 3.8 3.8h2.1v4.6l4.6-4.6h1.8v-3.8z"
-                fill="none"/>
-          <path d="M24.9 22.5h8.5c1.3 0 2.4 1.1 2.4 2.4v5c0 1.3-1.1 2.4-2.4 2.4h-1.3v2.9l-2.9-2.9h-4.3c-1.3 0-2.4-1.1-2.4-2.4v-5c0-1.3 1.1-2.4 2.4-2.4"
-                fill="#fff"/>
-        </svg>
-
-      </div>
-      <h1 class="title">�n��Љ�</h1><a class="subtitle medium" href="/challenges.html">���ׂẴ`�������W�ɖ߂�</a><p class="description uppercase">���S�Ȓn��Љ�́A���S�Ȓn���ɕK�v�ł��B</p>
-      <p class="description">�n��Љ�̃X�P�[���ł͂��΂��΁A�W�c�s���̗͂�����ɖ��m�Ɍ��邱�Ƃ��ł��܂��B�ߏ��A���A�s�s�ł́A�������̓C���t���Ɗ֌W���̗����łȂ����Ă��܂��B�T�|�[�g�������A�Ɨ������n��Љ�����邱�Ƃ��������̗�������𑁂������A����Ɏ����\�Ȑ������@�ɑO�i�����Ă���܂��B</p>
-      <div class="challenge-resource"><a class="button-outlined" target="_blank"
-           href="https://ecochallenge.org/wp-content/uploads/2017/03/2017-MetLife-EcoChallenge-Resources_Community.pdf">����Ɋw��</a></div>
-      <div class="challenge-sponsors">
-      </div>
-    </header>
-
-    <nav class="challenge-actions-list">
-      <ul>
-        <li class="action-card"
-            data-participant-action
-            data-action="4559"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">�V�F�A�����O�G�R�m�~�[���x������</h3>
-                <p data-description>���͉Ƒ��A�F�B�A�ߏ��ƃV�F�A�����O�G�R�m�~�[�����A�܂��͋��L���܂��B</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4559">����Ɋw��</a><ul class="dropdown" data-dropdown="resource-links-4559">
-                    <li>�A�N�V���� ���\�[�X</li>
-                    <li><a href="http://www.thepeoplewhoshare.com/blog/what-is-the-sharing-economy/" target="_blank">�V�F�A�����O�G�R�m�~�[�Ƃ́H</a></li>
-                    <li><a href="https://www.un.org/sustainabledevelopment/poverty/" target="_blank">UN SDG 1�F�n���[��</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=QX3M8Ka9vUA" target="_blank">��3���Y�Ɗv���F���{�I�ŐV�����V�F�A�����O�G�R�m�~�[</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>�`�������W�ł��łɂ��̃A�N�V�������������Ă��܂��B�A�N�V��������������ƁA���_�������\��������܂��B�{���ɂ�肽���ł����H</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>�f�C���[�`�������W</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">�`�������W���x���F</p>
-                    <p style="margin: 11px 0; font-size: 13px">�G�R�v��</p>
-                    <p style="text-transform: none;">�`�������W���x���́A�A�N�V���������Ɋւ�鎞�ԁA��p�A�m���A�X�L���Ƃ���4�v�f�Ō��܂�܂��B�Q���҂ɂ���Ă����̗v�f�͂��܂��܂�������܂��񂪁A�`�������W���x���͂��Ȃ��̐����ƖڕW�ɍœK�ȃA�N�V������I�Ԃ̂ɖ𗧂��܂��B</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4560"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">�ߏ��̐l�����ɉ</h3>
-                <p data-description>���͖���(___) �l�̐V�����ߏ��̐l�����ɉ�܂��B</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4560">����Ɋw��</a><ul class="dropdown" data-dropdown="resource-links-4560">
-                    <li>�A�N�V���� ���\�[�X</li>
-                    <li><a href="https://www.moving.com/tips/simple-tips-on-how-to-meet-your-neighbors/" target="_blank">�ߏ��̐l�����ɉ���@�F�K��̗ǂ��X�^�[�g��؂邽�߂̃V���v���ȃq���g</a></li>
-                    <li><a href="http://www.yesmagazine.org/happiness/soup-night-a-neighborhood-revolution-20160107"
-                         target="_blank">�X�[�v��̒��̋ߏ��v��</a></li>
-                    <li><a href="https://www.theatlantic.com/national/archive/2015/01/know-thy-neighbor-reduce-gun-violence/384598/"
-                         target="_blank">�e���˂����炷���߂ɁA�ߏ��̐l������m��Ȃ���</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>�`�������W�ł��łɂ��̃A�N�V�������������Ă��܂��B�A�N�V��������������ƁA���_�������\��������܂��B�{���ɂ�肽���ł����H</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>�f�C���[�`�������W</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">�`�������W���x���F</p>
-                    <p style="margin: 11px 0; font-size: 13px">�G�R�w�K��</p>
-                    <p style="text-transform: none;">�`�������W���x���́A�A�N�V���������Ɋւ�鎞�ԁA��p�A�m���A�X�L���Ƃ���4�v�f�Ō��܂�܂��B�Q���҂ɂ���Ă����̗v�f�͂��܂��܂�������܂��񂪁A�`�������W���x���͂��Ȃ��̐����ƖڕW�ɍœK�ȃA�N�V������I�Ԃ̂ɖ𗧂��܂��B</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4679"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">�������̃O���[���C���p�N�g�����o�[�ɂȂ�</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>���̓��b�g���C�t�̃O���[���R�~���j�e�B�ɎQ�����ċC�S�̒ʂ��鑼�̓����ƂȂ���A�G�R�`�������W�̂悤�Ȋy�����C�x���g�ɎQ������@��𓾂܂��B���̃��\�[�X�����N���N���b�N���ĎQ�����Ă��������B</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4679">����Ɋw��</a><ul class="dropdown" data-dropdown="resource-links-4679">
-                    <li>�A�N�V���� ���\�[�X</li>
-                    <li><a href="https://my.metlife.com/sites/gogreen/Lists/Become%20a%20Green%20Impact%20Member/NewForm.aspx"
-                         target="_blank">���b�g���C�t�̃O���[���C���p�N�g�R�~���j�e�B�ɎQ������</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>�`�������W�ł��łɂ��̃A�N�V�������������Ă��܂��B�A�N�V��������������ƁA���_�������\��������܂��B�{���ɂ�肽���ł����H</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>�����^�C�� �`�������W</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">�`�������W���x���F</p>
-                    <p style="margin: 11px 0; font-size: 13px">�G�R�v��</p>
-                    <p style="text-transform: none;">�`�������W���x���́A�A�N�V���������Ɋւ�鎞�ԁA��p�A�m���A�X�L���Ƃ���4�v�f�Ō��܂�܂��B�Q���҂ɂ���Ă����̗v�f�͂��܂��܂�������܂��񂪁A�`�������W���x���͂��Ȃ��̐����ƖڕW�ɍœK�ȃA�N�V������I�Ԃ̂ɖ𗧂��܂��B</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4561"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">���̐l������������</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>���͖����A������K�v�Ƃ��Ă���(___)�l�̐l�������܂��B</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4561">����Ɋw��</a><ul class="dropdown" data-dropdown="resource-links-4561">
-                    <li>�A�N�V���� ���\�[�X</li>
-                    <li><a href="http://www.yesmagazine.org/issues/50-solutions/the-fix-it-shop-where-neighbors-repair-your-clothes-and-electronics-20161220"
-                         target="_blank">�ߏ��̐l����������d�����i�𒼂���C���X</a></li>
-                    <li><a href="https://www.psychologytoday.com/us/blog/darwins-subterranean-world/201704/helping-your-neighbor"
-                         target="_blank">�ߏ���������</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>�`�������W�ł��łɂ��̃A�N�V�������������Ă��܂��B�A�N�V��������������ƁA���_�������\��������܂��B�{���ɂ�肽���ł����H</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>�f�C���[�`�������W</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">�`�������W���x���F</p>
-                    <p style="margin: 11px 0; font-size: 13px">�G�R�w�K��</p>
-                    <p style="text-transform: none;">�`�������W���x���́A�A�N�V���������Ɋւ�鎞�ԁA��p�A�m���A�X�L���Ƃ���4�v�f�Ō��܂�܂��B�Q���҂ɂ���Ă����̗v�f�͂��܂��܂�������܂��񂪁A�`�������W���x���͂��Ȃ��̐����ƖڕW�ɍœK�ȃA�N�V������I�Ԃ̂ɖ𗧂��܂��B</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4562"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">���l�Ŏ����\�Ȏ��Ƃ��x������</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>���͑��l�ȁi�L�F�l��A�����ALGBTQI�R�~���j�e�B��ޖ��R�l���^�c����j���ƂƊ��I�Ɏ����\�Ȏ��H���s�����Ƃ��x�����܂��B���I�ȗv�f�����b�g���C�t�ł̒��B����ɐD�荞�݁A���l�ȃT�v���C���[��g�ݍ��ށu1�̃��[���v���󂯓���܂��B</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4562">����Ɋw��</a><ul class="dropdown" data-dropdown="resource-links-4562">
-                    <li>�A�N�V���� ���\�[�X</li>
-                    <li><a href="https://www.metlife.com/corporate-responsibility/environment/our-environmental-priorities/"
-                         target="_blank">���b�g���C�t�̐ӔC���钲�B</a></li>
-                    <li><a href="https://my.metlife.com/en/us/tools/procurement/Pages/Supplier-Diversity.aspx"
-                         target="_blank">���b�g���C�t�̃T�v���C���[�g�ݓ���ƊJ��</a></li>
-                    <li><a href="https://my.metlife.com/en/us/tools/procurement/Documents/SID/Rule_of_One.pdf#search=rule%20of%20one"
-                         target="_blank">���b�g���C�t�̃��� �A�N�Z�X �t�H�[���̃��[��</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>�`�������W�ł��łɂ��̃A�N�V�������������Ă��܂��B�A�N�V��������������ƁA���_�������\��������܂��B�{���ɂ�肽���ł����H</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>�����^�C�� �`�������W</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">�`�������W���x���F</p>
-                    <p style="margin: 11px 0; font-size: 13px">�G�R�v��</p>
-                    <p style="text-transform: none;">�`�������W���x���́A�A�N�V���������Ɋւ�鎞�ԁA��p�A�m���A�X�L���Ƃ���4�v�f�Ō��܂�܂��B�Q���҂ɂ���Ă����̗v�f�͂��܂��܂�������܂��񂪁A�`�������W���x���͂��Ȃ��̐����ƖڕW�ɍœK�ȃA�N�V������I�Ԃ̂ɖ𗧂��܂��B</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4668"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">�����̃`�������W��F������</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>���̓��b�g���C�t �Z���^�[�X�e�[�W�̃|�[�^���T�C�g������A�܂��̓��b�g���C�t�̉��l�𐶊��ɂ����炷�菕����������A���ɗǂ��e����^�����肵�Ă��ꂽ�����ɁA�o�b�W��|�C���g�����^���܂��B���̓`�������W���Ԓ��A�����Œ��l��F�߂܂��B</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4668">����Ɋw��</a><ul class="dropdown" data-dropdown="resource-links-4668">
-                    <li>�A�N�V���� ���\�[�X</li>
-                    <li><a href="https://www.metlifecenterstage.com/metlifecenterstage/homePage.do#launch/recognition"
-                         target="_blank">�����̃`�������W��F������</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>�`�������W�ł��łɂ��̃A�N�V�������������Ă��܂��B�A�N�V��������������ƁA���_�������\��������܂��B�{���ɂ�肽���ł����H</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>�f�C���[�`�������W</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">�`�������W���x���F</p>
-                    <p style="margin: 11px 0; font-size: 13px">�G�R�w�K��</p>
-                    <p style="text-transform: none;">�`�������W���x���́A�A�N�V���������Ɋւ�鎞�ԁA��p�A�m���A�X�L���Ƃ���4�v�f�Ō��܂�܂��B�Q���҂ɂ���Ă����̗v�f�͂��܂��܂�������܂��񂪁A�`�������W���x���͂��Ȃ��̐����ƖڕW�ɍœK�ȃA�N�V������I�Ԃ̂ɖ𗧂��܂��B</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4564"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">�n��Ń{�����e�B�A����������</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>���̓`�������W���Ԓ��A�n���(___) ���ԃ{�����e�B�A�������s���܂��B���b�g���C�t�̃{�����e�B�A�����v���O�����ƁA�{�����e�B�A�@��̏ڍׂ͂�����ł������������B</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4564">����Ɋw��</a><ul class="dropdown" data-dropdown="resource-links-4564">
-                    <li>�A�N�V���� ���\�[�X</li>
-                    <li><a href="https://www.volunteermatch.org/" target="_blank">�{�����e�B�A�}�b�`</a></li>
-                    <li><a href="http://www.createthegood.org" target="_blank">�ǂ����Ƃ�n��o��</a></li>
-                    <li><a href="https://my.metlife.com/teams/MetLifeFoundation/SitePages/Volunteering%20and%20Matching%20Gifts.aspx"
-                         target="_blank">���b�g���C�t����F�{�����e�B�A����</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>�`�������W�ł��łɂ��̃A�N�V�������������Ă��܂��B�A�N�V��������������ƁA���_�������\��������܂��B�{���ɂ�肽���ł����H</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>�����^�C�� �`�������W</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">�`�������W���x���F</p>
-                    <p style="margin: 11px 0; font-size: 13px">�G�R�v��</p>
-                    <p style="text-transform: none;">�`�������W���x���́A�A�N�V���������Ɋւ�鎞�ԁA��p�A�m���A�X�L���Ƃ���4�v�f�Ō��܂�܂��B�Q���҂ɂ���Ă����̗v�f�͂��܂��܂�������܂��񂪁A�`�������W���x���͂��Ȃ��̐����ƖڕW�ɍœK�ȃA�N�V������I�Ԃ̂ɖ𗧂��܂��B</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4666"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">���b�g���C�t�̊��`�����s�I���ɂȂ�</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>���̓��b�g���C�t �}�C���[�j���O �|�[�^���ɃA�N�Z�X���A���w�K�`�����s�I���R�[�X�A�܂��͎����\���̃g�s�b�N�ɏœ_���i����e���[�j���O�A�L���ASkillsSoft�̖{�ATed-Talk����u���܂��B���͂��̃X�L���Ɛ헪���g���A�E��ł̕��ׂ����炵�A�����Ƀ|�W�e�B�u�ȑI��������悤��܂��܂��B</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4666">����Ɋw��</a><ul class="dropdown" data-dropdown="resource-links-4666">
-                    <li>�A�N�V���� ���\�[�X</li>
-                    <li><a href="https://my.metlife.com/en/learning/Pages/home.aspx" target="_blank">���b�g���C�t�̃}�C ���[�j���O</a></li>
-                    <li><a href="https://performancemanager8.successfactors.com/sf/learning?destUrl=https%3A%2F%2Fmetlife.plateau.com%2flearning%2fuser%2fdeeplink_redirect%2ejsp%3flinkId%3dITEM_DETAILS%26componentID%3dUS00003717%26componentTypeID%3dCRSE%26revisionDate%3d1552078080000%26fromSF%3dY&amp;company=mlprod&amp;_s.crb=EKZorw4%252bYIPMobQ7xDc638keikg%253d"
-                         target="_blank">���`�����s�I���w�K�R�[�X���W���[�� 1</a></li>
-                    <li><a href="https://degreed.com/account/login?returnUrl=%2Fpathway%2F4o97gj45pn%3Fpath%3Denvironmental-champion-certification"
-                         target="_blank">���`�����s�I���ւ̓� </a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>�`�������W�ł��łɂ��̃A�N�V�������������Ă��܂��B�A�N�V��������������ƁA���_�������\��������܂��B�{���ɂ�肽���ł����H</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>�����^�C�� �`�������W</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">�`�������W���x���F</p>
-                    <p style="margin: 11px 0; font-size: 13px">�G�R���[�_�[</p>
-                    <p style="text-transform: none;">�`�������W���x���́A�A�N�V���������Ɋւ�鎞�ԁA��p�A�m���A�X�L���Ƃ���4�v�f�Ō��܂�܂��B�Q���҂ɂ���Ă����̗v�f�͂��܂��܂�������܂��񂪁A�`�������W���x���͂��Ȃ��̐����ƖڕW�ɍœK�ȃA�N�V������I�Ԃ̂ɖ𗧂��܂��B</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4565"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">������܂��͒n��̃O���[�� �`�[���ɎQ������</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>���͒�����܂��͒n��̃O���[�� �`�[���ɎQ�����܂��B</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4565">����Ɋw��</a><ul class="dropdown" data-dropdown="resource-links-4565">
-                    <li>�A�N�V���� ���\�[�X</li>
-                    <li><a href="https://www.comstocksmag.com/commentary/5-reasons-join-your-neighborhood-association"
-                         target="_blank">������ɎQ������5�̗��R</a></li>
-                    <li><a href="https://bit.ly/2LQxjW5" target="_blank">�A�����J�̍ł����S�Ȓn��Љ��������</a></li>
-                    <li><a href="https://my.metlife.com/sites/gogreen/SitePages/Meet%20Our%20Green%20Team.aspx"
-                         target="_blank">���b�g���C�t�̃O���[���`�[��</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>�`�������W�ł��łɂ��̃A�N�V�������������Ă��܂��B�A�N�V��������������ƁA���_�������\��������܂��B�{���ɂ�肽���ł����H</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>�����^�C�� �`�������W</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">�`�������W���x���F</p>
-                    <p style="margin: 11px 0; font-size: 13px">�G�R�v��</p>
-                    <p style="text-transform: none;">�`�������W���x���́A�A�N�V���������Ɋւ�鎞�ԁA��p�A�m���A�X�L���Ƃ���4�v�f�Ō��܂�܂��B�Q���҂ɂ���Ă����̗v�f�͂��܂��܂�������܂��񂪁A�`�������W���x���͂��Ȃ��̐����ƖڕW�ɍœK�ȃA�N�V������I�Ԃ̂ɖ𗧂��܂��B</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4566"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">��Z���n����x������</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>���͒񋟃����N�̃��\�[�X���g���A(___)�����₵�ĉߋ��Ɏ��̒n��ɏZ��ł�����Z���l���ɂ��ĂƁA�������邻�̂悤�Ȓn����x��������@���w�т܂��B</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4566">����Ɋw��</a><ul class="dropdown" data-dropdown="resource-links-4566">
-                    <li>�A�N�V���� ���\�[�X</li>
-                    <li><a href="https://native-land.ca" target="_blank">���E�I�Ȑ�Z�����l��</a></li>
-                    <li><a href="http://www.yesmagazine.org/issues/affordable-housing/posting-your-hike-on-instagram-now-you-can-tag-your-locations-indigenous-name-20180523"
-                         target="_blank">�n�C�L���O�ʐ^���C���X�^�O�����ɓ��e���܂����H���������̏ꏊ�̐�Z�����̖��O�Ƀ^�O��t���邱�Ƃ��ł��܂�</a></li>
-                    <li><a href="https://everydayfeminism.com/2014/08/honor-native-americans-without-appropriating/"
-                         target="_blank">�������̕����ɉ��킹�邱�ƂȂ��A�l�C�e�B�u�A�����J�����̎^����4�̕��@</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>�`�������W�ł��łɂ��̃A�N�V�������������Ă��܂��B�A�N�V��������������ƁA���_�������\��������܂��B�{���ɂ�肽���ł����H</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>�����^�C�� �`�������W</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">�`�������W���x���F</p>
-                    <p style="margin: 11px 0; font-size: 13px">�G�R�w�K��</p>
-                    <p style="text-transform: none;">�`�������W���x���́A�A�N�V���������Ɋւ�鎞�ԁA��p�A�m���A�X�L���Ƃ���4�v�f�Ō��܂�܂��B�Q���҂ɂ���Ă����̗v�f�͂��܂��܂�������܂��񂪁A�`�������W���x���͂��Ȃ��̐����ƖڕW�ɍœK�ȃA�N�V������I�Ԃ̂ɖ𗧂��܂��B</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4567"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">��c���c�̂̂��߂Ɏ������W�߂�</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>���͊���c���c�̂̂��߂Ɏ����𒲒B���܂��B</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4567">����Ɋw��</a><ul class="dropdown" data-dropdown="resource-links-4567">
-                    <li>�A�N�V���� ���\�[�X</li>
-                    <li><a href="https://blog.ted.com/how-to-pick-the-charity-thats-right-for-you/" target="_blank">���Ȃ��ɓK�؂ȃ`�����e�B�[�̑I�ѕ�</a></li>
-                    <li><a href="https://www.nytimes.com/2013/11/08/giving/how-to-choose-a-charity-wisely.html"
-                         target="_blank">������t��I��</a></li>
-                    <li><a href="https://www.charitynavigator.org/" target="_blank">�`�����e�B�[�i�r�Q�[�^�[</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>�`�������W�ł��łɂ��̃A�N�V�������������Ă��܂��B�A�N�V��������������ƁA���_�������\��������܂��B�{���ɂ�肽���ł����H</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>�����^�C�� �`�������W</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">�`�������W���x���F</p>
-                    <p style="margin: 11px 0; font-size: 13px">�G�R���[�_�[</p>
-                    <p style="text-transform: none;">�`�������W���x���́A�A�N�V���������Ɋւ�鎞�ԁA��p�A�m���A�X�L���Ƃ���4�v�f�Ō��܂�܂��B�Q���҂ɂ���Ă����̗v�f�͂��܂��܂�������܂��񂪁A�`�������W���x���͂��Ȃ��̐����ƖڕW�ɍœK�ȃA�N�V������I�Ԃ̂ɖ𗧂��܂��B</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4568"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">�z�[���p�[�e�B�[����Â���</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>����(___) �l�̗F�B�E�����ƃz�[���p�[�e�B�[����Â��A���ɂƂ��đ�؂Ȋ����ɂ��Ẳf����ς邩�A�Q�X�g�X�s�[�J�[���Љ�܂��B</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4568">����Ɋw��</a><ul class="dropdown" data-dropdown="resource-links-4568">
-                    <li>�A�N�V���� ���\�[�X</li>
-                    <li><a href="http://www.earthleaders.org/center-programs/home-eco-parties/" target="_blank">�n�����[�_�[�V�b�v�̂��߂̃Z���^�[ - �G�R�z�[���p�[�e�B�[</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>�`�������W�ł��łɂ��̃A�N�V�������������Ă��܂��B�A�N�V��������������ƁA���_�������\��������܂��B�{���ɂ�肽���ł����H</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>�����^�C�� �`�������W</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">�`�������W���x���F</p>
-                    <p style="margin: 11px 0; font-size: 13px">�G�R���[�_�[</p>
-                    <p style="text-transform: none;">�`�������W���x���́A�A�N�V���������Ɋւ�鎞�ԁA��p�A�m���A�X�L���Ƃ���4�v�f�Ō��܂�܂��B�Q���҂ɂ���Ă����̗v�f�͂��܂��܂�������܂��񂪁A�`�������W���x���͂��Ȃ��̐����ƖڕW�ɍœK�ȃA�N�V������I�Ԃ̂ɖ𗧂��܂��B</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4569"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">�F�B�ɓ`����</h3>
-                <p data-description>���͎����ɂƂ��čł���؂Ȓn��ł̎Љ�I�܂��͊��I�Ȗ������߁A����(___)�l�̗F�B�ɂ��̖��ɂ��ē`���܂��B</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4569">����Ɋw��</a><ul class="dropdown" data-dropdown="resource-links-4569">
-                    <li>�A�N�V���� ���\�[�X</li>
-                    <li><a href="https://www.un.org/sustainabledevelopment/cities/" target="_blank">UN SDG 11�F�����\�Ȓ��ƒn��Љ�</a></li>
-                    <li><a href="https://nbs.net/p/make-it-personal-how-to-get-people-to-care-about-susta-db82e0a8-5f54-48c6-8e6a-b29f08d2d127"
-                         target="_blank">�l�I�Ȃ��̂ɂ���F�l�X�������\�����C�����悤�ɂ�����@</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>�`�������W�ł��łɂ��̃A�N�V�������������Ă��܂��B�A�N�V��������������ƁA���_�������\��������܂��B�{���ɂ�肽���ł����H</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>�f�C���[�`�������W</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">�`�������W���x���F</p>
-                    <p style="margin: 11px 0; font-size: 13px">�G�R�w�K��</p>
-                    <p style="text-transform: none;">�`�������W���x���́A�A�N�V���������Ɋւ�鎞�ԁA��p�A�m���A�X�L���Ƃ���4�v�f�Ō��܂�܂��B�Q���҂ɂ���Ă����̗v�f�͂��܂��܂�������܂��񂪁A�`�������W���x���͂��Ȃ��̐����ƖڕW�ɍœK�ȃA�N�V������I�Ԃ̂ɖ𗧂��܂��B</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4570"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">��c���c�̂ƂȂ���</h3>
-                <p data-description>���͒n��̊��I�������͂��̑��̔�c���c�̂ƂȂ���A�Q�����@�⃁���o�[�ɂȂ���@�������܂��B</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4570">����Ɋw��</a><ul class="dropdown" data-dropdown="resource-links-4570">
-                    <li>�A�N�V���� ���\�[�X</li>
-                    <li><a href="https://www.volunteermatch.org/" target="_blank">�{�����e�B�A�}�b�`</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>�`�������W�ł��łɂ��̃A�N�V�������������Ă��܂��B�A�N�V��������������ƁA���_�������\��������܂��B�{���ɂ�肽���ł����H</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>�����^�C�� �`�������W</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">�`�������W���x���F</p>
-                    <p style="margin: 11px 0; font-size: 13px">�G�R�w�K��</p>
-                    <p style="text-transform: none;">�`�������W���x���́A�A�N�V���������Ɋւ�鎞�ԁA��p�A�m���A�X�L���Ƃ���4�v�f�Ō��܂�܂��B�Q���҂ɂ���Ă����̗v�f�͂��܂��܂�������܂��񂪁A�`�������W���x���͂��Ȃ��̐����ƖڕW�ɍœK�ȃA�N�V������I�Ԃ̂ɖ𗧂��܂��B</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4667"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">�ЊQ�΍�v��𗧂Ă�</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>���͍ЊQ�΍�v����Ƒ��A�ߏ��A�n��̃����o�[�Ɨ��āA���R�ЊQ�̂Ƃ��̈��S�����m���Ȃ��̂ɂ��܂��B���̌v��̈�Ƃ��āA���A�ۑ��H�A��A�����d���A���}���u�Z�b�g�Ȃǋً}�p�̃A�C�e�����������h�Ѓo�b�O��ۊǂ��邱�Ƃ��ǂ��ł��傤�B</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4667">����Ɋw��</a><ul class="dropdown" data-dropdown="resource-links-4667">
-                    <li>�A�N�V���� ���\�[�X</li>
-                    <li><a href="http://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan"
-                         target="_blank">�ً}���ɔ�������@</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>�`�������W�ł��łɂ��̃A�N�V�������������Ă��܂��B�A�N�V��������������ƁA���_�������\��������܂��B�{���ɂ�肽���ł����H</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>�����^�C�� �`�������W</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">�`�������W���x���F</p>
-                    <p style="margin: 11px 0; font-size: 13px">�G�R���[�_�[</p>
-                    <p style="text-transform: none;">�`�������W���x���́A�A�N�V���������Ɋւ�鎞�ԁA��p�A�m���A�X�L���Ƃ���4�v�f�Ō��܂�܂��B�Q���҂ɂ���Ă����̗v�f�͂��܂��܂�������܂��񂪁A�`�������W���x���͂��Ȃ��̐����ƖڕW�ɍœK�ȃA�N�V������I�Ԃ̂ɖ𗧂��܂��B</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-      </ul>
-    </nav>
-
-
-    <p class="align-center"><a class="back-link" href="/challenges.html">���ׂẴ`�������W�ɖ߂�</a></p>
-  </div>
-</section>
-
-<footer class="global-footer">
-  <section class="bg-neutral20">
-
-  </section>
-  <section class="bg-neutral100">
-    <div class="content">
-      <div class="section">
-        <div class="block">
-          <div>
-            <div class="subheading">�������̃X�g�[���[</div>
-            <p>150�N�ԁA���b�g���C�t�͗D�Ǌ�Ǝs���Ƃ��ċƖ����s���Ă��܂����B���N�ɂ킽���z���̈�Y�̏�ɐ��藧���A�������͐��E���̐l�X�A�Ƒ��A�n��Љ���������̖ڕW��B�����A�l�������]�Ȑ܂����z���邨��`�������������関�����m���ɂ��邱�ƂɃR�~�b�g���Ă��܂��B</p>
-          </div>
-
-        </div>
-        <div class="block">
-          <div>
-            <div class="subheading">���⍇��</div>
-            <div>MetLife, Inc.<br>200 Park Avenue<br>New York, NY 10166<br>gogreen@metlife.com</div>
-            <div class="support-link"><a href="mailto:support@ecochallenge.org">support@ecochallenge.org</a></div>
-          </div>
-
-          <div>
-          </div>
-
-        </div>
-      </div>
-      <div class="section logos">
-        <div class="logo"><img src="../assets/images/logo.jpg"/> <a class="link-primary" href="https://metlife.ecochallenge.org/about/event-info">��Î҂ɂ���</a></div>
-      </div>
-
-    </div>
-  </section>
-  <section class="bg-neutral120">
-    <div class="bottom">
-      <div class="align-left"><span class="colophon">&copy; 2016-2019 Northwest Earth Institute</span></div>
-      <div class="align-right"><a href="https://ecochallenge.org/wp-content/uploads/2016/07/NWEI-Privacy-Policy_03.11.17.pdf" target="_blank">�v���C�o�V�[�|���V�[</a> <a href="mailto:support@ecochallenge.org">�e�N�j�J���T�|�[�g</a> <a href="https://ecochallenge.org/donations/donate-to-ecochallenge/" target="_blank" class="outlined">��t</a></div>
-    </div>
-  </section>
-
-</footer>
-
-
+<body class="layout-event" data-gtm-page-name="" data-gtm-subdomain="metlife">
+	<header class="global-header">
+		<nav class="user-nav"></nav>
+	</header>
+	<div class="event-header">
+		<div class="event-info">
+			<div class="subtitle">
+				<a href="https://www.metlife.com/">
+				<div class="logo"><img src="../assets/images/metlife_eng_logo_rgb.jpg"/></div></a>
+			</div>
+			<div class="title">
+				<a href="http://metlife.ecochallenge.org">2020年メットライフEcoChallenge</a>
+			</div>
+			<div class="event-date-range" data-date-range="">
+				2020年10月19日～10月30日
+			</div>
+		</div>
+	</div>
+	<section class="bg-spectrum spectrum08">
+		<div class="container">
+			<header class="section-title">
+				<div class="icon">
+					<svg class="border" viewbox="0 0 46 46" xmlns="http://www.w3.org/2000/svg">
+					<circle cx="23" cy="23" fill="none" r="22.5"></circle></svg> <svg viewbox="0 0 46 46" xmlns="http://www.w3.org/2000/svg">
+					<path d="M22.5 24.9c0-1.3 1.1-2.4 2.4-2.4h6.4v-5.6c0-2.1-1.7-3.8-3.8-3.8H14.1c-2.1 0-3.8 1.7-3.8 3.8v8c0 2.1 1.7 3.8 3.8 3.8h2.1v4.6l4.6-4.6h1.8v-3.8z" fill="none"></path>
+					<path d="M24.9 22.5h8.5c1.3 0 2.4 1.1 2.4 2.4v5c0 1.3-1.1 2.4-2.4 2.4h-1.3v2.9l-2.9-2.9h-4.3c-1.3 0-2.4-1.1-2.4-2.4v-5c0-1.3 1.1-2.4 2.4-2.4" fill="#fff"></path></svg>
+				</div>
+				<h1 class="title">地域社会</h1><a class="subtitle medium" href="../challenges.html">すべてのアクションのカテゴリーに戻る</a>
+				<p class="description uppercase">健やかな地域社会は、健やかな地球にとって欠くことができません。</p>
+				<p class="description">地元の地域社会のレベルで見つめると、自分たちの行動がもたらす力をより明確に理解できることがあります。私たちは、同じ界隈や町や市に住む人たちと、インフラと人間関係の両方を通じてつながっています。お互いに支え合う地域社会を築くことで、レジリエンスを高め、サステナブルな生活のあり方へと前進できるようになります。</p>
+				<div class="challenge-resource">
+					<a class="button-outlined" href="https://ecochallenge.org/wp-content/uploads/2017/03/2017-MetLife-EcoChallenge-Resources_Community.pdf" target="_blank">詳細情報</a>
+				</div>
+				<div class="challenge-sponsors"></div>
+			</header>
+			<div class="filter-toggle-group closed">
+				<div class="form-divider" data-filter-toggle="">
+					<span class="rule"></span> <span class="text" data-filter-toggle="" data-filter-type="action"></span> <span class="rule"></span>
+				</div>
+				<form accept-charset="UTF-8" action="/challenges/community" class="form-search-filter form-field centered" data-search-filter="true" method="get">
+					<input name="utf8" type="hidden" value="&#x2713;">
+					<div class="filters centered">
+						<div class="select" data-filter="">
+							<select id="difficulty" name="difficulty">
+								<option value="">
+									難易度：
+								</option>
+								<option value="easy">
+									EcoLearner
+								</option>
+								<option value="medium">
+									EcoPro
+								</option>
+								<option value="difficult">
+									EcoLeader
+								</option>
+							</select>
+						</div>
+						<div class="select" data-filter="">
+							<select id="limit_kind" name="limit_kind">
+								<option value="">
+									頻度：
+								</option>
+								<option value="one_time">
+									単発
+								</option>
+								<option value="daily">
+									毎日
+								</option>
+							</select>
+						</div>
+					</div>
+					<div class="filters centered">
+						<span class="prompt">表示するアクション：</span> <label class="checkbox" data-filter=""><input id="is_customizable" name="is_customizable" type="checkbox" value="1"> <span class="toggle-indicator"></span> カスタマイズできるアクションのみ</label> <label class="checkbox" data-filter=""><input id="has_resources" name="has_resources" type="checkbox" value="1"> <span class="toggle-indicator"></span> リソースへのリンクがあるアクションのみ</label>
+					</div>
+					<div class="reset inactive">
+						<a href="/challenges/community">すべてのフィルタをクリア</a>
+					</div>
+				</form>
+			</div>
+			<nav class="challenge-actions-list">
+				<ul>
+					<li class="action-card" data-action="6855" data-api-path="https://metlife.ecochallenge.org/me/actions/6855/myself/selection" data-customizable="false" id="action-6855">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">シェアリング・エコノミーをサポートする</h3>
+									<p data-description="">家族や友人、近所の人々とのシェアリング・エコノミーを始める、または支援する。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6855">
+											<li>Action Resources:</li>
+											<li>
+												<a href="http://www.thepeoplewhoshare.com/blog/what-is-the-sharing-economy/" target="_blank">What Is the Sharing Economy?</a>
+											</li>
+											<li>
+												<a href="https://www.un.org/sustainabledevelopment/poverty/" target="_blank">UN SDG 1:No Poverty</a>
+											</li>
+											<li>
+												<a href="https://www.youtube.com/watch?v=QX3M8Ka9vUA" target="_blank">The Third Industrial Revolution:A Radical New Sharing Economy</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>毎日のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoPro</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6856" data-api-path="https://metlife.ecochallenge.org/me/actions/6856/myself/selection" data-customizable="true" id="action-6856">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">近所の人と知り合う</h3>
+									<p data-description="">バーチャルな手段を介して、またはソーシャル・ディスタンスを保ちながら、1日当たり（___）人の近所の人と新たに知り合いになる。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6856">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.moving.com/tips/simple-tips-on-how-to-meet-your-neighbors/" target="_blank">How to Meet Neighbors:Simple Tips for Getting Off on the Right Foot</a>
+											</li>
+											<li>
+												<a href="http://www.yesmagazine.org/happiness/soup-night-a-neighborhood-revolution-20160107" target="_blank">A Neighborhood Revolution in a Pot of Soup</a>
+											</li>
+											<li>
+												<a href="https://www.theatlantic.com/national/archive/2015/01/know-thy-neighbor-reduce-gun-violence/384598/" target="_blank">To Reduce Gun Violence, Know Thy Neighbor</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>毎日のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLearner</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6857" data-api-path="https://metlife.ecochallenge.org/me/actions/6857/myself/selection" data-customizable="false" id="action-6857">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">Our Green Impactメンバーになる</h3>
+									<p data-description="">メットライフのグリーン・コミュニティに参加して、同じ考えを持つ同僚と知り合い、EcoChallengeをはじめ楽しいイベントに参加する機会を利用する。以下のリソースのリンクをクリックして参加する。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6857">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://my.metlife.com/sites/gogreen/Lists/Become%20a%20Green%20Impact%20Member/NewForm.aspx" target="_blank">Join MetLife's Green Impact Community</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>単発のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoPro</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6858" data-api-path="https://metlife.ecochallenge.org/me/actions/6858/myself/selection" data-customizable="true" id="action-6858">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">人を助ける</h3>
+									<p data-description="">各地のソーシャル・ディスタンスのガイドラインに従いながら、サポートを必要としている人（___）人に毎日、助力の手を差し伸べる。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6858">
+											<li>Action Resources:</li>
+											<li>
+												<a href="http://www.yesmagazine.org/issues/50-solutions/the-fix-it-shop-where-neighbors-repair-your-clothes-and-electronics-20161220" target="_blank">The Fix-It Shop Where Neighbors Repair Your Clothes and Electronics</a>
+											</li>
+											<li>
+												<a href="https://www.psychologytoday.com/us/blog/darwins-subterranean-world/201704/helping-your-neighbor" target="_blank">Helping Your Neighbor</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>毎日のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLearner</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div
+																																								</li>
+					<li class="action-card" data-action="6859" data-api-path="https://metlife.ecochallenge.org/me/actions/6859/myself/selection" data-customizable="false" id="action-6859">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">多様な事業とサステナブルな事業をサポートする</h3>
+									<p data-description="">多様な事業（有色人種、女性、LGBTQIコミュニティ、退役軍人が所有者になっている事業）、および環境サステナビリティを実践している事業をサポートする。メットライフの業務で外部の業者から物資やサービスを調達する際は、環境要因を考慮に入れ、また多様なサプライヤを取り込むため「ルール・オブ・ワン」の原則を実践する。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6859">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.metlife.com/corporate-responsibility/environment/our-environmental-priorities/" target="_blank">MetLife Responsible Sourcing</a>
+											</li>
+											<li>
+												<a href="https://my.metlife.com/en/us/tools/procurement/Pages/Supplier-Diversity.aspx" target="_blank">MetLife Supplier Inclusion and Development</a>
+											</li>
+											<li>
+												<a href="https://my.metlife.com/en/us/tools/procurement/Documents/SID/Rule_of_One.pdf#search=rule%20of%20one" target="_blank">MetLife's Rule of One Access Form</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>単発のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoPro</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6860" data-api-path="https://metlife.ecochallenge.org/me/actions/6860/myself/selection" data-customizable="false" id="action-6860">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">同僚の功績を認める</h3>
+									<p data-description="">メットライフのCenter Stageポータルにアクセスして、メットライフのバリューの実践を助けてくれている同僚や環境保護の取り組みを推進している同僚にバッジまたはリワードのポイントを贈る。チャレンジ期間中、毎日少なくともひとりの功績を認める。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6860">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.metlifecenterstage.com/metlifecenterstage/homePage.do#launch/recognition" target="_blank">Recognize your Colleague</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>毎日のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLearner</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6861" data-api-path="https://metlife.ecochallenge.org/me/actions/6861/myself/selection" data-customizable="true" id="action-6861">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">地域社会でボランティアをする</h3>
+									<p data-description="">自分の地域社会で（___）時間、（バーチャルな方法で）ボランティアをすることで、高齢者や免疫力が低下している人、育児のサポートを利用できない人、パンデミックで仕事を失った人をはじめ、最も支援を必要としている人たちを助ける。メットライフの「90デイズ・オブ・ギビング」に参加し、以下のメットライフのボランティア・プログラムについて詳しく知る。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6861">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.volunteermatch.org/" target="_blank">VolunteerMatch</a>
+											</li>
+											<li>
+												<a href="http://www.createthegood.org" target="_blank">Create the Good</a>
+											</li>
+											<li>
+												<a href="https://my.metlife.com/en/Pages/Purpose/Volunteering-with-Purpose.aspx#popup1" target="_blank">MetLife Foundation:Volunteering</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>単発のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoPro</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6862" data-api-path="https://metlife.ecochallenge.org/me/actions/6862/myself/selection" data-customizable="false" id="action-6862">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">メットライフの環境保護チャンピオンになる</h3>
+									<p data-description="">メットライフのMyLearningポータルにアクセスして、「Environmental Learning Champion（環境ラーニング・チャンピオン）」コース（すべての言語で利用可）を受講したり、サステナビリティのトピックに特化した他のeラーニング、記事、SkillsSoftの書籍、Tedトークなどで学習する。習得したスキルと戦略を利用して、オフィスにおける自分の環境インパクトを低減し、建設的な選択を行うよう同僚に働きかける。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6862">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://my.metlife.com/en/learning/Pages/home.aspx" target="_blank">MetLife's MyLearning</a>
+											</li>
+											<li>
+												<a href="https://degreed.com/pathway/4o97gj45pn?path=environmental-champion-certification#/pathway" target="_blank">Environmental Champions Course</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>単発のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLeader</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6863" data-api-path="https://metlife.ecochallenge.org/me/actions/6863/myself/selection" data-customizable="false" id="action-6863">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">自治会・町内会などの地域住民組織やローカルのグリーン・チームに参加する</h3>
+									<p data-description="">自治会・町内会などの地域住民組織やローカルのグリーン・チームに参加する。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6863">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.comstocksmag.com/commentary/5-reasons-join-your-neighborhood-association" target="_blank">5 Reasons to Join Your Neighborhood Association</a>
+											</li>
+											<li>
+												<a href="https://bit.ly/2LQxjW5" target="_blank">Finding America's Healthiest Communities</a>
+											</li>
+											<li>
+												<a href="https://my.metlife.com/sites/gogreen/SitePages/Meet%20Our%20Green%20Team.aspx" target="_blank">MetLife's Green Teams</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>単発のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoPro</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6864" data-api-path="https://metlife.ecochallenge.org/me/actions/6864/myself/selection" data-customizable="true" id="action-6864">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">先住民コミュニティをサポートする</h3>
+									<p data-description="">自分の住む地域にかつて住んでいた先住民について（___）分間、学習し、現存する先住民コミュニティをサポートするために何ができるかを考える。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6864">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://native-land.ca" target="_blank">Native Populations Globally</a>
+											</li>
+											<li>
+												<a href="http://www.yesmagazine.org/issues/affordable-housing/posting-your-hike-on-instagram-now-you-can-tag-your-locations-indigenous-name-20180523" target="_blank">Posting Your Hike on Instagram?Now You Can Tag Your Location’s Indigenous Name</a>
+											</li>
+											<li>
+												<a href="https://everydayfeminism.com/2014/08/honor-native-americans-without-appropriating/" target="_blank">4 Ways To Honor Native Americans Without Appropriating Our Culture</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>単発のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLearner</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6865" data-api-path="https://metlife.ecochallenge.org/me/actions/6865/myself/selection" data-customizable="true" id="action-6865">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">非営利団体の資金集め活動に参加する</h3>
+									<p data-description="">環境保護に取り組んでいる非営利団体のための資金集めを行う。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6865">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://blog.ted.com/how-to-pick-the-charity-thats-right-for-you/" target="_blank">How to Pick the Charity that's Right for You</a>
+											</li>
+											<li>
+												<a href="https://www.nytimes.com/2013/11/08/giving/how-to-choose-a-charity-wisely.html" target="_blank">Choose a Charity Wisely</a>
+											</li>
+											<li>
+												<a href="https://www.charitynavigator.org/" target="_blank">Charity Navigator</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>単発のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLeader</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6866" data-api-path="https://metlife.ecochallenge.org/me/actions/6866/myself/selection" data-customizable="true" id="action-6866">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">バーチャルでのホームパーティーを主催する</h3>
+									<p data-description="">バーチャルでのパーティを開いて、自分が重要だと思う環境問題についての映画を見たり、ゲストスピーカーを招いたりする。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6866">
+											<li>Action Resources:</li>
+											<li>
+												<a href="http://www.earthleaders.org/center-programs/home-eco-parties/" target="_blank">Center for Earth Leadership - Home Eco-Party</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>単発のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLeader</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6867" data-api-path="https://metlife.ecochallenge.org/me/actions/6867/myself/selection" data-customizable="true" id="action-6867">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">友人に話す</h3>
+									<p data-description="">地域社会が抱えている社会問題や環境問題のなかで自分にとって最も重要なものを選び、その問題について毎日（___）人の友人に話す。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6867">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.un.org/sustainabledevelopment/cities/" target="_blank">UN SDG 11:Sustainable Cities and Communities</a>
+											</li>
+											<li>
+												<a href="https://nbs.net/p/make-it-personal-how-to-get-people-to-care-about-susta-db82e0a8-5f54-48c6-8e6a-b29f08d2d127" target="_blank">Make It Personal:How to Get People to Care about Sustainability</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>毎日のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLearner</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6916" data-api-path="https://metlife.ecochallenge.org/me/actions/6916/myself/selection" data-customizable="false" id="action-6916">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">手紙やメールを書く</h3>
+									<p data-description="">1日当たり（___）通の手紙やメールを書いて、環境保護政策や自分の信条に合った他の活動を擁護する。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6916">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.govtrack.us/congress/members" target="_blank">Find a Representative</a>
+											</li>
+											<li>
+												<a href="https://my.metlife.com/en/Pages/Purpose/Volunteering-with-Purpose.aspx#popup1" target="_blank">Volunteering with Purpose</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>毎日のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoPro</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6868" data-api-path="https://metlife.ecochallenge.org/me/actions/6868/myself/selection" data-customizable="true" id="action-6868">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">非営利団体とつながる</h3>
+									<p data-description="">地域の非営利団体や環境保護団体などとつながりを持ち、参加・加入の方法を調べる。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6868">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.volunteermatch.org/" target="_blank">VolunteerMatch</a>
+											</li>
+											<li>
+												<a href="https://www.motherjones.com/environment/2006/03/guide-environmental-non-profits/" target="_blank">A Guide to Environmental Non-Profits</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>単発のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLearner</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6869" data-api-path="https://metlife.ecochallenge.org/me/actions/6869/myself/selection" data-customizable="false" id="action-6869">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">災害対策計画を立てる</h3>
+									<p data-description="">家族、近所の人、地域社会のメンバーとともに災害対策計画を立てて、自然災害時の安全を確保する。この計画には、水、保存食、医薬品、懐中電灯、応急処置キットなどを入れた、非常持出袋の準備と保管が含まれる。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6869">
+											<li>Action Resources:</li>
+											<li>
+												<a href="http://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan" target="_blank">How to Prepare for Emergencies</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>単発のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLeader</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="8350" data-api-path="https://metlife.ecochallenge.org/me/actions/8350/myself/selection" data-customizable="true" id="action-8350">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">ソーシャル・ディスタンスを実践しながら他の人とつながる</h3>
+									<p data-description="">1日当たり少なくとも（___）人の人と電話やビデオチャットでつながって、今の困難な状況のなかでも自分と相手のメンタルヘルスや感情的ニーズを支え合う。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-8350">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://theconversation.com/social-distancing-comes-with-social-side-effects-heres-how-to-stay-connected-133677" target="_blank">Social distancing comes with social side effects – here’s how to stay connected</a>
+											</li>
+											<li>
+												<a href="https://www.theatlantic.com/science/archive/2020/03/social-distancing-coronavirus-videochat-facetime/608038/" target="_blank">Social Distancing Could Change Our Relationship With FaceTime</a>
+											</li>
+											<li>
+												<a href="https://www.health.harvard.edu/blog/how-to-not-practice-emotional-distancing-during-social-distancing-2020031719222" target="_blank">How to not practice emotional distancing during social distancing</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>毎日のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLeader</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="8351" data-api-path="https://metlife.ecochallenge.org/me/actions/8351/myself/selection" data-customizable="true" id="action-8351">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">地域社会を美しく保つ</h3>
+									<p data-description="">疾病予防管理センター（CDC）の感染予防のガイドラインを守りながら、毎日（___）個のごみを拾う。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-8351">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.litterati.org/#mission" target="_blank">Litterati</a>
+											</li>
+											<li>
+												<a href="https://www.plasticpollutioncoalition.org/blog/2016/8/19/10-reasons-to-pick-up-10-pieces-of-trash" target="_blank">10 Reasons to Pick Up 10 Pieces of Trash</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>毎日のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoPro</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</nav>
+			<p class="align-center"><a class="back-link" href="../challenges.html">すべてのアクションのカテゴリーに戻る</a></p>
+		</div>
+	</section>
+	<footer class="global-footer">
+		<section class="bg-neutral20"></section>
+		<section class="bg-neutral100">
+			<div class="content">
+				<div class="section">
+					<div class="block">
+						<div>
+							<div class="subheading">
+								沿革
+							</div>
+							<p>メットライフは150年にわたり、責任ある企業市民としての役割を果たしてきました。当社には長年にわたるエクセレンスの実績があります。当社は、世界各地の人々、ご家族、地域社会が、目標を達成し、人生のアップダウンをナビゲートできるよう支援し続け、確かな未来を築くことに取り組んでいます。</p>
+						</div>
+					</div>
+					<div class="block">
+						<div>
+							<div class="subheading">
+								お問い合わせ先
+							</div>
+							<div>
+								MetLife, Inc.<br/>200 Park Avenue<br/>New York, NY 10166<br/>gogreen@metlife.com
+							</div>
+							<div class="support-link">
+								<a href="mailto:support@ecochallenge.org">support@ecochallenge.org</a>
+							</div>
+						</div>
+						<div></div>
+					</div>
+				</div>
+				<div class="section logos">
+					<div class="logo">
+						<img src="../assets/images/metlife_eng_logo_rgb.jpg"/> <a class="link-primary" href="https://www.metlife.com/">イベント主催者について</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bg-neutral120">
+			<div class="bottom">
+				<div class="align-left">
+					<span class="colophon">© 2016-2020 Ecochallenge.org</span>
+				</div>
+				<div class="align-right">
+					<a href="http://ecochallenge.org/privacy-policy" target="_blank">プライバシーポリシー | 利用規約</a> <a href="mailto:support@ecochallenge.org">テクニカルサポート</a> <a class="outlined" data-donate-button="" data-donate-default="30" href="#">寄付</a>
+				</div>
+			</div>
+		</section>
+	</footer>
 </body>
 </html>
-

@@ -1,1868 +1,822 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:og="http://ogp.me/ns#"
-      xmlns:fb="https://www.facebook.com/2008/fbml">
+﻿<!DOCTYPE html>
+<html>
 <head>
-  <title>2019�N�@���b�g���C�t �G�R�`�������W - �C�x���g���</title>
-  <link rel="stylesheet" media="all" href="../assets/stylesheets/application.css" data-turbolinks-track="true"/>
-  <script src="../assets/javascripts/application.js" data-turbolinks-track="true"></script>
-  <meta name="action-cable-url" content="/cable"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#ffffff">
-  <meta name="robots" content="noindex">
-
-  <meta name="csrf-param" content="authenticity_token"/>
-  <meta name="csrf-token"
-        content="KHbHeVfyS683SdqR+FCO7sJ7ZY4xcTTw0pVqzKOm+O8rq5m3j4rBvFsjaMcCnf5Q5WK1AJ3YFK6e/wpdT5aVdg=="/><!-- default meta --><meta property="og:title"
-        content="Join the 2019 MetLife EcoChallenge, presented by MetLife Global Sustainability Team"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:description"
-        content="For two weeks, we challenge you to make eco-friendly choices to live a more sustainable lifestyle! Team up with colleagues from around the world and take action to create a healthier planet during the 2019 MetLife EcoChallenge. "/>
-  <meta property="og:image"
-        content="http://metlife.ecochallenge.org/system/events/org_logos/000/000/039/original/metlife_eng_logo_rgb.jpg?1552691799"/>
-  <meta property="og:url" content="http://metlife.ecochallenge.org"/>
-
-
-  <style type="text/css">nav.user-nav {
-    background-color: #0061A0;
-  }
-
-  .event-header .event-info {
-    margin: 10px 15px 30px;
-  }
-
-  a {
-    color: #007ABC;
-  }
-
-  .button-primary, .button-primary.dark:hover, .award-point-list a, .award-point-list a .points::after, .event-header .event-nav a.outlined:hover, .event-header .event-nav a.outlined:active, .hero .button:hover, .button-outlined:hover {
-    background-color: #007ABC;
-  }
-
-  .event-header .event-nav a.outlined, .button-outlined {
-    border-color: #007ABC;
-    color: #007ABC;
-  }
-
-  .event-check-ins .days li.action-complete, .legend li .action-complete.marker {
-    background-color: #0061A0;
-  }
-
-  .calendar .week a.action-complete {
-    color: #0061A0;
-    border-color: #0061A0;
-  }
-
-  .event-header .event-info .event-date-range {
-    border-top: 1px solid #0061A0;
-    border-bottom: 1px solid #0061A0;
-  }
-
-  h2, h3, h5, .participants-counter .title, .horizontal-section-title .title, .page-content .title {
-    color: #333333;
-  }
-
-  .participant-feed .dropdown-wrapper& gt
-
-  ;
-  .feed-filter {
-    color: #0061A0;
-  }
-
-  .form-button-icon.facebook, .form-button-icon.google {
-    display: none;
-  }
-
-  .hero .sign, .event-header .event-info .title a, h2, h3, h5, .participants-counter .title, .horizontal-section-title .title, .page-content .title, .placeholder .title, .challenges-slider .slider-header .title, .section-title .title, .team-hero .title, .team-detail-points .title, .dashboard-sidebar .team-summary .team-header .title, .dashboard-sidebar .user-summary .user-header .name, .impact-grid .impact-card .units, .dashboard-sidebar .impact-summary .challenge-impact .count, .participants-counter .count .digit-box span {
-    font-family: Georgia, Times;
-    font-weight: bold;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-  }
-
-  p {
-    font-size: 15px;
-  }
-
-  .global-footer .top .subheading {
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-    font-size: 14px;
-    color: white;
-  }
-
-  .global-footer .top .social a, .global-footer .top .col, .global-footer .top .description {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: normal;
-    font-size: 12px;
-  }
-
-  .hero .copy, .company-callout .callout-container .blurb, .placeholder p, .page-content, .participant-action-cards .card-container .description p, .awarded-points-list tr + tr td, .section-title .description, .participants-feed-full .copy {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  .placeholder p, .page-content, .section-title .description, .participants-feed-full .copy {
-    font-size: 13px;
-  }
-
-  .hero .container-hero {
-    max-width: 450px;
-  }
-
-  .event-header .event-info .title a {
-    color: #000000;
-  }
-
-  .hero .copy {
-    font-weight: bold;
-  }
-
-  .user-nav ul li a:hover {
-    color: white;
-    opacity: 0.8;
-  }
-
-  .event-header .event-info .logo img {
-    max-height: 100px;
-    max-width: 170px;
-  }
-
-  .bottom .outlined {
-    display: none;
-  }
-
-  .hero .sign {
-    background-color: rgba(242, 242, 242, 0.85);
-    padding: 15px;
-    color: #333;
-    text-transform: inherit;
-    border-radius: 6px 6px 0px 0px;
-  }
-
-  .hero .copy {
-    background-color: rgba(242, 242, 242, 0.85);
-    padding: 15px;
-    padding-top: 0px;
-    color: #333;
-    border-radius: 0px 0px 6px 6px;
-    font-weight: lighter;
-  }
-
-  .hero .button {
-    font-family: & #39;
-    Galaxie Polaris & #39;, & #39;
-    Arial & #39;, sans-serif;
-    font-size: 13px;
-    letter-spacing: 0.1em;
-    display: inline-block;
-    padding: 10px 15px;
-    margin-top: 25px;
-    color: #ffffff;
-    border-radius: 4px;
-    background-color: #0061A0;
-    transition: color 0.2s ease, background-color 0.2s ease
-  }
-
-  .challenges-slider .slider-utility a, .featured_challenge .challenge-callout a {
-    border-radius: 4px;
-  }
-
-  p.instructional-message {
-    font-size: 12px;
-  }
-
-  .copy a:hover, .dashboard-table a:hover, .participant a:hover, .section-title .description a:hover, .section-title .subtitle a:hover {
-    text-decoration: underline;
-  }
-
-  /* Center Challenge Cards -kbb */
-  .challenges-grid {
-    justify-content: space-around;
-  }
-
-  .company-callout .callout-container .blurb {
-    font-size: 17px;
-  }
-
-  .nweiBrand {
-    text-align: center;
-    margin-top: 48px;
-    margin-bottom: 18px;
-  }
-
-  .nweiLogoAbout {
-    width: 100%;
-    max-width: 250px;
-    height: auto;
-  }</style>
+	<title>2020年メットライフEcoChallenge - 水</title>
+	<link href="../assets/stylesheets/application.css" media="all" rel="stylesheet">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="a#ffffff" name="theme-color">
+	<meta content="GU,PR,US,VI" name="location-countries">
+	<meta content="noindex" name="robots">
+	<link href="/site.webmanifest" rel="manifest">
+	<meta content="#134b61" name="msapplication-TileColor">
+	<meta content="#134b61" name="theme-color">
+	<link href="/manifest.json" rel="manifest">
 </head>
-
-<body
-        class="layout-event"
->
-
-<header class="global-header">
-  <nav class="user-nav"></nav>
-</header>
-
-<div class="event-header ">
-  <div class="event-info" style="">
-    <div class="subtitle"><a href="https://metlife.ecochallenge.org/about/event-info"><div class="logo"><img src="../assets/images/logo.jpg"/></div></a></div>
-    <div class="title"><a href="http://metlife.ecochallenge.org/">2019�N  ���b�g���C�t �G�R�`�������W</a></div>
-    <div class="event-date-range" data-date-range=""><span data-date-range-start>2019�N4��24��</span> <span> - </span> <span data-date-range-end>5��10��</span></div>
-    <div id="regPassBlock"><a class="outlined regNew" href="https://metlife.ecochallenge.org/users/join">���C�u�o�^ (�p��)</a><p id="greenImpact">�C�x���g�̃p�X���[�h: greenimpact</p>
-    </div>
-  </div>
-  <nav class="event-nav navNew">
-    <ul>
-      <li><a href="../">�ڍ�</a></li>
-      <li><a href="../points.html">�v�_</a></li>
-      <li><a href="../challenges.html">�ۑ�</a></li>
-    </ul>
-  </nav>
-</div>
-
-
-<section class="bg-spectrum spectrum03">
-  <div class="container">
-    <header class="section-title">
-      <div class="icon">
-        <svg class="border" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 46">
-          <circle r="22.5" cx="23" cy="23" fill="none"></circle>
-        </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 46">
-          <path d="M23.183 17.069l-.456-.456a5.671 5.671 0 0 0-8.02 0h0a5.671 5.671 0 0 0-1.662 4.01v22.755"
-                fill="none"/>
-          <path fill="#fff" d="M27.407 15.362l-7.231 7.231-2.101-3.87 5.258-5.466 4.074 2.105z"/>
-          <path d="M24.68 22.679zm1.07 3.87zm1.07 3.871zm.66-10.541zm1.07 3.87zm2.8-2.8zm-1.73 6.671zm2.8-2.8zm2.801-2.8z"
-                stroke-width="1.25" stroke-linecap="round" fill="none"/>
-        </svg>
-
-      </div><!DOCTYPE html>
-      <html xmlns="http://www.w3.org/1999/xhtml"
-            xmlns:og="http://ogp.me/ns#"
-            xmlns:fb="https://www.facebook.com/2008/fbml">
-      <head>
-        <title>2019�N ���b�g���C�t �G�R�`�������W - �C�x���g���</title>
-        <link rel="stylesheet" media="all" href="../assets/stylesheets/application.css" data-turbolinks-track="true"/>
-        <script src="../assets/javascripts/application.js" data-turbolinks-track="true"></script>
-        <meta name="action-cable-url" content="/cable"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="theme-color" content="#ffffff">
-        <meta name="robots" content="noindex">
-
-        <meta name="csrf-param" content="authenticity_token"/>
-        <meta name="csrf-token"
-              content="KHbHeVfyS683SdqR+FCO7sJ7ZY4xcTTw0pVqzKOm+O8rq5m3j4rBvFsjaMcCnf5Q5WK1AJ3YFK6e/wpdT5aVdg=="/><!-- default meta --><meta property="og:title"
-              content="Join the 2019 MetLife EcoChallenge, presented by MetLife Global Sustainability Team"/>
-        <meta property="og:type" content="website"/>
-        <meta property="og:description"
-              content="For two weeks, we challenge you to make eco-friendly choices to live a more sustainable lifestyle! Team up with colleagues from around the world and take action to create a healthier planet during the 2019 MetLife EcoChallenge. "/>
-        <meta property="og:image"
-              content="http://metlife.ecochallenge.org/system/events/org_logos/000/000/039/original/metlife_eng_logo_rgb.jpg?1552691799"/>
-        <meta property="og:url" content="http://metlife.ecochallenge.org"/>
-
-
-        <style type="text/css">nav.user-nav {
-          background-color: #0061A0;
-        }
-
-        .event-header .event-info {
-          margin: 10px 15px 30px;
-        }
-
-        a {
-          color: #007ABC;
-        }
-
-        .button-primary, .button-primary.dark:hover, .award-point-list a, .award-point-list a .points::after, .event-header .event-nav a.outlined:hover, .event-header .event-nav a.outlined:active, .hero .button:hover, .button-outlined:hover {
-          background-color: #007ABC;
-        }
-
-        .event-header .event-nav a.outlined, .button-outlined {
-          border-color: #007ABC;
-          color: #007ABC;
-        }
-
-        .event-check-ins .days li.action-complete, .legend li .action-complete.marker {
-          background-color: #0061A0;
-        }
-
-        .calendar .week a.action-complete {
-          color: #0061A0;
-          border-color: #0061A0;
-        }
-
-        .event-header .event-info .event-date-range {
-          border-top: 1px solid #0061A0;
-          border-bottom: 1px solid #0061A0;
-        }
-
-        h2, h3, h5, .participants-counter .title, .horizontal-section-title .title, .page-content .title {
-          color: #333333;
-        }
-
-        .participant-feed .dropdown-wrapper& gt
-
-        ;
-        .feed-filter {
-          color: #0061A0;
-        }
-
-        .form-button-icon.facebook, .form-button-icon.google {
-          display: none;
-        }
-
-        .hero .sign, .event-header .event-info .title a, h2, h3, h5, .participants-counter .title, .horizontal-section-title .title, .page-content .title, .placeholder .title, .challenges-slider .slider-header .title, .section-title .title, .team-hero .title, .team-detail-points .title, .dashboard-sidebar .team-summary .team-header .title, .dashboard-sidebar .user-summary .user-header .name, .impact-grid .impact-card .units, .dashboard-sidebar .impact-summary .challenge-impact .count, .participants-counter .count .digit-box span {
-          font-family: Georgia, Times;
-          font-weight: bold;
-          text-transform: capitalize;
-          letter-spacing: 1px;
-        }
-
-        p {
-          font-size: 15px;
-        }
-
-        .global-footer .top .subheading {
-          font-family: Arial, Helvetica, sans-serif;
-          text-transform: capitalize;
-          letter-spacing: 1px;
-          font-size: 14px;
-          color: white;
-        }
-
-        .global-footer .top .social a, .global-footer .top .col, .global-footer .top .description {
-          font-family: Arial, Helvetica, sans-serif;
-          font-weight: normal;
-          font-size: 12px;
-        }
-
-        .hero .copy, .company-callout .callout-container .blurb, .placeholder p, .page-content, .participant-action-cards .card-container .description p, .awarded-points-list tr + tr td, .section-title .description, .participants-feed-full .copy {
-          font-family: Arial, Helvetica, sans-serif;
-        }
-
-        .placeholder p, .page-content, .section-title .description, .participants-feed-full .copy {
-          font-size: 13px;
-        }
-
-        .hero .container-hero {
-          max-width: 450px;
-        }
-
-        .event-header .event-info .title a {
-          color: #000000;
-        }
-
-        .hero .copy {
-          font-weight: bold;
-        }
-
-        .user-nav ul li a:hover {
-          color: white;
-          opacity: 0.8;
-        }
-
-        .event-header .event-info .logo img {
-          max-height: 100px;
-          max-width: 170px;
-        }
-
-        .bottom .outlined {
-          display: none;
-        }
-
-        .hero .sign {
-          background-color: rgba(242, 242, 242, 0.85);
-          padding: 15px;
-          color: #333;
-          text-transform: inherit;
-          border-radius: 6px 6px 0px 0px;
-        }
-
-        .hero .copy {
-          background-color: rgba(242, 242, 242, 0.85);
-          padding: 15px;
-          padding-top: 0px;
-          color: #333;
-          border-radius: 0px 0px 6px 6px;
-          font-weight: lighter;
-        }
-
-        .hero .button {
-          font-family: & #39;
-          Galaxie Polaris & #39;, & #39;
-          Arial & #39;, sans-serif;
-          font-size: 13px;
-          letter-spacing: 0.1em;
-          display: inline-block;
-          padding: 10px 15px;
-          margin-top: 25px;
-          color: #ffffff;
-          border-radius: 4px;
-          background-color: #0061A0;
-          transition: color 0.2s ease, background-color 0.2s ease
-        }
-
-        .challenges-slider .slider-utility a, .featured_challenge .challenge-callout a {
-          border-radius: 4px;
-        }
-
-        p.instructional-message {
-          font-size: 12px;
-        }
-
-        .copy a:hover, .dashboard-table a:hover, .participant a:hover, .section-title .description a:hover, .section-title .subtitle a:hover {
-          text-decoration: underline;
-        }
-
-        /* Center Challenge Cards -kbb */
-        .challenges-grid {
-          justify-content: space-around;
-        }
-
-        .company-callout .callout-container .blurb {
-          font-size: 17px;
-        }
-
-        .nweiBrand {
-          text-align: center;
-          margin-top: 48px;
-          margin-bottom: 18px;
-        }
-
-        .nweiLogoAbout {
-          width: 100%;
-          max-width: 250px;
-          height: auto;
-        }</style>
-      </head>
-
-      <body
-              class="layout-event"
-      >
-
-      <header class="global-header">
-        <nav class="user-nav"></nav>
-      </header>
-
-      <div class="event-header ">
-        <div class="event-info" style="">
-          <div class="subtitle"><a href="https://metlife.ecochallenge.org/about/event-info"><div class="logo"><img src="../assets/images/logo.jpg"/></div></a></div>
-          <div class="title"><a href="http://metlife.ecochallenge.org/">2019�N  ���b�g���C�t �G�R�`�������W</a></div>
-          <div class="event-date-range" data-date-range=""><span data-date-range-start>2019�N4��24��</span> <span> - </span> <span data-date-range-end>5��10��</span></div>
-          <div id="regPassBlock"><a class="outlined regNew" href="https://metlife.ecochallenge.org/users/join">���C�u�o�^ (�p��)</a><p id="greenImpact">�C�x���g�̃p�X���[�h: greenimpact</p>
-          </div>
-        </div>
-        <nav class="event-nav navNew">
-          <ul>
-            <li><a href="/">�ڍ�</a></li>
-            <li><a href="/points.html">�v�_</a></li>
-            <li><a href="/challenges.html">�ۑ�</a></li>
-          </ul>
-        </nav>
-      </div>
-
-
-      <section class="bg-spectrum spectrum03">
-        <div class="container">
-          <header class="section-title">
-            <div class="icon">
-              <svg class="border" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 46">
-                <circle r="22.5" cx="23" cy="23" fill="none"></circle>
-              </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 46">
-                <path d="M23.183 17.069l-.456-.456a5.671 5.671 0 0 0-8.02 0h0a5.671 5.671 0 0 0-1.662 4.01v22.755"
-                      fill="none"/>
-                <path fill="#fff" d="M27.407 15.362l-7.231 7.231-2.101-3.87 5.258-5.466 4.074 2.105z"/>
-                <path d="M24.68 22.679zm1.07 3.87zm1.07 3.871zm.66-10.541zm1.07 3.87zm2.8-2.8zm-1.73 6.671zm2.8-2.8zm2.801-2.8z"
-                      stroke-width="1.25" stroke-linecap="round" fill="none"/>
-              </svg>
-
-            </div>
-            <h1 class="title">��</h1><a class="subtitle medium" href="/challenges.html">���ׂẴ`�������W�ɖ߂�</a><p class="description uppercase">��H��H���J�E���g����邱�Ƃ��ؖ����邨��`�������Ă��������B</p>
-            <p class="description">���U��ʂ��A�V�N�Ő����Ȑ��́A�l�ނ̐����ɂƂ��ĕs���Ȃ��̂ł��B���j�́A�������[�����鐴���Ȑ������ւ̃A�N�Z�X�ɂ���Ă̂ݐi���������Ƃ������Ă��܂��B���̋��������f�����ƁA�l�X�͐V����������ی삵�A�L�x�Ȏ����̂���n��ֈڏZ���邩�A�P�ɐ������j�]���Ă��܂��܂��B�������̐����ɐ��͕K�v�s���ł����A���̋M�d�Ő����̂��鎑�����������͂��܂�ɂ����R�̂��̂Ƃ݂Ȃ��Ă��܂��B</p>
-            <div class="challenge-resource"><a class="button-outlined" target="_blank"
-                 href="https://ecochallenge.org/wp-content/uploads/2017/03/2017-MetLife-EcoChallenge-Resources_Water.pdf">����Ɋw��</a></div>
-            <div class="challenge-sponsors">
-            </div>
-          </header>
-
-          <nav class="challenge-actions-list">
-            <ul>
-              <li class="action-card"
-                  data-participant-action
-                  data-action="4532"
-              >
-                <div class="init" data-focus-target>
-                  <div class="content" data-action-content>
-                    <div class="body">
-                      <h3 class="title">���̐��`���[�u�����g�ɎQ������</h3>
-                      <p data-description>���͍Œ�(___) ����₵�āA���̐��`�ƒn��ł̎��g�݂ɎQ��������@���w�ׂ鎑�����g���܂��B</p>
-                      <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4532">����Ɋw��</a><ul class="dropdown" data-dropdown="resource-links-4532">
-                          <li>�A�N�V���� ���\�[�X</li>
-                          <li><a href="http://www.takepart.com/feature/2016/08/26/native-american-waters/" target="_blank">�l�C�e�B�u�A�����J�������������ɑ΂��鐹����J�n</a></li>
-                          <li><a href="https://impactethics.ca/2017/03/31/water-health-social-justice/" target="_blank">���A���N�A�Љ�I����</a></li>
-                        </ul>
-                      </div>
-
-                      <p style="display: none" class="warning" data-warning>�`�������W�ł��łɂ��̃A�N�V�������������Ă��܂��B�A�N�V��������������ƁA���_�������\��������܂��B�{���ɂ�肽���ł����H</p>
-                    </div>
-
-                    <div class="challenge-meta">
-                      <p>�f�C���[�`�������W</p>
-                    </div>
-                    <div class="action-difficulty">
-                      <div class="indicator">
-                        <div class="bar"></div>
-                        <div class="bar dull"></div>
-                        <div class="bar dull"></div>
-                        <div class="description">
-                          <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">�`�������W���x���F</p>
-                          <p style="margin: 11px 0; font-size: 13px">�G�R�w�K��</p>
-                          <p style="text-transform: none;">�`�������W���x���́A�A�N�V���������Ɋւ�鎞�ԁA��p�A�m���A�X�L���Ƃ���4�v�f�Ō��܂�܂��B�Q���҂ɂ���Ă����̗v�f�͂��܂��܂�������܂��񂪁A�`�������W���x���͂��Ȃ��̐����ƖڕW�ɍœK�ȃA�N�V������I�Ԃ̂ɖ𗧂��܂��B</p>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </li>
-
-              <li class="action-card"
-                  data-participant-action
-                  data-action="4533"
-              >
-                <div class="init" data-focus-target>
-                  <div class="content" data-action-content>
-                    <div class="body">
-                      <h3 class="title">���ɂ₳�����K�[�f�j���O</h3>
-                      <h4 class="subtitle">
-
-                      </h4>
-                      <p data-description>���͐���L���ɗ��p�ł���ݗ���̃^�l��A���A���ɂ₳�����엿���g�p���܂��B</p>
-                      <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4533">����Ɋw��</a><ul class="dropdown" data-dropdown="resource-links-4533">
-                          <li>�A�N�V���� ���\�[�X</li>
-                          <li><a href="http://www.nwf.org/NativePlantFinder/About" target="_blank">�ݗ��A���t�@�C���_�[</a></li>
-                          <li><a href="http://www.groundwater.org/action/home/raingardens.html" target="_blank">���C���K�[�f���Ɋւ��邷�ׂ�</a></li>
-                        </ul>
-                      </div>
-
-                      <p style="display: none" class="warning" data-warning>�`�������W�ł��łɂ��̃A�N�V�������������Ă��܂��B�A�N�V��������������ƁA���_�������\��������܂��B�{���ɂ�肽���ł����H</p>
-                    </div>
-
-                    <div class="challenge-meta">
-                      <p>�����^�C�� �`�������W</p>
-                    </div>
-                    <div class="action-difficulty">
-                      <div class="indicator">
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar dull"></div>
-                        <div class="description">
-                          <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">�`�������W���x���F</p>
-                          <p style="margin: 11px 0; font-size: 13px">�G�R�v��</p>
-                          <p style="text-transform: none;">�`�������W���x���́A�A�N�V���������Ɋւ�鎞�ԁA��p�A�m���A�X�L���Ƃ���4�v�f�Ō��܂�܂��B�Q���҂ɂ���Ă����̗v�f�͂��܂��܂�������܂��񂪁A�`�������W���x���͂��Ȃ��̐����ƖڕW�ɍœK�ȃA�N�V������I�Ԃ̂ɖ𗧂��܂��B</p>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </li>
-
-              <li class="action-card"
-                  data-participant-action
-                  data-action="4534"
-              >
-                <div class="init" data-focus-target>
-                  <div class="content" data-action-content>
-                    <div class="body">
-                      <h3 class="title">�v���X�`�b�N�̃X�g���[��No�ƌ���</h3>
-                      <p data-description>����71���̊C����30���̃J���݂̈̒��ɁA�v���X�`�b�N����������Ă��܂��B�v���X�`�b�N��ێ悷��ƁA�C�m�����̐����m����50���ɂȂ�܂��B���ݕ��𒍕�����Ƃ��ɃX�g���[�͂���܂���ƌ������ƂŁA���͖��� (___) �{�̃v���X�`�b�N�X�g���[���C�Ɏ̂ĂȂ��悤�ɂ��܂��B</p>
-                      <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4534">����Ɋw��</a><ul class="dropdown" data-dropdown="resource-links-4534">
-                          <li>�A�N�V���� ���\�[�X</li>
-                          <li><a href="https://www.strawlessocean.org/faq/" target="_blank">�X�g���[�̂Ȃ��C</a></li>
-                          <li><a href="https://www.surfrider.org/" target="_blank">�T�[�t���C�_�[</a></li>
-                          <li><a href="https://simplystraws.com/" target="_blank">�P�ɃX�g���[</a></li>
-                        </ul>
-                      </div>
-
-                      <p style="display: none" class="warning" data-warning>�`�������W�ł��łɂ��̃A�N�V�������������Ă��܂��B�A�N�V��������������ƁA���_�������\��������܂��B�{���ɂ�肽���ł����H</p>
-                    </div>
-
-                    <div class="challenge-meta">
-                      <p>�f�C���[�`�������W</p>
-                    </div>
-                    <div class="action-difficulty">
-                      <div class="indicator">
-                        <div class="bar"></div>
-                        <div class="bar dull"></div>
-                        <div class="bar dull"></div>
-                        <div class="description">
-                          <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">�`�������W���x���F</p>
-                          <p style="margin: 11px 0; font-size: 13px">�G�R�w�K��</p>
-                          <p style="text-transform: none;">�`�������W���x���́A�A�N�V���������Ɋւ�鎞�ԁA��p�A�m���A�X�L���Ƃ���4�v�f�Ō��܂�܂��B�Q���҂ɂ���Ă����̗v�f�͂��܂��܂�������܂��񂪁A�`�������W���x���͂��Ȃ��̐����ƖڕW�ɍœK�ȃA�N�V������I�Ԃ̂ɖ𗧂��܂��B</p>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </li>
-
-              <li class="action-card"
-                  data-participant-action
-                  data-action="4535"
-              >
-                <div class="init" data-focus-target>
-                  <div class="content" data-action-content>
-                    <div class="body">
-                      <h3 class="title">5���Ԃ̃V�����[</h3>
-                      <h4 class="subtitle">
-
-                      </h4>
-                      <p data-description>5���Ԃ̃V�����[�ŁA�����ő�20�K�����i75���b�g���j��ߐ����܂��B</p>
-                      <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4535">����Ɋw��</a><ul class="dropdown" data-dropdown="resource-links-4535">
-                          <li>�A�N�V���� ���\�[�X</li>
-                          <li><a href="https://green.harvard.edu/tools-resources/green-tip/5-ways-measure-5-minute-shower"
-                               target="_blank">5���Ԃ̃V�����[�𑪒肷��5�̕��@</a></li>
-                          <li><a href="https://www.nbcnews.com/better/pop-culture/how-take-shower-according-dermatologists-ncna740526"
-                               target="_blank">�畆�Ȃɂɂ��V�����[�̗��ѕ�</a></li>
-                        </ul>
-                      </div>
-
-                      <p style="display: none" class="warning" data-warning>�`�������W�ł��łɂ��̃A�N�V�������������Ă��܂��B�A�N�V��������������ƁA���_�������\��������܂��B�{���ɂ�肽���ł����H</p>
-                    </div>
-
-                    <div class="challenge-meta">
-                      <p>�f�C���[�`�������W</p>
-                    </div>
-                    <div class="action-difficulty">
-                      <div class="indicator">
-                        <div class="bar"></div>
-                        <div class="bar dull"></div>
-                        <div class="bar dull"></div>
-                        <div class="description">
-                          <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">�`�������W���x���F</p>
-                          <p style="margin: 11px 0; font-size: 13px">�G�R�w�K��</p>
-                          <p style="text-transform: none;">�`�������W���x���́A�A�N�V���������Ɋւ�鎞�ԁA��p�A�m���A�X�L���Ƃ���4�v�f�Ō��܂�܂��B�Q���҂ɂ���Ă����̗v�f�͂��܂��܂�������܂��񂪁A�`�������W���x���͂��Ȃ��̐����ƖڕW�ɍœK�ȃA�N�V������I�Ԃ̂ɖ𗧂��܂��B</p>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </li>
-
-              <li class="action-card"
-                  data-participant-action
-                  data-action="4536"
-              >
-                <div class="init" data-focus-target>
-                  <div class="content" data-action-content>
-                    <div class="body">
-                      <h3 class="title">�g�C���^���N�o���N�����t����</h3>
-                      <p data-description>���͐��𗬂��񐔂����炵�A�g�C���^���N�o���N�����t���邱�ƂŁA�����ő�11�K�����i41���b�g���j��ߐ����܂��B</p>
-                      <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4536">����Ɋw��</a><ul class="dropdown" data-dropdown="resource-links-4536">
-                          <li>�A�N�V���� ���\�[�X</li>
-                          <li><a href="https://www.watercalculator.org/save-water/toilet/" target="_blank">���̌v�Z�@</a></li>
-                          <li><a href="https://eartheasy.com/toilet-tank-bank/" target="_blank">�g�C���̃^���N������</a></li>
-                        </ul>
-                      </div>
-
-                      <p style="display: none" class="warning" data-warning>�`�������W�ł��łɂ��̃A�N�V�������������Ă��܂��B�A�N�V��������������ƁA���_�������\��������܂��B�{���ɂ�肽���ł����H</p>
-                    </div>
-
-                    <div class="challenge-meta">
-                      <p>�����^�C�� �`�������W</p>
-                    </div>
-                    <div class="action-difficulty">
-                      <div class="indicator">
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="description">
-                          <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">�`�������W���x���F</p>
-                          <p style="margin: 11px 0; font-size: 13px">�G�R���[�_�[</p>
-                          <p style="text-transform: none;">�`�������W���x���́A�A�N�V���������Ɋւ�鎞�ԁA��p�A�m���A�X�L���Ƃ���4�v�f�Ō��܂�܂��B�Q���҂ɂ���Ă����̗v�f�͂��܂��܂�������܂��񂪁A�`�������W���x���͂��Ȃ��̐����ƖڕW�ɍœK�ȃA�N�V������I�Ԃ̂ɖ𗧂��܂��B</p>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </li>
-
-              <li class="action-card"
-                  data-participant-action
-                  data-action="4538"
-              >
-                <div class="init" data-focus-target>
-                  <div class="content" data-action-content>
-                    <div class="body">
-                      <h3 class="title">���R�ꂷ��֌����C������</h3>
-                      <h4 class="subtitle">
-
-                      </h4>
-                      <p data-description>���͎֌����C�����邩�A�����֌�������9�K�����i34���b�g���j�̐��𖳑ʂɂ��Ă���{�݂ɐ��R�ꂷ��֌���񍐂��܂��B</p>
-                      <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4538">����Ɋw��</a><ul class="dropdown" data-dropdown="resource-links-4538">
-                          <li>�A�N�V���� ���\�[�X</li>
-                          <li><a href="https://www.youtube.com/watch?v=dUWl-Ub_Ow8" target="_blank">���R�ꂷ��֌��̏C�����@</a></li>
-                          <li><a href="https://www.youtube.com/watch?v=7UbXmKW-v6o" target="_blank">���R�ꂷ��䏊�̎֌��̏C�����@</a></li>
-                          <li><a href="https://www.energy.gov/energysaver/water-heating/reduce-hot-water-use-energy-savings"
-                               target="_blank">�G�l���M�[�ߖ�̂��߂ɂ����̎g�p�����炷</a></li>
-                        </ul>
-                      </div>
-
-                      <p style="display: none" class="warning" data-warning>�`�������W�ł��łɂ��̃A�N�V�������������Ă��܂��B�A�N�V��������������ƁA���_�������\��������܂��B�{���ɂ�肽���ł����H</p>
-                    </div>
-
-                    <div class="challenge-meta">
-                      <p>�����^�C�� �`�������W</p>
-                    </div>
-                    <div class="action-difficulty">
-                      <div class="indicator">
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar dull"></div>
-                        <div class="description">
-                          <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">�`�������W���x���F</p>
-                          <p style="margin: 11px 0; font-size: 13px">�G�R�v��</p>
-                          <p style="text-transform: none;">�`�������W���x���́A�A�N�V���������Ɋւ�鎞�ԁA��p�A�m���A�X�L���Ƃ���4�v�f�Ō��܂�܂��B�Q���҂ɂ���Ă����̗v�f�͂��܂��܂�������܂��񂪁A�`�������W���x���͂��Ȃ��̐����ƖڕW�ɍœK�ȃA�N�V������I�Ԃ̂ɖ𗧂��܂��B</p>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </li>
-
-              <li class="action-card"
-                  data-participant-action
-                  data-action="4539"
-              >
-                <div class="init" data-focus-target>
-                  <div class="content" data-action-content>
-                    <div class="body">
-                      <h3 class="title">�ߐ��V�����[�w�b�h�����t����</h3>
-                      <h4 class="subtitle">
-
-                      </h4>
-                      <p data-description>���͐ߐ��V�����[�w�b�h�����t���邱�ƂŁA1��������15�K�����i56���b�g���j��ߐ����܂��B</p>
-                      <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4539">����Ɋw��</a><ul class="dropdown" data-dropdown="resource-links-4539">
-                          <li>�A�N�V���� ���\�[�X</li>
-                          <li><a href="https://learn.eartheasy.com/guides/low-flow-aerators-showerheads/" target="_blank">�ߖ�ł���G�A���[�^�[/�V�����[�w�b�h</a></li>
-                          <li><a href="https://www.epa.gov/watersense/showerheads" target="_blank">EPA WaterSense�̃V�����[�w�b�h</a></li>
-                        </ul>
-                      </div>
-
-                      <p style="display: none" class="warning" data-warning>�`�������W�ł��łɂ��̃A�N�V�������������Ă��܂��B�A�N�V��������������ƁA���_�������\��������܂��B�{���ɂ�肽���ł����H</p>
-                    </div>
-
-                    <div class="challenge-meta">
-                      <p>�����^�C�� �`�������W</p>
-                    </div>
-                    <div class="action-difficulty">
-                      <div class="indicator">
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="description">
-                          <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">�`�������W���x���F</p>
-                          <p style="margin: 11px 0; font-size: 13px">�G�R���[�_�[</p>
-                          <p style="text-transform: none;">�`�������W���x���́A�A�N�V���������Ɋւ�鎞�ԁA��p�A�m���A�X�L���Ƃ���4�v�f�Ō��܂�܂��B�Q���҂ɂ���Ă����̗v�f�͂��܂��܂�������܂��񂪁A�`�������W���x���͂��Ȃ��̐����ƖڕW�ɍœK�ȃA�N�V������I�Ԃ̂ɖ𗧂��܂��B</p>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </li>
-
-              <li class="action-card"
-                  data-participant-action
-                  data-action="4540"
-              >
-                <div class="init" data-focus-target>
-                  <div class="content" data-action-content>
-                    <div class="body">
-                      <h3 class="title">�����ǂƋ������f�M����</h3>
-                      <h4 class="subtitle">
-
-                      </h4>
-                      <p data-description>�����ǂ⋋���킪�K�؂ɒf�M����Ă��邱�Ƃ��m�F���A�V�����[�◬���䂪�M���Ȃ�̂�҂��Ă���ԁA���𖳑ʂɂ��Ȃ��悤�ɂ��܂��B������p�̒f�M�W���P�b�g�͂����Ă��A������10�h������20�h���̔�p�ŁA�N��11000�|���h�i499kg�j�̓�_���Y�f�r�o��h�����Ƃ��ł��܂��B</p>
-                      <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4540">����Ɋw��</a><ul class="dropdown" data-dropdown="resource-links-4540">
-                          <li>�A�N�V���� ���\�[�X</li>
-                          <li><a href="https://www.washingtonpost.com/news/energy-environment/wp/2015/03/04/your-shower-is-wasting-huge-amounts-of-energy-and-water-heres-what-to-do-about-it/"
-                               target="_blank">���Ȃ��̃V�����[����ʂ̃G�l���M�[�Ɛ��𖳑ʂɂ��Ă��܂��B����ɑ΂��āA���Ȃ����ł��邱�ƁB</a></li>
-                          <li><a href="https://www.energy.gov/energysaver/water-heating/reduce-hot-water-use-energy-savings"
-                               target="_blank">�G�l���M�[�ߖ�̂��߂ɂ����̎g�p�����炷</a></li>
-                        </ul>
-                      </div>
-
-                      <p style="display: none" class="warning" data-warning>�`�������W�ł��łɂ��̃A�N�V�������������Ă��܂��B�A�N�V��������������ƁA���_�������\��������܂��B�{���ɂ�肽���ł����H</p>
-                    </div>
-
-                    <div class="challenge-meta">
-                      <p>�����^�C�� �`�������W</p>
-                    </div>
-                    <div class="action-difficulty">
-                      <div class="indicator">
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="description">
-                          <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">�`�������W���x���F</p>
-                          <p style="margin: 11px 0; font-size: 13px">�G�R���[�_�[</p>
-                          <p style="text-transform: none;">�`�������W���x���́A�A�N�V���������Ɋւ�鎞�ԁA��p�A�m���A�X�L���Ƃ���4�v�f�Ō��܂�܂��B�Q���҂ɂ���Ă����̗v�f�͂��܂��܂�������܂��񂪁A�`�������W���x���͂��Ȃ��̐����ƖڕW�ɍœK�ȃA�N�V������I�Ԃ̂ɖ𗧂��܂��B</p>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </li>
-
-              <li class="action-card"
-                  data-participant-action
-                  data-action="4541"
-              >
-                <div class="init" data-focus-target>
-                  <div class="content" data-action-content>
-                    <div class="body">
-                      <h3 class="title">�؂ƐA���̍����𕢂�</h3>
-                      <h4 class="subtitle">
-
-                      </h4>
-                      <p data-description>���͉Ƃ�E��̖؁E�A���̍����𕢂����ƂŐ��̗��o��h���A�z�������グ�܂��B</p>
-                      <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4541">����Ɋw��</a><ul class="dropdown" data-dropdown="resource-links-4541">
-                          <li>�A�N�V���� ���\�[�X</li>
-                          <li><a href="https://www.gardeners.com/how-to/building-healthy-soil/5060.html" target="_blank">�R���|�X�g�ƃ}���`�œy������ǂ���</a></li>
-                        </ul>
-                      </div>
-
-                      <p style="display: none" class="warning" data-warning>�`�������W�ł��łɂ��̃A�N�V�������������Ă��܂��B�A�N�V��������������ƁA���_�������\��������܂��B�{���ɂ�肽���ł����H</p>
-                    </div>
-
-                    <div class="challenge-meta">
-                      <p>�����^�C�� �`�������W</p>
-                    </div>
-                    <div class="action-difficulty">
-                      <div class="indicator">
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar dull"></div>
-                        <div class="description">
-                          <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">�`�������W���x���F</p>
-                          <p style="margin: 11px 0; font-size: 13px">�G�R�v��</p>
-                          <p style="text-transform: none;">�`�������W���x���́A�A�N�V���������Ɋւ�鎞�ԁA��p�A�m���A�X�L���Ƃ���4�v�f�Ō��܂�܂��B�Q���҂ɂ���Ă����̗v�f�͂��܂��܂�������܂��񂪁A�`�������W���x���͂��Ȃ��̐����ƖڕW�ɍœK�ȃA�N�V������I�Ԃ̂ɖ𗧂��܂��B</p>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </li>
-
-              <li class="action-card"
-                  data-participant-action
-                  data-action="4542"
-              >
-                <div class="init" data-focus-target>
-                  <div class="content" data-action-content>
-                    <div class="body">
-                      <h3 class="title">�Ő�����߂�</h3>
-                      <h4 class="subtitle">
-
-                      </h4>
-                      <p data-description>���͎Ő������΂ɋ����i�ςɑウ�āA�Ŋ���ɔ�₵�Ă������A�����A���Ԃ�ߖ񂵂܂��B</p>
-                      <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4542">����Ɋw��</a><ul class="dropdown" data-dropdown="resource-links-4542">
-                          <li>�A�N�V���� ���\�[�X</li>
-                          <li><a href="https://www.thespruce.com/drought-tolerant-landscaping-what-to-know-2736660"
-                               target="_blank">���΂ɋ����i�ς��Ȃ����m��ׂ�����</a></li>
-                          <li><a href="https://www.watereducation.org/drought-tolerant-landscaping" target="_blank">��������c</a></li>
-                        </ul>
-                      </div>
-
-                      <p style="display: none" class="warning" data-warning>�`�������W�ł��łɂ��̃A�N�V�������������Ă��܂��B�A�N�V��������������ƁA���_�������\��������܂��B�{���ɂ�肽���ł����H</p>
-                    </div>
-
-                    <div class="challenge-meta">
-                      <p>�����^�C�� �`�������W</p>
-                    </div>
-                    <div class="action-difficulty">
-                      <div class="indicator">
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="description">
-                          <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">�`�������W���x���F</p>
-                          <p style="margin: 11px 0; font-size: 13px">�G�R���[�_�[</p>
-                          <p style="text-transform: none;">�`�������W���x���́A�A�N�V���������Ɋւ�鎞�ԁA��p�A�m���A�X�L���Ƃ���4�v�f�Ō��܂�܂��B�Q���҂ɂ���Ă����̗v�f�͂��܂��܂�������܂��񂪁A�`�������W���x���͂��Ȃ��̐����ƖڕW�ɍœK�ȃA�N�V������I�Ԃ̂ɖ𗧂��܂��B</p>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </li>
-
-              <li class="action-card"
-                  data-participant-action
-                  data-action="4543"
-              >
-                <div class="init" data-focus-target>
-                  <div class="content" data-action-content>
-                    <div class="body">
-                      <h3 class="title">�J�����W�߂�</h3>
-                      <p data-description>���̓��C���K�[�f���܂��̓o�C�I�X�E�F�������邩�A�J���p�̒M���g���āA���O�Ő����K�v�ȏꏊ�̂��߂ɉJ�����W�߂܂��B</p>
-                      <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4543">����Ɋw��</a><ul class="dropdown" data-dropdown="resource-links-4543">
-                          <li>�A�N�V���� ���\�[�X</li>
-                          <li><a href="https://www.wikihow.com/Create-a-Rain-Garden" target="_blank">���C���K�[�f���̍���</a></li>
-                          <li><a href="http://nrcsolutions.org/bioswales/" target="_blank">�o�C�I�X�E�F��</a></li>
-                          <li><a href="https://www.motherearthnews.com/homesteading-and-livestock/self-reliance/rainwater-harvesting-zm0z12aszhun"
-                               target="_blank">���ǂ��J�����n�V�X�e��</a></li>
-                        </ul>
-                      </div>
-
-                      <p style="display: none" class="warning" data-warning>�`�������W�ł��łɂ��̃A�N�V�������������Ă��܂��B�A�N�V��������������ƁA���_�������\��������܂��B�{���ɂ�肽���ł����H</p>
-                    </div>
-
-                    <div class="challenge-meta">
-                      <p>�����^�C�� �`�������W</p>
-                    </div>
-                    <div class="action-difficulty">
-                      <div class="indicator">
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar dull"></div>
-                        <div class="description">
-                          <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">�`�������W���x���F</p>
-                          <p style="margin: 11px 0; font-size: 13px">�G�R�v��</p>
-                          <p style="text-transform: none;">�`�������W���x���́A�A�N�V���������Ɋւ�鎞�ԁA��p�A�m���A�X�L���Ƃ���4�v�f�Ō��܂�܂��B�Q���҂ɂ���Ă����̗v�f�͂��܂��܂�������܂��񂪁A�`�������W���x���͂��Ȃ��̐����ƖڕW�ɍœK�ȃA�N�V������I�Ԃ̂ɖ𗧂��܂��B</p>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </li>
-
-              <li class="action-card"
-                  data-participant-action
-                  data-action="4544"
-              >
-                <div class="init" data-focus-target>
-                  <div class="content" data-action-content>
-                    <div class="body">
-                      <h3 class="title">�ƒ�p�����ė��p����</h3>
-                      <h4 class="subtitle">
-
-                      </h4>
-                      <p data-description>���͉ƒ�G�r�����̎悵�܂��B������5�K�����i18.9���b�g���j�̐��𖈓��ė��p���邱�ƂŁA�ő�75�K�����i283.9���b�g���j�̐����G�R�`�������W���ɐߖ�ł��܂��B</p>
-                      <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4544">����Ɋw��</a><ul class="dropdown" data-dropdown="resource-links-4544">
-                          <li>�A�N�V���� ���\�[�X</li>
-                          <li><a href="https://greywateraction.org/greywater-reuse/" target="_blank">�ƒ�G�r���̍ė��p�ɂ���</a></li>
-                        </ul>
-                      </div>
-
-                      <p style="display: none" class="warning" data-warning>�`�������W�ł��łɂ��̃A�N�V�������������Ă��܂��B�A�N�V��������������ƁA���_�������\��������܂��B�{���ɂ�肽���ł����H</p>
-                    </div>
-
-                    <div class="challenge-meta">
-                      <p>�f�C���[�`�������W</p>
-                    </div>
-                    <div class="action-difficulty">
-                      <div class="indicator">
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="description">
-                          <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">�`�������W���x���F</p>
-                          <p style="margin: 11px 0; font-size: 13px">�G�R���[�_�[</p>
-                          <p style="text-transform: none;">�`�������W���x���́A�A�N�V���������Ɋւ�鎞�ԁA��p�A�m���A�X�L���Ƃ���4�v�f�Ō��܂�܂��B�Q���҂ɂ���Ă����̗v�f�͂��܂��܂�������܂��񂪁A�`�������W���x���͂��Ȃ��̐����ƖڕW�ɍœK�ȃA�N�V������I�Ԃ̂ɖ𗧂��܂��B</p>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </li>
-
-              <li class="action-card"
-                  data-participant-action
-                  data-action="4674"
-              >
-                <div class="init" data-focus-target>
-                  <div class="content" data-action-content>
-                    <div class="body">
-                      <h3 class="title">���𗬂����Ɏ��𖁂�</h3>
-                      <h4 class="subtitle">
-
-                      </h4>
-                      <p data-description>���͎��������ɐ��𗬂��Ȃ����ƂŁA�����ő�8�K�����i30���b�g���j��ߐ����܂��B</p>
-                      <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4674">����Ɋw��</a><ul class="dropdown" data-dropdown="resource-links-4674">
-                          <li>�A�N�V���� ���\�[�X</li>
-                          <li><a href="https://water.usgs.gov/edu/qa-home-percapita.html" target="_blank">USGS: �P�l������A1���ŕ��ςǂꂭ�炢�̐����g�p���Ă���̂ł��傤���H</a></li>
-                          <li><a href="https://sustainability.ncsu.edu/blog/changeyourstate/6-times-you-should-turn-off-the-tap-to-save-water/"
-                               target="_blank">�ߐ��̂��߂Ɏ֌���߂���6�� </a></li>
-                        </ul>
-                      </div>
-
-                      <p style="display: none" class="warning" data-warning>�`�������W�ł��łɂ��̃A�N�V�������������Ă��܂��B�A�N�V��������������ƁA���_�������\��������܂��B�{���ɂ�肽���ł����H</p>
-                    </div>
-
-                    <div class="challenge-meta">
-                      <p>�f�C���[�`�������W</p>
-                    </div>
-                    <div class="action-difficulty">
-                      <div class="indicator">
-                        <div class="bar"></div>
-                        <div class="bar dull"></div>
-                        <div class="bar dull"></div>
-                        <div class="description">
-                          <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">�`�������W���x���F</p>
-                          <p style="margin: 11px 0; font-size: 13px">�G�R�w�K��</p>
-                          <p style="text-transform: none;">�`�������W���x���́A�A�N�V���������Ɋւ�鎞�ԁA��p�A�m���A�X�L���Ƃ���4�v�f�Ō��܂�܂��B�Q���҂ɂ���Ă����̗v�f�͂��܂��܂�������܂��񂪁A�`�������W���x���͂��Ȃ��̐����ƖڕW�ɍœK�ȃA�N�V������I�Ԃ̂ɖ𗧂��܂��B</p>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </li>
-
-              <li class="action-card"
-                  data-participant-action
-                  data-action="4675"
-              >
-                <div class="init" data-focus-target>
-                  <div class="content" data-action-content>
-                    <div class="body">
-                      <h3 class="title">�X�}�[�g�ȗe��</h3>
-                      <h4 class="subtitle">
-
-                      </h4>
-                      <p data-description>���͐��ƃG�l���M�[��ߖ񂷂邽�߂ɁA�H��􂢋@�Ɛ���@�̗e�ʂ������ς��ɂȂ����Ƃ������g�p���邱�Ƃ𐾂��܂��B</p>
-                      <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4675">����Ɋw��</a><ul class="dropdown" data-dropdown="resource-links-4675">
-                          <li>�A�N�V���� ���\�[�X</li>
-                          <li><a href="https://www.thesimpledollar.com/only-wash-full-loads-of-dishes-or-clothes-22365/"
-                               target="_blank">�V���v���ȃh�������ς��ɂȂ����Ƃ�������</a></li>
-                          <li><a href="https://www.conserveh2o.org/washing-dishes-dishwasher-water-use" target="_blank">�H��􂢋@�Ɏd����������</a></li>
-                          <li><a href="https://www.seventhgeneration.com/blog/dirt-laundry" target="_blank">���󕨂̉���</a></li>
-                        </ul>
-                      </div>
-
-                      <p style="display: none" class="warning" data-warning>�`�������W�ł��łɂ��̃A�N�V�������������Ă��܂��B�A�N�V��������������ƁA���_�������\��������܂��B�{���ɂ�肽���ł����H</p>
-                    </div>
-
-                    <div class="challenge-meta">
-                      <p>�����^�C�� �`�������W</p>
-                    </div>
-                    <div class="action-difficulty">
-                      <div class="indicator">
-                        <div class="bar"></div>
-                        <div class="bar dull"></div>
-                        <div class="bar dull"></div>
-                        <div class="description">
-                          <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">�`�������W���x���F</p>
-                          <p style="margin: 11px 0; font-size: 13px">�G�R�w�K��</p>
-                          <p style="text-transform: none;">�`�������W���x���́A�A�N�V���������Ɋւ�鎞�ԁA��p�A�m���A�X�L���Ƃ���4�v�f�Ō��܂�܂��B�Q���҂ɂ���Ă����̗v�f�͂��܂��܂�������܂��񂪁A�`�������W���x���͂��Ȃ��̐����ƖڕW�ɍœK�ȃA�N�V������I�Ԃ̂ɖ𗧂��܂��B</p>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </li>
-
-              <li class="action-card"
-                  data-participant-action
-                  data-action="4676"
-              >
-                <div class="init" data-focus-target>
-                  <div class="content" data-action-content>
-                    <div class="body">
-                      <h3 class="title">���̋����𒲍�����</h3>
-                      <h4 class="subtitle">
-
-                      </h4>
-                      <p data-description>����(___)�����₵�āA�����̒n��̕����n�_�Ɛ����ɂ��Ă���Ɋw�сA�ۑS�␅��������肵�܂��B</p>
-                      <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4676">����Ɋw��</a><ul class="dropdown" data-dropdown="resource-links-4676">
-                          <li>�A�N�V���� ���\�[�X</li>
-                          <li><a href="https://water.usgs.gov/wsc/map_index.html" target="_blank">���Ȃ��̕����n�_��������i�č��j</a></li>
-                          <li><a href="http://riverbasins.wateractionhub.org/" target="_blank">���E�̕����n�_�̃C���^���N�e�B�u �f�[�^�x�[�X</a></li>
-                        </ul>
-                      </div>
-
-                      <p style="display: none" class="warning" data-warning>�`�������W�ł��łɂ��̃A�N�V�������������Ă��܂��B�A�N�V��������������ƁA���_�������\��������܂��B�{���ɂ�肽���ł����H</p>
-                    </div>
-
-                    <div class="challenge-meta">
-                      <p>�����^�C�� �`�������W</p>
-                    </div>
-                    <div class="action-difficulty">
-                      <div class="indicator">
-                        <div class="bar"></div>
-                        <div class="bar dull"></div>
-                        <div class="bar dull"></div>
-                        <div class="description">
-                          <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">�`�������W���x���F</p>
-                          <p style="margin: 11px 0; font-size: 13px">�G�R�w�K��</p>
-                          <p style="text-transform: none;">�`�������W���x���́A�A�N�V���������Ɋւ�鎞�ԁA��p�A�m���A�X�L���Ƃ���4�v�f�Ō��܂�܂��B�Q���҂ɂ���Ă����̗v�f�͂��܂��܂�������܂��񂪁A�`�������W���x���͂��Ȃ��̐����ƖڕW�ɍœK�ȃA�N�V������I�Ԃ̂ɖ𗧂��܂��B</p>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </li>
-
-            </ul>
-          </nav>
-
-
-          <p class="align-center"><a class="back-link" href="/challenges.html">���ׂẴ`�������W�ɖ߂�</a></p>
-        </div>
-      </section>
-
-      <footer class="global-footer">
-        <section class="bg-neutral20">
-
-        </section>
-        <section class="bg-neutral100">
-          <div class="content">
-            <div class="section">
-              <div class="block">
-                <div>
-                  <div class="subheading">�������̃X�g�[���[</div>
-                  <p>150�N�ԁA���b�g���C�t�͗D�Ǌ�Ǝs���Ƃ��ċƖ����s���Ă��܂����B���N�ɂ킽���z���̈�Y�̏�ɐ��藧���A�������͐��E���̐l�X�A�Ƒ��A�n��Љ���������̖ڕW��B�����A�l�������]�Ȑ܂����z���邨��`�������������関�����m���ɂ��邱�ƂɃR�~�b�g���Ă��܂��B</p>
-                </div>
-
-              </div>
-              <div class="block">
-                <div>
-                  <div class="subheading">���⍇��</div>
-                  <div>MetLife, Inc.<br>200 Park Avenue<br>New York, NY 10166<br>gogreen@metlife.com</div>
-                  <div class="support-link"><a href="mailto:support@ecochallenge.org">support@ecochallenge.org</a></div>
-                </div>
-
-                <div>
-                </div>
-
-              </div>
-            </div>
-            <div class="section logos">
-              <div class="logo"><img src="../assets/images/logo.jpg"/> <a class="link-primary" href="https://metlife.ecochallenge.org/about/event-info">��Î҂ɂ���</a></div>
-            </div>
-
-          </div>
-        </section>
-        <section class="bg-neutral120">
-          <div class="bottom">
-            <div class="align-left"><span class="colophon">&copy; 2016-2019 Northwest Earth Institute</span></div>
-            <div class="align-right"><a href="https://ecochallenge.org/wp-content/uploads/2016/07/NWEI-Privacy-Policy_03.11.17.pdf" target="_blank">�v���C�o�V�[�|���V�[</a> <a href="mailto:support@ecochallenge.org">�e�N�j�J���T�|�[�g</a> <a href="https://ecochallenge.org/donations/donate-to-ecochallenge/" target="_blank" class="outlined">��t</a></div>
-          </div>
-        </section>
-
-      </footer>
-
-
-      </body>
-      </html>
-
-
-      <h1 class="title">��</h1><a class="subtitle medium" href="/challenges.html">���ׂẴ`�������W�ɖ߂�</a><p class="description uppercase">��H��H���J�E���g�����Əؖ����邨��`�������Ă��������B</p>
-      <p class="description">���U��ʂ��A�V�N�Ő����Ȑ��́A�l�ނ̐����ɂƂ��ĕs���Ȃ��̂ł��B���j�́A�������[�����鐴���Ȑ������ւ̃A�N�Z�X�ɂ���Ă̂ݐi���������Ƃ������Ă��܂��B���̋��������f�����ƁA�l�X�͐V����������ی삵�A�L�x�Ȏ����̂���n��ֈڏZ���邩�A�P�ɐ������j�]���܂��B�������̐����ɐ��͕K�v�s���ł����A���̋M�d�Ő����̂��鎑�����������͂��܂�ɂ����R�̂��̂Ƃ݂Ȃ��Ă��܂��B</p>
-      <div class="challenge-resource"><a class="button-outlined" target="_blank"
-           href="https://ecochallenge.org/wp-content/uploads/2017/03/2017-MetLife-EcoChallenge-Resources_Water.pdf">����Ɋw��</a></div>
-      <div class="challenge-sponsors">
-      </div>
-    </header>
-
-    <nav class="challenge-actions-list">
-      <ul>
-        <li class="action-card"
-            data-participant-action
-            data-action="4532"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">���̐��`���[�u�����g�ɎQ������</h3>
-                <p data-description>���͐��̐��`�ƒn��ł̎��g�݂֎Q��������@�ɂ��Ċw�ׂ鎑�����g���A�Œ�ł�(___) ���Ԃ��₵�܂��B</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4532">����Ɋw��</a><ul class="dropdown" data-dropdown="resource-links-4532">
-                    <li>�A�N�V���� ���\�[�X</li>
-                    <li><a href="http://www.takepart.com/feature/2016/08/26/native-american-waters/" target="_blank">�l�C�e�B�u�A�����J�������������ɑ΂��鐹����J�n</a></li>
-                    <li><a href="https://impactethics.ca/2017/03/31/water-health-social-justice/" target="_blank">���A���N�A�Љ�I����</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>�`�������W�ł��łɂ��̃A�N�V�������������Ă��܂��B�A�N�V��������������ƁA���_�������\��������܂��B�{���ɂ�肽���ł����H</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>�f�C���[�`�������W</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">�`�������W���x���F</p>
-                    <p style="margin: 11px 0; font-size: 13px">�G�R�w�K��</p>
-                    <p style="text-transform: none;">�`�������W���x���́A�A�N�V���������Ɋւ�鎞�ԁA��p�A�m���A�X�L���Ƃ���4�v�f�Ō��܂�܂��B�Q���҂ɂ���Ă����̗v�f�͂��܂��܂�������܂��񂪁A�`�������W���x���͂��Ȃ��̐����ƖڕW�ɍœK�ȃA�N�V������I�Ԃ̂ɖ𗧂��܂��B</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4533"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">���ɂ₳�����K�[�f�j���O</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>���͐���L���ɗ��p�ł���ݗ���̃^�l��A���A���ɂ₳�����엿���g�p���܂��B</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4533">����Ɋw��</a><ul class="dropdown" data-dropdown="resource-links-4533">
-                    <li>�A�N�V���� ���\�[�X</li>
-                    <li><a href="http://www.nwf.org/NativePlantFinder/About" target="_blank">�ݗ��A���t�@�C���_�[</a></li>
-                    <li><a href="http://www.groundwater.org/action/home/raingardens.html" target="_blank">���C���K�[�f���Ɋւ��邷�ׂ�</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>�`�������W�ł��łɂ��̃A�N�V�������������Ă��܂��B�A�N�V��������������ƁA���_�������\��������܂��B�{���ɂ�肽���ł����H</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>�����^�C�� �`�������W</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">�`�������W���x���F</p>
-                    <p style="margin: 11px 0; font-size: 13px">�G�R�v��</p>
-                    <p style="text-transform: none;">�`�������W���x���́A�A�N�V���������Ɋւ�鎞�ԁA��p�A�m���A�X�L���Ƃ���4�v�f�Ō��܂�܂��B�Q���҂ɂ���Ă����̗v�f�͂��܂��܂�������܂��񂪁A�`�������W���x���͂��Ȃ��̐����ƖڕW�ɍœK�ȃA�N�V������I�Ԃ̂ɖ𗧂��܂��B</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4534"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">�v���X�`�b�N�̃X�g���[��No�ƌ���</h3>
-                <p data-description>����71���̊C����30���̃J���ɁA�݂̒��̃v���X�`�b�N����������Ă��܂��B�v���X�`�b�N��ێ悷��ƁA�C�m�����̐����m����50���ɂȂ�܂��B���ݕ��𒍕�����Ƃ��ɃX�g���[�͂���܂���ƌ������ƂŁA���͖��� (___) �{�̃v���X�`�b�N�X�g���[���C�Ɏ̂Ă܂���B</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4534">����Ɋw��</a><ul class="dropdown" data-dropdown="resource-links-4534">
-                    <li>�A�N�V���� ���\�[�X</li>
-                    <li><a href="https://www.strawlessocean.org/faq/" target="_blank">�X�g���[�̂Ȃ��C</a></li>
-                    <li><a href="https://www.surfrider.org/" target="_blank">�T�[�t���C�_�[</a></li>
-                    <li><a href="https://simplystraws.com/" target="_blank">�P�ɃX�g���[</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>�`�������W�ł��łɂ��̃A�N�V�������������Ă��܂��B�A�N�V��������������ƁA���_�������\��������܂��B�{���ɂ�肽���ł����H</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>�f�C���[�`�������W</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">�`�������W���x���F</p>
-                    <p style="margin: 11px 0; font-size: 13px">�G�R�w�K��</p>
-                    <p style="text-transform: none;">�`�������W���x���́A�A�N�V���������Ɋւ�鎞�ԁA��p�A�m���A�X�L���Ƃ���4�v�f�Ō��܂�܂��B�Q���҂ɂ���Ă����̗v�f�͂��܂��܂�������܂��񂪁A�`�������W���x���͂��Ȃ��̐����ƖڕW�ɍœK�ȃA�N�V������I�Ԃ̂ɖ𗧂��܂��B</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4535"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">5���Ԃ̃V�����[</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>5���Ԃ̃V�����[�ŁA�����ő�20�K�����i75���b�g���j�̐���ߖ񂵂܂��B</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4535">����Ɋw��</a><ul class="dropdown" data-dropdown="resource-links-4535">
-                    <li>�A�N�V���� ���\�[�X</li>
-                    <li><a href="https://green.harvard.edu/tools-resources/green-tip/5-ways-measure-5-minute-shower"
-                         target="_blank">5���Ԃ̃V�����[�𑪒肷��5�̕��@</a></li>
-                    <li><a href="https://www.nbcnews.com/better/pop-culture/how-take-shower-according-dermatologists-ncna740526"
-                         target="_blank">�畆�Ȃɂɂ��V�����[�̗��ѕ�</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>�`�������W�ł��łɂ��̃A�N�V�������������Ă��܂��B�A�N�V��������������ƁA���_�������\��������܂��B�{���ɂ�肽���ł����H</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>�f�C���[�`�������W</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">�`�������W���x���F</p>
-                    <p style="margin: 11px 0; font-size: 13px">�G�R�w�K��</p>
-                    <p style="text-transform: none;">�`�������W���x���́A�A�N�V���������Ɋւ�鎞�ԁA��p�A�m���A�X�L���Ƃ���4�v�f�Ō��܂�܂��B�Q���҂ɂ���Ă����̗v�f�͂��܂��܂�������܂��񂪁A�`�������W���x���͂��Ȃ��̐����ƖڕW�ɍœK�ȃA�N�V������I�Ԃ̂ɖ𗧂��܂��B</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4536"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">�g�C���̃^���N�����������t����</h3>
-                <p data-description>���͐��𗬂��񐔂����炵�A�g�C���̃^���N�����������t���邱�ƂŁA�����ő�11�K�����i41���b�g���j�̐���ߖ񂵂܂��B</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4536">����Ɋw��</a><ul class="dropdown" data-dropdown="resource-links-4536">
-                    <li>�A�N�V���� ���\�[�X</li>
-                    <li><a href="https://www.watercalculator.org/save-water/toilet/" target="_blank">���̌v�Z�@</a></li>
-                    <li><a href="https://eartheasy.com/toilet-tank-bank/" target="_blank">�g�C���̃^���N������</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>�`�������W�ł��łɂ��̃A�N�V�������������Ă��܂��B�A�N�V��������������ƁA���_�������\��������܂��B�{���ɂ�肽���ł����H</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>�����^�C�� �`�������W</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">�`�������W���x���F</p>
-                    <p style="margin: 11px 0; font-size: 13px">�G�R���[�_�[</p>
-                    <p style="text-transform: none;">�`�������W���x���́A�A�N�V���������Ɋւ�鎞�ԁA��p�A�m���A�X�L���Ƃ���4�v�f�Ō��܂�܂��B�Q���҂ɂ���Ă����̗v�f�͂��܂��܂�������܂��񂪁A�`�������W���x���͂��Ȃ��̐����ƖڕW�ɍœK�ȃA�N�V������I�Ԃ̂ɖ𗧂��܂��B</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4538"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">���R�ꂷ��֌����C������</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>���͎֌����C�����邩�A�����֌�������9�K�����i34���b�g���j�̐��𖳑ʂɂ��Ă���{�݂ɐ��R�ꂷ��֌���񍐂��܂��B</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4538">����Ɋw��</a><ul class="dropdown" data-dropdown="resource-links-4538">
-                    <li>�A�N�V���� ���\�[�X</li>
-                    <li><a href="https://www.youtube.com/watch?v=dUWl-Ub_Ow8" target="_blank">���R�ꂷ��֌��̏C�����@</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=7UbXmKW-v6o" target="_blank">���R�ꂷ��䏊�̎֌��̏C�����@</a></li>
-                    <li><a href="https://www.energy.gov/energysaver/water-heating/reduce-hot-water-use-energy-savings"
-                         target="_blank">�G�l���M�[�ߖ�̂��߂ɂ����̎g�p�����炷</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>�`�������W�ł��łɂ��̃A�N�V�������������Ă��܂��B�A�N�V��������������ƁA���_�������\��������܂��B�{���ɂ�肽���ł����H</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>�����^�C�� �`�������W</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">�`�������W���x���F</p>
-                    <p style="margin: 11px 0; font-size: 13px">�G�R�v��</p>
-                    <p style="text-transform: none;">�`�������W���x���́A�A�N�V���������Ɋւ�鎞�ԁA��p�A�m���A�X�L���Ƃ���4�v�f�Ō��܂�܂��B�Q���҂ɂ���Ă����̗v�f�͂��܂��܂�������܂��񂪁A�`�������W���x���͂��Ȃ��̐����ƖڕW�ɍœK�ȃA�N�V������I�Ԃ̂ɖ𗧂��܂��B</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4539"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">�ߐ��ł���V�����[�w�b�h�����t����</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>���͐ߐ��ł���V�����[�w�b�h�����t���邱�Ƃ�</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4539">����Ɋw��</a><ul class="dropdown" data-dropdown="resource-links-4539">
-                    <li>�A�N�V���� ���\�[�X</li>
-                    <li><a href="https://learn.eartheasy.com/guides/low-flow-aerators-showerheads/" target="_blank">�ߖ�ł���G�A���[�^�[/�V�����[�w�b�h</a></li>
-                    <li><a href="https://www.epa.gov/watersense/showerheads" target="_blank">EPA WaterSense�̃V�����[�w�b�h</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>�`�������W�ł��łɂ��̃A�N�V�������������Ă��܂��B�A�N�V��������������ƁA���_�������\��������܂��B�{���ɂ�肽���ł����H</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>�����^�C�� �`�������W</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">�`�������W���x���F</p>
-                    <p style="margin: 11px 0; font-size: 13px">�G�R���[�_�[</p>
-                    <p style="text-transform: none;">�`�������W���x���́A�A�N�V���������Ɋւ�鎞�ԁA��p�A�m���A�X�L���Ƃ���4�v�f�Ō��܂�܂��B�Q���҂ɂ���Ă����̗v�f�͂��܂��܂�������܂��񂪁A�`�������W���x���͂��Ȃ��̐����ƖڕW�ɍœK�ȃA�N�V������I�Ԃ̂ɖ𗧂��܂��B</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4540"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">�����ǂƋ������f�M����</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>�����ǂ⋋���킪�K�؂ɒf�M����Ă��邱�Ƃ��m�F���A�V�����[�◬���䂪�M���Ȃ�̂�҂��Ă���Ԃ́A���Ɛ��𖳑ʂɂ��Ȃ��悤�ɂ��܂��B������p�̒f�M�W���P�b�g�͂����Ă�������10�h������20�h���̔�p�ŁA�N��11000�|���h�i499kg�j�̓�_���Y�f��ߖ񂷂邱�Ƃ��ł��܂��B</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4540">����Ɋw��</a><ul class="dropdown" data-dropdown="resource-links-4540">
-                    <li>�A�N�V���� ���\�[�X</li>
-                    <li><a href="https://www.washingtonpost.com/news/energy-environment/wp/2015/03/04/your-shower-is-wasting-huge-amounts-of-energy-and-water-heres-what-to-do-about-it/"
-                         target="_blank">���Ȃ��̃V�����[����ʂ̃G�l���M�[�Ɛ��𖳑ʂɂ��Ă��܂��B����ɑ΂��āA���Ȃ����ł��邱�ƁB</a></li>
-                    <li><a href="https://www.energy.gov/energysaver/water-heating/reduce-hot-water-use-energy-savings"
-                         target="_blank">�G�l���M�[�ߖ�̂��߂ɂ����̎g�p�����炷</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>�`�������W�ł��łɂ��̃A�N�V�������������Ă��܂��B�A�N�V��������������ƁA���_�������\��������܂��B�{���ɂ�肽���ł����H</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>�����^�C�� �`�������W</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">�`�������W���x���F</p>
-                    <p style="margin: 11px 0; font-size: 13px">�G�R���[�_�[</p>
-                    <p style="text-transform: none;">�`�������W���x���́A�A�N�V���������Ɋւ�鎞�ԁA��p�A�m���A�X�L���Ƃ���4�v�f�Ō��܂�܂��B�Q���҂ɂ���Ă����̗v�f�͂��܂��܂�������܂��񂪁A�`�������W���x���͂��Ȃ��̐����ƖڕW�ɍœK�ȃA�N�V������I�Ԃ̂ɖ𗧂��܂��B</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4541"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">�؂ƐA���̍����𕢂�</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>���͉Ƃ�E��̖؂ƐA���̍����𕢂����ƂŐ��̗��o��h���A�z�������グ�܂��B</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4541">����Ɋw��</a><ul class="dropdown" data-dropdown="resource-links-4541">
-                    <li>�A�N�V���� ���\�[�X</li>
-                    <li><a href="https://www.gardeners.com/how-to/building-healthy-soil/5060.html" target="_blank">�R���|�X�g�ƃ}���`�œy������ǂ���</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>�`�������W�ł��łɂ��̃A�N�V�������������Ă��܂��B�A�N�V��������������ƁA���_�������\��������܂��B�{���ɂ�肽���ł����H</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>�����^�C�� �`�������W</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">�`�������W���x���F</p>
-                    <p style="margin: 11px 0; font-size: 13px">�G�R�v��</p>
-                    <p style="text-transform: none;">�`�������W���x���́A�A�N�V���������Ɋւ�鎞�ԁA��p�A�m���A�X�L���Ƃ���4�v�f�Ō��܂�܂��B�Q���҂ɂ���Ă����̗v�f�͂��܂��܂�������܂��񂪁A�`�������W���x���͂��Ȃ��̐����ƖڕW�ɍœK�ȃA�N�V������I�Ԃ̂ɖ𗧂��܂��B</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4542"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">�Ő�����߂�</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>���͎Ő������΂ɋ����i�ςɑウ�āA�Ŋ���ɔ�₵�Ă������A�����A���Ԃ�ߖ񂵂܂��B</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4542">����Ɋw��</a><ul class="dropdown" data-dropdown="resource-links-4542">
-                    <li>�A�N�V���� ���\�[�X</li>
-                    <li><a href="https://www.thespruce.com/drought-tolerant-landscaping-what-to-know-2736660"
-                         target="_blank">���΂ɋ����i�ς��Ȃ����m��ׂ�����</a></li>
-                    <li><a href="https://www.watereducation.org/drought-tolerant-landscaping" target="_blank">��������c</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>�`�������W�ł��łɂ��̃A�N�V�������������Ă��܂��B�A�N�V��������������ƁA���_�������\��������܂��B�{���ɂ�肽���ł����H</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>�����^�C�� �`�������W</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">�`�������W���x���F</p>
-                    <p style="margin: 11px 0; font-size: 13px">�G�R���[�_�[</p>
-                    <p style="text-transform: none;">�`�������W���x���́A�A�N�V���������Ɋւ�鎞�ԁA��p�A�m���A�X�L���Ƃ���4�v�f�Ō��܂�܂��B�Q���҂ɂ���Ă����̗v�f�͂��܂��܂�������܂��񂪁A�`�������W���x���͂��Ȃ��̐����ƖڕW�ɍœK�ȃA�N�V������I�Ԃ̂ɖ𗧂��܂��B</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4543"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">�J�����W�߂�</h3>
-                <p data-description>���̓��C���K�[�f���܂��̓o�C�I�X�E�F�������邩�A�J���p�̒M���g���āA���O�Ő����K�v�ȏꏊ�̂��߂ɉJ�����W�߂܂��B</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4543">����Ɋw��</a><ul class="dropdown" data-dropdown="resource-links-4543">
-                    <li>�A�N�V���� ���\�[�X</li>
-                    <li><a href="https://www.wikihow.com/Create-a-Rain-Garden" target="_blank">���C���K�[�f���̍���</a></li>
-                    <li><a href="http://nrcsolutions.org/bioswales/" target="_blank">�o�C�I�X�E�F��</a></li>
-                    <li><a href="https://www.motherearthnews.com/homesteading-and-livestock/self-reliance/rainwater-harvesting-zm0z12aszhun"
-                         target="_blank">���ǂ��J�����n�V�X�e��</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>�`�������W�ł��łɂ��̃A�N�V�������������Ă��܂��B�A�N�V��������������ƁA���_�������\��������܂��B�{���ɂ�肽���ł����H</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>�����^�C�� �`�������W</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">�`�������W���x���F</p>
-                    <p style="margin: 11px 0; font-size: 13px">�G�R�v��</p>
-                    <p style="text-transform: none;">�`�������W���x���́A�A�N�V���������Ɋւ�鎞�ԁA��p�A�m���A�X�L���Ƃ���4�v�f�Ō��܂�܂��B�Q���҂ɂ���Ă����̗v�f�͂��܂��܂�������܂��񂪁A�`�������W���x���͂��Ȃ��̐����ƖڕW�ɍœK�ȃA�N�V������I�Ԃ̂ɖ𗧂��܂��B</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4544"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">�ƒ�p�����ė��p����</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>���͉ƒ�G�r�������n���܂��B������5�K�����i18.9���b�g���j�̐��𖈓��ė��p���邱�ƂŁA�ő�75�K�����i283.9���b�g���j�̐����G�R�`�������W���ɐߖ�ł��܂��B</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4544">����Ɋw��</a><ul class="dropdown" data-dropdown="resource-links-4544">
-                    <li>�A�N�V���� ���\�[�X</li>
-                    <li><a href="https://greywateraction.org/greywater-reuse/" target="_blank">�ƒ�G�r���̍ė��p�ɂ���</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>�`�������W�ł��łɂ��̃A�N�V�������������Ă��܂��B�A�N�V��������������ƁA���_�������\��������܂��B�{���ɂ�肽���ł����H</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>�f�C���[�`�������W</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">�`�������W���x���F</p>
-                    <p style="margin: 11px 0; font-size: 13px">�G�R���[�_�[</p>
-                    <p style="text-transform: none;">�`�������W���x���́A�A�N�V���������Ɋւ�鎞�ԁA��p�A�m���A�X�L���Ƃ���4�v�f�Ō��܂�܂��B�Q���҂ɂ���Ă����̗v�f�͂��܂��܂�������܂��񂪁A�`�������W���x���͂��Ȃ��̐����ƖڕW�ɍœK�ȃA�N�V������I�Ԃ̂ɖ𗧂��܂��B</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4674"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">���𗬂����Ɏ��𖁂�</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>���͎��������ɐ��𗬂��Ȃ����ƂŁA�����ő�8�K�����i30���b�g���j�̐���ߖ񂵂܂��B</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4674">����Ɋw��</a><ul class="dropdown" data-dropdown="resource-links-4674">
-                    <li>�A�N�V���� ���\�[�X</li>
-                    <li><a href="https://water.usgs.gov/edu/qa-home-percapita.html" target="_blank">USGS: �P�l������A1���ŕ��ςǂꂭ�炢�̐����g�p���Ă���̂ł��傤���H</a></li>
-                    <li><a href="https://sustainability.ncsu.edu/blog/changeyourstate/6-times-you-should-turn-off-the-tap-to-save-water/"
-                         target="_blank">�ߐ��̂��߂Ɏ֌���߂���6�� </a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>�`�������W�ł��łɂ��̃A�N�V�������������Ă��܂��B�A�N�V��������������ƁA���_�������\��������܂��B�{���ɂ�肽���ł����H</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>�f�C���[�`�������W</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">�`�������W���x���F</p>
-                    <p style="margin: 11px 0; font-size: 13px">�G�R�w�K��</p>
-                    <p style="text-transform: none;">�`�������W���x���́A�A�N�V���������Ɋւ�鎞�ԁA��p�A�m���A�X�L���Ƃ���4�v�f�Ō��܂�܂��B�Q���҂ɂ���Ă����̗v�f�͂��܂��܂�������܂��񂪁A�`�������W���x���͂��Ȃ��̐����ƖڕW�ɍœK�ȃA�N�V������I�Ԃ̂ɖ𗧂��܂��B</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4675"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">�X�}�[�g�ȗe��</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>���͐��ƃG�l���M�[��ߖ񂷂邽�߂ɁA�H��􂢋@�Ɛ���@�̗e�ʂ������ς��ɂȂ����Ƃ������g�p���邱�Ƃ𐾂��܂��B</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4675">����Ɋw��</a><ul class="dropdown" data-dropdown="resource-links-4675">
-                    <li>�A�N�V���� ���\�[�X</li>
-                    <li><a href="https://www.thesimpledollar.com/only-wash-full-loads-of-dishes-or-clothes-22365/"
-                         target="_blank">�V���v���ȃh�������ς��ɂȂ����Ƃ�������</a></li>
-                    <li><a href="https://www.conserveh2o.org/washing-dishes-dishwasher-water-use" target="_blank">�H��􂢋@�Ɏd����������</a></li>
-                    <li><a href="https://www.seventhgeneration.com/blog/dirt-laundry" target="_blank">���󕨂̉���</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>�`�������W�ł��łɂ��̃A�N�V�������������Ă��܂��B�A�N�V��������������ƁA���_�������\��������܂��B�{���ɂ�肽���ł����H</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>�����^�C�� �`�������W</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">�`�������W���x���F</p>
-                    <p style="margin: 11px 0; font-size: 13px">�G�R�w�K��</p>
-                    <p style="text-transform: none;">�`�������W���x���́A�A�N�V���������Ɋւ�鎞�ԁA��p�A�m���A�X�L���Ƃ���4�v�f�Ō��܂�܂��B�Q���҂ɂ���Ă����̗v�f�͂��܂��܂�������܂��񂪁A�`�������W���x���͂��Ȃ��̐����ƖڕW�ɍœK�ȃA�N�V������I�Ԃ̂ɖ𗧂��܂��B</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4676"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">���̋����𒲍�����</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>����(___)�����₵�āA�����̒n��̕����n�_�Ɛ����ɂ��Ă���Ɋw�сA�ۑS�␅��������肵�܂��B</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4676">����Ɋw��</a><ul class="dropdown" data-dropdown="resource-links-4676">
-                    <li>�A�N�V���� ���\�[�X</li>
-                    <li><a href="https://water.usgs.gov/wsc/map_index.html" target="_blank">���Ȃ��̕����n�_��������i�č��j</a></li>
-                    <li><a href="http://riverbasins.wateractionhub.org/" target="_blank">���E�̕����n�_�̃C���^���N�e�B�u �f�[�^�x�[�X</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>�`�������W�ł��łɂ��̃A�N�V�������������Ă��܂��B�A�N�V��������������ƁA���_�������\��������܂��B�{���ɂ�肽���ł����H</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>�����^�C�� �`�������W</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">�`�������W���x���F</p>
-                    <p style="margin: 11px 0; font-size: 13px">�G�R�w�K��</p>
-                    <p style="text-transform: none;">�`�������W���x���́A�A�N�V���������Ɋւ�鎞�ԁA��p�A�m���A�X�L���Ƃ���4�v�f�Ō��܂�܂��B�Q���҂ɂ���Ă����̗v�f�͂��܂��܂�������܂��񂪁A�`�������W���x���͂��Ȃ��̐����ƖڕW�ɍœK�ȃA�N�V������I�Ԃ̂ɖ𗧂��܂��B</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-      </ul>
-    </nav>
-
-
-    <p class="align-center"><a class="back-link" href="/challenges.html">���ׂẴ`�������W�ɖ߂�</a></p>
-  </div>
-</section>
-
-<footer class="global-footer">
-  <section class="bg-neutral20">
-
-  </section>
-  <section class="bg-neutral100">
-    <div class="content">
-      <div class="section">
-        <div class="block">
-          <div>
-            <div class="subheading">�������̃X�g�[���[</div>
-            <p>150�N�ԁA���b�g���C�t�͗D�Ǌ�Ǝs���Ƃ��ċƖ����s���Ă��܂����B���N�ɂ킽���z���̈�Y�̏�ɐ��藧���A�������͐��E���̐l�X�A�Ƒ��A�n��Љ���������̖ڕW��B�����A�l�������]�Ȑ܂����z���邨��`�������������関�����m���ɂ��邱�ƂɃR�~�b�g���Ă��܂��B</p>
-          </div>
-
-        </div>
-        <div class="block">
-          <div>
-            <div class="subheading">���⍇��</div>
-            <div>MetLife, Inc.<br>200 Park Avenue<br>New York, NY 10166<br>gogreen@metlife.com</div>
-            <div class="support-link"><a href="mailto:support@ecochallenge.org">support@ecochallenge.org</a></div>
-          </div>
-
-          <div>
-          </div>
-
-        </div>
-      </div>
-      <div class="section logos">
-        <div class="logo"><img src="../assets/images/logo.jpg"/> <a class="link-primary" href="https://metlife.ecochallenge.org/about/event-info">��Î҂ɂ���</a></div>
-      </div>
-
-    </div>
-  </section>
-  <section class="bg-neutral120">
-    <div class="bottom">
-      <div class="align-left"><span class="colophon">&copy; 2016-2019 Northwest Earth Institute</span></div>
-      <div class="align-right"><a href="https://ecochallenge.org/wp-content/uploads/2016/07/NWEI-Privacy-Policy_03.11.17.pdf" target="_blank">�v���C�o�V�[�|���V�[</a> <a href="mailto:support@ecochallenge.org">�e�N�j�J���T�|�[�g</a> <a href="https://ecochallenge.org/donations/donate-to-ecochallenge/" target="_blank" class="outlined">��t</a></div>
-    </div>
-  </section>
-
-</footer>
-
-
+<body class="layout-event" data-gtm-page-name="" data-gtm-subdomain="metlife">
+	<header class="global-header">
+		<nav class="user-nav"></nav>
+	</header>
+	<div class="event-header">
+		<div class="event-info">
+			<div class="subtitle">
+				<a href="https://www.metlife.com/">
+				<div class="logo"><img src="../assets/images/metlife_eng_logo_rgb.jpg"/></div></a>
+			</div>
+			<div class="title">
+				<a href="http://metlife.ecochallenge.org">2020年メットライフEcoChallenge</a>
+			</div>
+			<div class="event-date-range" data-date-range="">
+				2020年10月19日～10月30日
+			</div>
+		</div>
+	</div>
+	<section class="bg-spectrum spectrum03">
+		<div class="container">
+			<header class="section-title">
+				<div class="icon">
+					<svg class="border" viewbox="0 0 46 46" xmlns="http://www.w3.org/2000/svg">
+					<circle cx="23" cy="23" fill="none" r="22.5"></circle></svg> <svg viewbox="0 0 46 46" xmlns="http://www.w3.org/2000/svg">
+					<path d="M23.183 17.069l-.456-.456a5.671 5.671 0 0 0-8.02 0h0a5.671 5.671 0 0 0-1.662 4.01v22.755" fill="none"></path>
+					<path d="M27.407 15.362l-7.231 7.231-2.101-3.87 5.258-5.466 4.074 2.105z" fill="#fff"></path>
+					<path d="M24.68 22.679zm1.07 3.87zm1.07 3.871zm.66-10.541zm1.07 3.87zm2.8-2.8zm-1.73 6.671zm2.8-2.8zm2.801-2.8z" fill="none" stroke-linecap="round" stroke-width="1.25"></path></svg>
+				</div>
+				<h1 class="title">水</h1><a class="subtitle medium" href="../challenges.html">すべてのアクションのカテゴリーに戻る</a>
+				<p class="description uppercase">1滴1滴が大切だということを証明しましょう。</p>
+				<p class="description">人類の誕生以来、清浄な淡水は、人類の存続にとって不可欠な要因となってきました。清浄な水資源が十分にある場所で文明が進化したことは、歴史が物語っています。そして、水の供給が妨げられれば、新しい水源を確保したり、水が豊かな別の場所へ移住したりする必要が生じ、それができなければ文明は崩壊を余儀なくされました。水は、人類の存続にとって欠くことができません。にもかかわらず、私たちはしばしば、この限りある貴重な資源を気にも留めずにいます。</p>
+				<div class="challenge-resource">
+					<a class="button-outlined" href="https://ecochallenge.org/wp-content/uploads/2017/03/2017-MetLife-EcoChallenge-Resources_Water.pdf" target="_blank">詳細情報</a>
+				</div>
+				<div class="challenge-sponsors"></div>
+			</header>
+			<div class="filter-toggle-group closed">
+				<div class="form-divider" data-filter-toggle="">
+					<span class="rule"></span> <span class="text" data-filter-toggle="" data-filter-type="action"></span> <span class="rule"></span>
+				</div>
+				<form accept-charset="UTF-8" action="/challenges/water" class="form-search-filter form-field centered" data-search-filter="true" method="get">
+					<input name="utf8" type="hidden" value="&#x2713;">
+					<div class="filters centered">
+						<div class="select" data-filter="">
+							<select id="difficulty" name="difficulty">
+								<option value="">
+									難易度：
+								</option>
+								<option value="easy">
+									EcoLearner
+								</option>
+								<option value="medium">
+									EcoPro
+								</option>
+								<option value="difficult">
+									EcoLeader
+								</option>
+							</select>
+						</div>
+						<div class="select" data-filter="">
+							<select id="limit_kind" name="limit_kind">
+								<option value="">
+									頻度：
+								</option>
+								<option value="one_time">
+									単発
+								</option>
+								<option value="daily">
+									毎日
+								</option>
+							</select>
+						</div>
+					</div>
+					<div class="filters centered">
+						<span class="prompt">表示するアクション：</span> <label class="checkbox" data-filter=""><input id="is_customizable" name="is_customizable" type="checkbox" value="1"> <span class="toggle-indicator"></span> カスタマイズできるアクションのみ</label> <label class="checkbox" data-filter=""><input id="has_resources" name="has_resources" type="checkbox" value="1"> <span class="toggle-indicator"></span> リソースへのリンクがあるアクションのみ</label>
+					</div>
+					<div class="reset inactive">
+						<a href="/challenges/water">すべてのフィルタをクリア</a>
+					</div>
+				</form>
+			</div>
+			<nav class="challenge-actions-list">
+				<ul>
+					<li class="action-card" data-action="6887" data-api-path="https://metlife.ecochallenge.org/me/actions/6887/myself/selection" data-customizable="true" id="action-6887">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">水の正義の活動に参加する</h3>
+									<p data-description="">少なくとも（___）分間を費やして、水の正義についてのリソースで学習し、自分の地域内の活動に参加する方法を学ぶ。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6887">
+											<li>Action Resources:</li>
+											<li>
+												<a href="http://www.takepart.com/feature/2016/08/26/native-american-waters/" target="_blank">Native Americans Take Up a Sacred Fight Against Water Pollution</a>
+											</li>
+											<li>
+												<a href="https://impactethics.ca/2017/03/31/water-health-social-justice/" target="_blank">Water, Health, and Social Justice</a>
+											</li>
+											<li>
+												<a href="https://sustainabledevelopment.un.org/sdg6" target="_blank">Sustainable Development Goal 6:Water for All</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>毎日のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLearner</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6888" data-api-path="https://metlife.ecochallenge.org/me/actions/6888/myself/selection" data-customizable="false" id="action-6888">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">エコ・フレンドリーなガーデニング</h3>
+									<p data-description="">地元の品種を植え、水効率の良い植物で庭をつくり、エコ・フレンドリーな肥料を使う。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6888">
+											<li>Action Resources:</li>
+											<li>
+												<a href="http://www.nwf.org/NativePlantFinder/About" target="_blank">Native Plant Finder</a>
+											</li>
+											<li>
+												<a href="http://www.groundwater.org/action/home/raingardens.html" target="_blank">All About Rain Gardens</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>単発のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoPro</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6889" data-api-path="https://metlife.ecochallenge.org/me/actions/6889/myself/selection" data-customizable="true" id="action-6889">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">プラスチックのストローを使わない</h3>
+									<p data-description="">水辺に生息する鳥の71％、カメの30％で、胃の中からプラスチックが見つかると見積もられている。また、プラスチックを飲み込んだ海洋生物は50％の確率で死ぬ。そこで、ドリンクを注文する際にストローはいらないと伝えることで、毎日（___）本のプラスチック・ストローが海に行き着くのを防止する。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6889">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.strawlessocean.org/faq/" target="_blank">Strawless Ocean</a>
+											</li>
+											<li>
+												<a href="https://www.surfrider.org/" target="_blank">Surfrider</a>
+											</li>
+											<li>
+												<a href="https://simplystraws.com/" target="_blank">Simply Straws</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>毎日のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLearner</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6890" data-api-path="https://metlife.ecochallenge.org/me/actions/6890/myself/selection" data-customizable="false" id="action-6890">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">5分間シャワー</h3>
+									<p data-description="">シャワーの時間を5分にすることで、毎日最大75 Lの水を節約する。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6890">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.greenlifestylechanges.com/take-5-minute-showers/" target="_blank">Take 5 Minute Showers</a>
+											</li>
+											<li>
+												<a href="https://sustainabledevelopment.un.org/sdg6" target="_blank">Sustainable Development Goal 6:Water for All</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>毎日のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLearner</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6891" data-api-path="https://metlife.ecochallenge.org/me/actions/6891/myself/selection" data-customizable="false" id="action-6891">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">トイレタンク節水装置を取り付ける</h3>
+									<p data-description="">トイレの水槽に節水キットを取り付けて、毎日最大41 Lの水を節約する。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6891">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.watercalculator.org/save-water/toilet/" target="_blank">Water Calculator</a>
+											</li>
+											<li>
+												<a href="https://eartheasy.com/toilet-tank-bank/" target="_blank">Toilet Tank Bank</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>単発のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLeader</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6892" data-api-path="https://metlife.ecochallenge.org/me/actions/6892/myself/selection" data-customizable="true" id="action-6892">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">蛇口の水漏れを直す</h3>
+									<p data-description="">蛇口の水漏れを直すか、水漏れを施設に報告することで、1日当たり1か所で最大34 Lの水の無駄をなくす。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6892">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.youtube.com/watch?v=dUWl-Ub_Ow8" target="_blank">How to Fix a Leaky Faucet</a>
+											</li>
+											<li>
+												<a href="https://www.youtube.com/watch?v=7UbXmKW-v6o" target="_blank">How to Repair a Leaky Kitchen Faucet</a>
+											</li>
+											<li>
+												<a href="https://www.energy.gov/energysaver/water-heating/reduce-hot-water-use-energy-savings" target="_blank">Reduce Hot Water Use for Energy Savings</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>単発のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoPro</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6893" data-api-path="https://metlife.ecochallenge.org/me/actions/6893/myself/selection" data-customizable="false" id="action-6893">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">節水型シャワーヘッドを取り付ける</h3>
+									<p data-description="">節水型のシャワーヘッドを取り付けることで、1日当たり最大56 Lの水を節約する。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6893">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://learn.eartheasy.com/guides/low-flow-aerators-showerheads/" target="_blank">Low-Flow Aerators / Showerheads</a>
+											</li>
+											<li>
+												<a href="https://www.epa.gov/watersense/showerheads" target="_blank">EPA WaterSense Showerheads</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>単発のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLeader</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6894" data-api-path="https://metlife.ecochallenge.org/me/actions/6894/myself/selection" data-customizable="false" id="action-6894">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">水道管と温水器に断熱材を取り付ける。</h3>
+									<p data-description="">水道管と温水器の断熱を確実に行うことで、シャワーやシンクでお湯が出てくるまで待つ間の水の無駄を回避する。温水器の断熱カバーは、たいてい$10～$20程度で、年間最大499 kgの二酸化炭素排出削減ができる。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6894">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.washingtonpost.com/news/energy-environment/wp/2015/03/04/your-shower-is-wasting-huge-amounts-of-energy-and-water-heres-what-to-do-about-it/" target="_blank">Your Shower Is Wasting Huge Amounts of Energy and Water.Here’s What You Can Do About It.</a>
+											</li>
+											<li>
+												<a href="https://www.energy.gov/energysaver/water-heating/reduce-hot-water-use-energy-savings" target="_blank">Reduce Hot Water Use for Energy Savings</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>単発のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLeader</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6895" data-api-path="https://metlife.ecochallenge.org/me/actions/6895/myself/selection" data-customizable="false" id="action-6895">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">庭の木や植物の根元をマルチで覆う</h3>
+									<p data-description="">自宅や職場の木や植物の根元をマルチで覆うことで、水の表面流出を防ぎ、吸収を良くする。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6895">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.gardeners.com/how-to/building-healthy-soil/5060.html" target="_blank">Building Healthy Soil</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>単発のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoPro</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6896" data-api-path="https://metlife.ecochallenge.org/me/actions/6896/myself/selection" data-customizable="false" id="action-6896">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">芝生は止める</h3>
+									<p data-description="">芝生の代わりに、水が少なくても大丈夫な庭造りにすることで、水とお金を節約し、芝刈りの時間も節約する。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6896">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.thespruce.com/drought-tolerant-landscaping-what-to-know-2736660" target="_blank">Drought Tolerant Landscaping:What You Should Know</a>
+											</li>
+											<li>
+												<a href="https://www.watereducation.org/drought-tolerant-landscaping" target="_blank">Water Education Foundation</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>単発のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLeader</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6897" data-api-path="https://metlife.ecochallenge.org/me/actions/6897/myself/selection" data-customizable="false" id="action-6897">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">雨水を溜める</h3>
+									<p data-description="">レインガーデンやバイオスウェール（浸透池）を作ったり、雨水樽など使うことで、屋外の水やりに必要な水を溜めておく。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6897">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.wikihow.com/Create-a-Rain-Garden" target="_blank">How to Create a Rain Garden</a>
+											</li>
+											<li>
+												<a href="http://nrcsolutions.org/bioswales/" target="_blank">Bioswales</a>
+											</li>
+											<li>
+												<a href="https://www.motherearthnews.com/homesteading-and-livestock/self-reliance/rainwater-harvesting-zm0z12aszhun" target="_blank">A Better Rainwater-Harvesting System</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>単発のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoPro</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6898" data-api-path="https://metlife.ecochallenge.org/me/actions/6898/myself/selection" data-customizable="false" id="action-6898">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">家庭用水を再使用する</h3>
+									<p data-description="">家庭の雑排水を回収する。1日当たり18.9 Lの水を再使用するだけで、EcoChallengeの期間中に最大283.9 Lを節水できる。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6898">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://greywateraction.org/greywater-reuse/" target="_blank">About Grey Water Reuse</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>毎日のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLeader</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6899" data-api-path="https://metlife.ecochallenge.org/me/actions/6899/myself/selection" data-customizable="false" id="action-6899">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">歯を磨くときは、水を止める</h3>
+									<p data-description="">歯を磨くときに水を出しっ放しにしないことで、毎日最大30 Lの水を節約する。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6899">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://water.usgs.gov/edu/qa-home-percapita.html" target="_blank">USGS:How Much Water Does the Average Person Use at Home Per Day?</a>
+											</li>
+											<li>
+												<a href="https://sustainability.ncsu.edu/blog/changeyourstate/6-times-you-should-turn-off-the-tap-to-save-water/" target="_blank">6 Times You Can Turn off the Tap to Save Water</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>毎日のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLearner</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6900" data-api-path="https://metlife.ecochallenge.org/me/actions/6900/myself/selection" data-customizable="false" id="action-6900">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">賢く洗う</h3>
+									<p data-description="">食器洗い機や洗濯機は、洗うものが一杯になったときだけ作動させることで、節水と省エネを行うことを誓う。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6900">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.thesimpledollar.com/only-wash-full-loads-of-dishes-or-clothes-22365/" target="_blank">The Simple Dollar:Only Wash Full Loads</a>
+											</li>
+											<li>
+												<a href="https://www.conserveh2o.org/washing-dishes-dishwasher-water-use" target="_blank">Let Your Dishwasher Do the Work</a>
+											</li>
+											<li>
+												<a href="https://www.seventhgeneration.com/blog/dirt-laundry" target="_blank">The Dirt on Laundry</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>単発のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLearner</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6901" data-api-path="https://metlife.ecochallenge.org/me/actions/6901/myself/selection" data-customizable="true" id="action-6901">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">水源についてリサーチする</h3>
+									<p data-description="">（___）分間を費やして、地域内の流域や水源について学び、水源保護や水質問題のことを知る。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6901">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://water.usgs.gov/wsc/map_index.html" target="_blank">Locate your WaterShed USA</a>
+											</li>
+											<li>
+												<a href="http://riverbasins.wateractionhub.org/" target="_blank">Interactive Database of the World's Watersheds</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>単発のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLearner</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="8352" data-api-path="https://metlife.ecochallenge.org/me/actions/8352/myself/selection" data-customizable="false" id="action-8352">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">食洗器を効率よく使う</h3>
+									<p data-description="">食器を食洗器に入れる前に、汚れを洗い流すのではなく、こすり落とす。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-8352">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://support.worldwildlife.org/site/Advocacy?cmd=display&amp;page=UserAction&amp;id=971" target="_blank">Join the Freshwater Force</a>
+											</li>
+											<li>
+												<a href="https://c402277.ssl.cf1.rackcdn.com/publications/1154/files/original/Water_4.4.pdf?1523984978" target="_blank">Protecting Fresh Water</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>毎日のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoPro</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="8353" data-api-path="https://metlife.ecochallenge.org/me/actions/8353/myself/selection" data-customizable="false" id="action-8353">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">水のことを考えた化粧品を使用する</h3>
+									<p data-description="">マイクロビーズや有害な化学品は土壌や水源に入り込むため、これらを使用した化粧品は使わない。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-8353">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.ewg.org/skindeep/" target="_blank">EWG Skin Deep</a>
+											</li>
+											<li>
+												<a href="https://www.beatthemicrobead.org/3-reasons-to-worry-about-microplastics-in-2020/" target="_blank">3 Reasons to Worry About Microplastics in 2020</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>毎日のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoPro</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</nav>
+			<p class="align-center"><a class="back-link" href="../challenges.html">すべてのアクションのカテゴリーに戻る</a></p>
+		</div>
+	</section>
+	<footer class="global-footer">
+		<section class="bg-neutral20"></section>
+		<section class="bg-neutral100">
+			<div class="content">
+				<div class="section">
+					<div class="block">
+						<div>
+							<div class="subheading">
+								沿革
+							</div>
+							<p>メットライフは150年にわたり、責任ある企業市民としての役割を果たしてきました。当社には長年にわたるエクセレンスの実績があります。当社は、世界各地の人々、ご家族、地域社会が、目標を達成し、人生のアップダウンをナビゲートできるよう支援し続け、確かな未来を築くことに取り組んでいます。</p>
+						</div>
+					</div>
+					<div class="block">
+						<div>
+							<div class="subheading">
+								お問い合わせ先
+							</div>
+							<div>
+								MetLife, Inc.<br/>200 Park Avenue<br/>New York, NY 10166<br/>gogreen@metlife.com
+							</div>
+							<div class="support-link">
+								<a href="mailto:support@ecochallenge.org">support@ecochallenge.org</a>
+							</div>
+						</div>
+						<div></div>
+					</div>
+				</div>
+				<div class="section logos">
+					<div class="logo">
+						<img src="../assets/images/metlife_eng_logo_rgb.jpg?1582136268"/> <a class="link-primary" href="https://www.metlife.com/">イベント主催者について</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bg-neutral120">
+			<div class="bottom">
+				<div class="align-left">
+					<span class="colophon">© 2016-2020 Ecochallenge.org</span>
+				</div>
+				<div class="align-right">
+					<a href="http://ecochallenge.org/privacy-policy" target="_blank">プライバシーポリシー | 利用規約</a> <a href="mailto:support@ecochallenge.org">テクニカルサポート</a> <a class="outlined" data-donate-button="" data-donate-default="30" href="#">寄付</a>
+				</div>
+			</div>
+		</section>
+	</footer>
 </body>
 </html>
-

@@ -1,1207 +1,993 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:og="http://ogp.me/ns#"
-      xmlns:fb="https://www.facebook.com/2008/fbml">
+﻿<!DOCTYPE html>
+<html>
 <head>
-  <title>2019年　メットライフ エコチャレンジ - イベント情報</title>
-  <link rel="stylesheet" media="all" href="../assets/stylesheets/application.css" data-turbolinks-track="true"/>
-  <script src="../assets/javascripts/application.js" data-turbolinks-track="true"></script>
-  <meta name="action-cable-url" content="/cable"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#ffffff">
-  <meta name="robots" content="noindex">
-
-  <meta name="csrf-param" content="authenticity_token"/>
-  <meta name="csrf-token"
-        content="KHbHeVfyS683SdqR+FCO7sJ7ZY4xcTTw0pVqzKOm+O8rq5m3j4rBvFsjaMcCnf5Q5WK1AJ3YFK6e/wpdT5aVdg=="/><!-- default meta --><meta property="og:title"
-        content="Join the 2019 MetLife EcoChallenge, presented by MetLife Global Sustainability Team"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:description"
-        content="For two weeks, we challenge you to make eco-friendly choices to live a more sustainable lifestyle! Team up with colleagues from around the world and take action to create a healthier planet during the 2019 MetLife EcoChallenge. "/>
-  <meta property="og:image"
-        content="http://metlife.ecochallenge.org/system/events/org_logos/000/000/039/original/metlife_eng_logo_rgb.jpg?1552691799"/>
-  <meta property="og:url" content="http://metlife.ecochallenge.org"/>
-
-
-  <style type="text/css">nav.user-nav {
-    background-color: #0061A0;
-  }
-
-  .event-header .event-info {
-    margin: 10px 15px 30px;
-  }
-
-  a {
-    color: #007ABC;
-  }
-
-  .button-primary, .button-primary.dark:hover, .award-point-list a, .award-point-list a .points::after, .event-header .event-nav a.outlined:hover, .event-header .event-nav a.outlined:active, .hero .button:hover, .button-outlined:hover {
-    background-color: #007ABC;
-  }
-
-  .event-header .event-nav a.outlined, .button-outlined {
-    border-color: #007ABC;
-    color: #007ABC;
-  }
-
-  .event-check-ins .days li.action-complete, .legend li .action-complete.marker {
-    background-color: #0061A0;
-  }
-
-  .calendar .week a.action-complete {
-    color: #0061A0;
-    border-color: #0061A0;
-  }
-
-  .event-header .event-info .event-date-range {
-    border-top: 1px solid #0061A0;
-    border-bottom: 1px solid #0061A0;
-  }
-
-  h2, h3, h5, .participants-counter .title, .horizontal-section-title .title, .page-content .title {
-    color: #333333;
-  }
-
-  .participant-feed .dropdown-wrapper& gt
-
-  ;
-  .feed-filter {
-    color: #0061A0;
-  }
-
-  .form-button-icon.facebook, .form-button-icon.google {
-    display: none;
-  }
-
-  .hero .sign, .event-header .event-info .title a, h2, h3, h5, .participants-counter .title, .horizontal-section-title .title, .page-content .title, .placeholder .title, .challenges-slider .slider-header .title, .section-title .title, .team-hero .title, .team-detail-points .title, .dashboard-sidebar .team-summary .team-header .title, .dashboard-sidebar .user-summary .user-header .name, .impact-grid .impact-card .units, .dashboard-sidebar .impact-summary .challenge-impact .count, .participants-counter .count .digit-box span {
-    font-family: Georgia, Times;
-    font-weight: bold;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-  }
-
-  p {
-    font-size: 15px;
-  }
-
-  .global-footer .top .subheading {
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-    font-size: 14px;
-    color: white;
-  }
-
-  .global-footer .top .social a, .global-footer .top .col, .global-footer .top .description {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: normal;
-    font-size: 12px;
-  }
-
-  .hero .copy, .company-callout .callout-container .blurb, .placeholder p, .page-content, .participant-action-cards .card-container .description p, .awarded-points-list tr + tr td, .section-title .description, .participants-feed-full .copy {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  .placeholder p, .page-content, .section-title .description, .participants-feed-full .copy {
-    font-size: 13px;
-  }
-
-  .hero .container-hero {
-    max-width: 450px;
-  }
-
-  .event-header .event-info .title a {
-    color: #000000;
-  }
-
-  .hero .copy {
-    font-weight: bold;
-  }
-
-  .user-nav ul li a:hover {
-    color: white;
-    opacity: 0.8;
-  }
-
-  .event-header .event-info .logo img {
-    max-height: 100px;
-    max-width: 170px;
-  }
-
-  .bottom .outlined {
-    display: none;
-  }
-
-  .hero .sign {
-    background-color: rgba(242, 242, 242, 0.85);
-    padding: 15px;
-    color: #333;
-    text-transform: inherit;
-    border-radius: 6px 6px 0px 0px;
-  }
-
-  .hero .copy {
-    background-color: rgba(242, 242, 242, 0.85);
-    padding: 15px;
-    padding-top: 0px;
-    color: #333;
-    border-radius: 0px 0px 6px 6px;
-    font-weight: lighter;
-  }
-
-  .hero .button {
-    font-family: & #39;
-    Galaxie Polaris & #39;, & #39;
-    Arial & #39;, sans-serif;
-    font-size: 13px;
-    letter-spacing: 0.1em;
-    display: inline-block;
-    padding: 10px 15px;
-    margin-top: 25px;
-    color: #ffffff;
-    border-radius: 4px;
-    background-color: #0061A0;
-    transition: color 0.2s ease, background-color 0.2s ease
-  }
-
-  .challenges-slider .slider-utility a, .featured_challenge .challenge-callout a {
-    border-radius: 4px;
-  }
-
-  p.instructional-message {
-    font-size: 12px;
-  }
-
-  .copy a:hover, .dashboard-table a:hover, .participant a:hover, .section-title .description a:hover, .section-title .subtitle a:hover {
-    text-decoration: underline;
-  }
-
-  /* Center Challenge Cards -kbb */
-  .challenges-grid {
-    justify-content: space-around;
-  }
-
-  .company-callout .callout-container .blurb {
-    font-size: 17px;
-  }
-
-  .nweiBrand {
-    text-align: center;
-    margin-top: 48px;
-    margin-bottom: 18px;
-  }
-
-  .nweiLogoAbout {
-    width: 100%;
-    max-width: 250px;
-    height: auto;
-  }</style>
+	<title>2020年メットライフEcoChallenge - エネルギー</title>
+	<link href="../assets/stylesheets/application.css" media="all" rel="stylesheet">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="a#ffffff" name="theme-color">
+	<meta content="GU,PR,US,VI" name="location-countries">
+	<meta content="noindex" name="robots">
+	<link href="/site.webmanifest" rel="manifest">
+	<meta content="#134b61" name="msapplication-TileColor">
+	<meta content="#134b61" name="theme-color">
+	<link href="/manifest.json" rel="manifest">
+	<link href="/safari-pinned-tab.svg" rel="mask-icon">
 </head>
-
-<body
-        class="layout-event"
->
-
-<header class="global-header">
-  <nav class="user-nav"></nav>
-</header>
-
-<div class="event-header ">
-  <div class="event-info" style="">
-    <div class="subtitle"><a href="https://metlife.ecochallenge.org/about/event-info"><div class="logo"><img src="../assets/images/logo.jpg"/></div></a></div>
-    <div class="title"><a href="http://metlife.ecochallenge.org/">2019年  メットライフ エコチャレンジ</a></div>
-    <div class="event-date-range" data-date-range=""><span data-date-range-start>2019年4月24日</span> <span> - </span> <span data-date-range-end>5月10日</span></div>
-    <div id="regPassBlock"><a class="outlined regNew" href="https://metlife.ecochallenge.org/users/join">ライブ登録 (英語)</a><p id="greenImpact">イベントのパスワード: greenimpact</p>
-    </div>
-  </div>
-  <nav class="event-nav navNew">
-    <ul>
-      <li><a href="../">詳細</a></li>
-      <li><a href="../points.html">要点</a></li>
-      <li><a href="../challenges.html">課題</a></li>
-    </ul>
-  </nav>
-</div>
-
-
-<section class="bg-spectrum spectrum05">
-  <div class="container">
-    <header class="section-title">
-      <div class="icon">
-        <svg class="border" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 46">
-          <circle r="22.5" cx="23" cy="23" fill="none"></circle>
-        </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 46">
-          <path d="M23.123 19.473a3.616 3.616 0 0 0-2.245.792l1.366-12.909h1.758l1.365 12.909a3.616 3.616 0 0 0-2.244-.792zm-3.65 3.65a3.632 3.632 0 0 1 .06-.6L9.03 30.244l.88 1.522 11.731-5.315a3.645 3.645 0 0 1-2.167-3.33zm17.743 7.122l-10.504-7.723a3.556 3.556 0 0 1-2.107 3.93l11.732 5.315z"
-                fill="#fff"/>
-          <path d="M23.123 26.772v18.974m0-26.273a3.65 3.65 0 1 0 3.65 3.65 3.65 3.65 0 0 0-3.65-3.65zm2.244.792L24.002 7.356h-1.758l-1.366 12.909m-1.344 2.257L9.029 30.245l.88 1.522 11.731-5.315m2.965 0l11.732 5.315.88-1.522-10.505-7.723m11.979-1.198A13.228 13.228 0 0 0 30.54 9.108M35.323 20.2a9.925 9.925 0 0 0-5.254-7.664"
-                fill="none"/>
-        </svg>
-
-      </div>
-      <h1 class="title">エネルギー</h1><a class="subtitle medium" href="/challenges.html">すべてのチャレンジに戻る</a><p class="description uppercase">省エネは地球にも、あなたのお財布にも良いことです。</p>
-      <p class="description">エネルギーは移動性、成長、適応性、開発を可能にします。信頼できるエネルギーにアクセスすることで、子供たちは暗くなった後に勉強し、家族は自分の家を暖めて食べ物を冷蔵し、医療スタッフは救命処置を行い、企業は成長し拡大することができます。賢くエネルギーを使い、再生可能なエネルギーオプションを選ぶことは、地球の健康と私たちの幸せのために重要なことです。</p>
-      <div class="challenge-resource"><a class="button-outlined" target="_blank"
-           href="https://ecochallenge.org/wp-content/uploads/2017/03/2017-MetLife-EcoChallenge-Resources_Energy.pdf">さらに学ぶ</a></div>
-      <div class="challenge-sponsors">
-      </div>
-    </header>
-
-    <nav class="challenge-actions-list">
-      <ul>
-        <li class="action-card"
-            data-participant-action
-            data-action="4571"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">LED電球を選ぶ</h3>
-                <p data-description>私は(___)個の白熱電球をエネルギースター認証のLED電球に取り替え、年間で最大$14分の個数を節約します。</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4571">さらに学ぶ</a><ul class="dropdown" data-dropdown="resource-links-4571">
-                    <li>アクション リソース</li>
-                    <li><a href="https://www.energystar.gov/products/lighting_fans/light_bulbs" target="_blank">エネルギースター：電球</a></li>
-                    <li><a href="http://www.drawdown.org/solutions/buildings-and-cities/led-lighting-household"
-                         target="_blank">ドローダウン ソリューション #33：LED照明（家庭用）</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>チャレンジですでにこのアクションを完了しています。アクションを消去すると、得点を失う可能性があります。本当にやりたいですか？</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>ワンタイム チャレンジ</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">チャレンジレベル：</p>
-                    <p style="margin: 11px 0; font-size: 13px">エコ学習者</p>
-                    <p style="text-transform: none;">チャレンジレベルは、アクション完了に関わる時間、費用、知識、スキルという4要素で決まります。参加者によってこれらの要素はさまざまかもしれませんが、チャレンジレベルはあなたの生活と目標に最適なアクションを選ぶのに役立ちます。</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4572"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">サーモスタットを調節する</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>私はヒーターを使う際に通常より2度低くサーモスタットを調節し、冷房を使う際には2度上げます。これで年間、最大2,000 lbs (907 kg) の二酸化炭素を減らすことができます！(1日あたり5.5 lbs/2.5 kg)</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4572">さらに学ぶ</a><ul class="dropdown" data-dropdown="resource-links-4572">
-                    <li>アクション リソース</li>
-                    <li><a href="https://www.directenergy.com/blog/how-much-can-you-save-by-adjusting-your-thermostat/"
-                         target="_blank">サーモスタットを変更すれば、どれだけ節約できる？</a></li>
-                    <li><a href="https://www.energy.gov/energysaver/thermostats" target="_blank">DOE エネルギーセーバー：サーモスタットのヒント </a></li>
-                    <li><a href="https://my.metlife.com/sites/gogreen/SitePages/energy_action_month.aspx" target="_blank">メットライフのエネルギーアクション月間</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>チャレンジですでにこのアクションを完了しています。アクションを消去すると、得点を失う可能性があります。本当にやりたいですか？</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>デイリーチャレンジ</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">チャレンジレベル：</p>
-                    <p style="margin: 11px 0; font-size: 13px">エコ学習者</p>
-                    <p style="text-transform: none;">チャレンジレベルは、アクション完了に関わる時間、費用、知識、スキルという4要素で決まります。参加者によってこれらの要素はさまざまかもしれませんが、チャレンジレベルはあなたの生活と目標に最適なアクションを選ぶのに役立ちます。</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4573"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">クリーン/再生可能なエネルギーを選ぶ</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>可能なら、会社のクリーン/再生可能なエネルギーオプションに申し込みます。</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4573">さらに学ぶ</a><ul class="dropdown" data-dropdown="resource-links-4573">
-                    <li>アクション リソース</li>
-                    <li><a href="https://www.un.org/sustainabledevelopment/energy/" target="_blank">UN SDG 7：良心的価格のクリーンエネルギー</a></li>
-                    <li><a href="https://www.drawdown.org/solutions/electricity-generation" target="_blank">ドローダウン：電気の生成</a></li>
-                    <li><a href="https://spotforcleanenergy.org/policy/utility-green-power-option/" target="_blank">米国における再生可能なエネルギー利用の選択肢</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>チャレンジですでにこのアクションを完了しています。アクションを消去すると、得点を失う可能性があります。本当にやりたいですか？</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>ワンタイム チャレンジ</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">チャレンジレベル：</p>
-                    <p style="margin: 11px 0; font-size: 13px">エコリーダー</p>
-                    <p style="text-transform: none;">チャレンジレベルは、アクション完了に関わる時間、費用、知識、スキルという4要素で決まります。参加者によってこれらの要素はさまざまかもしれませんが、チャレンジレベルはあなたの生活と目標に最適なアクションを選ぶのに役立ちます。</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4574"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">レジリエンス パワーグリッドを支持する</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>地域社会は頼れる電力がないと屈してしまう可能性があり、しばしば最も弱い立場にある人々に影響を与えます。私はレジリエンス パワーグリッド（例えばマイクログリッド、太陽光＋蓄電など）について調べ、支援します。</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4574">さらに学ぶ</a><ul class="dropdown" data-dropdown="resource-links-4574">
-                    <li>アクション リソース</li>
-                    <li><a href="http://energystorage.org/news/esa-news/solar-and-energy-storage-can-protect-cities-power-outages-create-resilient-communities"
-                         target="_blank">太陽光とエネルギー貯蔵が停電から町を守ります。レジリエント コミュニティを作りましょう</a></li>
-                    <li><a href="https://microgridknowledge.com/energy-storage-public-health/" target="_blank">エネルギー貯蔵が不利な立場の地域における公衆衛生を改善する</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>チャレンジですでにこのアクションを完了しています。アクションを消去すると、得点を失う可能性があります。本当にやりたいですか？</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>デイリーチャレンジ</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">チャレンジレベル：</p>
-                    <p style="margin: 11px 0; font-size: 13px">エコプロ</p>
-                    <p style="text-transform: none;">チャレンジレベルは、アクション完了に関わる時間、費用、知識、スキルという4要素で決まります。参加者によってこれらの要素はさまざまかもしれませんが、チャレンジレベルはあなたの生活と目標に最適なアクションを選ぶのに役立ちます。</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4575"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">パソコンの電源を切る</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>私は毎日、2時間以上使用しないときにはパソコンとモニターの電源を切り、そうすることで最大(1.1) lbsの二酸化炭素を減らします。</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4575">さらに学ぶ</a><ul class="dropdown" data-dropdown="resource-links-4575">
-                    <li>アクション リソース</li>
-                    <li><a href="https://www.energystar.gov/index.cfm?c=power_mgt.pr_pm_faq" target="_blank">エネルギースター：パワーマネジメントのよくある質問集</a></li>
-                    <li><a href="https://www.energy.gov/energysaver/appliances-and-electronics/energy-efficient-computers-home-office-equipment-and"
-                         target="_blank">エネルギー効率の良いオフィス設備</a></li>
-                    <li><a href="https://my.metlife.com/sites/gogreen/SitePages/energy_action_month.aspx" target="_blank">メットライフのエネルギーアクション月間</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>チャレンジですでにこのアクションを完了しています。アクションを消去すると、得点を失う可能性があります。本当にやりたいですか？</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>デイリーチャレンジ</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">チャレンジレベル：</p>
-                    <p style="margin: 11px 0; font-size: 13px">エコ学習者</p>
-                    <p style="text-transform: none;">チャレンジレベルは、アクション完了に関わる時間、費用、知識、スキルという4要素で決まります。参加者によってこれらの要素はさまざまかもしれませんが、チャレンジレベルはあなたの生活と目標に最適なアクションを選ぶのに役立ちます。</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4576"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">オンラインのエネルギーを監査する</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>私は自宅のオンラインのエネルギー監査を完了し、省エネのための次のステップを特定します。</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4576">さらに学ぶ</a><ul class="dropdown" data-dropdown="resource-links-4576">
-                    <li>アクション リソース</li>
-                    <li><a href="https://www.energystar.gov/index.cfm?c=home_improvement.hm_improvement_audits"
-                         target="_blank">エネルギースター：家のエネルギー監査</a></li>
-                    <li><a href="https://www.energy.gov/energysaver/weatherize/home-energy-audits" target="_blank">DOE：家のエネルギー監査</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>チャレンジですでにこのアクションを完了しています。アクションを消去すると、得点を失う可能性があります。本当にやりたいですか？</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>ワンタイム チャレンジ</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">チャレンジレベル：</p>
-                    <p style="margin: 11px 0; font-size: 13px">エコプロ</p>
-                    <p style="text-transform: none;">チャレンジレベルは、アクション完了に関わる時間、費用、知識、スキルという4要素で決まります。参加者によってこれらの要素はさまざまかもしれませんが、チャレンジレベルはあなたの生活と目標に最適なアクションを選ぶのに役立ちます。</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4577"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">電源を切る</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>私は使わないとき、照明、電気、電化製品の電源を切ります。</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4577">さらに学ぶ</a><ul class="dropdown" data-dropdown="resource-links-4577">
-                    <li>アクション リソース</li>
-                    <li><a href="https://www.duke-energy.com/energy-education/energy-savings-and-efficiency/energy-vampires"
-                         target="_blank">待機電力を食い止めて節約する</a></li>
-                    <li><a href="https://www.energystar.gov/products/energy_star_home_tips" target="_blank">自宅のエネルギースターのヒント</a></li>
-                    <li><a href="https://www.energy.gov/energysaver/save-electricity-and-fuel/lighting-choices-save-you-money/when-turn-your-lights"
-                         target="_blank">照明をいつ消すか</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>チャレンジですでにこのアクションを完了しています。アクションを消去すると、得点を失う可能性があります。本当にやりたいですか？</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>デイリーチャレンジ</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">チャレンジレベル：</p>
-                    <p style="margin: 11px 0; font-size: 13px">エコ学習者</p>
-                    <p style="text-transform: none;">チャレンジレベルは、アクション完了に関わる時間、費用、知識、スキルという4要素で決まります。参加者によってこれらの要素はさまざまかもしれませんが、チャレンジレベルはあなたの生活と目標に最適なアクションを選ぶのに役立ちます。</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4578"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">冷水にする</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>私は洗濯を冷水で行い、来年は最大1,600 lbs (726 kg) の二酸化炭素を減らします。</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4578">さらに学ぶ</a><ul class="dropdown" data-dropdown="resource-links-4578">
-                    <li>アクション リソース</li>
-                    <li><a href="https://www.coldwatersaves.org" target="_blank">冷水が節約になる</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>チャレンジですでにこのアクションを完了しています。アクションを消去すると、得点を失う可能性があります。本当にやりたいですか？</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>ワンタイム チャレンジ</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">チャレンジレベル：</p>
-                    <p style="margin: 11px 0; font-size: 13px">エコ学習者</p>
-                    <p style="text-transform: none;">チャレンジレベルは、アクション完了に関わる時間、費用、知識、スキルという4要素で決まります。参加者によってこれらの要素はさまざまかもしれませんが、チャレンジレベルはあなたの生活と目標に最適なアクションを選ぶのに役立ちます。</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4579"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">手動サーモスタットに取り替える</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>私は、職場にいるときや休暇のときに温度を調整できるようプログラム可能な手動サーモスタットに取り替えます。</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4579">さらに学ぶ</a><ul class="dropdown" data-dropdown="resource-links-4579">
-                    <li>アクション リソース</li>
-                    <li><a href="http://www.drawdown.org/solutions/buildings-and-cities/smart-thermostats"
-                         target="_blank">ドローダウン ソリューション #57：スマートサーモスタット</a></li>
-                    <li><a href="https://www.energystar.gov/productfinder/product/certified-connected-thermostats/results"
-                         target="_blank">エネルギースター認定スマートサーモスタット</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>チャレンジですでにこのアクションを完了しています。アクションを消去すると、得点を失う可能性があります。本当にやりたいですか？</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>ワンタイム チャレンジ</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">チャレンジレベル：</p>
-                    <p style="margin: 11px 0; font-size: 13px">エコリーダー</p>
-                    <p style="text-transform: none;">チャレンジレベルは、アクション完了に関わる時間、費用、知識、スキルという4要素で決まります。参加者によってこれらの要素はさまざまかもしれませんが、チャレンジレベルはあなたの生活と目標に最適なアクションを選ぶのに役立ちます。</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4580"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">代替エネルギーを取り付ける</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>私は太陽光発電システムや太陽光温水器といった、代替エネルギーシステムを取り付けます。</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4580">さらに学ぶ</a><ul class="dropdown" data-dropdown="resource-links-4580">
-                    <li>アクション リソース</li>
-                    <li><a href="https://www.energy.gov/energysaver/buying-and-making-electricity/planning-home-renewable-energy-systems"
-                         target="_blank">家庭用の再生可能エネルギーシステムの計画</a></li>
-                    <li><a href="https://www.google.com/get/sunroof#p=0" target="_blank">プロジェクト サンルーフ</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>チャレンジですでにこのアクションを完了しています。アクションを消去すると、得点を失う可能性があります。本当にやりたいですか？</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>ワンタイム チャレンジ</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">チャレンジレベル：</p>
-                    <p style="margin: 11px 0; font-size: 13px">エコリーダー</p>
-                    <p style="text-transform: none;">チャレンジレベルは、アクション完了に関わる時間、費用、知識、スキルという4要素で決まります。参加者によってこれらの要素はさまざまかもしれませんが、チャレンジレベルはあなたの生活と目標に最適なアクションを選ぶのに役立ちます。</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4581"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">エネルギーメーターを使う</h3>
-                <p data-description>私はエネルギーメーターを使ってエネルギー使用量をモニターし、節電の機会を特定します。</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4581">さらに学ぶ</a><ul class="dropdown" data-dropdown="resource-links-4581">
-                    <li>アクション リソース</li>
-                    <li><a href="https://www.energysage.com/energy-products/energy-monitors/" target="_blank">2018年ベストな家のエネルギーモニター</a></li>
-                    <li><a href="http://www.p3international.com/products/p4400.html" target="_blank">ワットを打ち止める</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>チャレンジですでにこのアクションを完了しています。アクションを消去すると、得点を失う可能性があります。本当にやりたいですか？</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>ワンタイム チャレンジ</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">チャレンジレベル：</p>
-                    <p style="margin: 11px 0; font-size: 13px">エコプロ</p>
-                    <p style="text-transform: none;">チャレンジレベルは、アクション完了に関わる時間、費用、知識、スキルという4要素で決まります。参加者によってこれらの要素はさまざまかもしれませんが、チャレンジレベルはあなたの生活と目標に最適なアクションを選ぶのに役立ちます。</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4582"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">自然に温め、冷やす</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>私は窓、カーテン、ブラインドの開閉と扇風機を使って、家を自然に温め、冷やします。</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4582">さらに学ぶ</a><ul class="dropdown" data-dropdown="resource-links-4582">
-                    <li>アクション リソース</li>
-                    <li><a href="https://www.energystar.gov/products/heating_cooling/keep_your_cool_and_save_your_money_summer"
-                         target="_blank">今年の夏は涼しいままでお金を節約しましょう</a></li>
-                    <li><a href="https://greatist.com/happiness/tricks-to-sleep-in-the-heat" target="_blank">熱帯夜を乗り切る24のトリック（冷房なし）</a></li>
-                    <li><a href="https://www.todayshomeowner.com/using-ceiling-fans-properly/" target="_blank">天井に付いている扇風機なしで家を冷暖</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>チャレンジですでにこのアクションを完了しています。アクションを消去すると、得点を失う可能性があります。本当にやりたいですか？</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>デイリーチャレンジ</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">チャレンジレベル：</p>
-                    <p style="margin: 11px 0; font-size: 13px">エコ学習者</p>
-                    <p style="text-transform: none;">チャレンジレベルは、アクション完了に関わる時間、費用、知識、スキルという4要素で決まります。参加者によってこれらの要素はさまざまかもしれませんが、チャレンジレベルはあなたの生活と目標に最適なアクションを選ぶのに役立ちます。</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4583"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">冷暖ユニットをアップグレードする</h3>
-                <p data-description>私は効率の悪い冷暖ユニットを取り替えます。</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4583">さらに学ぶ</a><ul class="dropdown" data-dropdown="resource-links-4583">
-                    <li>アクション リソース</li>
-                    <li><a href="https://www.energystar.gov/index.cfm?c=heat_cool.pr_hvac" target="_blank">エネルギースター：効率よく冷暖</a></li>
-                    <li><a href="https://www.energystar.gov/index.cfm?c=heat_cool.pr_checklist_consumers" target="_blank">エネルギースター：取り替え時期は？</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>チャレンジですでにこのアクションを完了しています。アクションを消去すると、得点を失う可能性があります。本当にやりたいですか？</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>ワンタイム チャレンジ</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">チャレンジレベル：</p>
-                    <p style="margin: 11px 0; font-size: 13px">エコリーダー</p>
-                    <p style="text-transform: none;">チャレンジレベルは、アクション完了に関わる時間、費用、知識、スキルという4要素で決まります。参加者によってこれらの要素はさまざまかもしれませんが、チャレンジレベルはあなたの生活と目標に最適なアクションを選ぶのに役立ちます。</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4584"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">窓をアップグレードする</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>私は自宅の窓またはウェザーストリップをアップグレードして、空気の漏れを減らし、エネルギー費用を節約します。</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4584">さらに学ぶ</a><ul class="dropdown" data-dropdown="resource-links-4584">
-                    <li>アクション リソース</li>
-                    <li><a href="https://www.energystar.gov/index.cfm?c=home_sealing.hm_improvement_sealing&amp;s=footer"
-                         target="_blank">エネルギースター：なぜ密封して断熱しますか？</a></li>
-                    <li><a href="https://www.energystar.gov/index.cfm?c=home_sealing.hm_improvement_window_door_trim"
-                         target="_blank">エネルギースター：窓やドアトリムの裏側を密封する</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>チャレンジですでにこのアクションを完了しています。アクションを消去すると、得点を失う可能性があります。本当にやりたいですか？</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>ワンタイム チャレンジ</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">チャレンジレベル：</p>
-                    <p style="margin: 11px 0; font-size: 13px">エコリーダー</p>
-                    <p style="text-transform: none;">チャレンジレベルは、アクション完了に関わる時間、費用、知識、スキルという4要素で決まります。参加者によってこれらの要素はさまざまかもしれませんが、チャレンジレベルはあなたの生活と目標に最適なアクションを選ぶのに役立ちます。</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4585"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">低所得層の太陽光導入について学ぶ</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>私は(___) 分を費やして低所得層の太陽光導入について調べ、自分の地域で低所得層の太陽光導入を支援する方法を見つけます。</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4585">さらに学ぶ</a><ul class="dropdown" data-dropdown="resource-links-4585">
-                    <li>アクション リソース</li>
-                    <li><a href="http://www.lowincomesolar.org/film/" target="_blank">短編映画：Powering Communities</a></li>
-                    <li><a href="https://gridalternatives.org/" target="_blank">組織：グリッドの代替</a></li>
-                    <li><a href="https://www.theatlantic.com/business/archive/2016/06/energy-poverty-low-income-households/486197/"
-                         target="_blank">貧困層が収入の10％以上をエネルギーに使う場所</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>チャレンジですでにこのアクションを完了しています。アクションを消去すると、得点を失う可能性があります。本当にやりたいですか？</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>ワンタイム チャレンジ</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">チャレンジレベル：</p>
-                    <p style="margin: 11px 0; font-size: 13px">エコ学習者</p>
-                    <p style="text-transform: none;">チャレンジレベルは、アクション完了に関わる時間、費用、知識、スキルという4要素で決まります。参加者によってこれらの要素はさまざまかもしれませんが、チャレンジレベルはあなたの生活と目標に最適なアクションを選ぶのに役立ちます。</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4660"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">電気自動車への切り替えを検討する</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>私は電気自動車もしくは電動自転車について調べるか、試乗します。メットライフは、電気自動車の充電スタンドを主な米国オフィスの従業員向けアメニティとして供給しています。</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4660">さらに学ぶ</a><ul class="dropdown" data-dropdown="resource-links-4660">
-                    <li>アクション リソース</li>
-                    <li><a href="https://www.energy.gov/eere/electricvehicles/electric-vehicle-benefits" target="_blank">U.S. DOE- 電気自動車の利点</a></li>
-                    <li><a href="https://www.fleetcarma.com/countries-best-incentives-ev-purchases/" target="_blank">電気自動車にベストなインセンティブがあるのはどの国か？</a></li>
-                    <li><a href="https://insideevs.com/new-study-shows-canada-trailing-in-electric-car-adoption/"
-                         target="_blank">電気自動車使用をリードしている国々を示す調査</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>チャレンジですでにこのアクションを完了しています。アクションを消去すると、得点を失う可能性があります。本当にやりたいですか？</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>ワンタイム チャレンジ</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">チャレンジレベル：</p>
-                    <p style="margin: 11px 0; font-size: 13px">エコプロ</p>
-                    <p style="text-transform: none;">チャレンジレベルは、アクション完了に関わる時間、費用、知識、スキルという4要素で決まります。参加者によってこれらの要素はさまざまかもしれませんが、チャレンジレベルはあなたの生活と目標に最適なアクションを選ぶのに役立ちます。</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4661"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">省エネ設定を選択する</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>私はコンピューターやプリンターの省エネ設定を行い、機械が省エネモードに切り替わるまでの設定時間を短縮します。</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4661">さらに学ぶ</a><ul class="dropdown" data-dropdown="resource-links-4661">
-                    <li>アクション リソース</li>
-                    <li><a href="https://www.energystar.gov/products/low_carbon_it_campaign/power_management_computer"
-                         target="_blank">パソコンの電力管理</a></li>
-                    <li><a href="https://www.energystar.gov/products/low_carbon_it_campaign/put_your_computers_sleep/myths_realities"
-                         target="_blank">電力管理の謎トップ10</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>チャレンジですでにこのアクションを完了しています。アクションを消去すると、得点を失う可能性があります。本当にやりたいですか？</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>ワンタイム チャレンジ</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">チャレンジレベル：</p>
-                    <p style="margin: 11px 0; font-size: 13px">エコリーダー</p>
-                    <p style="text-transform: none;">チャレンジレベルは、アクション完了に関わる時間、費用、知識、スキルという4要素で決まります。参加者によってこれらの要素はさまざまかもしれませんが、チャレンジレベルはあなたの生活と目標に最適なアクションを選ぶのに役立ちます。</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4662"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">服を自然乾燥させる</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>私は服を干すために吊り干しするか、自然乾燥ができない場合は低温の熱で乾かします。</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4662">さらに学ぶ</a><ul class="dropdown" data-dropdown="resource-links-4662">
-                    <li>アクション リソース</li>
-                    <li><a href="https://www.thespruce.com/reasons-to-line-dry-laundry-2145997" target="_blank">吊り干しするべき理由トップ10</a></li>
-                    <li><a href="https://www.greenamerica.org/green-living/ditch-your-dryer" target="_blank">乾燥機を捨てるべき5つの理由</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>チャレンジですでにこのアクションを完了しています。アクションを消去すると、得点を失う可能性があります。本当にやりたいですか？</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>ワンタイム チャレンジ</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">チャレンジレベル：</p>
-                    <p style="margin: 11px 0; font-size: 13px">エコリーダー</p>
-                    <p style="text-transform: none;">チャレンジレベルは、アクション完了に関わる時間、費用、知識、スキルという4要素で決まります。参加者によってこれらの要素はさまざまかもしれませんが、チャレンジレベルはあなたの生活と目標に最適なアクションを選ぶのに役立ちます。</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4663"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">セーターで身体を温める</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>私は少し寒いと感じたら、ヒーターをつけるのではなくセーターか毛布を身に着けます。</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4663">さらに学ぶ</a><ul class="dropdown" data-dropdown="resource-links-4663">
-                    <li>アクション リソース</li>
-                    <li><a href="https://www.treehugger.com/culture/eco-tips-jimmy-carters-sweater.html" target="_blank">ジミーカーターのセーター</a></li>
-                    <li><a href="https://blog.wwf.ca/blog/2014/02/07/10137-stitches-great-day-sweaters-energy-conservation/"
-                         target="_blank">ナショナル セーターデー</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>チャレンジですでにこのアクションを完了しています。アクションを消去すると、得点を失う可能性があります。本当にやりたいですか？</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>デイリーチャレンジ</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">チャレンジレベル：</p>
-                    <p style="margin: 11px 0; font-size: 13px">エコ学習者</p>
-                    <p style="text-transform: none;">チャレンジレベルは、アクション完了に関わる時間、費用、知識、スキルという4要素で決まります。参加者によってこれらの要素はさまざまかもしれませんが、チャレンジレベルはあなたの生活と目標に最適なアクションを選ぶのに役立ちます。</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4664"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">モノのインターネット（ioT）で革新する</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>私は自宅やアパートで照明や暖房に IoTセンサーを採用するチャンスを調べ、携帯電話のアプリケーションやAmaxon Alexa、Google Homeなどのスマートデバイスを通して、ガスや電気などの使用をリモートで制御できるようにします。</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4664">さらに学ぶ</a><ul class="dropdown" data-dropdown="resource-links-4664">
-                    <li>アクション リソース</li>
-                    <li><a href="https://www.smartcity.press/internet-of-things-for-environment/" target="_blank">スマートな町が環境課題を達成するために、IoTが役立てられる方法</a></li>
-                    <li><a href="https://www.techrepublic.com/article/how-to-use-iot-to-save-money-on-your-office-bills/"
-                         target="_blank">お金の節約に IoTを使う方法</a></li>
-                    <li><a href="https://www.itproportal.com/features/reducing-the-environmental-impact-of-global-iot/"
-                         target="_blank">グローバル IoTの環境負荷を削減する</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>チャレンジですでにこのアクションを完了しています。アクションを消去すると、得点を失う可能性があります。本当にやりたいですか？</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>ワンタイム チャレンジ</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">チャレンジレベル：</p>
-                    <p style="margin: 11px 0; font-size: 13px">エコプロ</p>
-                    <p style="text-transform: none;">チャレンジレベルは、アクション完了に関わる時間、費用、知識、スキルという4要素で決まります。参加者によってこれらの要素はさまざまかもしれませんが、チャレンジレベルはあなたの生活と目標に最適なアクションを選ぶのに役立ちます。</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4665"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">電源タップを使う</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>私は使わないときは電化製品と電気のプラグを抜きます。なぜなら、電源を切ってもほとんどがまだ電気を消費しているからです。電源タップに複数の電化製品（パソコン、プリンター、コーヒーメーカーなど）をつなぎ、ボタンを押せば電源が切れるようにするとさらに良いです。これで年間およそ＄100以上のエネルギー費用と900キロワットのエネルギーを抑えられます！</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4665">さらに学ぶ</a><ul class="dropdown" data-dropdown="resource-links-4665">
-                    <li>アクション リソース</li>
-                    <li><a href="https://nativeenergy.com/2017/11/phantom-load-how-unplugging-can-save-you-100-or-more/"
-                         target="_blank">プラグを抜いて＄100以上節約する方法</a></li>
-                    <li><a href="https://www.energystar.gov/products/low_carbon_it_campaign/more_it_energy_saving_tips"
-                         target="_blank">エネルギースター：さらにITエネルギーを節約するヒント</a></li>
-                    <li><a href="https://science.howstuffworks.com/environmental/green-tech/sustainable/smart-power-strip.htm"
-                         target="_blank">スマートな電源タップ</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>チャレンジですでにこのアクションを完了しています。アクションを消去すると、得点を失う可能性があります。本当にやりたいですか？</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>ワンタイム チャレンジ</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">チャレンジレベル：</p>
-                    <p style="margin: 11px 0; font-size: 13px">エコリーダー</p>
-                    <p style="text-transform: none;">チャレンジレベルは、アクション完了に関わる時間、費用、知識、スキルという4要素で決まります。参加者によってこれらの要素はさまざまかもしれませんが、チャレンジレベルはあなたの生活と目標に最適なアクションを選ぶのに役立ちます。</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-      </ul>
-    </nav>
-
-    <p class="align-center"><a class="back-link" href="/challenges.html">すべてのチャレンジに戻る</a></p>
-  </div>
-</section>
-
-<footer class="global-footer">
-  <section class="bg-neutral20">
-
-  </section>
-  <section class="bg-neutral100">
-    <div class="content">
-      <div class="section">
-        <div class="block">
-          <div>
-            <div class="subheading">私たちのストーリー</div>
-            <p>150年間、メットライフは優良企業市民として業務を行ってきました。長年にわたる卓越性の遺産の上に成り立ち、私たちは世界中の人々、家族、地域社会が自分たちの目標を達成し、人生の紆余曲折を乗り越えるお手伝いをし続けられる未来を確実にすることにコミットしています。</p>
-          </div>
-
-        </div>
-        <div class="block">
-          <div>
-            <div class="subheading">お問合せ</div>
-            <div>MetLife, Inc.<br>200 Park Avenue<br>New York, NY 10166<br>gogreen@metlife.com</div>
-            <div class="support-link"><a href="mailto:support@ecochallenge.org">support@ecochallenge.org</a></div>
-          </div>
-
-          <div>
-          </div>
-
-        </div>
-      </div>
-      <div class="section logos">
-        <div class="logo"><img src="../assets/images/logo.jpg"/> <a class="link-primary" href="https://metlife.ecochallenge.org/about/event-info">主催者について</a></div>
-      </div>
-
-    </div>
-  </section>
-  <section class="bg-neutral120">
-    <div class="bottom">
-      <div class="align-left"><span class="colophon">&copy; 2016-2019 Northwest Earth Institute</span></div>
-      <div class="align-right"><a href="https://ecochallenge.org/wp-content/uploads/2016/07/NWEI-Privacy-Policy_03.11.17.pdf" target="_blank">プライバシーポリシー</a> <a href="mailto:support@ecochallenge.org">テクニカルサポート</a> <a href="https://ecochallenge.org/donations/donate-to-ecochallenge/" target="_blank" class="outlined">寄付</a></div>
-    </div>
-  </section>
-
-</footer>
-
-
+<body class="layout-event" data-gtm-page-name="" data-gtm-subdomain="metlife">
+	<header class="global-header">
+		<nav class="user-nav"></nav>
+	</header>
+	<div class="event-header">
+		<div class="event-info">
+			<div class="subtitle">
+				<a href="https://www.metlife.com/">
+				<div class="logo"><img src="../assets/images/metlife_eng_logo_rgb.jpg"/></div></a>
+			</div>
+			<div class="title">
+				<a href="http://metlife.ecochallenge.org">2020年メットライフEcoChallenge</a>
+			</div>
+			<div class="event-date-range" data-date-range="">
+				2020年10月19日～10月30日
+			</div>
+		</div>
+	</div>
+	<section class="bg-spectrum spectrum05">
+		<div class="container">
+			<header class="section-title">
+				<div class="icon">
+					<svg class="border" viewbox="0 0 46 46" xmlns="http://www.w3.org/2000/svg">
+					<circle cx="23" cy="23" fill="none" r="22.5"></circle></svg> <svg viewbox="0 0 46 46" xmlns="http://www.w3.org/2000/svg">
+					<path d="M23.123 19.473a3.616 3.616 0 0 0-2.245.792l1.366-12.909h1.758l1.365 12.909a3.616 3.616 0 0 0-2.244-.792zm-3.65 3.65a3.632 3.632 0 0 1 .06-.6L9.03 30.244l.88 1.522 11.731-5.315a3.645 3.645 0 0 1-2.167-3.33zm17.743 7.122l-10.504-7.723a3.556 3.556 0 0 1-2.107 3.93l11.732 5.315z" fill="#fff"></path>
+					<path d="M23.123 26.772v18.974m0-26.273a3.65 3.65 0 1 0 3.65 3.65 3.65 3.65 0 0 0-3.65-3.65zm2.244.792L24.002 7.356h-1.758l-1.366 12.909m-1.344 2.257L9.029 30.245l.88 1.522 11.731-5.315m2.965 0l11.732 5.315.88-1.522-10.505-7.723m11.979-1.198A13.228 13.228 0 0 0 30.54 9.108M35.323 20.2a9.925 9.925 0 0 0-5.254-7.664" fill="none"></path></svg>
+				</div>
+				<h1 class="title">エネルギー</h1><a class="subtitle medium" href="../challenges.html">すべてのアクションのカテゴリーに戻る</a>
+				<p class="description uppercase">省エネは、地球にやさしいだけでなく、お財布にもやさしい行動です。</p>
+				<p class="description">私たちは、エネルギーを使用することで、移動や交通を可能にし、環境に順応し、成長と開発を達成しています。信頼性の高いエネルギー供給があることで、子供たちが暗くなった後も勉強できるようになります。住居を暖かく保ち、食品を冷蔵庫で保存し、医療で命を救い、企業が成長・拡大できるようになります。エネルギーを賢明に使用すること、再生可能エネルギーを選ぶことは、心身の幸福と健やかな地球にとって重要です。</p>
+				<div class="challenge-resource">
+					<a class="button-outlined" href="https://ecochallenge.org/wp-content/uploads/2017/03/2017-MetLife-EcoChallenge-Resources_Energy.pdf" target="_blank">詳細情報</a>
+				</div>
+				<div class="challenge-sponsors"></div>
+			</header>
+			<div class="filter-toggle-group closed">
+				<div class="form-divider" data-filter-toggle="">
+					<span class="rule"></span> <span class="text" data-filter-toggle="" data-filter-type="action"></span> <span class="rule"></span>
+				</div>
+				<form accept-charset="UTF-8" action="/challenges/energy" class="form-search-filter form-field centered" data-search-filter="true" method="get">
+					<input name="utf8" type="hidden" value="&#x2713;">
+					<div class="filters centered">
+						<div class="select" data-filter="">
+							<select id="difficulty" name="difficulty">
+								<option value="">
+									難易度：
+								</option>
+								<option value="easy">
+									EcoLearner
+								</option>
+								<option value="medium">
+									EcoPro
+								</option>
+								<option value="difficult">
+									EcoLeader
+								</option>
+							</select>
+						</div>
+						<div class="select" data-filter="">
+							<select id="limit_kind" name="limit_kind">
+								<option value="">
+									頻度：
+								</option>
+								<option value="one_time">
+									単発
+								</option>
+								<option value="daily">
+									毎日
+								</option>
+							</select>
+						</div>
+					</div>
+					<div class="filters centered">
+						<span class="prompt">表示するアクション：</span> <label class="checkbox" data-filter=""><input id="is_customizable" name="is_customizable" type="checkbox" value="1"> <span class="toggle-indicator"></span> カスタマイズできるアクションのみ</label> <label class="checkbox" data-filter=""><input id="has_resources" name="has_resources" type="checkbox" value="1"> <span class="toggle-indicator"></span> リソースへのリンクがあるアクションのみ</label>
+					</div>
+					<div class="reset inactive">
+						<a href="/challenges/energy">すべてのフィルタをクリア</a>
+					</div>
+				</form>
+			</div>
+			<nav class="challenge-actions-list">
+				<ul>
+					<li class="action-card" data-action="6834" data-api-path="https://metlife.ecochallenge.org/me/actions/6834/myself/selection" data-customizable="true" id="action-6834">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">LED電球を選ぶ</h3>
+									<p data-description="">（___）個の白熱電球をEnergy Star認証電球またはLED電球に取り替えて、1年で1個当たり最大$14の節約を達成する。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6834">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.energystar.gov/products/lighting_fans/light_bulbs" target="_blank">Energy Star:Light Bulbs</a>
+											</li>
+											<li>
+												<a href="http://www.drawdown.org/solutions/buildings-and-cities/led-lighting-household" target="_blank">Drawdown Solution #33:LED Lighting (Household)</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>単発のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLearner</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6835" data-api-path="https://metlife.ecochallenge.org/me/actions/6835/myself/selection" data-customizable="false" id="action-6835">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">サーモスタットを調節する</h3>
+									<p data-description="">暖房の時期は自宅のサーモスタット設定を今までより2°F下げ、冷房の時期は2°F上げる。これにより、二酸化炭素排出量を年間最大907 kg（1日当たり2.5 kg）削減する！</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6835">
+											<li>Action Resources:</li>
+											<li>
+												<a href="http://www.oregonzoo.org/conserve/small-actions/adjust-your-thermostat-two-degrees" target="_blank">Adjust Your Thermostat by Two Degrees</a>
+											</li>
+											<li>
+												<a href="https://www.energy.gov/energysaver/thermostats" target="_blank">Energy Saver:Thermostats</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>毎日のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLearner</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6836" data-api-path="https://metlife.ecochallenge.org/me/actions/6836/myself/selection" data-customizable="false" id="action-6836">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">クリーンエネルギー / 再生可能エネルギーを選ぶ</h3>
+									<p data-description="">電力会社が提供している場合は、クリーンエネルギーや再生可能エネルギーのオプションに申し込む。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6836">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.un.org/sustainabledevelopment/energy/" target="_blank">UN SDG 7:Affordable and Clean Energy</a>
+											</li>
+											<li>
+												<a href="https://www.drawdown.org/solutions/electricity-generation" target="_blank">Drawdown:Electricity Generation</a>
+											</li>
+											<li>
+												<a href="https://www.epa.gov/statelocalenergy/local-renewable-energy-benefits-and-resources" target="_blank">Renewable Energy Benefits and Resources</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>単発のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLeader</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6837" data-api-path="https://metlife.ecochallenge.org/me/actions/6837/myself/selection" data-customizable="false" id="action-6837">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">災害に強い電力供給体制をサポートする</h3>
+									<p data-description="">信頼性の高い電力供給がなければ、地域社会がまったく機能しなくなる可能性があり、そうなった時にしばしば影響を受けるのは、最も弱い立場にある人たちだ。そこで、災害に強い電力供給体制（マイクログリッドや太陽発電と蓄電装置など）について調べ、導入や設置をサポートする。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6837">
+											<li>Action Resources:</li>
+											<li>
+												<a href="http://energystorage.org/news/esa-news/solar-and-energy-storage-can-protect-cities-power-outages-create-resilient-communities" target="_blank">Solar and Energy Storage Can Protect Cities from Power Outages, Create Resilient Communities</a>
+											</li>
+											<li>
+												<a href="https://microgridknowledge.com/energy-storage-public-health/" target="_blank">Using Energy Storage to Improve Public Health in Disadvantaged Communities</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>毎日のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoPro</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6838" data-api-path="https://metlife.ecochallenge.org/me/actions/6838/myself/selection" data-customizable="false" id="action-6838">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">コンピューターの電源を切る</h3>
+									<p data-description="">2時間以上コンピューターを使わない場合はコンピューターとモニターの電源を切って、二酸化炭素排出量を毎日最大（1.1）ポンド削減する。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6838">
+											<li>Action Resources:</li>
+											<li>
+												<a href="http://smarterhouse.org/resources/shrink-your-dorm-print" target="_blank">Smarter House:Shrink Your Dorm Footprint</a>
+											</li>
+											<li>
+												<a href="https://www.energystar.gov/products/low_carbon_it_campaign/put_your_computers_sleep/myths_realities" target="_blank">Top 10 Computer Management Myths and Realities</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>毎日のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLearner</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6839" data-api-path="https://metlife.ecochallenge.org/me/actions/6839/myself/selection" data-customizable="false" id="action-6839">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">オンラインエネルギー監査</h3>
+									<p data-description="">自宅のオンラインエネルギー監査を受けて、省エネの次のステップを見つける。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6839">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.energystar.gov/index.cfm?c=home_improvement.hm_improvement_audits" target="_blank">Energy Star:Home Energy Audits</a>
+											</li>
+											<li>
+												<a href="https://www.energy.gov/energysaver/weatherize/home-energy-audits" target="_blank">DOE:Home Energy Audits</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>単発のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoPro</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6840" data-api-path="https://metlife.ecochallenge.org/me/actions/6840/myself/selection" data-customizable="false" id="action-6840">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">スイッチを切る</h3>
+									<p data-description="">使っていないときは、照明やエレクトロニクス、電気製品のスイッチを切る。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6840">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.duke-energy.com/energy-education/energy-savings-and-efficiency/energy-vampires" target="_blank">Slay Energy Vampires and Save</a>
+											</li>
+											<li>
+												<a href="https://www.energystar.gov/products/energy_star_home_tips" target="_blank">ENERGY STAR at Home Tips</a>
+											</li>
+											<li>
+												<a href="https://www.energy.gov/energysaver/save-electricity-and-fuel/lighting-choices-save-you-money/when-turn-your-lights" target="_blank">When to Turn Off Your Lights</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>毎日のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLearner</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6841" data-api-path="https://metlife.ecochallenge.org/me/actions/6841/myself/selection" data-customizable="false" id="action-6841">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">冷水モードに切り替える</h3>
+									<p data-description="">洗濯の際に冷水モードにすることで、二酸化炭素排出量を年間最大726 kg削減する。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6841">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.coldwatersaves.org" target="_blank">Cold Water Saves</a>
+											</li>
+											<li>
+												<a href="https://blog.epa.gov/2014/04/30/earth-month-tip-wash-your-clothes-in-cold-water/" target="_blank">Wash Your Clothes in Cold Water</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>単発のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLearner</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6842" data-api-path="https://metlife.ecochallenge.org/me/actions/6842/myself/selection" data-customizable="false" id="action-6842">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">手動のサーモスタットを取り替える</h3>
+									<p data-description="">手動のサーモスタットをプログラマブル・サーモスタットに交換して、外出中に冷暖房を調節できるようにする。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6842">
+											<li>Action Resources:</li>
+											<li>
+												<a href="http://www.drawdown.org/solutions/buildings-and-cities/smart-thermostats" target="_blank">Drawdown Solution #57:Smart Thermostats</a>
+											</li>
+											<li>
+												<a href="https://www.digitaltrends.com/home/best-smart-thermostats/" target="_blank">Best Smart Thermostats of 2020</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>単発のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLeader</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6843" data-api-path="https://metlife.ecochallenge.org/me/actions/6843/myself/selection" data-customizable="false" id="action-6843">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">代替エネルギーシステムを取り付ける</h3>
+									<p data-description="">太陽光発電システムや太陽熱温水器などの代替エネルギーシステムを取り付ける。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6843">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.energy.gov/energysaver/buying-and-making-electricity/planning-home-renewable-energy-systems" target="_blank">Planning for Home Renewable Energy Systems</a>
+											</li>
+											<li>
+												<a href="https://www.google.com/get/sunroof#p=0" target="_blank">Project Sunroof</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>単発のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLeader</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6844" data-api-path="https://metlife.ecochallenge.org/me/actions/6844/myself/selection" data-customizable="true" id="action-6844">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">スマートメーターを使う</h3>
+									<p data-description="">スマートメーターを使ってエネルギー使用量をモニターし、電力節約の機会を見つける。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6844">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.energysage.com/energy-products/energy-monitors/" target="_blank">Best Home Energy Monitors in 2020</a>
+											</li>
+											<li>
+												<a href="http://www.p3international.com/products/p4400.html" target="_blank">Kill A Watt</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>単発のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoPro</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6845" data-api-path="https://metlife.ecochallenge.org/me/actions/6845/myself/selection" data-customizable="false" id="action-6845">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">自然の暖房・冷房を活用する</h3>
+									<p data-description="">窓、カーテン、ブラインドを開閉し、扇風機を使って、自然の冷暖房を利用する。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6845">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.energystar.gov/products/heating_cooling/keep_your_cool_and_save_your_money_summer" target="_blank">Keep your Cool And Save Money this Summer</a>
+											</li>
+											<li>
+												<a href="https://greatist.com/happiness/tricks-to-sleep-in-the-heat" target="_blank">24 Tricks to Survive Hot Summer Nights (without AC)</a>
+											</li>
+											<li>
+												<a href="https://www.todayshomeowner.com/using-ceiling-fans-properly/" target="_blank">How to Heat and Cool your Home with a Ceiling Fan</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>毎日のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLearner</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6846" data-api-path="https://metlife.ecochallenge.org/me/actions/6846/myself/selection" data-customizable="false" id="action-6846">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">冷暖房装置をアップグレードする</h3>
+									<p data-description="">効率の悪い冷暖房装置を、新しいものと取り替える。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6846">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.energystar.gov/index.cfm?c=heat_cool.pr_hvac" target="_blank">Energy Star:Heat and Cool Efficiently</a>
+											</li>
+											<li>
+												<a href="https://www.energystar.gov/index.cfm?c=heat_cool.pr_checklist_consumers" target="_blank">Energy Star:When Is It Time to Replace?</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>単発のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLeader</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6847" data-api-path="https://metlife.ecochallenge.org/me/actions/6847/myself/selection" data-customizable="false" id="action-6847">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">窓をアップグレードする</h3>
+									<p data-description="">自宅の窓や隙間ふさぎ材をアップグレードしてすきま風を防ぎ、エネルギーコストを節約する。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6847">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.energystar.gov/index.cfm?c=home_sealing.hm_improvement_sealing&amp;s=footer" target="_blank">Energy Star:Why Seal and Insulate?</a>
+											</li>
+											<li>
+												<a href="https://www.energystar.gov/index.cfm?c=home_sealing.hm_improvement_window_door_trim" target="_blank">Energy Star:Sealing Behind Window and Door Trim</a>
+											</li>
+											<li>
+												<a href="https://www.energy.gov/energysaver/design/windows-doors-and-skylights/update-or-replace-windows" target="_blank">Upgrade and Replace Windows</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>単発のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLeader</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6848" data-api-path="https://metlife.ecochallenge.org/me/actions/6848/myself/selection" data-customizable="true" id="action-6848">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">低所得者向けの太陽光発電の制度について学習する</h3>
+									<p data-description="">（___）分間を費やして、太陽光発電が低所得者にもたらすメリットについて調べ、自分の住む地域内の低所得者向け太陽光発電制度をサポートする方法を見つける。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6848">
+											<li>Action Resources:</li>
+											<li>
+												<a href="http://www.lowincomesolar.org/film/" target="_blank">Short Film:Powering Communities</a>
+											</li>
+											<li>
+												<a href="https://gridalternatives.org/" target="_blank">Organization:Grid Alternatives</a>
+											</li>
+											<li>
+												<a href="https://www.theatlantic.com/business/archive/2016/06/energy-poverty-low-income-households/486197/" target="_blank">Where the Poor Spend More than 10 Percent of their Income on Energy</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>単発のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLearner</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6849" data-api-path="https://metlife.ecochallenge.org/me/actions/6849/myself/selection" data-customizable="false" id="action-6849">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">電気自動車への切り替えを検討する</h3>
+									<p data-description="">電気自動車や電動自転車について調べ、テストドライブしてみる。メットライフは、米国内の主要オフィスのほとんどで、社員向けのサービスとして電気自動車の充電ステーションを提供している。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6849">
+											<li>Action Resources:</li>
+											<li>
+												<a href="http://smarterhouse.org/start-here/planning-energy-improvements-0" target="_blank">Smarter House:Planning Energy Improvements</a>
+											</li>
+											<li>
+												<a href="https://www.energy.gov/eere/electricvehicles/electric-vehicle-benefits" target="_blank">Electric Vehicle Benefits</a>
+											</li>
+											<li>
+												<a href="https://cars.usnews.com/cars-trucks/best-electric-cars" target="_blank">The 15 Best Electric Cars for 2020</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>単発のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoPro</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6850" data-api-path="https://metlife.ecochallenge.org/me/actions/6850/myself/selection" data-customizable="false" id="action-6850">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">省エネ設定を選ぶ</h3>
+									<p data-description="">コンピューターやプリンターの省エネ設定をオンにし、省エネモードに切り替わるまでの時間を短くする。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6850">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.energystar.gov/products/low_carbon_it_campaign/power_management_computer" target="_blank">Power Management on Your Computer</a>
+											</li>
+											<li>
+												<a href="https://www.energystar.gov/products/low_carbon_it_campaign/put_your_computers_sleep/myths_realities" target="_blank">Top 10 Power Management Myths</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>単発のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLeader</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6851" data-api-path="https://metlife.ecochallenge.org/me/actions/6851/myself/selection" data-customizable="false" id="action-6851">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">洗濯物を自然乾燥させる</h3>
+									<p data-description="">洗濯物は自然乾燥にするか、それができない場合は低温設定で乾燥機にかける。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6851">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.thespruce.com/reasons-to-line-dry-laundry-2145997" target="_blank">Top 10 Reasons to Line Dry</a>
+											</li>
+											<li>
+												<a href="https://www.greenamerica.org/green-living/ditch-your-dryer" target="_blank">5 Reasons to Ditch your Dryer</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>単発のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLeader</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6852" data-api-path="https://metlife.ecochallenge.org/me/actions/6852/myself/selection" data-customizable="false" id="action-6852">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">セーターで暖かく</h3>
+									<p data-description="">寒いときには、暖房を強くする代わりにセーターを着るか毛布をかける。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6852">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.treehugger.com/culture/eco-tips-jimmy-carters-sweater.html" target="_blank">Jimmy Carter's Sweater</a>
+											</li>
+											<li>
+												<a href="https://blog.wwf.ca/blog/2014/02/07/10137-stitches-great-day-sweaters-energy-conservation/" target="_blank">National Sweater Day</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>毎日のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLearner</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6853" data-api-path="https://metlife.ecochallenge.org/me/actions/6853/myself/selection" data-customizable="false" id="action-6853">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">モノのインターネット（IoT）を活用してイノベーションを実現する</h3>
+									<p data-description="">自宅の照明や暖房にIoTセンサーを設置して、スマホのアプリやAmazon Alexa、Googl Homeなどのスマート装置で遠隔制御する方法について調べる。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6853">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.smartcity.press/internet-of-things-for-environment/" target="_blank">How IoT Can Help Smart Cities Beat The Environmental Challenges?</a>
+											</li>
+											<li>
+												<a href="https://www.techrepublic.com/article/how-to-use-iot-to-save-money-on-your-office-bills/" target="_blank">How to Use IoT to Save Money</a>
+											</li>
+											<li>
+												<a href="https://www.itproportal.com/features/reducing-the-environmental-impact-of-global-iot/" target="_blank">Reducing the Environmental Impact of Global IoT</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>単発のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoPro</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6854" data-api-path="https://metlife.ecochallenge.org/me/actions/6854/myself/selection" data-customizable="false" id="action-6854">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">電源タップを使用する</h3>
+									<p data-description="">家電や電子機器の不使用時は、電源コードを抜く。ほとんどの電気製品は、電源がオフになっていても電力を消費している。さらに、複数の電気製品（コンピューター、プリンター、トースター、コーヒーメーカーなど）を1本の電源タップにつなげ、ボタンを1個を押すだけでまとめてオフにできるようにする。これにより、年間約$100、電力量にして900 kwhを節約する！</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">詳細情報</div>
+										<ul class="dropdown" data-dropdown="resource-links-6854">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://nativeenergy.com/2017/11/phantom-load-how-unplugging-can-save-you-100-or-more/" target="_blank">How Unplugging Can Save You $100 or More</a>
+											</li>
+											<li>
+												<a href="https://www.energystar.gov/products/low_carbon_it_campaign/more_it_energy_saving_tips" target="_blank">ENERGY STAR:More IT Energy Saving Tips</a>
+											</li>
+											<li>
+												<a href="https://science.howstuffworks.com/environmental/green-tech/sustainable/smart-power-strip.htm" target="_blank">Smart Power Strips</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">このアクションはチャレンジの期間中にすでに実践済みです。アクションを削除すると、ポイントが失われる可能性があります。この操作を実行してよろしいですか？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>単発のアクション</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLeader</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</nav>
+			<p class="align-center"><a class="back-link" href="../challenges.html">すべてのアクションのカテゴリーに戻る</a></p>
+		</div>
+	</section>
+	<footer class="global-footer">
+		<section class="bg-neutral20"></section>
+		<section class="bg-neutral100">
+			<div class="content">
+				<div class="section">
+					<div class="block">
+						<div>
+							<div class="subheading">
+								沿革
+							</div>
+							<p>メットライフは150年にわたり、責任ある企業市民としての役割を果たしてきました。当社には長年にわたるエクセレンスの実績があります。当社は、世界各地の人々、ご家族、地域社会が、目標を達成し、人生のアップダウンをナビゲートできるよう支援し続け、確かな未来を築くことに取り組んでいます。</p>
+						</div>
+					</div>
+					<div class="block">
+						<div>
+							<div class="subheading">
+								お問い合わせ先
+							</div>
+							<div>
+								MetLife, Inc.<br/>200 Park Avenue<br/>New York, NY 10166<br/>gogreen@metlife.com
+							</div>
+							<div class="support-link">
+								<a href="mailto:support@ecochallenge.org">support@ecochallenge.org</a>
+							</div>
+						</div>
+						<div></div>
+					</div>
+				</div>
+				<div class="section logos">
+					<div class="logo">
+						<img src="/system/events/org_logos/000/000/058/original/metlife_eng_logo_rgb.jpg?1582136268"/> <a class="link-primary" href="https://www.metlife.com/">イベント主催者について</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bg-neutral120">
+			<div class="bottom">
+				<div class="align-left">
+					<span class="colophon">© 2016-2020 Ecochallenge.org</span>
+				</div>
+				<div class="align-right">
+					<a href="http://ecochallenge.org/privacy-policy" target="_blank">プライバシーポリシー | 利用規約</a> <a href="mailto:support@ecochallenge.org">テクニカルサポート</a> <a class="outlined" data-donate-button="" data-donate-default="30" href="#">寄付</a>
+				</div>
+			</div>
+		</section>
+	</footer>
 </body>
 </html>
-
