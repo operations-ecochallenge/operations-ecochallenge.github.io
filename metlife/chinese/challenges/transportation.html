@@ -1,954 +1,771 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:og="http://ogp.me/ns#"
-      xmlns:fb="https://www.facebook.com/2008/fbml">
+﻿<!DOCTYPE html>
+<html>
 <head>
-  <title>2019 ��󶼻����� EcoChallenge - ���Ϣ</title>
-  <link rel="stylesheet" media="all" href="../assets/stylesheets/application.css" data-turbolinks-track="true"/>
-  <script src="../assets/javascripts/application.js" data-turbolinks-track="true"></script>
-  <meta name="action-cable-url" content="/cable"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#ffffff">
-  <meta name="robots" content="noindex">
-
-  <meta name="csrf-param" content="authenticity_token"/>
-  <meta name="csrf-token"
-        content="KHbHeVfyS683SdqR+FCO7sJ7ZY4xcTTw0pVqzKOm+O8rq5m3j4rBvFsjaMcCnf5Q5WK1AJ3YFK6e/wpdT5aVdg=="/><!-- default meta --><meta property="og:title"
-        content="Join the 2019 MetLife EcoChallenge, presented by MetLife Global Sustainability Team"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:description"
-        content="For two weeks, we challenge you to make eco-friendly choices to live a more sustainable lifestyle! Team up with colleagues from around the world and take action to create a healthier planet during the 2019 MetLife EcoChallenge. "/>
-  <meta property="og:image"
-        content="http://metlife.ecochallenge.org/system/events/org_logos/000/000/039/original/metlife_eng_logo_rgb.jpg?1552691799"/>
-  <meta property="og:url" content="http://metlife.ecochallenge.org"/>
-
-
-  <style type="text/css">nav.user-nav {
-    background-color: #0061A0;
-  }
-
-  .event-header .event-info {
-    margin: 10px 15px 30px;
-  }
-
-  a {
-    color: #007ABC;
-  }
-
-  .button-primary, .button-primary.dark:hover, .award-point-list a, .award-point-list a .points::after, .event-header .event-nav a.outlined:hover, .event-header .event-nav a.outlined:active, .hero .button:hover, .button-outlined:hover {
-    background-color: #007ABC;
-  }
-
-  .event-header .event-nav a.outlined, .button-outlined {
-    border-color: #007ABC;
-    color: #007ABC;
-  }
-
-  .event-check-ins .days li.action-complete, .legend li .action-complete.marker {
-    background-color: #0061A0;
-  }
-
-  .calendar .week a.action-complete {
-    color: #0061A0;
-    border-color: #0061A0;
-  }
-
-  .event-header .event-info .event-date-range {
-    border-top: 1px solid #0061A0;
-    border-bottom: 1px solid #0061A0;
-  }
-
-  h2, h3, h5, .participants-counter .title, .horizontal-section-title .title, .page-content .title {
-    color: #333333;
-  }
-
-  .participant-feed .dropdown-wrapper& gt
-
-  ;
-  .feed-filter {
-    color: #0061A0;
-  }
-
-  .form-button-icon.facebook, .form-button-icon.google {
-    display: none;
-  }
-
-  .hero .sign, .event-header .event-info .title a, h2, h3, h5, .participants-counter .title, .horizontal-section-title .title, .page-content .title, .placeholder .title, .challenges-slider .slider-header .title, .section-title .title, .team-hero .title, .team-detail-points .title, .dashboard-sidebar .team-summary .team-header .title, .dashboard-sidebar .user-summary .user-header .name, .impact-grid .impact-card .units, .dashboard-sidebar .impact-summary .challenge-impact .count, .participants-counter .count .digit-box span {
-    font-family: Georgia, Times;
-    font-weight: bold;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-  }
-
-  p {
-    font-size: 15px;
-  }
-
-  .global-footer .top .subheading {
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-    font-size: 14px;
-    color: white;
-  }
-
-  .global-footer .top .social a, .global-footer .top .col, .global-footer .top .description {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: normal;
-    font-size: 12px;
-  }
-
-  .hero .copy, .company-callout .callout-container .blurb, .placeholder p, .page-content, .participant-action-cards .card-container .description p, .awarded-points-list tr + tr td, .section-title .description, .participants-feed-full .copy {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  .placeholder p, .page-content, .section-title .description, .participants-feed-full .copy {
-    font-size: 13px;
-  }
-
-  .hero .container-hero {
-    max-width: 450px;
-  }
-
-  .event-header .event-info .title a {
-    color: #000000;
-  }
-
-  .hero .copy {
-    font-weight: bold;
-  }
-
-  .user-nav ul li a:hover {
-    color: white;
-    opacity: 0.8;
-  }
-
-  .event-header .event-info .logo img {
-    max-height: 100px;
-    max-width: 170px;
-  }
-
-  .bottom .outlined {
-    display: none;
-  }
-
-  .hero .sign {
-    background-color: rgba(242, 242, 242, 0.85);
-    padding: 15px;
-    color: #333;
-    text-transform: inherit;
-    border-radius: 6px 6px 0px 0px;
-  }
-
-  .hero .copy {
-    background-color: rgba(242, 242, 242, 0.85);
-    padding: 15px;
-    padding-top: 0px;
-    color: #333;
-    border-radius: 0px 0px 6px 6px;
-    font-weight: lighter;
-  }
-
-  .hero .button {
-    font-family: & #39;
-    Galaxie Polaris & #39;, & #39;
-    Arial & #39;, sans-serif;
-    font-size: 13px;
-    letter-spacing: 0.1em;
-    display: inline-block;
-    padding: 10px 15px;
-    margin-top: 25px;
-    color: #ffffff;
-    border-radius: 4px;
-    background-color: #0061A0;
-    transition: color 0.2s ease, background-color 0.2s ease
-  }
-
-  .challenges-slider .slider-utility a, .featured_challenge .challenge-callout a {
-    border-radius: 4px;
-  }
-
-  p.instructional-message {
-    font-size: 12px;
-  }
-
-  .copy a:hover, .dashboard-table a:hover, .participant a:hover, .section-title .description a:hover, .section-title .subtitle a:hover {
-    text-decoration: underline;
-  }
-
-  /* Center Challenge Cards -kbb */
-  .challenges-grid {
-    justify-content: space-around;
-  }
-
-  .company-callout .callout-container .blurb {
-    font-size: 17px;
-  }
-
-  .nweiBrand {
-    text-align: center;
-    margin-top: 48px;
-    margin-bottom: 18px;
-  }
-
-  .nweiLogoAbout {
-    width: 100%;
-    max-width: 250px;
-    height: auto;
-  }</style>
+	<title>2020 年大都会人寿 EcoChallenge 环保挑战赛 — 交通</title>
+	<link href="../assets/stylesheets/application.css" media="all" rel="stylesheet">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="a#ffffff" name="theme-color">
+	<meta content="GU,PR,US,VI" name="location-countries">
+	<meta content="noindex" name="robots">
+	<link href="/site.webmanifest" rel="manifest">
+	<meta content="#134b61" name="msapplication-TileColor">
+	<meta content="#134b61" name="theme-color">
+	<link href="/manifest.json" rel="manifest">
+	<link href="/safari-pinned-tab.svg" rel="mask-icon">
 </head>
-
-<body
-        class="layout-event"
->
-
-<header class="global-header">
-  <nav class="user-nav"></nav>
-</header>
-
-<div class="event-header ">
-  <div class="event-info" style="">
-    <div class="subtitle"><a href="https://metlife.ecochallenge.org/about/event-info"><div class="logo"><img src="../assets/images/logo.jpg"/></div></a></div>
-    <div class="title"><a href="http://metlife.ecochallenge.org/">2019 ��󶼻����� EcoChallenge</a></div>
-    <div class="event-date-range" data-date-range=""><span data-date-range-start>2019 �� 4 �� 24 ��</span> <span> - </span> <span data-date-range-end>5 �� 10 ��</span></div>
-    <div id="regPassBlock"><a class="outlined regNew" href="https://metlife.ecochallenge.org/users/join">ʵʱע�ᣨӢ�ģ�</a><p id="greenImpact">����룺greenimpact</p>
-    </div>
-  </div>
-  <nav class="event-nav navNew">
-    <ul>
-      <li><a href="../">����</a></li>
-      <li><a href="../points.html">����</a></li>
-      <li><a href="../challenges.html">��ս��</a></li>
-    </ul>
-  </nav>
-</div>
-
-<section class="bg-spectrum spectrum06">
-  <div class="container">
-    <header class="section-title">
-      <div class="icon">
-        <svg class="border" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 46">
-          <circle r="22.5" cx="23" cy="23" fill="none"></circle>
-        </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 46">
-          <path d="M37.182 28.51A10.67 10.67 0 1 1 26.51 17.84a10.67 10.67 0 0 1 10.67 10.67zM26.51 21.518a6.993 6.993 0 1 0 6.993 6.994 6.993 6.993 0 0 0-6.993-6.994z"
-                fill="#fff" stroke-width="0"/>
-          <path d="M37.182 28.51A10.67 10.67 0 1 1 26.51 17.84a10.67 10.67 0 0 1 10.67 10.67zM20.208 10.724H4.064m16.964 2.991L1.171 27.366m23.216-13.73a3.845 3.845 0 0 0 0-7.69h-6.031l8.155 22.565"
-                fill="none"/>
-        </svg>
-
-      </div>
-      <h1 class="title">��ͨ��ʽ</h1><a class="subtitle medium" href="/challenges.html">����������ս��</a><p class="description uppercase">���������ͨ��ʽ���������ǵ�����ͻ�����</p>
-      <p class="description">�ںܶ���Һ͵��������ж��ǿ��������˿�ͨ��ֻ��һλ���Ǿ���˾�����ˡ����ʦ�͹���ʦ�޽��˳��еĽֵ��͵�·ϵͳ�����������ǵĽ�ͨ����ȴ�����������������з�ʽ�����������ŷš�ӵ���ĵ�·����������Ⱦ�ĵر������Լ��������ǵ����ͼ۸��޲��������ǵ�ǰ�Ľ�ͨϵͳ���ɳ�����Ϊ�ˣ����ǵ�Ŀ���Ǵٽ�����һ���������н�ͨ��ʽ������ϵͳ��������ֻ�Ǿ�����������</p>
-      <div class="challenge-resource"><a class="button-outlined" target="_blank"
-           href="https://ecochallenge.org/wp-content/uploads/2017/03/2017-MetLife-EcoChallenge-Resources_Transportation.pdf">�˽����</a></div>
-      <div class="challenge-sponsors">
-      </div>
-    </header>
-
-    <nav class="challenge-actions-list">
-      <ul>
-        <li class="action-card"
-            data-participant-action
-            data-action="4587"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">�Ż�����վ������</h3>
-                <p data-description>�ҽ�����ͣ��ʱ�����������λ���ͤ����������װ��Ʒ�򻨶䡢��ʰ�������ȡ����һЩС�Ľ����Ӷ��Ż������Ĺ���վ�����á�</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4587">�˽����</a><ul class="dropdown" data-dropdown="resource-links-4587">
-                    <li>���Դ��</li>
-                    <li><a href="http://transitcenter.org/2016/01/28/marta-army/" target="_blank">�����Զ�����������������վ</a></li>
-                    <li><a href="http://humantransit.org/2016/12/tactical-transit-a-fast-path-to-transit-infrastructure.html"
-                         target="_blank">������ԣ���ͨ������ʩ�Ŀ��·��</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>��������ս���ڼ���ɴ��ж���ɾ���ж����ܻᵼ�������֡���ȷ��Ҫ��ô����</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>һ������ս��</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">��ս������</p>
-                    <p style="margin: 11px 0; font-size: 13px">�����ȷ�</p>
-                    <p style="text-transform: none;">���ǵ���ս������ȡ��������ж����漰���ĸ����� - ʱ�䡢�ɱ���֪ʶ�ͼ��ܡ�������Щ���ػ�������߶��죬����ս��������������ѡ�����ʺ��Լ����ʽ��Ŀ����ж���</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4588"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">ʹ�ù�����ͨ</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>��ÿ���� (___) Ӣ��Ĺ�����ͨ�����⽫��� (___) ���Ķ�����̼�ŷŵ�����Ĵ������С�</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4588">�˽����</a><ul class="dropdown" data-dropdown="resource-links-4588">
-                    <li>���Դ��</li>
-                    <li><a href="https://www.treehugger.com/htgg/how-to-go-green-public-transportation.html"
-                         target="_blank">ѡ�񹫹���ͨ�� 10 ������</a></li>
-                    <li><a href="https://www.fastcompany.com/3069056/if-you-use-public-transit-when-youre-young-youre-less-likely-to-drive-later"
-                         target="_blank">����ʱ����ʹ�ù�����ͨ���ߵ�ϰ�ߣ��Ժ����Ͳ�̫������ѡ�񿪳���</a></li>
-                    <li><a href="https://www.theatlantic.com/business/archive/2015/05/stranded-how-americas-failing-public-transportation-increases-inequality/393419/"
-                         target="_blank">Stranded������ʧ�ܵĹ�����ͨϵͳ��μӾ粻ƽ��</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>��������ս���ڼ���ɴ��ж���ɾ���ж����ܻᵼ�������֡���ȷ��Ҫ��ô����</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>ÿ����ս��</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">��ս������</p>
-                    <p style="margin: 11px 0; font-size: 13px">����ר��</p>
-                    <p style="text-transform: none;">���ǵ���ս������ȡ��������ж����漰���ĸ����� - ʱ�䡢�ɱ���֪ʶ�ͼ��ܡ�������Щ���ػ�������߶��죬����ս��������������ѡ�����ʺ��Լ����ʽ��Ŀ����ж���</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4589"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">�˽���ಢ��������һ��</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>������ͨ�ĳɱ����ܳ�Ϊ���������Ե��ϰ����ҽ��˽������Թ�����ͨ�����󣬲�ÿ�콫���������� (___) �����ѡ�</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4589">�˽����</a><ul class="dropdown" data-dropdown="resource-links-4589">
-                    <li>���Դ��</li>
-                    <li><a href="https://www.huffingtonpost.com/molly-secours/cant-get-there-think-publ_b_782280.html"
-                         target="_blank">��Ϊ������ͨ����һ������������⣿������</a></li>
-                    <li><a href="https://www.theatlantic.com/business/archive/2015/05/stranded-how-americas-failing-public-transportation-increases-inequality/393419/"
-                         target="_blank">Stranded������ʧ�ܵĹ�����ͨϵͳ��μӾ粻ƽ��</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>��������ս���ڼ���ɴ��ж���ɾ���ж����ܻᵼ�������֡���ȷ��Ҫ��ô����</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>ÿ����ս��</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">��ս������</p>
-                    <p style="margin: 11px 0; font-size: 13px">����ר��</p>
-                    <p style="text-transform: none;">���ǵ���ս������ȡ��������ж����漰���ĸ����� - ʱ�䡢�ɱ���֪ʶ�ͼ��ܡ�������Щ���ػ�������߶��죬����ս��������������ѡ�����ʺ��Լ����ʽ��Ŀ����ж���</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4590"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">����ƴ��</h3>
-                <p data-description>��ÿ��ͨ��ƴ��ͨ�� (___) Ӣ����⽫��� (___) ���Ķ�����̼�ŷŵ�����Ĵ������С�</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4590">�˽����</a><ul class="dropdown" data-dropdown="resource-links-4590">
-                    <li>���Դ��</li>
-                    <li><a href="https://www.theguardian.com/sustainable-business/2017/apr/26/carpooling-commuting-car-share-liftshare-uber"
-                         target="_blank">&ldquo;���ǳ�Ϊ�˺�����&rdquo;��ƴ����ͨ�ڲ����Ǽ������</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=_Ualvltj9Ug" target="_blank">��ι���Ա��ƴ��</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>��������ս���ڼ���ɴ��ж���ɾ���ж����ܻᵼ�������֡���ȷ��Ҫ��ô����</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>ÿ����ս��</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">��ս������</p>
-                    <p style="margin: 11px 0; font-size: 13px">����ר��</p>
-                    <p style="text-transform: none;">���ǵ���ս������ȡ��������ж����漰���ĸ����� - ʱ�䡢�ɱ���֪ʶ�ͼ��ܡ�������Щ���ػ�������߶��죬����ս��������������ѡ�����ʺ��Լ����ʽ��Ŀ����ж���</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4591"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">�����г�</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>��ÿ�������г�ͨ�� (___) Ӣ����⽫��� (___) ���Ķ�����̼�ŷŵ�����Ĵ������С�</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4591">�˽����</a><ul class="dropdown" data-dropdown="resource-links-4591">
-                    <li>���Դ��</li>
-                    <li><a href="https://www.bikemap.net/en/route/create/" target="_blank">Ѱ�����������г�·��</a></li>
-                    <li><a href="https://www.bikeleague.org/content/national-household-travel-survey-short-trips-analysis"
-                         target="_blank">ȫ����ͥ���е��� - ��;���з���</a></li>
-                    <li><a href="https://www.yammer.com/metlife.com/#/threads/inGroup?type=in_group&amp;feedId=10934373&amp;view=all"
-                         target="_blank">�󶼻����ٵ����г�ͨ�� Yammer �Ŷ�</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>��������ս���ڼ���ɴ��ж���ɾ���ж����ܻᵼ�������֡���ȷ��Ҫ��ô����</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>ÿ����ս��</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">��ս������</p>
-                    <p style="margin: 11px 0; font-size: 13px">����ר��</p>
-                    <p style="text-transform: none;">���ǵ���ս������ȡ��������ж����漰���ĸ����� - ʱ�䡢�ɱ���֪ʶ�ͼ��ܡ�������Щ���ػ�������߶��죬����ս��������������ѡ�����ʺ��Լ����ʽ��Ŀ����ж���</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4592"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">�ò����������</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>��ÿ���ò���������� (___) Ӣ����⽫��� (___) ���Ķ�����̼�ŷŵ�����Ĵ������С�</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4592">�˽����</a><ul class="dropdown" data-dropdown="resource-links-4592">
-                    <li>���Դ��</li>
-                    <li><a href="http://americawalks.org/" target="_blank">����ó��и��ʺϲ���</a></li>
-                    <li><a href="https://www.ted.com/talks/jeff_speck_the_walkable_city/transcript" target="_blank">Ted Talk��Jeff Speck - �ʺϲ��еĳ���</a></li>
-                    <li><a href="https://www.houselogic.com/save-money-add-value/save-on-utilities/make-my-neighborhood-more-walkable/"
-                         target="_blank">�������������������</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>��������ս���ڼ���ɴ��ж���ɾ���ж����ܻᵼ�������֡���ȷ��Ҫ��ô����</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>ÿ����ս��</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">��ս������</p>
-                    <p style="margin: 11px 0; font-size: 13px">����ר��</p>
-                    <p style="text-transform: none;">���ǵ���ս������ȡ��������ж����漰���ĸ����� - ʱ�䡢�ɱ���֪ʶ�ͼ��ܡ�������Щ���ػ�������߶��죬����ս��������������ѡ�����ʺ��Լ����ʽ��Ŀ����ж���</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4593"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">���ټݳ�</h3>
-                <p data-description>��ֻ���ڱ�Ҫʱ�ŻῪ���������г���̡�</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4593">�˽����</a><ul class="dropdown" data-dropdown="resource-links-4593">
-                    <li>���Դ��</li>
-                    <li><a href="https://www.youtube.com/watch?v=R2gwy6bKKVg" target="_blank">��������չ (TOD) �ĺô�</a></li>
-                    <li><a href="https://www.pps.org/article/reimagining-our-streets-as-places-from-transit-routes-to-community-roots"
-                         target="_blank">���¹������ǵĽֵ����ӹ���·�ߵ���������</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>��������ս���ڼ���ɴ��ж���ɾ���ж����ܻᵼ�������֡���ȷ��Ҫ��ô����</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>ÿ����ս��</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">��ս������</p>
-                    <p style="margin: 11px 0; font-size: 13px">������ѧ��</p>
-                    <p style="text-transform: none;">���ǵ���ս������ȡ��������ж����漰���ĸ����� - ʱ�䡢�ɱ���֪ʶ�ͼ��ܡ�������Щ���ػ�������߶��죬����ս��������������ѡ�����ʺ��Լ����ʽ��Ŀ����ж���</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4594"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">��������</h3>
-                <p data-description>�ҽ�ע�������������񣬻����ھ���֯�����������Լ��ٵ�·�ϵĳ���������</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4594">�˽����</a><ul class="dropdown" data-dropdown="resource-links-4594">
-                    <li>���Դ��</li>
-                    <li><a href="https://www.youtube.com/watch?v=R2gwy6bKKVg" target="_blank">�������н��� 2050 ��ǰ�������� 320 �׶ֵ�̼�ŷ�</a></li>
-                    <li><a href="https://www.inc.com/laura-montini/infographic/the-sharing-economy-disrupting-life-as-we-know-it.html"
-                         target="_blank">&ldquo;��������&rdquo;�ľ޴�Ч��</a></li>
-                    <li><a href="https://www.csmonitor.com/Environment/2016/0720/How-much-does-car-sharing-benefit-the-environment"
-                         target="_blank">���������Ի����ж��ô���</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>��������ս���ڼ���ɴ��ж���ɾ���ж����ܻᵼ�������֡���ȷ��Ҫ��ô����</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>һ������ս��</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">��ս������</p>
-                    <p style="margin: 11px 0; font-size: 13px">�����ȷ�</p>
-                    <p style="text-transform: none;">���ǵ���ս������ȡ��������ж����漰���ĸ����� - ʱ�䡢�ɱ���֪ʶ�ͼ��ܡ�������Щ���ػ�������߶��죬����ս��������������ѡ�����ʺ��Լ����ʽ��Ŀ����ж���</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4595"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">�ڼҰ칫</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>���������׼���ҽ��ڼҰ칫 (___) �죬�Ա���ÿ��ͨ�ڴ����Ķ�����̼�ŷš�</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4595">�˽����</a><ul class="dropdown" data-dropdown="resource-links-4595">
-                    <li>���Դ��</li>
-                    <li><a href="https://www.thrillist.com/news/nation/cities-with-the-worst-commutes-in-the-world-survey"
-                         target="_blank">������ͨ��״�������ĳ���</a></li>
-                    <li><a href="https://www.washingtonpost.com/news/on-leadership/wp/2017/02/16/want-to-work-from-home-more-often-new-data-from-gallup-could-help-convince-your-boss/"
-                         target="_blank">ϣ���������ڼҰ칫�𣿸����յ������ݿ��԰���˵���ϰ�</a></li>
-                    <li><a href="https://www.washingtonpost.com/news/wonk/wp/2016/02/25/how-much-of-your-life-youre-wasting-on-your-commute/"
-                         target="_blank">�����˷���ͨ���еľ���Ǳ��</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>��������ս���ڼ���ɴ��ж���ɾ���ж����ܻᵼ�������֡���ȷ��Ҫ��ô����</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>һ������ս��</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">��ս������</p>
-                    <p style="margin: 11px 0; font-size: 13px">������ѧ��</p>
-                    <p style="text-transform: none;">���ǵ���ս������ȡ��������ж����漰���ĸ����� - ʱ�䡢�ɱ���֪ʶ�ͼ��ܡ�������Щ���ػ�������߶��죬����ս��������������ѡ�����ʺ��Լ����ʽ��Ŀ����ж���</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4596"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">�ٿ��������</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>ֻҪ���У��ҽ��������μӻ��飬����ʹ�� Web-Ex��Telepresence��Box �������󶼻����ٵ�Э�������μ�������顣���� Yammer ��������������˽������ʾ��</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4596">�˽����</a><ul class="dropdown" data-dropdown="resource-links-4596">
-                    <li>���Դ��</li>
-                    <li><a href="http://www.drawdown.org/solutions/transport/telepresence" target="_blank">���������� #63��˼������</a></li>
-                    <li><a href="https://my.metlife.com/en/us/tools/technology/Pages/Virtual-Meeting-Technologies/Virtual-Meeting-Technologies.aspx?WT.mc_id=US_NextGen_HowDoI_MeetingsAndWorkSpaces_VirtualMeetingSpace"
-                         target="_blank">�󶼻�����������鼼��</a></li>
-                    <li><a href="https://www.treehugger.com/corporate-responsibility/5-innovations-to-make-telecommuting-easy-green.html"
-                         target="_blank">��Զ�̰칫������ɻ����� 5 ����</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>��������ս���ڼ���ɴ��ж���ɾ���ж����ܻᵼ�������֡���ȷ��Ҫ��ô����</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>ÿ����ս��</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">��ս������</p>
-                    <p style="margin: 11px 0; font-size: 13px">����ר��</p>
-                    <p style="text-transform: none;">���ǵ���ս������ȡ��������ж����漰���ĸ����� - ʱ�䡢�ɱ���֪ʶ�ͼ��ܡ�������Щ���ػ�������߶��죬����ս��������������ѡ�����ʺ��Լ����ʽ��Ŀ����ж���</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4597"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">�����ҵ�����</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>���������һ�Ÿ������л�Ʊ����Ҳ�Ṻ����Ӧ��̼��������Ϊ����̼�кͳ�ŵ��һ���֣��󶼻�����ͨ��֧�ֿɳ�����չ���������ǵ��������в����Ķ�����̼�ŷš�</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4597">�˽����</a><ul class="dropdown" data-dropdown="resource-links-4597">
-                    <li>���Դ��</li>
-                    <li><a href="https://www.metlife.com/corporate-responsibility/environment/carbon-neutrality/"
-                         target="_blank">�󶼻����ٵ�̼�кͳ�ŵ</a></li>
-                    <li><a href="http://www.yesmagazine.org/issues/life-after-oil/how-far-can-we-get-without-flying-20160211"
-                         target="_blank">�����ɻ��������߶�Զ��</a></li>
-                    <li><a href="https://www.nytimes.com/2017/07/27/climate/airplane-pollution-global-warming.html"
-                         target="_blank">���ɻ������ڵ��򻷱���������������ø���</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>��������ս���ڼ���ɴ��ж���ɾ���ж����ܻᵼ�������֡���ȷ��Ҫ��ô����</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>һ������ս��</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">��ս������</p>
-                    <p style="margin: 11px 0; font-size: 13px">�����ȷ�</p>
-                    <p style="text-transform: none;">���ǵ���ս������ȡ��������ж����漰���ĸ����� - ʱ�䡢�ɱ���֪ʶ�ͼ��ܡ�������Щ���ػ�������߶��죬����ս��������������ѡ�����ʺ��Լ����ʽ��Ŀ����ж���</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4656"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">��������</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>�ҽ�ֻ��������������Ľ�ͨ��ʽ���� &mdash; ���С��ܲ��������г������峵������ȡ�</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4656">�˽����</a><ul class="dropdown" data-dropdown="resource-links-4656">
-                    <li>���Դ��</li>
-                    <li><a href="https://www.doityourself.com/stry/alternative-transportation-all-about-human-powered-vehicles"
-                         target="_blank">�����ͨ��ʽ����������������һ��</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>��������ս���ڼ���ɴ��ж���ɾ���ж����ܻᵼ�������֡���ȷ��Ҫ��ô����</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>ÿ����ս��</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">��ս������</p>
-                    <p style="margin: 11px 0; font-size: 13px">�����ȷ�</p>
-                    <p style="text-transform: none;">���ǵ���ս������ȡ��������ж����漰���ĸ����� - ʱ�䡢�ɱ���֪ʶ�ͼ��ܡ�������Щ���ػ�������߶��죬����ս��������������ѡ�����ʺ��Լ����ʽ��Ŀ����ж���</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4657"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">���ø������ĳ���</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>�ڹ�˾���л�����г�����Ҫ�⳵ʱ���һ�ѡ����ܳ���</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4657">�˽����</a><ul class="dropdown" data-dropdown="resource-links-4657">
-                    <li>���Դ��</li>
-                    <li><a href="https://my.metlife.com/en/us/tools/procurement/Documents/GTP/GTP_Master.pdf"
-                         target="_blank">�Ķ��󶼻����ٵ���������</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>��������ս���ڼ���ɴ��ж���ɾ���ж����ܻᵼ�������֡���ȷ��Ҫ��ô����</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>һ������ս��</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">��ս������</p>
-                    <p style="margin: 11px 0; font-size: 13px">�����ȷ�</p>
-                    <p style="text-transform: none;">���ǵ���ս������ȡ��������ж����漰���ĸ����� - ʱ�䡢�ɱ���֪ʶ�ͼ��ܡ�������Щ���ػ�������߶��죬����ս��������������ѡ�����ʺ��Լ����ʽ��Ŀ����ж���</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4658"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">2 Ӣ����ս��</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>�һ����&ldquo;2 Ӣ����ս��&rdquo;�����ۺ�ʱ���� 2 Ӣ��뾶�ķ�Χ�ڲ��������г�����·��</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4658">�˽����</a><ul class="dropdown" data-dropdown="resource-links-4658">
-                    <li>���Դ��</li>
-                    <li><a href="http://www.energysavingsecrets.co.uk/walking.html" target="_blank">����·��</a></li>
-                    <li><a href="https://www.epa.gov/greenvehicles/what-if-we-kept-our-cars-parked-trips-less-one-mile"
-                         target="_blank">���������ǻ�������</a></li>
-                    <li><a href="https://my.metlife.com/teams/WellnessforLife/SitePages/Home.aspx" target="_blank">�󶼻����ٵ� Wellness for Life</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>��������ս���ڼ���ɴ��ж���ɾ���ж����ܻᵼ�������֡���ȷ��Ҫ��ô����</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>ÿ����ս��</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">��ս������</p>
-                    <p style="margin: 11px 0; font-size: 13px">�����ȷ�</p>
-                    <p style="text-transform: none;">���ǵ���ս������ȡ��������ж����漰���ĸ����� - ʱ�䡢�ɱ���֪ʶ�ͼ��ܡ�������Щ���ػ�������߶��죬����ս��������������ѡ�����ʺ��Լ����ʽ��Ŀ����ж���</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4659"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">��ϲ�ͬ���񣬽�ʡ���д���</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>�ұ�֤ͨ������������&ldquo;��&rdquo;��һ������Ƿֿ��������Ա����̶ȼ����ҵļݳ����д�����</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4659">�˽����</a><ul class="dropdown" data-dropdown="resource-links-4659">
-                    <li>���Դ��</li>
-                    <li><a href="https://jamesclear.com/habit-stacking" target="_blank">ϰ�����ɣ������ý�ϲ�ͬ�����Ϊһ��ϰ�ߣ� </a></li>
-                    <li><a href="https://home.howstuffworks.com/home-improvement/household-hints-tips/cleaning-organizing/how-to-prioritize-daily-errands1.htm"
-                         target="_blank">�ﻮ��Ҫ�����</a></li>
-                    <li><a href="https://www.actiongatortire.com/7-surprising-things-affect-gas-mileage/" target="_blank">Ӱ����ʻ��̵� 7 ����</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>��������ս���ڼ���ɴ��ж���ɾ���ж����ܻᵼ�������֡���ȷ��Ҫ��ô����</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>һ������ս��</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">��ս������</p>
-                    <p style="margin: 11px 0; font-size: 13px">������ѧ��</p>
-                    <p style="text-transform: none;">���ǵ���ս������ȡ��������ж����漰���ĸ����� - ʱ�䡢�ɱ���֪ʶ�ͼ��ܡ�������Щ���ػ�������߶��죬����ս��������������ѡ�����ʺ��Լ����ʽ��Ŀ����ж���</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-      </ul>
-    </nav>
-
-
-    <p class="align-center"><a class="back-link" href="/challenges.html">����������ս��</a></p>
-  </div>
-</section>
-
-
-<footer class="global-footer">
-  <section class="bg-neutral20">
-
-  </section>
-  <section class="bg-neutral100">
-    <div class="content">
-      <div class="section">
-        <div class="block">
-          <div>
-            <div class="subheading">���ǵĹ���</div>
-            <p>150 �������󶼻�����һֱ�������õ���ҵ����ƾ��󶼻������ƾõļ�ʵ����������������ȷ��δ�����Լ�������������صĸ��ˡ���ͥ�������ܹ�ʵ��Ŀ��Ͷȹ������е��ѹء�</p>
-          </div>
-
-        </div>
-        <div class="block">
-          <div>
-            <div class="subheading">��ϵ��Ϣ</div>
-            <div>MetLife, Inc.<br>200 Park Avenue<br>New York, NY 10166<br>gogreen@metlife.com</div>
-            <div class="support-link"><a href="mailto:support@ecochallenge.org">support@ecochallenge.org</a></div>
-          </div>
-
-          <div>
-          </div>
-
-        </div>
-      </div>
-      <div class="section logos">
-        <div class="logo"><img src="../assets/images/logo.jpg"/> <a class="link-primary" href="https://metlife.ecochallenge.org/about/event-info">���ڻ��֯��</a></div>
-      </div>
-
-    </div>
-  </section>
-  <section class="bg-neutral120">
-    <div class="bottom">
-      <div class="align-left"><span class="colophon">&copy;2016-2019 Northwest Earth Institute</span></div>
-      <div class="align-right"><a href="https://ecochallenge.org/wp-content/uploads/2016/07/NWEI-Privacy-Policy_03.11.17.pdf" target="_blank">��˽����</a> <a href="mailto:support@ecochallenge.org">����֧��</a> <a href="https://ecochallenge.org/donations/donate-to-ecochallenge/" target="_blank" class="outlined">����</a></div>
-    </div>
-  </section>
-
-</footer>
-
-
+<body class="layout-event" data-gtm-page-name="" data-gtm-subdomain="metlife">
+	<header class="global-header">
+		<nav class="user-nav"></nav>
+	</header>
+	<div class="event-header">
+		<div class="event-info">
+			<div class="subtitle">
+				<a href="https://www.metlife.com/">
+				<div class="logo"><img src="../assets/images/metlife_eng_logo_rgb.jpg"/></div></a>
+			</div>
+			<div class="title">
+				<a href="http://metlife.ecochallenge.org">2020 年大都会人寿 EcoChallenge 环保挑战赛</a>
+			</div>
+			<div class="event-date-range" data-date-range="">
+				2020 年 10 月 19 日 － 30 日
+			</div>
+		</div>
+	</div>
+	<section class="bg-spectrum spectrum06">
+		<div class="container">
+			<header class="section-title">
+				<div class="icon">
+					<svg class="border" viewbox="0 0 46 46" xmlns="http://www.w3.org/2000/svg">
+					<circle cx="23" cy="23" fill="none" r="22.5"></circle></svg> <svg viewbox="0 0 46 46" xmlns="http://www.w3.org/2000/svg">
+					<path d="M37.182 28.51A10.67 10.67 0 1 1 26.51 17.84a10.67 10.67 0 0 1 10.67 10.67zM26.51 21.518a6.993 6.993 0 1 0 6.993 6.994 6.993 6.993 0 0 0-6.993-6.994z" fill="#fff" stroke-width="0"></path>
+					<path d="M37.182 28.51A10.67 10.67 0 1 1 26.51 17.84a10.67 10.67 0 0 1 10.67 10.67zM20.208 10.724H4.064m16.964 2.991L1.171 27.366m23.216-13.73a3.845 3.845 0 0 0 0-7.69h-6.031l8.155 22.565" fill="none"></path></svg>
+				</div>
+				<h1 class="title">运输</h1><a class="subtitle medium" href="../challenges.html">返回所有行动类别</a>
+				<p class="description uppercase">采用替代交通方式有益于我们的身体和环境！</p>
+				<p class="description">在许多国家/地区，汽车都是出行的主要工具，并且经常都是一个人独自驾车出行。规划师和工程师建造了城市街道和道路系统，以满足我们的交通需求，但经常不提供其他出行方式的选择。温室气体排放、道路拥堵、噪音、径流污染和天然气价格不断上涨，这一切均表明我们目前的交通系统是不可持续的。为此，我们的目标是促进有利于所有交通方式的运输系统，而不仅仅是汽车。</p>
+				<div class="challenge-resource">
+					<a class="button-outlined" href="https://ecochallenge.org/wp-content/uploads/2017/03/2017-MetLife-EcoChallenge-Resources_Transportation.pdf" target="_blank">了解更多</a>
+				</div>
+				<div class="challenge-sponsors"></div>
+			</header>
+			<div class="filter-toggle-group closed">
+				<div class="form-divider" data-filter-toggle="">
+					<span class="rule"></span><span class="text" data-filter-toggle="" data-filter-type="action"></span> <span class="rule"></span>
+				</div>
+				<form accept-charset="UTF-8" action="/challenges/transportation" class="form-search-filter form-field centered" data-search-filter="true" method="get">
+					<input name="utf8" type="hidden" value="&#x2713;">
+					<div class="filters centered">
+						<div class="select" data-filter="">
+							<select id="difficulty" name="difficulty">
+								<option value="">
+									难度：
+								</option>
+								<option value="easy">
+									EcoLearner
+								</option>
+								<option value="medium">
+									EcoPro
+								</option>
+								<option value="difficult">
+									EcoLeader
+								</option>
+							</select>
+						</div>
+						<div class="select" data-filter="">
+							<select id="limit_kind" name="limit_kind">
+								<option value="">
+									频率：
+								</option>
+								<option value="one_time">
+									一次性
+								</option>
+								<option value="daily">
+									每天
+								</option>
+							</select>
+						</div>
+					</div>
+					<div class="filters centered">
+						<span class="prompt">仅在以下情况下显示行动：</span> <label class="checkbox" data-filter=""><input id="is_customizable" name="is_customizable" type="checkbox" value="1"> <span class="toggle-indicator"></span>可定制</label> <label class="checkbox" data-filter=""><input id="has_resources" name="has_resources" type="checkbox" value="1"> <span class="toggle-indicator"></span>拥有资源链接</label>
+					</div>
+					<div class="reset inactive">
+						<a href="/challenges/transportation">清除所有筛选条件</a>
+					</div>
+				</form>
+			</div>
+			<nav class="challenge-actions-list">
+				<ul>
+					<li class="action-card" data-action="6819" data-api-path="https://metlife.ecochallenge.org/me/actions/6819/myself/selection" data-customizable="false" id="action-6819">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">改善公共汽车站</h3>
+									<p data-description="">我会通过在车站张贴时刻表、增加座位或遮盖物、增加艺术品或鲜花、捡拾垃圾或其他一些小改进来改善我所在社区的公共汽车站。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">了解更多</div>
+										<ul class="dropdown" data-dropdown="resource-links-6819">
+											<li>Action Resources:</li>
+											<li>
+												<a href="http://transitcenter.org/2016/01/28/marta-army/" target="_blank">Tactical Urbanism Meets the Bus Stop</a>
+											</li>
+											<li>
+												<a href="http://humantransit.org/2016/12/tactical-transit-a-fast-path-to-transit-infrastructure.html" target="_blank">Tactical Transit:A Fast Path to Transit Infrastructure</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">您已在挑战赛期间完成此行动。删除此行动可能会导致积分损失。确定要执行此操作吗？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>一次性行动</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLeader</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6820" data-api-path="https://metlife.ecochallenge.org/me/actions/6820/myself/selection" data-customizable="true" id="action-6820">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">使用公共交通</h3>
+									<p data-description="">我每天搭乘 (___) 英里的公共交通，避免将高达 (___) 磅的二氧化碳排放到地球的大气层中。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">了解更多</div>
+										<ul class="dropdown" data-dropdown="resource-links-6820">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.treehugger.com/htgg/how-to-go-green-public-transportation.html" target="_blank">10 Reasons Why You Should Use Public Transport</a>
+											</li>
+											<li>
+												<a href="https://www.fastcompany.com/3069056/if-you-use-public-transit-when-youre-young-youre-less-likely-to-drive-later" target="_blank">If You Use Public Transit When You’re Young, You’re Less Likely To Drive Later</a>
+											</li>
+											<li>
+												<a href="https://www.theatlantic.com/business/archive/2015/05/stranded-how-americas-failing-public-transportation-increases-inequality/393419/" target="_blank">Stranded:How America's Failing Public Transportation Increases Inequality</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">您已在挑战赛期间完成此行动。删除此行动可能会导致积分损失。确定要执行此操作吗？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>每日行动</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoPro</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6821" data-api-path="https://metlife.ecochallenge.org/me/actions/6821/myself/selection" data-customizable="true" id="action-6821">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">了解更多并与朋友交谈</h3>
+									<p data-description="">公共交通的成本会成为经济流动性的障碍。我将了解我的社区对公共交通的需求，并且每天将问题告诉给 (___) 位朋友。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">了解更多</div>
+										<ul class="dropdown" data-dropdown="resource-links-6821">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.huffingtonpost.com/molly-secours/cant-get-there-think-publ_b_782280.html" target="_blank">Think Public Transportation Isn’t a Social Justice Issue?Think Again</a>
+											</li>
+											<li>
+												<a href="https://www.theatlantic.com/business/archive/2015/05/stranded-how-americas-failing-public-transportation-increases-inequality/393419/" target="_blank">Stranded:How America's Failing Public Transportation Increases Inequality</a>
+											</li>
+											<li>
+												<a href="https://sustainabledevelopment.un.org/sdg9" target="_blank">Sustainable Development Goal 9:Build Resilient Infrastructure</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">您已在挑战赛期间完成此行动。删除此行动可能会导致积分损失。确定要执行此操作吗？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>每日行动</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoPro</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6822" data-api-path="https://metlife.ecochallenge.org/me/actions/6822/myself/selection" data-customizable="true" id="action-6822">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">尝试拼车</h3>
+									<p data-description="">我每天通过拼车通勤 (___) 英里，避免将高达 (___) 磅的二氧化碳排放到地球的大气层中。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">了解更多</div>
+										<ul class="dropdown" data-dropdown="resource-links-6822">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.theguardian.com/sustainable-business/2017/apr/26/carpooling-commuting-car-share-liftshare-uber" target="_blank">'We've Become Good Friends':Carpooling Eases Drudgery of Commuting</a>
+											</li>
+											<li>
+												<a href="https://www.youtube.com/watch?v=_Ualvltj9Ug" target="_blank">How to Motivate Employees to Carpool</a>
+											</li>
+											<li>
+												<a href="https://www.weforum.org/agenda/2018/08/how-the-everyday-commute-is-changing-who-we-are" target="_blank">How Your Commute is Changing You</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">您已在挑战赛期间完成此行动。删除此行动可能会导致积分损失。确定要执行此操作吗？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>每日行动</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoPro</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6823" data-api-path="https://metlife.ecochallenge.org/me/actions/6823/myself/selection" data-customizable="true" id="action-6823">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">骑自行车</h3>
+									<p data-description="">我每天骑自行车通勤 (___) 英里，避免将高达 (___) 磅的二氧化碳排放到地球的大气层中。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">了解更多</div>
+										<ul class="dropdown" data-dropdown="resource-links-6823">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.bikemap.net/en/route/create/" target="_blank">Find Your Perfect Bike Route</a>
+											</li>
+											<li>
+												<a href="https://www.bikeleague.org/content/national-household-travel-survey-short-trips-analysis" target="_blank">National Household Travel Survey -- Short Trip Analysis</a>
+											</li>
+											<li>
+												<a href="https://www.weforum.org/agenda/2018/08/how-the-everyday-commute-is-changing-who-we-are" target="_blank">How Your Commute is Changing You</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">您已在挑战赛期间完成此行动。删除此行动可能会导致积分损失。确定要执行此操作吗？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>每日行动</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoPro</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6824" data-api-path="https://metlife.ecochallenge.org/me/actions/6824/myself/selection" data-customizable="true" id="action-6824">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">用步行替代开车</h3>
+									<p data-description="">我每天用步行替代开车 (___) 英里，避免将高达 (___) 磅的二氧化碳排放到地球的大气层中。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">了解更多</div>
+										<ul class="dropdown" data-dropdown="resource-links-6824">
+											<li>Action Resources:</li>
+											<li>
+												<a href="http://americawalks.org/" target="_blank">How to Make Your Town More Walkable</a>
+											</li>
+											<li>
+												<a href="https://www.ted.com/talks/jeff_speck_the_walkable_city/transcript" target="_blank">Ted Talk:Jeff Speck - The Walkable City</a>
+											</li>
+											<li>
+												<a href="https://www.houselogic.com/save-money-add-value/save-on-utilities/make-my-neighborhood-more-walkable/" target="_blank">Boost Your Neighborhood’s Walkability</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">您已在挑战赛期间完成此行动。删除此行动可能会导致积分损失。确定要执行此操作吗？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>每日行动</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoPro</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6825" data-api-path="https://metlife.ecochallenge.org/me/actions/6825/myself/selection" data-customizable="true" id="action-6825">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">减少开车</h3>
+									<p data-description="">我只会在必要时才会开车，减少行车里程。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">了解更多</div>
+										<ul class="dropdown" data-dropdown="resource-links-6825">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.youtube.com/watch?v=R2gwy6bKKVg" target="_blank">Benefits of Transit Oriented Development (TOD)</a>
+											</li>
+											<li>
+												<a href="https://www.pps.org/article/reimagining-our-streets-as-places-from-transit-routes-to-community-roots" target="_blank">Reimagining Our Streets As Places:From Transit Routes To Community Roots</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">您已在挑战赛期间完成此行动。删除此行动可能会导致积分损失。确定要执行此操作吗？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>每日行动</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLearner</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6826" data-api-path="https://metlife.ecochallenge.org/me/actions/6826/myself/selection" data-customizable="false" id="action-6826">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">汽车共享</h3>
+									<p data-description="">我将注册汽车共享服务，或与邻居组织汽车共享，以减少道路上的车辆数量。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">了解更多</div>
+										<ul class="dropdown" data-dropdown="resource-links-6826">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.youtube.com/watch?v=R2gwy6bKKVg" target="_blank">Ridesharing Would Save 320 Megatons of Carbon By 2050</a>
+											</li>
+											<li>
+												<a href="https://www.inc.com/laura-montini/infographic/the-sharing-economy-disrupting-life-as-we-know-it.html" target="_blank">The Big Benefits of the 'Sharing Economy'</a>
+											</li>
+											<li>
+												<a href="https://www.csmonitor.com/Environment/2016/0720/How-much-does-car-sharing-benefit-the-environment" target="_blank">How Much Does Car-Sharing Benefit the Environment?</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">您已在挑战赛期间完成此行动。删除此行动可能会导致积分损失。确定要执行此操作吗？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>一次性行动</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLeader</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6827" data-api-path="https://metlife.ecochallenge.org/me/actions/6827/myself/selection" data-customizable="true" id="action-6827">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">在家办公</h3>
+									<p data-description="">如果经理批准，我将在家办公 (___) 天，以避免每天通勤带来的二氧化碳排放。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">了解更多</div>
+										<ul class="dropdown" data-dropdown="resource-links-6827">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.thrillist.com/news/nation/cities-with-the-worst-commutes-in-the-world-survey" target="_blank">Cities with the Worst Commutes in the World</a>
+											</li>
+											<li>
+												<a href="https://www.washingtonpost.com/news/on-leadership/wp/2017/02/16/want-to-work-from-home-more-often-new-data-from-gallup-could-help-convince-your-boss/" target="_blank">Want To Work From Home More Often?New Data From Gallup Could Help Convince Your Boss</a>
+											</li>
+											<li>
+												<a href="https://www.washingtonpost.com/news/wonk/wp/2016/02/25/how-much-of-your-life-youre-wasting-on-your-commute/" target="_blank">The Astonishing Human Potential Wasted on Commutes</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">您已在挑战赛期间完成此行动。删除此行动可能会导致积分损失。确定要执行此操作吗？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>一次性行动</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLearner</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6828" data-api-path="https://metlife.ecochallenge.org/me/actions/6828/myself/selection" data-customizable="false" id="action-6828">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">召开虚拟会议</h3>
+									<p data-description="">只要可行，我将不会出差参加会议，而是使用 Web-Ex、Telepresence、Skype 和其他大都会人寿的协作技术参加虚拟会议。加入 Yammer 的虚拟会议社区了解更多提示。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">了解更多</div>
+										<ul class="dropdown" data-dropdown="resource-links-6828">
+											<li>Action Resources:</li>
+											<li>
+												<a href="http://www.drawdown.org/solutions/transport/telepresence" target="_blank">Drawdown Solution #63:Telepresence</a>
+											</li>
+											<li>
+												<a href="https://my.metlife.com/en/us/tools/technology/Pages/Virtual-Meeting-Technologies/Virtual-Meeting-Technologies.aspx?WT.mc_id=US_NextGen_HowDoI_MeetingsAndWorkSpaces_VirtualMeetingSpace" target="_blank">MetLife Virtual Meeting Technologies</a>
+											</li>
+											<li>
+												<a href="https://www.treehugger.com/corporate-responsibility/5-innovations-to-make-telecommuting-easy-green.html" target="_blank">5 Innovations to Make Telecommuting Easy &amp; Green</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">您已在挑战赛期间完成此行动。删除此行动可能会导致积分损失。确定要执行此操作吗？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>每日行动</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoPro</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6829" data-api-path="https://metlife.ecochallenge.org/me/actions/6829/myself/selection" data-customizable="true" id="action-6829">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">选择碳补偿</h3>
+									<p data-description="">如果购买了一张个人旅行机票，我也会购买相应的碳补偿。在我们碳中和的承诺中，大都会人寿通过支持可持续发展项目来抵消所有企业的商务旅行。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">了解更多</div>
+										<ul class="dropdown" data-dropdown="resource-links-6829">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.metlife.com/corporate-responsibility/environment/carbon-neutrality/" target="_blank">MetLife's Carbon Neutrality Commitment</a>
+											</li>
+											<li>
+												<a href="http://www.yesmagazine.org/issues/life-after-oil/how-far-can-we-get-without-flying-20160211" target="_blank">How Far Can We Get Without Flying?</a>
+											</li>
+											<li>
+												<a href="https://www.nytimes.com/2017/07/27/climate/airplane-pollution-global-warming.html" target="_blank">Flying Is Bad for the Planet.You Can Help Make It Better</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">您已在挑战赛期间完成此行动。删除此行动可能会导致积分损失。确定要执行此操作吗？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>一次性行动</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLeader</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6830" data-api-path="https://metlife.ecochallenge.org/me/actions/6830/myself/selection" data-customizable="false" id="action-6830">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">运用体力</h3>
+									<p data-description="">我将只会采用体力驱动的交通方式出行，如步行、跑步、骑自行车、滑板车、滑板等。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">了解更多</div>
+										<ul class="dropdown" data-dropdown="resource-links-6830">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.doityourself.com/stry/alternative-transportation-all-about-human-powered-vehicles" target="_blank">Alternative Transportation:All About Human Powered Vehicles</a>
+											</li>
+											<li>
+												<a href="https://transportgeography.org/?page_id=5725" target="_blank">All about Sustainable Transportation</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">您已在挑战赛期间完成此行动。删除此行动可能会导致积分损失。确定要执行此操作吗？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>每日行动</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLeader</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6831" data-api-path="https://metlife.ecochallenge.org/me/actions/6831/myself/selection" data-customizable="false" id="action-6831">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">租用更环保的车辆</h3>
+									<p data-description="">在公司旅行或个人休闲需要租车时，我会选择经济实惠的节能车。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">了解更多</div>
+										<ul class="dropdown" data-dropdown="resource-links-6831">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://my.metlife.com/en/us/tools/procurement/Documents/GTP/GTP_Master.pdf" target="_blank">Read MetLife's Travel Policy</a>
+											</li>
+											<li>
+												<a href="https://www.epa.gov/greenvehicles/learn-about-green-vehicles" target="_blank">Learn About Green Vehicles</a>
+											</li>
+											<li>
+												<a href="https://greenercars.org/" target="_blank">Greener Cars Rating</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">您已在挑战赛期间完成此行动。删除此行动可能会导致积分损失。确定要执行此操作吗？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>一次性行动</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLeader</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6832" data-api-path="https://metlife.ecochallenge.org/me/actions/6832/myself/selection" data-customizable="false" id="action-6832">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">2 英里挑战赛</h3>
+									<p data-description="">我会参与“2 英里挑战赛”，无论何时，在 2 英里半径的范围内采用骑自行车或走路。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">了解更多</div>
+										<ul class="dropdown" data-dropdown="resource-links-6832">
+											<li>Action Resources:</li>
+											<li>
+												<a href="http://www.energysavingsecrets.co.uk/walking.html" target="_blank">Get Walking!</a>
+											</li>
+											<li>
+												<a href="https://www.epa.gov/greenvehicles/what-if-we-kept-our-cars-parked-trips-less-one-mile" target="_blank">What would happen if we kept our cars parked?</a>
+											</li>
+											<li>
+												<a href="https://my.metlife.com/teams/WellnessforLife/SitePages/Home.aspx" target="_blank">MetLife's Wellness for Life</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">您已在挑战赛期间完成此行动。删除此行动可能会导致积分损失。确定要执行此操作吗？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>每日行动</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLeader</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6833" data-api-path="https://metlife.ecochallenge.org/me/actions/6833/myself/selection" data-customizable="false" id="action-6833">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">结合不同事务，节省出行次数</h3>
+									<p data-description="">我保证通过将各种事务“串”到一起，而不是分开办理来最大程度减少我的驾车出行次数。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">了解更多</div>
+										<ul class="dropdown" data-dropdown="resource-links-6833">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://jamesclear.com/habit-stacking" target="_blank">Habit Stacking:Try making combining errands a habit!</a>
+											</li>
+											<li>
+												<a href="https://home.howstuffworks.com/home-improvement/household-hints-tips/cleaning-organizing/how-to-prioritize-daily-errands1.htm" target="_blank">Map out Your Errands</a>
+											</li>
+											<li>
+												<a href="https://www.actiongatortire.com/7-surprising-things-affect-gas-mileage/" target="_blank">7 Things that Affect Gas Mileage</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">您已在挑战赛期间完成此行动。删除此行动可能会导致积分损失。确定要执行此操作吗？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>一次性行动</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLearner</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</nav>
+			<p class="align-center"><a class="back-link" href="../challenges.html">返回所有行动类别</a></p>
+		</div>
+	</section>
+	<footer class="global-footer">
+		<section class="bg-neutral20"></section>
+		<section class="bg-neutral100">
+			<div class="content">
+				<div class="section">
+					<div class="block">
+						<div>
+							<div class="subheading">
+								我们的故事
+							</div>
+							<p>150 年来，大都会人寿一直都是良好的企业公民。凭借大都会人寿悠久的坚实根基，我们致力于确保未来可以继续为世界各地的个人、家庭和社区提供帮助，使他们能够实现目标，并度过生活中的难关。</p>
+						</div>
+					</div>
+					<div class="block">
+						<div>
+							<div class="subheading">
+								联系信息
+							</div>
+							<div>
+								MetLife, Inc.<br/>200 Park Avenue<br/>New York, NY 10166<br/>gogreen@metlife.com
+							</div>
+							<div class="support-link">
+								<a href="mailto:support@ecochallenge.org">support@ecochallenge.org</a>
+							</div>
+						</div>
+						<div></div>
+					</div>
+				</div>
+				<div class="section logos">
+					<div class="logo">
+						<img src="../assets/images/metlife_eng_logo_rgb.jpg"/><a class="link-primary" href="https://www.metlife.com/">关于活动组织方</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bg-neutral120">
+			<div class="bottom">
+				<div class="align-left">
+					<span class="colophon">© 2016-2020 Ecochallenge.org</span>
+				</div>
+				<div class="align-right">
+					<a href="http://ecochallenge.org/privacy-policy" target="_blank">隐私政策 | 使用条款</a> <a href="mailto:support@ecochallenge.org">技术支持</a> <a class="outlined" data-donate-button="" data-donate-default="30" href="#">捐款</a>
+				</div>
+			</div>
+		</section>
+	</footer>
 </body>
 </html>
-

@@ -1,1012 +1,990 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:og="http://ogp.me/ns#"
-      xmlns:fb="https://www.facebook.com/2008/fbml">
+﻿<!DOCTYPE html>
+<html>
 <head>
-  <title>2019 ��󶼻����� EcoChallenge - ���Ϣ</title>
-  <link rel="stylesheet" media="all" href="../assets/stylesheets/application.css" data-turbolinks-track="true"/>
-  <script src="../assets/javascripts/application.js" data-turbolinks-track="true"></script>
-  <meta name="action-cable-url" content="/cable"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#ffffff">
-  <meta name="robots" content="noindex">
-
-  <meta name="csrf-param" content="authenticity_token"/>
-  <meta name="csrf-token"
-        content="KHbHeVfyS683SdqR+FCO7sJ7ZY4xcTTw0pVqzKOm+O8rq5m3j4rBvFsjaMcCnf5Q5WK1AJ3YFK6e/wpdT5aVdg=="/><!-- default meta --><meta property="og:title"
-        content="Join the 2019 MetLife EcoChallenge, presented by MetLife Global Sustainability Team"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:description"
-        content="For two weeks, we challenge you to make eco-friendly choices to live a more sustainable lifestyle! Team up with colleagues from around the world and take action to create a healthier planet during the 2019 MetLife EcoChallenge. "/>
-  <meta property="og:image"
-        content="http://metlife.ecochallenge.org/system/events/org_logos/000/000/039/original/metlife_eng_logo_rgb.jpg?1552691799"/>
-  <meta property="og:url" content="http://metlife.ecochallenge.org"/>
-
-
-  <style type="text/css">nav.user-nav {
-    background-color: #0061A0;
-  }
-
-  .event-header .event-info {
-    margin: 10px 15px 30px;
-  }
-
-  a {
-    color: #007ABC;
-  }
-
-  .button-primary, .button-primary.dark:hover, .award-point-list a, .award-point-list a .points::after, .event-header .event-nav a.outlined:hover, .event-header .event-nav a.outlined:active, .hero .button:hover, .button-outlined:hover {
-    background-color: #007ABC;
-  }
-
-  .event-header .event-nav a.outlined, .button-outlined {
-    border-color: #007ABC;
-    color: #007ABC;
-  }
-
-  .event-check-ins .days li.action-complete, .legend li .action-complete.marker {
-    background-color: #0061A0;
-  }
-
-  .calendar .week a.action-complete {
-    color: #0061A0;
-    border-color: #0061A0;
-  }
-
-  .event-header .event-info .event-date-range {
-    border-top: 1px solid #0061A0;
-    border-bottom: 1px solid #0061A0;
-  }
-
-  h2, h3, h5, .participants-counter .title, .horizontal-section-title .title, .page-content .title {
-    color: #333333;
-  }
-
-  .participant-feed .dropdown-wrapper& gt
-
-  ;
-  .feed-filter {
-    color: #0061A0;
-  }
-
-  .form-button-icon.facebook, .form-button-icon.google {
-    display: none;
-  }
-
-  .hero .sign, .event-header .event-info .title a, h2, h3, h5, .participants-counter .title, .horizontal-section-title .title, .page-content .title, .placeholder .title, .challenges-slider .slider-header .title, .section-title .title, .team-hero .title, .team-detail-points .title, .dashboard-sidebar .team-summary .team-header .title, .dashboard-sidebar .user-summary .user-header .name, .impact-grid .impact-card .units, .dashboard-sidebar .impact-summary .challenge-impact .count, .participants-counter .count .digit-box span {
-    font-family: Georgia, Times;
-    font-weight: bold;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-  }
-
-  p {
-    font-size: 15px;
-  }
-
-  .global-footer .top .subheading {
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-    font-size: 14px;
-    color: white;
-  }
-
-  .global-footer .top .social a, .global-footer .top .col, .global-footer .top .description {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: normal;
-    font-size: 12px;
-  }
-
-  .hero .copy, .company-callout .callout-container .blurb, .placeholder p, .page-content, .participant-action-cards .card-container .description p, .awarded-points-list tr + tr td, .section-title .description, .participants-feed-full .copy {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  .placeholder p, .page-content, .section-title .description, .participants-feed-full .copy {
-    font-size: 13px;
-  }
-
-  .hero .container-hero {
-    max-width: 450px;
-  }
-
-  .event-header .event-info .title a {
-    color: #000000;
-  }
-
-  .hero .copy {
-    font-weight: bold;
-  }
-
-  .user-nav ul li a:hover {
-    color: white;
-    opacity: 0.8;
-  }
-
-  .event-header .event-info .logo img {
-    max-height: 100px;
-    max-width: 170px;
-  }
-
-  .bottom .outlined {
-    display: none;
-  }
-
-  .hero .sign {
-    background-color: rgba(242, 242, 242, 0.85);
-    padding: 15px;
-    color: #333;
-    text-transform: inherit;
-    border-radius: 6px 6px 0px 0px;
-  }
-
-  .hero .copy {
-    background-color: rgba(242, 242, 242, 0.85);
-    padding: 15px;
-    padding-top: 0px;
-    color: #333;
-    border-radius: 0px 0px 6px 6px;
-    font-weight: lighter;
-  }
-
-  .hero .button {
-    font-family: & #39;
-    Galaxie Polaris & #39;, & #39;
-    Arial & #39;, sans-serif;
-    font-size: 13px;
-    letter-spacing: 0.1em;
-    display: inline-block;
-    padding: 10px 15px;
-    margin-top: 25px;
-    color: #ffffff;
-    border-radius: 4px;
-    background-color: #0061A0;
-    transition: color 0.2s ease, background-color 0.2s ease
-  }
-
-  .challenges-slider .slider-utility a, .featured_challenge .challenge-callout a {
-    border-radius: 4px;
-  }
-
-  p.instructional-message {
-    font-size: 12px;
-  }
-
-  .copy a:hover, .dashboard-table a:hover, .participant a:hover, .section-title .description a:hover, .section-title .subtitle a:hover {
-    text-decoration: underline;
-  }
-
-  /* Center Challenge Cards -kbb */
-  .challenges-grid {
-    justify-content: space-around;
-  }
-
-  .company-callout .callout-container .blurb {
-    font-size: 17px;
-  }
-
-  .nweiBrand {
-    text-align: center;
-    margin-top: 48px;
-    margin-bottom: 18px;
-  }
-
-  .nweiLogoAbout {
-    width: 100%;
-    max-width: 250px;
-    height: auto;
-  }</style>
+	<title>2020 年大都会人寿 EcoChallenge 环保挑战赛 — 自然</title>
+	<link href="../assets/stylesheets/application.css" media="all" rel="stylesheet">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="a#ffffff" name="theme-color">
+	<meta content="GU,PR,US,VI" name="location-countries">
+	<meta content="noindex" name="robots">
+	<link href="/site.webmanifest" rel="manifest">
+	<meta content="#134b61" name="msapplication-TileColor">
+	<meta content="#134b61" name="theme-color">
+	<link href="/manifest.json" rel="manifest">
+	<link href="/safari-pinned-tab.svg" rel="mask-icon">
 </head>
-
-<body
-        class="layout-event"
->
-
-<header class="global-header">
-  <nav class="user-nav"></nav>
-</header>
-
-<div class="event-header ">
-  <div class="event-info" style="">
-    <div class="subtitle"><a href="https://metlife.ecochallenge.org/about/event-info"><div class="logo"><img src="../assets/images/logo.jpg"/></div></a></div>
-    <div class="title"><a href="http://metlife.ecochallenge.org/">2019 ��󶼻����� EcoChallenge</a></div>
-    <div class="event-date-range" data-date-range=""><span data-date-range-start>2019 �� 4 �� 24 ��</span> <span> - </span> <span data-date-range-end>5 �� 10 ��</span></div>
-    <div id="regPassBlock"><a class="outlined regNew" href="https://metlife.ecochallenge.org/users/join">ʵʱע�ᣨӢ�ģ�</a><p id="greenImpact">����룺greenimpact</p>
-    </div>
-  </div>
-  <nav class="event-nav navNew">
-    <ul>
-      <li><a href="../">����</a></li>
-      <li><a href="../points.html">����</a></li>
-      <li><a href="../challenges.html">��ս��</a></li>
-    </ul>
-  </nav>
-</div>
-
-
-<section class="bg-spectrum spectrum07">
-  <div class="container">
-    <header class="section-title">
-      <div class="icon">
-        <svg class="border" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 46">
-          <circle r="22.5" cx="23" cy="23" fill="none"></circle>
-        </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 46">
-          <path fill="none" d="M23.123 34.922v10.824"/>
-          <path d="M17.64 16.69l5.483-6.614 5.483 6.614zm12.059 8.457l-6.576-7.933-6.576 7.933zm1.093 9.775l-7.67-9.252-7.668 9.252z"
-                fill="#fff"/>
-        </svg>
-
-      </div>
-      <h1 class="title">��Ȼ</h1><a class="subtitle medium" href="/challenges.html">����������ս��</a><p class="description uppercase">����Ȼ���ٻ����������ж��н���ѡ�񣬲�������Χ���������½�����ϵ��</p>
-      <p class="description">���Ź�ҵ����ȫ�򻯵Ĳ���������ǿ�ʼ������Ȼ�����ں�����ļ�԰��Ҳ������ʳƷ����·�ͷ����ȥ�򡣴�����������ȡ��ʳ��Ͳ����ķ���Խ�࣬���Ǿ͸��ܷ����Լ������ʽ����Χ��ˮ�������������Ӱ�졣��������ʶ�����������ϵ���������������־�ʱ�������Ƕ��������������������ǵ�����˵������Ī��ĺô���</p>
-      <div class="challenge-resource"><a class="button-outlined" target="_blank"
-           href="https://ecochallenge.org/wp-content/uploads/2017/03/2017-MetLife-EcoChallenge-Resources_Nature.pdf">�˽����</a></div>
-      <div class="challenge-sponsors">
-      </div>
-    </header>
-
-    <nav class="challenge-actions-list">
-      <ul>
-        <li class="action-card"
-            data-participant-action
-            data-action="4545"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">������ɫ�ռ�</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>�ҽ������ڳ��н��������̵ء�</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4545">�˽����</a><ul class="dropdown" data-dropdown="resource-links-4545">
-                    <li>���Դ��</li>
-                    <li><a href="https://www.theguardian.com/teacher-network/2018/mar/01/improving-childrens-access-nature-addressing-inequality-bame-low-income-backgrounds"
-                         target="_blank">�ú����׽�����ȻҪ�ӽ����ƽ������</a></li>
-                    <li><a href="http://www.hphpcentral.com/article/urban-planning-and-the-importance-of-green-space-in-cities-to-human-and-environmental-health"
-                         target="_blank">���й滮������̵ض�����ͻ�����������Ҫ��</a></li>
-                    <li><a href="https://www.npr.org/sections/health-shots/2018/07/20/630615148/replacing-vacant-lots-with-green-spaces-can-ease-depression-in-urban-communities"
-                         target="_blank">����ɫ�ռ�ȡ�����õؿ�ɻ����������������֢</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>��������ս���ڼ���ɴ��ж���ɾ���ж����ܻᵼ�������֡���ȷ��Ҫ��ô����</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>ÿ����ս��</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">��ս������</p>
-                    <p style="margin: 11px 0; font-size: 13px">����ר��</p>
-                    <p style="text-transform: none;">���ǵ���ս������ȡ��������ж����漰���ĸ����� - ʱ�䡢�ɱ���֪ʶ�ͼ��ܡ�������Щ���ػ�������߶��죬����ս��������������ѡ�����ʺ��Լ����ʽ��Ŀ����ж���</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4546"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">�ж�����</h3>
-                <p data-description>�ҽ�ÿ�컨 (___) �����ڻ��⣬����Ե�������ܱ���Ȼ�����ĸж�֮�飨������ڤ�롢д�ռǵȣ���</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4546">�˽����</a><ul class="dropdown" data-dropdown="resource-links-4546">
-                    <li>���Դ��</li>
-                    <li><a href="http://alexstark.com/on-gratitude/" target="_blank">�ж�</a></li>
-                    <li><a href="https://greatergood.berkeley.edu/article/item/what_happens_when_we_reconnect_with_nature"
-                         target="_blank">����������ӵ����Ȼ�ᷢ��ʲô</a></li>
-                    <li><a href="http://www.yesmagazine.org/happiness/if-meditation-is-not-your-thing-try-a-walk-in-the-woods-20180712"
-                         target="_blank">�����ϲ��ڤ�룬�Ǿ�ȥ����ɢɢ��</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>��������ս���ڼ���ɴ��ж���ɾ���ж����ܻᵼ�������֡���ȷ��Ҫ��ô����</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>ÿ����ս��</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">��ս������</p>
-                    <p style="margin: 11px 0; font-size: 13px">������ѧ��</p>
-                    <p style="text-transform: none;">���ǵ���ս������ȡ��������ж����漰���ĸ����� - ʱ�䡢�ɱ���֪ʶ�ͼ��ܡ�������Щ���ػ�������߶��죬����ս��������������ѡ�����ʺ��Լ����ʽ��Ŀ����ж���</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4547"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">ÿ��ɢ��</h3>
-                <p data-description>�ҽ�ÿ�����ɢ�� (___) ���ӡ�</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4547">�˽����</a><ul class="dropdown" data-dropdown="resource-links-4547">
-                    <li>���Դ��</li>
-                    <li><a href="https://www.uofmhealth.org/news/archive/201409/walking-depression-and-beating-stress-outdoors-nature-group"
-                         target="_blank">Ͷ����Ȼ��������������Ĺ�ϵ</a></li>
-                    <li><a href="https://greatergood.berkeley.edu/article/item/what_happens_when_we_reconnect_with_nature"
-                         target="_blank">����������ӵ����Ȼ�ᷢ��ʲô</a></li>
-                    <li><a href="http://www.yesmagazine.org/happiness/if-meditation-is-not-your-thing-try-a-walk-in-the-woods-20180712"
-                         target="_blank">�����ϲ��ڤ�룬�Ǿ�ȥ����ɢɢ��</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>��������ս���ڼ���ɴ��ж���ɾ���ж����ܻᵼ�������֡���ȷ��Ҫ��ô����</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>ÿ����ս��</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">��ս������</p>
-                    <p style="margin: 11px 0; font-size: 13px">������ѧ��</p>
-                    <p style="text-transform: none;">���ǵ���ս������ȡ��������ж����漰���ĸ����� - ʱ�䡢�ɱ���֪ʶ�ͼ��ܡ�������Щ���ػ�������߶��죬����ս��������������ѡ�����ʺ��Լ����ʽ��Ŀ����ж���</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4549"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">�������صĴ�������</h3>
-                <p data-description>���� 30�� ��ũ����� 90�� ���л�ֲ�ﶼҪ��������������ܿ���������ҽ����� (___) �������о���Щֲ�������ڱ��ش�����������棬�����Լ�Ժ��������һЩ��</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4549">�˽����</a><ul class="dropdown" data-dropdown="resource-links-4549">
-                    <li>���Դ��</li>
-                    <li><a href="http://pollinator.org/guides" target="_blank">���������Ѻõ���ֲָ��</a></li>
-                    <li><a href="https://www.smithsonianmag.com/smithsonian-institution/honor-world-bee-day-protect-your-local-pollinators-these-ten-east-ways-180969111/"
-                         target="_blank">ʮ�ּ򵥷�ʽ�����������صĴ�������</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>��������ս���ڼ���ɴ��ж���ɾ���ж����ܻᵼ�������֡���ȷ��Ҫ��ô����</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>һ������ս��</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">��ս������</p>
-                    <p style="margin: 11px 0; font-size: 13px">����ר��</p>
-                    <p style="text-transform: none;">���ǵ���ս������ȡ��������ж����漰���ĸ����� - ʱ�䡢�ɱ���֪ʶ�ͼ��ܡ�������Щ���ػ�������߶��죬����ս��������������ѡ�����ʺ��Լ����ʽ��Ŀ����ж���</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4550"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">����ʱ��</h3>
-                <p data-description>�ҽ������ʵĻ���ʱ����ȡ��ͨ��ÿ�컨�����ڵ� (___) ����ʱ�䣨ʹ�ü�����������ӵȣ���</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4550">�˽����</a><ul class="dropdown" data-dropdown="resource-links-4550">
-                    <li>���Դ��</li>
-                    <li><a href="https://news.nationalgeographic.com/2017/02/nature-fix-brain-happy-florence-williams/"
-                         target="_blank">���ҵ������������������ڴ���Ȼ</a></li>
-                    <li><a href="https://www.bustle.com/articles/114893-how-to-spend-more-time-outside-in-7-sneaky-ways"
-                         target="_blank">7 ���ڻ���ͣ������ʱ��ķ�ʽ</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>��������ս���ڼ���ɴ��ж���ɾ���ж����ܻᵼ�������֡���ȷ��Ҫ��ô����</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>ÿ����ս��</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">��ս������</p>
-                    <p style="margin: 11px 0; font-size: 13px">������ѧ��</p>
-                    <p style="text-transform: none;">���ǵ���ս������ȡ��������ж����漰���ĸ����� - ʱ�䡢�ɱ���֪ʶ�ͼ��ܡ�������Щ���ػ�������߶��죬����ս��������������ѡ�����ʺ��Լ����ʽ��Ŀ����ж���</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4551"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">��չ������Ȼ�Ļ</h3>
-                <p data-description>��ÿ���ͺ���һ�����������Ȼ�Ļ (___) ���ӡ�����������κ����飬��ɢ����ͽ�����С��۲�Ҷ����ɫ�ı仯���Լ��Ķ���Ȼ������鼮����</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4551">�˽����</a><ul class="dropdown" data-dropdown="resource-links-4551">
-                    <li>���Դ��</li>
-                    <li><a href="https://greatergood.berkeley.edu/article/item/what_happens_when_we_reconnect_with_nature"
-                         target="_blank">����������ӵ����Ȼ�ᷢ��ʲô</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>��������ս���ڼ���ɴ��ж���ɾ���ж����ܻᵼ�������֡���ȷ��Ҫ��ô����</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>ÿ����ս��</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">��ս������</p>
-                    <p style="margin: 11px 0; font-size: 13px">������ѧ��</p>
-                    <p style="text-transform: none;">���ǵ���ս������ȡ��������ж����漰���ĸ����� - ʱ�䡢�ɱ���֪ʶ�ͼ��ܡ�������Щ���ػ�������߶��죬����ս��������������ѡ�����ʺ��Լ����ʽ��Ŀ����ж���</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4552"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">�����ۼ�</h3>
-                <p data-description>���Ի�������һ�������Ȼ�ʱ���ҽ����в����ۼ�������ԭ��</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4552">�˽����</a><ul class="dropdown" data-dropdown="resource-links-4552">
-                    <li>���Դ��</li>
-                    <li><a href="https://lnt.org/learn/7-principles" target="_blank">�����ۼ��� 7 ��ԭ��</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>��������ս���ڼ���ɴ��ж���ɾ���ж����ܻᵼ�������֡���ȷ��Ҫ��ô����</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>ÿ����ս��</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">��ս������</p>
-                    <p style="margin: 11px 0; font-size: 13px">�����ȷ�</p>
-                    <p style="text-transform: none;">���ǵ���ս������ȡ��������ж����漰���ĸ����� - ʱ�䡢�ɱ���֪ʶ�ͼ��ܡ�������Щ���ػ�������߶��죬����ս��������������ѡ�����ʺ��Լ����ʽ��Ŀ����ж���</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4553"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">�����ճ�/����</h3>
-                <p data-description>�ҽ�ÿ�������ճ���/�����䡣</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4553">�˽����</a><ul class="dropdown" data-dropdown="resource-links-4553">
-                    <li>���Դ��</li>
-                    <li><a href="https://sunrise-sunset.org/" target="_blank">����ص���ճ�/����ʱ��</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>��������ս���ڼ���ɴ��ж���ɾ���ж����ܻᵼ�������֡���ȷ��Ҫ��ô����</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>ÿ����ս��</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">��ս������</p>
-                    <p style="margin: 11px 0; font-size: 13px">������ѧ��</p>
-                    <p style="text-transform: none;">���ǵ���ս������ȡ��������ж����漰���ĸ����� - ʱ�䡢�ɱ���֪ʶ�ͼ��ܡ�������Щ���ػ�������߶��죬����ս��������������ѡ�����ʺ��Լ����ʽ��Ŀ����ж���</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4554"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">̽�������ڵ�����</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>�ҽ�̽���Լ��������������һ���µ�ͽ��·������Ȼ������</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4554">�˽����</a><ul class="dropdown" data-dropdown="resource-links-4554">
-                    <li>���Դ��</li>
-                    <li><a href="https://www.nps.gov/findapark/index.htm" target="_blank">���ҹ�԰����Ѱ�ҹ�԰</a></li>
-                    <li><a href="https://localadventurer.com/25-best-hikes-in-the-world-bucket-list/" target="_blank">ȫ�� 25 �����ͽ��������·</a></li>
-                    <li><a href="https://www.alltrails.com/" target="_blank">All Trails - Ѱ������ϲ������һ��·��</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>��������ս���ڼ���ɴ��ж���ɾ���ж����ܻᵼ�������֡���ȷ��Ҫ��ô����</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>һ������ս��</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">��ս������</p>
-                    <p style="margin: 11px 0; font-size: 13px">������ѧ��</p>
-                    <p style="text-transform: none;">���ǵ���ս������ȡ��������ж����漰���ĸ����� - ʱ�䡢�ɱ���֪ʶ�ͼ��ܡ�������Щ���ػ�������߶��죬����ս��������������ѡ�����ʺ��Լ����ʽ��Ŀ����ж���</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4555"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">�μӻ�����Ŀ</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>�ҽ��μ������Ļ���ָ���Ŀ�����ߺʹ󶼻����ٵ�ͬ��һ��������ɫ����־Ը����Ŀ��</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4555">�˽����</a><ul class="dropdown" data-dropdown="resource-links-4555">
-                    <li>���Դ��</li>
-                    <li><a href="https://www.volunteermatch.org/" target="_blank">VolunteerMatch</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>��������ս���ڼ���ɴ��ж���ɾ���ж����ܻᵼ�������֡���ȷ��Ҫ��ô����</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>һ������ս��</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">��ս������</p>
-                    <p style="margin: 11px 0; font-size: 13px">����ר��</p>
-                    <p style="text-transform: none;">���ǵ���ս������ȡ��������ж����漰���ĸ����� - ʱ�䡢�ɱ���֪ʶ�ͼ��ܡ�������Щ���ػ�������߶��죬����ս��������������ѡ�����ʺ��Լ����ʽ��Ŀ����ж���</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4556"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">���д��Ȼ�ռ�</h3>
-                <p data-description>�ҽ�ÿ�춼��¼���Լ��ڴ���Ȼ�еľ�����</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4556">�˽����</a><ul class="dropdown" data-dropdown="resource-links-4556">
-                    <li>���Դ��</li>
-                    <li><a href="https://wearewildness.com/6-reasons-why-you-should-keep-a-nature-journal/"
-                         target="_blank">д��Ȼ�ռǵ� 6 ������</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>��������ս���ڼ���ɴ��ж���ɾ���ж����ܻᵼ�������֡���ȷ��Ҫ��ô����</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>ÿ����ս��</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">��ս������</p>
-                    <p style="margin: 11px 0; font-size: 13px">������ѧ��</p>
-                    <p style="text-transform: none;">���ǵ���ս������ȡ��������ж����漰���ĸ����� - ʱ�䡢�ɱ���֪ʶ�ͼ��ܡ�������Щ���ػ�������߶��죬����ս��������������ѡ�����ʺ��Լ����ʽ��Ŀ����ж���</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4557"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">���ϻ�԰</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>��ÿ�콫������һ����԰�������ֽ�һ����԰��</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4557">�˽����</a><ul class="dropdown" data-dropdown="resource-links-4557">
-                    <li>���Դ��</li>
-                    <li><a href="http://www.yesmagazine.org/issues/good-health/the-curious-case-of-the-antidepressant-anti-anxiety-backyard-garden-20151112"
-                         target="_blank">��԰���صĿ�������������Ч��</a></li>
-                    <li><a href="https://www.moneycrashers.com/start-community-garden-benefits/" target="_blank">ʲô��������԰���ô��Լ�����Լ����ֹ��� </a></li>
-                    <li><a href="https://www.nytimes.com/2015/05/27/dining/urban-gardening-tips.html" target="_blank">����԰��С��ʿ</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>��������ս���ڼ���ɴ��ж���ɾ���ж����ܻᵼ�������֡���ȷ��Ҫ��ô����</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>ÿ����ս��</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">��ս������</p>
-                    <p style="margin: 11px 0; font-size: 13px">����ר��</p>
-                    <p style="text-transform: none;">���ǵ���ս������ȡ��������ж����漰���ĸ����� - ʱ�䡢�ɱ���֪ʶ�ͼ��ܡ�������Щ���ػ�������߶��죬����ս��������������ѡ�����ʺ��Լ����ʽ��Ŀ����ж���</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4669"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">����Ͳ�</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>��ÿ�콫�� (___) �����ⲿ��ɡ�</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4669">�˽����</a><ul class="dropdown" data-dropdown="resource-links-4669">
-                    <li>���Դ��</li>
-                    <li><a href="https://www.health.harvard.edu/press_releases/spending-time-outdoors-is-good-for-you"
-                         target="_blank">����ʱ������кô�</a></li>
-                    <li><a href="http://planetmattersandmore.com/healthy-living-2/health-benefits-of-eating-outdoors/"
-                         target="_blank">����Ͳ͵ĺô�</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>��������ս���ڼ���ɴ��ж���ɾ���ж����ܻᵼ�������֡���ȷ��Ҫ��ô����</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>ÿ����ս��</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">��ս������</p>
-                    <p style="margin: 11px 0; font-size: 13px">������ѧ��</p>
-                    <p style="text-transform: none;">���ǵ���ս������ȡ��������ж����漰���ĸ����� - ʱ�䡢�ɱ���֪ʶ�ͼ��ܡ�������Щ���ػ�������߶��죬����ս��������������ѡ�����ʺ��Լ����ʽ��Ŀ����ж���</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4670"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">�������</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>���п��ܣ��ҽ�ÿ�찲�� (___) ���ӵĻ��⹤�������ͨ����</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4670">�˽����</a><ul class="dropdown" data-dropdown="resource-links-4670">
-                    <li>���Դ��</li>
-                    <li><a href="https://www.salesforce.com/blog/2014/07/meeting-outside-gp.html" target="_blank">ΪʲôӦ���ڻ�������´λ���</a></li>
-                    <li><a href="https://www.entrepreneur.com/article/233897" target="_blank">ΪʲôҪ�ѹ�����������</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>��������ս���ڼ���ɴ��ж���ɾ���ж����ܻᵼ�������֡���ȷ��Ҫ��ô����</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>ÿ����ս��</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">��ս������</p>
-                    <p style="margin: 11px 0; font-size: 13px">����ר��</p>
-                    <p style="text-transform: none;">���ǵ���ս������ȡ��������ж����漰���ĸ����� - ʱ�䡢�ɱ���֪ʶ�ͼ��ܡ�������Щ���ػ�������߶��죬����ս��������������ѡ�����ʺ��Լ����ʽ��Ŀ����ж���</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4671"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">�ɳ�����ͥԺ����</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>�ҽ��˽�ɳ�����ͥԺ����ʵ�񣬲����ҵ� EcoChallenge Feed �Ϸ����Լ�ѧ�������ݡ�</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4671">�˽����</a><ul class="dropdown" data-dropdown="resource-links-4671">
-                    <li>���Դ��</li>
-                    <li><a href="https://www.nrdc.org/stories/more-sustainable-and-beautiful-alternatives-grass-lawn"
-                         target="_blank">���ɳ����Ĳ�ƺ���Ʒ</a></li>
-                    <li><a href="https://www.planetnatural.com/organic-lawn-care-101/" target="_blank">�л���ƺ���� 101</a></li>
-                    <li><a href="https://draxe.com/10-ways-to-go-green-with-your-lawn-care/" target="_blank">ͨ����ƺ����������ɫ�� 10 �ַ���</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>��������ս���ڼ���ɴ��ж���ɾ���ж����ܻᵼ�������֡���ȷ��Ҫ��ô����</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>һ������ս��</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">��ս������</p>
-                    <p style="margin: 11px 0; font-size: 13px">�����ȷ�</p>
-                    <p style="text-transform: none;">���ǵ���ս������ȡ��������ж����漰���ĸ����� - ʱ�䡢�ɱ���֪ʶ�ͼ��ܡ�������Щ���ػ�������߶��죬����ս��������������ѡ�����ʺ��Լ����ʽ��Ŀ����ж���</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4672"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">���� Our Green Impact</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>�ҳ�ŵ�μӴ󶼻����ٵ� Our Green Impact�����ǵĻ���Ӱ������������������ֻᡢ־Ը�߻��ᡢ�����������պ͵����ܻ��</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4672">�˽����</a><ul class="dropdown" data-dropdown="resource-links-4672">
-                    <li>���Դ��</li>
-                    <li><a href="https://my.metlife.com/sites/gogreen/SitePages/Our-Green-Home.aspx" target="_blank">���ǵ���ɫӰ����</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>��������ս���ڼ���ɴ��ж���ɾ���ж����ܻᵼ�������֡���ȷ��Ҫ��ô����</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>һ������ս��</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar dull"></div>
-                  <div class="bar dull"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">��ս������</p>
-                    <p style="margin: 11px 0; font-size: 13px">������ѧ��</p>
-                    <p style="text-transform: none;">���ǵ���ս������ȡ��������ж����漰���ĸ����� - ʱ�䡢�ɱ���֪ʶ�ͼ��ܡ�������Щ���ػ�������߶��죬����ս��������������ѡ�����ʺ��Լ����ʽ��Ŀ����ж���</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li class="action-card"
-            data-participant-action
-            data-action="4673"
-        >
-          <div class="init" data-focus-target>
-            <div class="content" data-action-content>
-              <div class="body">
-                <h3 class="title">ͽ������</h3>
-                <h4 class="subtitle">
-
-                </h4>
-                <p data-description>�� EcoChallenge �ڼ䣬�ҽ����С��ܲ��������г�ǰ��ͨ���Ὺ�����˹�����ͨ����ǰ���ĵط�����ע��۲���Χ�Ļ�����</p>
-                <div class="resource-links dropdown-wrapper"><a href="#" class="button-action" data-dropdown-toggle="resource-links-4673">�˽����</a><ul class="dropdown" data-dropdown="resource-links-4673">
-                    <li>���Դ��</li>
-                    <li><a href="https://whatifwewalked.com/seven-reasons-to-travel-on-foot/" target="_blank">�����߻�������</a></li>
-                    <li><a href="https://www.women-on-the-road.com/travel-on-foot.html" target="_blank">ͽ������ - Ů����·��</a></li>
-                    <li><a href="https://awol.junkee.com/the-case-for-slow-travel-5-benefits-of-taking-your-time/36618"
-                         target="_blank">�����У���ʱ��ĺô�</a></li>
-                  </ul>
-                </div>
-
-                <p style="display: none" class="warning" data-warning>��������ս���ڼ���ɴ��ж���ɾ���ж����ܻᵼ�������֡���ȷ��Ҫ��ô����</p>
-              </div>
-
-              <div class="challenge-meta">
-                <p>ÿ����ս��</p>
-              </div>
-              <div class="action-difficulty">
-                <div class="indicator">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="description">
-                    <p style="font-weight: 700; margin-top: -9px; font-size: 10px;">��ս������</p>
-                    <p style="margin: 11px 0; font-size: 13px">�����ȷ�</p>
-                    <p style="text-transform: none;">���ǵ���ս������ȡ��������ж����漰���ĸ����� - ʱ�䡢�ɱ���֪ʶ�ͼ��ܡ�������Щ���ػ�������߶��죬����ս��������������ѡ�����ʺ��Լ����ʽ��Ŀ����ж���</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-      </ul>
-    </nav>
-
-
-    <p class="align-center"><a class="back-link" href="/challenges.html">����������ս��</a></p>
-  </div>
-</section>
-
-<footer class="global-footer">
-  <section class="bg-neutral20">
-
-  </section>
-  <section class="bg-neutral100">
-    <div class="content">
-      <div class="section">
-        <div class="block">
-          <div>
-            <div class="subheading">���ǵĹ���</div>
-            <p>150 �������󶼻�����һֱ�������õ���ҵ����ƾ��󶼻������ƾõļ�ʵ����������������ȷ��δ�����Լ�������������صĸ��ˡ���ͥ�������ܹ�ʵ��Ŀ��Ͷȹ������е��ѹء�</p>
-          </div>
-
-        </div>
-        <div class="block">
-          <div>
-            <div class="subheading">��ϵ��Ϣ</div>
-            <div>MetLife, Inc.<br>200 Park Avenue<br>New York, NY 10166<br>gogreen@metlife.com</div>
-            <div class="support-link"><a href="mailto:support@ecochallenge.org">support@ecochallenge.org</a></div>
-          </div>
-
-          <div>
-          </div>
-
-        </div>
-      </div>
-      <div class="section logos">
-        <div class="logo"><img src="../assets/images/logo.jpg"/> <a class="link-primary" href="https://metlife.ecochallenge.org/about/event-info">���ڻ��֯��</a></div>
-      </div>
-
-    </div>
-  </section>
-  <section class="bg-neutral120">
-    <div class="bottom">
-      <div class="align-left"><span class="colophon">&copy;2016-2019 Northwest Earth Institute</span></div>
-      <div class="align-right"><a href="https://ecochallenge.org/wp-content/uploads/2016/07/NWEI-Privacy-Policy_03.11.17.pdf" target="_blank">��˽����</a> <a href="mailto:support@ecochallenge.org">����֧��</a> <a href="https://ecochallenge.org/donations/donate-to-ecochallenge/" target="_blank" class="outlined">����</a></div>
-    </div>
-  </section>
-
-</footer>
-
-
+<body class="layout-event" data-gtm-page-name="" data-gtm-subdomain="metlife">
+	<header class="global-header">
+		<nav class="user-nav"></nav>
+	</header>
+	<div class="event-header">
+		<div class="event-info">
+			<div class="subtitle">
+				<a href="https://www.metlife.com/">
+				<div class="logo"><img src="../assets/images/metlife_eng_logo_rgb.jpg"/></div></a>
+			</div>
+			<div class="title">
+				<a href="http://metlife.ecochallenge.org">2020 年大都会人寿 EcoChallenge 环保挑战赛</a>
+			</div>
+			<div class="event-date-range" data-date-range="">
+				2020 年 10 月 19 日 － 30 日
+			</div>
+		</div>
+	</div>
+	<section class="bg-spectrum spectrum07">
+		<div class="container">
+			<header class="section-title">
+				<div class="icon">
+					<svg class="border" viewbox="0 0 46 46" xmlns="http://www.w3.org/2000/svg">
+					<circle cx="23" cy="23" fill="none" r="22.5"></circle></svg> <svg viewbox="0 0 46 46" xmlns="http://www.w3.org/2000/svg">
+					<path d="M23.123 34.922v10.824" fill="none"></path>
+					<path d="M17.64 16.69l5.483-6.614 5.483 6.614zm12.059 8.457l-6.576-7.933-6.576 7.933zm1.093 9.775l-7.67-9.252-7.668 9.252z" fill="#fff"></path></svg>
+				</div>
+				<h1 class="title">自然</h1><a class="subtitle medium" href="../challenges.html">返回所有行动类别</a>
+				<p class="description uppercase">大自然在召唤！从以下行动中进行选择，并与您周围的世界重新建立联系。</p>
+				<p class="description">随着我们的世界变得更加工业化和全球化，我们与自然、四季和我们居住之地的联系逐渐疏远，对食物的生产者和垃圾的去向日益淡漠。我们越多地在我们自己的生物区获得食物和处理垃圾，就越能看到我们的生活模式对周边的水、土壤和生物造成的影响。当我们与我们的家园休戚相关时，如果我们能够致力于当地的可持续发展，会带来巨大的好处 — 对我们自己、社区和地球均是如此。</p>
+				<div class="challenge-resource">
+					<a class="button-outlined" href="https://ecochallenge.org/wp-content/uploads/2017/03/2017-MetLife-EcoChallenge-Resources_Nature.pdf" target="_blank">了解更多</a>
+				</div>
+				<div class="challenge-sponsors"></div>
+			</header>
+			<div class="filter-toggle-group closed">
+				<div class="form-divider" data-filter-toggle="">
+					<span class="rule"></span><span class="text" data-filter-toggle="" data-filter-type="action"></span> <span class="rule"></span>
+				</div>
+				<form accept-charset="UTF-8" action="/challenges/nature" class="form-search-filter form-field centered" data-search-filter="true" method="get">
+					<input name="utf8" type="hidden" value="&#x2713;">
+					<div class="filters centered">
+						<div class="select" data-filter="">
+							<select id="difficulty" name="difficulty">
+								<option value="">
+									难度：
+								</option>
+								<option value="easy">
+									EcoLearner
+								</option>
+								<option value="medium">
+									EcoPro
+								</option>
+								<option value="difficult">
+									EcoLeader
+								</option>
+							</select>
+						</div>
+						<div class="select" data-filter="">
+							<select id="limit_kind" name="limit_kind">
+								<option value="">
+									频率：
+								</option>
+								<option value="one_time">
+									一次性
+								</option>
+								<option value="daily">
+									每天
+								</option>
+							</select>
+						</div>
+					</div>
+					<div class="filters centered">
+						<span class="prompt">仅在以下情况下显示行动：</span> <label class="checkbox" data-filter=""><input id="is_customizable" name="is_customizable" type="checkbox" value="1"> <span class="toggle-indicator"></span>可定制</label> <label class="checkbox" data-filter=""><input id="has_resources" name="has_resources" type="checkbox" value="1"> <span class="toggle-indicator"></span>拥有资源链接</label>
+					</div>
+					<div class="reset inactive">
+						<a href="/challenges/nature">清除所有筛选条件</a>
+					</div>
+				</form>
+			</div>
+			<nav class="challenge-actions-list">
+				<ul>
+					<li class="action-card" data-action="6870" data-api-path="https://metlife.ecochallenge.org/me/actions/6870/myself/selection" data-customizable="false" id="action-6870">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">倡导绿色空间</h3>
+									<p data-description="">我将倡导在我的城市周围增加更多绿地。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">了解更多</div>
+										<ul class="dropdown" data-dropdown="resource-links-6870">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.theguardian.com/teacher-network/2018/mar/01/improving-childrens-access-nature-addressing-inequality-bame-low-income-backgrounds" target="_blank">Improving Children's Access to Nature Starts with Addressing Inequality</a>
+											</li>
+											<li>
+												<a href="http://www.hphpcentral.com/article/urban-planning-and-the-importance-of-green-space-in-cities-to-human-and-environmental-health" target="_blank">Urban Planning and the Importance of Green Space in Cities to Human and Environmental Health</a>
+											</li>
+											<li>
+												<a href="https://www.npr.org/sections/health-shots/2018/07/20/630615148/replacing-vacant-lots-with-green-spaces-can-ease-depression-in-urban-communities" target="_blank">Replacing Vacant Lots With Green Spaces Can Ease Depression In Urban Communities</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">您已在挑战赛期间完成此行动。删除此行动可能会导致积分损失。确定要执行此操作吗？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>每日行动</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoPro</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6871" data-api-path="https://metlife.ecochallenge.org/me/actions/6871/myself/selection" data-customizable="true" id="action-6871">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">感恩地球</h3>
+									<p data-description="">我将每天花 (___) 分钟在户外，表达对地球和我周边自然环境的感恩之情（通过祈祷、冥想、写日记等形式）。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">了解更多</div>
+										<ul class="dropdown" data-dropdown="resource-links-6871">
+											<li>Action Resources:</li>
+											<li>
+												<a href="http://alexstark.com/on-gratitude/" target="_blank">On Gratitude</a>
+											</li>
+											<li>
+												<a href="https://greatergood.berkeley.edu/article/item/what_happens_when_we_reconnect_with_nature" target="_blank">What Happens When We Reconnect with Nature</a>
+											</li>
+											<li>
+												<a href="http://www.yesmagazine.org/happiness/if-meditation-is-not-your-thing-try-a-walk-in-the-woods-20180712" target="_blank">If Meditation Is Not Your Thing, Try a Walk in the Woods</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">您已在挑战赛期间完成此行动。删除此行动可能会导致积分损失。确定要执行此操作吗？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>每日行动</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLearner</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6872" data-api-path="https://metlife.ecochallenge.org/me/actions/6872/myself/selection" data-customizable="true" id="action-6872">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">每日散步</h3>
+									<p data-description="">我将每天外出散步 (___) 分钟，在此期间遵循保持社交距离的指南。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">了解更多</div>
+										<ul class="dropdown" data-dropdown="resource-links-6872">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.uofmhealth.org/news/archive/201409/walking-depression-and-beating-stress-outdoors-nature-group" target="_blank">Nature Group Walks Linked to Improved Mental Health</a>
+											</li>
+											<li>
+												<a href="https://greatergood.berkeley.edu/article/item/what_happens_when_we_reconnect_with_nature" target="_blank">What Happens When We Reconnect with Nature</a>
+											</li>
+											<li>
+												<a href="http://www.yesmagazine.org/happiness/if-meditation-is-not-your-thing-try-a-walk-in-the-woods-20180712" target="_blank">If Meditation Is Not Your Thing, Try a Walk in the Woods</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">您已在挑战赛期间完成此行动。删除此行动可能会导致积分损失。确定要执行此操作吗？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>每日行动</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLearner</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6873" data-api-path="https://metlife.ecochallenge.org/me/actions/6873/myself/selection" data-customizable="true" id="action-6873">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">帮助当地的传粉媒介</h3>
+									<p data-description="">至少 30% 的作物和 90% 的开花植物依靠传粉媒介来结出果实。我将花 (___) 分钟时间研究哪些植物能帮助本地的原生传粉媒介，并在我的院子里种植一些。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">了解更多</div>
+										<ul class="dropdown" data-dropdown="resource-links-6873">
+											<li>Action Resources:</li>
+											<li>
+												<a href="http://pollinator.org/guides" target="_blank">Pollinator-Friendly Planting Guides</a>
+											</li>
+											<li>
+												<a href="https://www.smithsonianmag.com/smithsonian-institution/honor-world-bee-day-protect-your-local-pollinators-these-ten-east-ways-180969111/" target="_blank">How to Protect Your Local Pollinators in Ten Easy Ways</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">您已在挑战赛期间完成此行动。删除此行动可能会导致积分损失。确定要执行此操作吗？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>一次性行动</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoPro</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6874" data-api-path="https://metlife.ecochallenge.org/me/actions/6874/myself/selection" data-customizable="true" id="action-6874">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">户外时光</h3>
+									<p data-description="">我将用优质的户外时光来取代通常每天花在室内的 (___) 分钟时间（使用计算机、看电视等）。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">了解更多</div>
+										<ul class="dropdown" data-dropdown="resource-links-6874">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://news.nationalgeographic.com/2017/02/nature-fix-brain-happy-florence-williams/" target="_blank">National Geographic:We Are Wired to Be Outside</a>
+											</li>
+											<li>
+												<a href="https://www.bustle.com/articles/114893-how-to-spend-more-time-outside-in-7-sneaky-ways" target="_blank">How to Spend More Time Outside in 7 Sneaky Ways</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">您已在挑战赛期间完成此行动。删除此行动可能会导致积分损失。确定要执行此操作吗？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>每日行动</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLearner</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6875" data-api-path="https://metlife.ecochallenge.org/me/actions/6875/myself/selection" data-customizable="true" id="action-6875">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">开展融入自然的活动</h3>
+									<p data-description="">我在遵循保持社交距离的指南的前提下，每天将花 (___) 分钟单独参与，或者与亲友一起参与融入自然的活动。（这可以是任何事情，如散步或徒步旅行、观察叶子颜色的变化、以及阅读自然主题的书籍。）</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">了解更多</div>
+										<ul class="dropdown" data-dropdown="resource-links-6875">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://greatergood.berkeley.edu/article/item/what_happens_when_we_reconnect_with_nature" target="_blank">What Happens When We Reconnect with Nature</a>
+											</li>
+											<li>
+												<a href="https://www.familyeducation.com/fun/nature-activities/10-hands-nature-activities-kids" target="_blank">面向孩子的亲身实践自然活动</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">您已在挑战赛期间完成此行动。删除此行动可能会导致积分损失。确定要执行此操作吗？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>每日行动</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLearner</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6876" data-api-path="https://metlife.ecochallenge.org/me/actions/6876/myself/selection" data-customizable="false" id="action-6876">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">不留痕迹</h3>
+									<p data-description="">独自或与亲友一起参与自然活动时，除了遵循保持社交距离的指南外，我将践行不留痕迹的七项原则。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">了解更多</div>
+										<ul class="dropdown" data-dropdown="resource-links-6876">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://lnt.org/learn/7-principles" target="_blank">The 7 Principles of Leave No Trace</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">您已在挑战赛期间完成此行动。删除此行动可能会导致积分损失。确定要执行此操作吗？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>每日行动</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLeader</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6877" data-api-path="https://metlife.ecochallenge.org/me/actions/6877/myself/selection" data-customizable="false" id="action-6877">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">享受日出/日落</h3>
+									<p data-description="">我将每天享受日出和/或日落。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">了解更多</div>
+										<ul class="dropdown" data-dropdown="resource-links-6877">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://sunrise-sunset.org/" target="_blank">Sunrise and Sunset Times for Any Location</a>
+											</li>
+											<li>
+												<a href="https://www.mnn.com/health/fitness-well-being/blogs/how-watching-sunrise-or-sunset-can-improve-your-health" target="_blank">How Watching the Sun Set or Rise Can Help Your Health</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">您已在挑战赛期间完成此行动。删除此行动可能会导致积分损失。确定要执行此操作吗？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>每日行动</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLearner</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6878" data-api-path="https://metlife.ecochallenge.org/me/actions/6878/myself/selection" data-customizable="true" id="action-6878">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">探索我所在的区域</h3>
+									<p data-description="">我将在遵循保持社交距离的指南的前提下，探索自己所在区域的至少一条新的徒步路径或自然步道。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">了解更多</div>
+										<ul class="dropdown" data-dropdown="resource-links-6878">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.nps.gov/findapark/index.htm" target="_blank">National Park Service:Find a Park</a>
+											</li>
+											<li>
+												<a href="https://www.health.harvard.edu/press_releases/spending-time-outdoors-is-good-for-you" target="_blank">Spending time outdoors is good for you</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">您已在挑战赛期间完成此行动。删除此行动可能会导致积分损失。确定要执行此操作吗？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>一次性行动</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLearner</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6879" data-api-path="https://metlife.ecochallenge.org/me/actions/6879/myself/selection" data-customizable="true" id="action-6879">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">参加户外项目</h3>
+									<p data-description="">我将与大都会人寿同事一起组织虚拟绿色社区志愿者项目，致力于户外环境恢复或环境保护。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">了解更多</div>
+										<ul class="dropdown" data-dropdown="resource-links-6879">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.volunteermatch.org/" target="_blank">VolunteerMatch</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">您已在挑战赛期间完成此行动。删除此行动可能会导致积分损失。确定要执行此操作吗？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>一次性行动</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoPro</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6880" data-api-path="https://metlife.ecochallenge.org/me/actions/6880/myself/selection" data-customizable="true" id="action-6880">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">记录自然日志</h3>
+									<p data-description="">我每天都会记录我在大自然中的经历。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">了解更多</div>
+										<ul class="dropdown" data-dropdown="resource-links-6880">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://wearewildness.com/6-reasons-why-you-should-keep-a-nature-journal/" target="_blank">6 Reasons Why You Should Keep a Nature Journal</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">您已在挑战赛期间完成此行动。删除此行动可能会导致积分损失。确定要执行此操作吗？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>每日行动</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLearner</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6881" data-api-path="https://metlife.ecochallenge.org/me/actions/6881/myself/selection" data-customizable="false" id="action-6881">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">照料花园</h3>
+									<p data-description="">我每天将会照料一个花园，或着手建一个花园。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">了解更多</div>
+										<ul class="dropdown" data-dropdown="resource-links-6881">
+											<li>Action Resources:</li>
+											<li>
+												<a href="http://www.yesmagazine.org/issues/good-health/the-curious-case-of-the-antidepressant-anti-anxiety-backyard-garden-20151112" target="_blank">The Curious Case of the Antidepressant, Anti-Anxiety Backyard Garden</a>
+											</li>
+											<li>
+												<a href="https://www.aarp.org/health/healthy-living/info-2017/health-benefits-of-gardening-fd.html" target="_blank">Health Benefits of Gardening</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">您已在挑战赛期间完成此行动。删除此行动可能会导致积分损失。确定要执行此操作吗？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>每日行动</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoPro</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6882" data-api-path="https://metlife.ecochallenge.org/me/actions/6882/myself/selection" data-customizable="true" id="action-6882">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">外出就餐</h3>
+									<p data-description="">我每天将有 (___) 餐在外部完成。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">了解更多</div>
+										<ul class="dropdown" data-dropdown="resource-links-6882">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.health.harvard.edu/press_releases/spending-time-outdoors-is-good-for-you" target="_blank">Spending time outdoors is good for you</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">您已在挑战赛期间完成此行动。删除此行动可能会导致积分损失。确定要执行此操作吗？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>每日行动</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLearner</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6883" data-api-path="https://metlife.ecochallenge.org/me/actions/6883/myself/selection" data-customizable="true" id="action-6883">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">户外会议</h3>
+									<p data-description="">我每天将安排 (___) 分钟的户外工作会议或通话。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">了解更多</div>
+										<ul class="dropdown" data-dropdown="resource-links-6883">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.health.harvard.edu/press_releases/spending-time-outdoors-is-good-for-you" target="_blank">Spending time outdoors is good for you</a>
+											</li>
+											<li>
+												<a href="https://whatifwewalked.com/seven-reasons-to-travel-on-foot/" target="_blank">What if We Walked?</a>
+											</li>
+											<li>
+												<a href="https://www.smartertravel.com/art-slow-travel/" target="_blank">The Art of Slow Travel</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">您已在挑战赛期间完成此行动。删除此行动可能会导致积分损失。确定要执行此操作吗？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>每日行动</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoPro</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="6884" data-api-path="https://metlife.ecochallenge.org/me/actions/6884/myself/selection" data-customizable="false" id="action-6884">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">可持续的庭院护理</h3>
+									<p data-description="">我将了解可持续的庭院护理实务，并在我的 EcoChallenge Feed 上分享我学到的内容。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">了解更多</div>
+										<ul class="dropdown" data-dropdown="resource-links-6884">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.asla.org/sustainablelandscapes/about.html" target="_blank">Sustainable Landscapes</a>
+											</li>
+											<li>
+												<a href="https://draxe.com/10-ways-to-go-green-with-your-lawn-care/" target="_blank">10 Ways to Go Green with Lawn Care</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">您已在挑战赛期间完成此行动。删除此行动可能会导致积分损失。确定要执行此操作吗？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>一次性行动</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLeader</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="8361" data-api-path="https://metlife.ecochallenge.org/me/actions/8361/myself/selection" data-customizable="true" id="action-8361">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">研究野生动物</h3>
+									<p data-description="">我将至少花 (___) 分钟来了解我感兴趣的野生动物，包括它们的生命周期、栖息地、生态系统功能以及与人类的互动（如有！）。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">了解更多</div>
+										<ul class="dropdown" data-dropdown="resource-links-8361">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.nationalgeographic.com/animals/facts-pictures/" target="_blank">National Geographic:Animal Pictures and Facts</a>
+											</li>
+											<li>
+												<a href="https://kids.nationalgeographic.com/animals/" target="_blank">National Geographic Kids:Animals</a>
+											</li>
+											<li>
+												<a href="https://www.worldwildlife.org/species" target="_blank">Protecting Wildlife for a Healthy Planet</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">您已在挑战赛期间完成此行动。删除此行动可能会导致积分损失。确定要执行此操作吗？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>一次性行动</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLearner</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="8362" data-api-path="https://metlife.ecochallenge.org/me/actions/8362/myself/selection" data-customizable="true" id="action-8362">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">植树</h3>
+									<p data-description="">我将在我的社区、公园或后院种植 (___) 棵原生树种。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">了解更多</div>
+										<ul class="dropdown" data-dropdown="resource-links-8362">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://c402277.ssl.cf1.rackcdn.com/publications/1155/files/original/Forest_4.4.pdf?1523895719" target="_blank">WWF:Take a Walk Through the Forest:Forest Guide</a>
+											</li>
+											<li>
+												<a href="https://www.ted.com/talks/shubhendu_sharma_how_to_grow_a_forest_in_your_backyard" target="_blank">TED Talk:Shubhendu Sharma on How to Grow a Forest in your Backyard</a>
+											</li>
+											<li>
+												<a href="https://solu.news/cb76e" target="_blank">SolutionsU news on expanding urban forests</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">您已在挑战赛期间完成此行动。删除此行动可能会导致积分损失。确定要执行此操作吗？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>一次性行动</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoPro</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="8363" data-api-path="https://metlife.ecochallenge.org/me/actions/8363/myself/selection" data-customizable="true" id="action-8363">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">倡导森林保护</h3>
+									<p data-description="">我将联系 (___) 位议员或国会代表，倡导保护森林和提升森林固碳和促进生物多样性能力的公共政策。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">了解更多</div>
+										<ul class="dropdown" data-dropdown="resource-links-8363">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://c402277.ssl.cf1.rackcdn.com/publications/1155/files/original/Forest_4.4.pdf?1523895719" target="_blank">WWF:Take a Walk Through the Forest:Forest Guide</a>
+											</li>
+											<li>
+												<a href="https://blogs.scientificamerican.com/observations/the-best-technology-for-fighting-climate-change-isnt-a-technology/" target="_blank">The Best Technology for Fighting Climate Change Isn't a Technology</a>
+											</li>
+											<li>
+												<a href="https://www.govtrack.us/congress/members" target="_blank">GovTrack:Find your U.S. Congressperson</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">您已在挑战赛期间完成此行动。删除此行动可能会导致积分损失。确定要执行此操作吗？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>一次性行动</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLeader</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="8364" data-api-path="https://metlife.ecochallenge.org/me/actions/8364/myself/selection" data-customizable="true" id="action-8364">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">研究生物多样性的益处</h3>
+									<p data-description="">我将至少花 (___) 分钟研究生物多样性如何对我们的世界产生积极影响，以及生物多样性的丧失会如何损害我们的世界。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">了解更多</div>
+										<ul class="dropdown" data-dropdown="resource-links-8364">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://www.globalissues.org/article/170/why-is-biodiversity-important-who-cares" target="_blank">Why Is Biodiversity Important?</a>
+											</li>
+											<li>
+												<a href="https://www.nytimes.com/2012/07/15/sunday-review/the-ecology-of-disease.html?fbclid=IwAR03nGQzdFR6jT84Xb6R7oX--gdZkjUzXF01A6O0gBbnHsy5A_tDVD9ZsQQ" target="_blank">The Ecology of Disease</a>
+											</li>
+											<li>
+												<a href="https://www.youtube.com/watch?v=ysa5OBhXz-Q&amp;t=9s" target="_blank">How Wolves Change Rivers</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">您已在挑战赛期间完成此行动。删除此行动可能会导致积分损失。确定要执行此操作吗？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>一次性行动</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoLearner</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="8365" data-api-path="https://metlife.ecochallenge.org/me/actions/8365/myself/selection" data-customizable="false" id="action-8365">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">森林友好型食品</h3>
+									<p data-description="">我将改变当前的饮食习惯，对于已知会加剧森林砍伐的产品，如棕榈油、咖啡和可可产品，我会使用替代品或不再使用。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">了解更多</div>
+										<ul class="dropdown" data-dropdown="resource-links-8365">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://rspo.org/rspo-credits" target="_blank">Roundtable on Sustainable Palm Oil</a>
+											</li>
+											<li>
+												<a href="http://www.onegreenplanet.org/environment/foods-that-are-eating-the-worlds-forests-and-how-to-choose-better/" target="_blank">5 Foods That Are Eating the World’s Forests And How to Choose Better</a>
+											</li>
+											<li>
+												<a href="https://www.rainforest-alliance.org/find-certified?page=1" target="_blank">Find Rainforest Alliance Certified products</a>
+											</li>
+											<li>
+												<a href="https://solutionsu.solutionsjournalism.org/lists/7e2bn17elr" target="_blank">SolutionsU Collection:Restoring Tropical Forests</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">您已在挑战赛期间完成此行动。删除此行动可能会导致积分损失。确定要执行此操作吗？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>一次性行动</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoPro</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="action-card" data-action="8366" data-api-path="https://metlife.ecochallenge.org/me/actions/8366/myself/selection" data-customizable="false" id="action-8366">
+						<div class="init" data-focus-target="">
+							<div class="content" data-action-content="true">
+								<div class="body">
+									<h3 class="title">选择更好的木质产品</h3>
+									<p data-description="">我只会购买来源获得生态认证（如森林管理委员会认证）的木质和纸质产品。</p>
+									<div class="resource-links dropdown-wrapper">
+										<div class="button-action indicator">了解更多</div>
+										<ul class="dropdown" data-dropdown="resource-links-8366">
+											<li>Action Resources:</li>
+											<li>
+												<a href="https://us.fsc.org/en-us/market/find-products" target="_blank">Find Forest Stewardship Council Certified Products</a>
+											</li>
+											<li>
+												<a href="https://blogs.scientificamerican.com/observations/the-best-technology-for-fighting-climate-change-isnt-a-technology/" target="_blank">The Best Technology for Fighting Climate Change Isn't a Technology</a>
+											</li>
+											<li>
+												<a href="https://solutionsu.solutionsjournalism.org/lists/k7ohdwqxg4" target="_blank">SolutionsU Collection:Forest Protection</a>
+											</li>
+										</ul>
+									</div>
+									<p class="warning" data-warning="" style="display: none">您已在挑战赛期间完成此行动。删除此行动可能会导致积分损失。确定要执行此操作吗？</p>
+								</div>
+
+								<div class="challenge-meta">
+									<p>一次性行动</p>
+								</div>
+								<div class="action-difficulty">
+									<div aria-describedby="action-difficulty-tooltip" class="indicator">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar dull"></div>
+										<div class="tooltip" id="action-difficulty-tooltip" role="tooltip">
+											<p style="font-weight: 700; font-size: 10px;">Challenge Level:</p>
+											<p style="margin: 11px 0; font-size: 13px">EcoPro</p>
+											<p class="tooltip__body" style="text-transform: none;">Our challenge levels are determined by four factors involved in completing the action - time, cost, knowledge, and skills.While these factors may vary by participant, the challenge level can help you choose which actions fit best with your lifestyle and goals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</nav>
+			<p class="align-center"><a class="back-link" href="../challenges.html">返回所有行动类别</a></p>
+		</div>
+	</section>
+	<footer class="global-footer">
+		<section class="bg-neutral20"></section>
+		<section class="bg-neutral100">
+			<div class="content">
+				<div class="section">
+					<div class="block">
+						<div>
+							<div class="subheading">
+								我们的故事
+							</div>
+							<p>150 年来，大都会人寿一直都是良好的企业公民。凭借大都会人寿悠久的坚实根基，我们致力于确保未来可以继续为世界各地的个人、家庭和社区提供帮助，使他们能够实现目标，并度过生活中的难关。</p>
+						</div>
+					</div>
+					<div class="block">
+						<div>
+							<div class="subheading">
+								联系信息
+							</div>
+							<div>
+								MetLife, Inc.<br/>200 Park Avenue<br/>New York, NY 10166<br/>gogreen@metlife.com
+							</div>
+							<div class="support-link">
+								<a href="mailto:support@ecochallenge.org">support@ecochallenge.org</a>
+							</div>
+						</div>
+						<div></div>
+					</div>
+				</div>
+				<div class="section logos">
+					<div class="logo">
+						<img src="../assets/images/metlife_eng_logo_rgb.jpg"/><a class="link-primary" href="https://www.metlife.com/">关于活动组织方</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bg-neutral120">
+			<div class="bottom">
+				<div class="align-left">
+					<span class="colophon">© 2016-2020 Ecochallenge.org</span>
+				</div>
+				<div class="align-right">
+					<a href="http://ecochallenge.org/privacy-policy" target="_blank">隐私政策 | 使用条款</a> <a href="mailto:support@ecochallenge.org">技术支持</a> <a class="outlined" data-donate-button="" data-donate-default="30" href="#">捐款</a>
+				</div>
+			</div>
+		</section>
+	</footer>
 </body>
 </html>
-
